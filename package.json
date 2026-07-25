@@ -23,11 +23,11 @@
   },
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start --port 5964 --host 0.0.0.0",
+    "start": "docusaurus start --port 5968 --host 0.0.0.0",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "clear": "docusaurus clear",
-    "serve": "docusaurus serve --port 5965",
+    "serve": "docusaurus serve --port 5969",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc --noEmit"
