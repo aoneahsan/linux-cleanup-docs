@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.yarn/cache
+.yarn/install-state.gz
+.pnp.*
+
+# Build outputs
+.docusaurus/
+build/
+dist/
+
+# Generated files
+.cache-loader
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Env / secrets — THIS REPO IS PUBLIC. Only .env.example may ever be tracked.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+key.properties
+keystore.properties
+*service-account*.json
+*credential*
+.npmrc
+
+# Project-record / private notes
+project-record-ignore/
+*.ignore.*
+
+# Lock-files from unwanted package managers (yarn-only repo)
+package-lock.json
+pnpm-lock.yaml

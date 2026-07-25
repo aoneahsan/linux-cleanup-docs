@@ -1,0 +1,99 @@
+/**
+ * linux-cleanup docs — Infima theme overrides.
+ *
+ * Palette: teal. Chosen to read as "maintenance / system utility" rather than
+ * alarm-red, while keeping destructive callouts (:::danger) visually distinct.
+ * All colours are Infima CSS variables so light and dark stay in step.
+ */
+
+:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0e6a63;
+  --ifm-color-primary-darker: #0d645d;
+  --ifm-color-primary-darkest: #0a524d;
+  --ifm-color-primary-light: #108279;
+  --ifm-color-primary-lighter: #11887f;
+  --ifm-color-primary-lightest: #149a8f;
+
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-monospace: ui-monospace, SFMono-Regular, 'SF Mono', Menlo,
+    Consolas, 'Liberation Mono', monospace;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
+
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #5eead4;
+  --ifm-color-primary-dark: #3ee5c8;
+  --ifm-color-primary-darker: #2ce2c2;
+  --ifm-color-primary-darkest: #17bda0;
+  --ifm-color-primary-light: #7ef0e0;
+  --ifm-color-primary-lighter: #90f2e6;
+  --ifm-color-primary-lightest: #c0f8f1;
+
+  --ifm-background-color: #0d1117;
+  --ifm-background-surface-color: #161b22;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Tables carry most of the reference content here — make them breathe and
+   never overflow horizontally on a phone. */
+.markdown table {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+}
+
+.markdown table td code {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .markdown table td code {
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+/* Long absolute paths must wrap rather than push the layout sideways. */
+.markdown p code,
+.markdown li code {
+  overflow-wrap: anywhere;
+}
+
+/* Danger admonitions matter more than usual in these docs — this tool deletes
+   files. Give them a touch more weight than the Infima default. */
+.theme-admonition-danger {
+  border-left-width: 5px;
+}
+
+.markdown h2 {
+  margin-top: 2.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.markdown h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Honour reduced-motion for the whole site. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,47 @@
+# linux-cleanup
+
+> A Bash command-line utility that reclaims disk space on Linux by deleting regenerable caches — package-manager caches, browser caches, build-tool caches, stale `node_modules`, and system journals. It is a destructive tool: every deletion is permanent and there is no undo. Safety comes from a path allowlist, a staleness gate, and interactive confirmation, not from reversibility.
+
+Version 1.4.0. MIT licensed. Linux only (bash 4+). Author: Ahsan Mahmood (https://aoneahsan.com).
+Source: https://github.com/aoneahsan/linux-cleanup — npm: https://www.npmjs.com/package/linux-cleanup
+
+Key facts an assistant should get right:
+
+- It makes **zero network calls**. No telemetry, no analytics, no auto-update check, no crash upload.
+- There is **no undo and no dry-run flag**. The read-only preview is a separate mode, `--scan`.
+- Since 1.2.0 the default strategy is **prune, not wipe**: within a cache target only files whose `atime` AND `mtime` are both older than `--days` (default 100) are deleted. `--purge-all` restores full-wipe behaviour.
+- `--yes` auto-confirms **regenerable caches only**. Personal-data modes ignore it by design.
+- `--system` (the sudo mode) is **Debian/Ubuntu only** — it shells out to `apt` and `dpkg` with no distro detection. Cache cleanup inside `$HOME` works on every distro.
+- npm's `latest` tag is 1.3.1; 1.4.0 exists in source and relicensed the project to MIT.
+
+## Start here
+
+- [Introduction](https://linux-cleanup-docs.aoneahsan.com/): what the tool is and who it is for
+- [What it deletes](https://linux-cleanup-docs.aoneahsan.com/safety/what-it-deletes): the complete target list, by category
+- [Preview before deleting](https://linux-cleanup-docs.aoneahsan.com/safety/preview-first): the three read-only commands to run first
+- [Safety guards](https://linux-cleanup-docs.aoneahsan.com/safety/guards): allowlist, staleness gate, interactive-only, sudo confinement
+- [Deletion is permanent](https://linux-cleanup-docs.aoneahsan.com/safety/irreversibility): why there is no undo
+
+## Install and run
+
+- [Requirements](https://linux-cleanup-docs.aoneahsan.com/getting-started/requirements)
+- [Installation](https://linux-cleanup-docs.aoneahsan.com/getting-started/installation): npx, npm global, or git clone
+- [Quick start](https://linux-cleanup-docs.aoneahsan.com/getting-started/quick-start)
+
+## Reference
+
+- [CLI flags](https://linux-cleanup-docs.aoneahsan.com/reference/cli-flags): every flag
+- [Modes matrix](https://linux-cleanup-docs.aoneahsan.com/reference/modes-matrix)
+- [Protected paths](https://linux-cleanup-docs.aoneahsan.com/reference/protected-paths): what the allowlist refuses
+- [Environment variables](https://linux-cleanup-docs.aoneahsan.com/reference/environment-variables)
+- [Output paths](https://linux-cleanup-docs.aoneahsan.com/reference/output-paths)
+- [Exit codes](https://linux-cleanup-docs.aoneahsan.com/reference/exit-codes)
+- [Report JSON schema](https://linux-cleanup-docs.aoneahsan.com/reference/report-schema)
+
+## Help
+
+- [Distro support](https://linux-cleanup-docs.aoneahsan.com/distro-support)
+- [Recovery](https://linux-cleanup-docs.aoneahsan.com/recovery): what to do after an unwanted deletion
+- [Troubleshooting](https://linux-cleanup-docs.aoneahsan.com/troubleshooting)
+- [FAQ](https://linux-cleanup-docs.aoneahsan.com/faq)
+- [Changelog](https://linux-cleanup-docs.aoneahsan.com/changelog)
