@@ -17,7 +17,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // ---------------------------------------------------------------------------
 
 const SITE_URL = 'https://linux-cleanup-docs.aoneahsan.com';
-const TOOL_VERSION = '1.4.0';
+const TOOL_VERSION = '1.6.0';
 
 // Analytics are env-gated: an absent key means the provider is skipped
 // entirely, so a clone with no secrets still builds. Never inline a real key.

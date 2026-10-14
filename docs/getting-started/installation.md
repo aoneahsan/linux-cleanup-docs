@@ -12,9 +12,9 @@ three run the same Bash script — the npm package is a thin Node launcher that 
 points logs and reports at a persistent directory.
 
 :::info Version note
-npm's `latest` tag is currently **1.3.1**. Version **1.4.0** exists in the repository and relicensed the
-project to MIT; it has not been published to npm yet. Installing from npm today gets you 1.3.1, whose
-behaviour is identical — 1.4.0 changed only the licence. See the [changelog](../changelog.md).
+The npm registry reported **1.6.0** on 2026-10-14. Versions 1.5.0–1.6.0
+include safety fixes; they are not behaviorally identical to 1.4.0.
+See the [changelog](../changelog.md) before upgrading an older install.
 :::
 
 ## Option 1 — `npx`, no install

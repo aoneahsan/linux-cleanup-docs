@@ -130,8 +130,8 @@ job.
 
 ## Which version should I install?
 
-npm's `latest` is **1.3.1**. Version **1.4.0** exists in the repository and changed only the licence, so
-behaviour is identical. See the [changelog](./changelog.md).
+The npm registry reported **1.6.0** on 2026-10-14. Versions 1.5.0–1.6.0
+include safety and behavior changes. See the [changelog](./changelog.md).
 
 ## What licence is it under?
 

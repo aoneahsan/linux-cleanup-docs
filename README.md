@@ -6,6 +6,11 @@ confirmation guards.
 
 **Live:** [linux-cleanup-docs.aoneahsan.com](https://linux-cleanup-docs.aoneahsan.com)
 
+**Status checked 2026-10-14:** The package and npm release are at 1.6.0.
+The site content was last audited against 1.4.0; its 1.6.0 safety review is
+pending. GitHub Pages builds pass, but the custom domain did not resolve
+in this check. The DNS and HTTPS tasks remain in `docs/MANUAL-TASKS.md`.
+
 ## Local development
 
 ```bash

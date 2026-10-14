@@ -2,7 +2,15 @@
 
 **Mirror of `AGENTS.md`** — byte-identical except the header names. Change one, change both.
 
-**Last Updated:** 2026-07-25
+**Last Updated:** 2026-10-14
+
+| Context Budget Last Verified | 2026-10-14; next routine pass 2026-11-13. See the workspace context tracker for coverage and byte counts. |
+|---|---|
+
+The source package and npm release are now 1.6.0. This site was last
+fact-checked against 1.4.0; its full 1.6.0 safety/content audit remains
+in the workspace package pass. Treat the old facts table below as historical
+evidence, then verify every current claim against `../linux-cleanup/`.
 
 ## What this is
 
@@ -67,9 +75,9 @@ sanctioned path.
 - **Redirect, never delete, a published URL**
 - Fence every code block with a language
 
-## Facts about the tool that are easy to get wrong
+## Prior safety findings to revalidate
 
-Verified against the source of 1.4.0. Do not "correct" these back:
+These were verified against source 1.4.0. Re-check each against 1.6.0 before changing or reusing a claim:
 
 | Fact | Detail |
 |---|---|
@@ -82,7 +90,7 @@ Verified against the source of 1.4.0. Do not "correct" these back:
 | **`~/.password-store` and `~/.aws` are NOT protected** | The source `safety.md` claims they are |
 | **`~/Downloads` is NOT protected** | Deliberately — cleaning it is a feature. Guard 3 covers it instead |
 | **Refusal string** | `✗ REFUSE: protected path: <path>` |
-| **npm `latest` is 1.3.1** | 1.4.0 is in the repo, unpublished; it changed only the licence |
+| **Current npm release** | 1.6.0 was verified from the npm registry on 2026-10-14. Re-query before future release claims. |
 
 ## Never
 

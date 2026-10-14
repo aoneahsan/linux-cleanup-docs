@@ -1,7 +1,7 @@
 # Manual / User-Only Tasks — linux-cleanup-docs
 
 > The ONE place for everything only you (the human) can do. Fixed path: `docs/MANUAL-TASKS.md`.
-> Global spec: `~/.claude/rules/manual-tasks.md`.  **Last updated:** 2026-07-25
+> Global spec: `~/.claude/rules/manual-tasks.md`.  **Last updated:** 2026-10-14
 
 > 🔴 **This file is EXCLUDED from the published site** via the docs plugin `exclude` list in
 > `docusaurus.config.ts`. It is internal. Do not link it from any published page, and do not remove it from
@@ -11,12 +11,8 @@
 
 | # | Task | Why only you | Detail | Status |
 |---|------|--------------|--------|--------|
-| 1 | Create the GitHub repo `aoneahsan/linux-cleanup-docs` (**public**) and push `main` | Repo creation + visibility is an owner decision | Remote must be `git@github.com:aoneahsan/linux-cleanup-docs.git` | ☐ Not started |
-| 2 | Add the Hostinger DNS record for `linux-cleanup-docs.aoneahsan.com` | DNS registrar access | `CNAME  linux-cleanup-docs  →  aoneahsan.github.io` | ☐ Not started |
-| 3 | Repo **Settings → Pages**: source = GitHub Actions; custom domain = `linux-cleanup-docs.aoneahsan.com`; tick **Enforce HTTPS** | GitHub repo settings | `static/CNAME` already pins the domain in the build artifact | ☐ Not started |
-| 4 | Verify the first Actions deploy went green | Requires the repo to exist | Workflow: `.github/workflows/deploy-pages.yml` | ☐ Not started |
-| 5 | Apply the public-repo ruleset to `main` | Owner-only admin action | Per `~/.claude/rules/public-repo-governance.md`: PR + 1 approval + CI, no force-push/delete, bypass = Repository admin only | ☐ Not started |
-| 6 | Decide whether to publish `linux-cleanup@1.4.0` to npm | Release decision | npm `latest` is 1.3.1; 1.4.0 (MIT relicence) is unpublished. The docs currently state this discrepancy honestly — revisit the wording after publishing | ☐ Not started |
+| 2 | Set the DNS record for `linux-cleanup-docs.aoneahsan.com` | Registrar access | GitHub Pages already names this domain, but DNS did not resolve on 2026-10-14. Configure the record shown by the registrar/Pages and recheck. | ☐ Open |
+| 3 | Enable and verify HTTPS after DNS resolves | GitHub Pages setting | Pages uses GitHub Actions and has the custom domain set; the API reported `https_enforced: false` on 2026-10-14. | ☐ Open |
 
 ### Optional, not blocking
 
@@ -27,7 +23,12 @@
 
 ## ✅ Completed manual tasks
 
-(move rows here with the date once done)
+| Task | Evidence |
+|---|---|
+| Public `aoneahsan/linux-cleanup-docs` repository exists on `main` | GitHub visibility and branch verified 2026-10-14 |
+| GitHub Pages workflow deployed successfully | Run 30163241032 succeeded for the prior `main` head; custom-domain DNS remains open |
+| Public `main` ruleset enabled | Active `Protect main (PR + approval; owner bypass)` ruleset verified 2026-10-14 |
+| Package published beyond 1.4.0 | npm registry returned `linux-cleanup@1.6.0` as latest on 2026-10-14; the old 1.3.1 claim was retired |
 
 ---
 

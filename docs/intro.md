@@ -27,7 +27,7 @@ Read **[What it deletes](./safety/what-it-deletes.md)** and run
 
 | | |
 |---|---|
-| **Documented version** | 1.4.0 (source) · **1.3.1** is the current npm `latest` |
+| **Current package** | npm and source version **1.6.0** (checked 2026-10-14); this site's full 1.6.0 safety audit is pending |
 | **Platform** | Linux only — `bash` ≥ 4 and GNU coreutils |
 | **License** | [MIT](https://github.com/aoneahsan/linux-cleanup/blob/main/LICENSE) — since 1.4.0 |
 | **Network access** | None. Zero calls, no telemetry, no update check |

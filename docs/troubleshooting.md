@@ -246,8 +246,8 @@ hash -r
 linux-cleanup --version
 ```
 
-Note that npm's `latest` is **1.3.1**; 1.4.0 exists in the repository but is not published. See the
-[changelog](./changelog.md).
+The npm registry reported **1.6.0** on 2026-10-14. Review the
+[changelog](./changelog.md) for fixes since 1.4.0.
 
 ## Still stuck
 

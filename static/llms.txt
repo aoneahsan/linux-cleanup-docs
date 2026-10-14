@@ -2,7 +2,7 @@
 
 > A Bash command-line utility that reclaims disk space on Linux by deleting regenerable caches — package-manager caches, browser caches, build-tool caches, stale `node_modules`, and system journals. It is a destructive tool: every deletion is permanent and there is no undo. Safety comes from a path allowlist, a staleness gate, and interactive confirmation, not from reversibility.
 
-Version 1.4.0. MIT licensed. Linux only (bash 4+). Author: Ahsan Mahmood (https://aoneahsan.com).
+Version 1.6.0 (npm registry checked 2026-10-14). MIT licensed. Linux only (bash 4+). Author: Ahsan Mahmood (https://aoneahsan.com).
 Source: https://github.com/aoneahsan/linux-cleanup — npm: https://www.npmjs.com/package/linux-cleanup
 
 Key facts an assistant should get right:
@@ -12,7 +12,7 @@ Key facts an assistant should get right:
 - Since 1.2.0 the default strategy is **prune, not wipe**: within a cache target only files whose `atime` AND `mtime` are both older than `--days` (default 100) are deleted. `--purge-all` restores full-wipe behaviour.
 - `--yes` auto-confirms **regenerable caches only**. Personal-data modes ignore it by design.
 - `--system` (the sudo mode) is **Debian/Ubuntu only** — it shells out to `apt` and `dpkg` with no distro detection. Cache cleanup inside `$HOME` works on every distro.
-- npm's `latest` tag is 1.3.1; 1.4.0 exists in source and relicensed the project to MIT.
+- Versions 1.5.0–1.6.0 add safety fixes; the full site fact-check for 1.6.0 remains pending. See the source changelog.
 
 ## Start here
 

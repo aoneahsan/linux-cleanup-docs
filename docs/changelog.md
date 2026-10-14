@@ -1,6 +1,6 @@
 ---
 title: Changelog
-description: Release history for linux-cleanup from 1.0.0 through 1.4.0, including the safety-hardening releases that introduced the staleness gate and the protected install-root list.
+description: Release history for linux-cleanup from 1.0.0 through 1.6.0, including the newer cache-safety fixes and speed check.
 tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
@@ -10,10 +10,36 @@ sidebar_position: 94
 Release history for `linux-cleanup`. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and the project uses [semantic versioning](https://semver.org/spec/v2.0.0.html).
 
-:::info 1.4.0 is not on npm yet
-npm's `latest` tag is **1.3.1**. Version **1.4.0** exists in the repository and changes only the licence, so
-installing from npm today gets you identical behaviour under the previous licence terms.
+:::info Current release
+The npm registry reported **1.6.0** on 2026-10-14. The safety and feature
+changes since 1.4.0 are summarised below; the [source changelog](https://github.com/aoneahsan/linux-cleanup/blob/main/CHANGELOG.md)
+has the complete release record. The rest of this site still needs its 1.6.0 fact-check.
 :::
+
+## 1.6.0 — 2026-09-18
+
+Added the read-only `--speed` diagnosis and configurable project/personal
+search roots. Fixed idle detection on `noatime` filesystems: older releases
+could delete a cache still in use because access times were not recorded.
+Alias and cron installs now point to a persistent copy, and log cleanup
+removes only the current run's log.
+
+## 1.5.2 — 2026-09-18
+
+Preserved recent disabled Snap revisions as rollback copies and stopped
+`--node-modules` from listing Yarn PnP internals.
+
+## 1.5.1 — 2026-09-18
+
+Changed extracted package and browser caches to whole-entry pruning so a
+rarely used file cannot be removed from an otherwise active installation.
+
+## 1.5.0 — 2026-09-18
+
+Made Gradle and Android Studio cache pruning operate on complete version
+units, and repaired stale `node_modules` detection and its dedicated
+deletion guard. Earlier 1.4.0/1.5.0 cleanup can leave an extracted cache
+incomplete; see the source changelog for recovery steps.
 
 ## 1.4.0 — 2026-07-11
 
