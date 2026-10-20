@@ -2,7 +2,7 @@
 
 **Mirror of `AGENTS.md`** — byte-identical except the header names. Change one, change both.
 
-**Last Updated:** 2026-10-14
+**Last Updated:** 2026-10-20
 
 | Context Budget Last Verified | 2026-10-14; next routine pass 2026-11-13. See the workspace context tracker for coverage and byte counts. |
 |---|---|
@@ -106,3 +106,9 @@ These were verified against source 1.4.0. Re-check each against 1.6.0 before cha
 - Global docs-site law: `~/.claude/rules/docs-sites.md`
 - Public repo governance: `~/.claude/rules/public-repo-governance.md`
 - Manual-task spec: `~/.claude/rules/manual-tasks.md`
+
+## Stop-work Git gate
+
+<!-- RULE:stop-work-git-gate v2026-10-20 -->
+
+Before stopping, commit every legitimate change and work-progress checkpoint in this repository and each independent nested repository, fetch and merge the designated upstream, push the documented working branch, then verify an empty worktree and `0 0` ahead/behind. Never stash, discard, reset, rebase, or force-push. If synchronization is blocked, report the exact repository, branch, blocker, and next action instead of calling the work complete. The full workflow remains authoritative in `~/.claude/rules/git-workflow.md`.
