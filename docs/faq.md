@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: Common questions about linux-cleanup — whether it can delete your code, whether it phones home, why there is no undo, how often to run it, and what it will not do.
+description: Answers about linux-cleanup paths, its release check, dry runs, permanent deletion and distribution support.
 tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
@@ -24,7 +24,8 @@ tool, that edit exists nowhere else.
 
 ## Does it phone home?
 
-**No. Zero network calls.** No telemetry, no analytics, no crash upload, no update check.
+**The CLI checks a public release record over HTTPS at start when online.** It sends no scan results, cleanup
+paths or crash bundle. Offline, the check fails open and the run continues.
 
 Verify it yourself on a clone:
 
@@ -32,8 +33,8 @@ Verify it yourself on a clone:
 grep -rE 'curl|wget|http://|https://' cleanup.sh lib/ modules/ bin/
 ```
 
-Matches appear only in the version banner's URLs, the `mailto:` feedback helper, and comments. There is no
-network code path. The only data that leaves your machine is what you choose to email.
+The release check lives in `modules/update_check.sh`; inspect that file too. Installing or accepting an
+update uses npm or GitHub. The feedback helper opens a draft that you choose whether to send.
 
 ## Why is there no undo?
 
@@ -45,8 +46,8 @@ reasoning: [Deletion is permanent](./safety/irreversibility.md).
 
 ## Is there a `--dry-run`?
 
-**No.** Read-only inspection is a separate mode, [`--scan`](./modes/scan.md). Passing `--dry-run` exits with
-code `2` for an unknown flag — do not treat that as a safety net. See
+**Yes.** `--scan` reads only; `--dry-run` walks the selected cleanup without deleting files or changing
+settings. A dry run still keeps a local log and writes no JSON session report. See
 [Preview before deleting](./safety/preview-first.md).
 
 ## What is the safest way to try it?
@@ -55,6 +56,7 @@ code `2` for an unknown flag — do not treat that as a safety net. See
 linux-cleanup --self-test      # verifies the guards actually fire
 linux-cleanup --scan           # read-only; shows what would be reclaimed
 linux-cleanup --list-targets   # every path it can touch
+linux-cleanup --all-safe --dry-run  # preview a cache cleanup
 ```
 
 After those three you have seen the safety model work without losing a byte. Then run `linux-cleanup` and
@@ -93,9 +95,9 @@ steps still work. See [Distro support](./distro-support.md).
 
 ## What about WSL?
 
-Works normally. linux-cleanup runs on the Linux side and behaves identically to a native install. It does not
-walk into `/mnt/c/`. If `~/Downloads` is symlinked to a Windows directory, the allowlist resolves the symlink
-before deciding, so Windows-side `Documents` and `Pictures` are refused.
+The CLI runs on the Linux side. Review any symlink from your Linux home into `/mnt/c/` before cleanup. The
+allowlist resolves symlinks, but a Windows `Documents` path is not automatically covered by a Linux home-path
+rule.
 
 ## Why bash rather than Python, Go or Rust?
 
@@ -130,8 +132,9 @@ job.
 
 ## Which version should I install?
 
-The npm registry reported **1.6.0** on 2026-10-14. Versions 1.5.0–1.6.0
-include safety and behavior changes. See the [changelog](./changelog.md).
+Check the [npm package](https://www.npmjs.com/package/linux-cleanup) for the current published version and
+run `linux-cleanup --version` to identify your installed copy. See the [changelog](./changelog.md) before
+upgrading.
 
 ## What licence is it under?
 
@@ -156,7 +159,7 @@ feature requests are equally welcome. See [Send a bug report](./guides/send-a-bu
 
 - Delete anything on the [protected-path list](./reference/protected-paths.md)
 - Touch personal data without per-file confirmation
-- Make a network connection
+- Upload scan results, cleanup paths or crash bundles automatically
 - Install a service, daemon or background agent
 - Modify or remove an existing line in your shell configuration
 - Recover anything it deleted

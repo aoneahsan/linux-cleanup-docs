@@ -17,6 +17,7 @@ codes are expected and deliberately not treated as crashes.
 | `0` | Clean run. Every requested action completed or was declined | No |
 | `1` | Generic failure — an invariant was violated. Rare | Yes |
 | `2` | Argument parse error. Help is printed | No |
+| `3` | Update required by the public release record | No |
 | `127` | Command not found — a required dependency is missing | Yes |
 | `130` | Aborted with `Ctrl-C` (SIGINT) | No |
 | `137` | Killed by SIGKILL — usually the OOM killer or `kill -9` | Yes |
@@ -24,9 +25,8 @@ codes are expected and deliberately not treated as crashes.
 | `143` | Terminated by SIGTERM | No |
 | any other non-zero | Unexpected internal failure | Yes |
 
-`2` is the one worth remembering: **an unknown flag exits `2`**. If you typed `--dry-run` expecting safety,
-this is the code you get — and no cleanup runs. That is not a safety feature to rely on; use
-[`--scan`](../modes/scan.md).
+An unknown flag exits `2` before cleanup. `--dry-run` is supported; it walks the selected mode without
+deleting files. See [Preview before deleting](../safety/preview-first.md).
 
 ## How the crash trap decides
 

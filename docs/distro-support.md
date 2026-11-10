@@ -7,27 +7,25 @@ sidebar_position: 90
 
 # Distro support
 
-**Cache cleanup inside `$HOME` works on every Linux distribution.** That is the large majority of what the
-tool reclaims. The exception is [`--system`](./modes/system-cleanup.md), which is Debian and Ubuntu only.
+**Home cache cleanup is designed for Linux distributions with the required GNU utilities.**
+[`--system`](./modes/system-cleanup.md) uses Debian and Ubuntu package commands. Check the installed tools with `--self-test` before cleanup.
 
 ## The summary
 
 | Distro family | `$HOME` cache cleanup | `--system` |
 |---|---|---|
 | Debian, Ubuntu, Mint, Pop!\_OS | Full | **Full** |
-| Fedora, RHEL, Rocky, Alma | Full | Partial — apt steps fail |
-| Arch, Manjaro, EndeavourOS | Full | Partial — apt steps fail |
-| openSUSE | Full | Partial — apt steps fail |
-| Alpine, minimal containers | Needs GNU coreutils | Partial — apt steps fail |
-| WSL (any distro) | Full | As the underlying distro |
+| Fedora, RHEL, Rocky, Alma | With required utilities | Do not use: apt steps fail |
+| Arch, Manjaro, EndeavourOS | With required utilities | Do not use: apt steps fail |
+| openSUSE | With required utilities | Do not use: apt steps fail |
+| Alpine, minimal containers | Needs Bash and GNU utilities | Do not use: apt steps fail |
+| WSL | With required utilities | Debian/Ubuntu only; inspect mounted paths first |
 
 :::warning `--system` has no distro detection
 The apt steps call `apt` and `dpkg` directly, with no `command -v` guard and no fallback to `dnf`, `pacman`
 or `zypper`. On a non-Debian system they fail with "command not found" per step.
 
-The mode does not abort — it moves to the next step — so on Fedora or Arch you get the journal, `/tmp` and
-page-cache steps working and the package steps failing noisily. Nothing is damaged; the reclaim is simply
-smaller than advertised.
+The mode does not abort after an apt failure: later steps can still run. Avoid it on other distributions.
 
 Some descriptions of this tool claim graded multi-distro support for `--system`, with `dnf` substituting for
 `apt` and `paccache` on Arch. **No such code exists.** Verify with
@@ -51,7 +49,7 @@ costs nothing.
 
 ## Doing the package part yourself
 
-On a non-Debian system, run `--system` for the steps that work and handle packages natively:
+On a non-Debian system, use its package manager's own maintenance guidance. The commands below are examples to review before running:
 
 ```bash
 # Fedora / RHEL / Rocky
@@ -68,16 +66,16 @@ sudo zypper clean --all
 sudo zypper packages --orphaned
 ```
 
-Then let linux-cleanup do the rest, which is where most of the space is anyway:
+For home caches, preview what linux-cleanup finds:
 
 ```bash
-linux-cleanup --all-safe -y
+linux-cleanup --scan
+linux-cleanup --all-safe --dry-run
 ```
 
-## What works identically everywhere
+## Home cache targets
 
-Every `$HOME` cache category is distro-independent, because the paths come from the tools themselves rather
-than the distribution:
+Home paths come from the installed tools rather than the distribution. Availability varies by machine:
 
 - Package-manager caches — yarn, npm, pnpm, pip, composer, bun, deno
 - Browser caches — Chrome, Firefox, Brave, Chromium, Edge, Vivaldi
@@ -85,7 +83,7 @@ than the distribution:
 - Developer-tool data — Android AVDs, Flutter pub-cache, Dart, flatpak
 - Editor extensions — VS Code, Cursor
 - `node_modules`, partial downloads, personal stale files
-- All read-only modes, every safety guard, session records and logs
+- Scan, audit, safety checks and local logs
 
 ## Minimal containers
 
@@ -102,11 +100,7 @@ linux-cleanup --self-test
 
 ## WSL
 
-Works normally. linux-cleanup runs on the Linux side and behaves exactly as it would on bare metal. It does
-not walk into `/mnt/c/`.
-
-If you have symlinked `~/Downloads` to a Windows directory, the allowlist resolves the symlink before
-deciding, so Windows-side `Documents` and `Pictures` are refused the same as native ones.
+The tool runs in the Linux environment. Its path guard resolves symlinks, but it does not identify Windows personal folders as protected Linux folders. Inspect the scan and dry run carefully if your home directories or caches point into `/mnt/`.
 
 ## macOS
 

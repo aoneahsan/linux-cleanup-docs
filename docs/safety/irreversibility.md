@@ -13,7 +13,7 @@ Once a path is removed, this tool cannot bring it back, and neither can any flag
 :::danger Read this before your first destructive run
 - Deleted files do **not** go to a trash or recycle bin.
 - There is no `--undo`, no restore command, and no hidden copy kept anywhere.
-- The session log and JSON report record **what was deleted**, not the data itself.
+- A local log may help you retrace a run; a walkthrough record summarizes its steps. Neither is a file-by-file backup.
 - If a file was irreplaceable and you had no backup, it is gone.
 
 The tool's safety comes entirely from [refusing to delete the wrong thing](./guards.md) in the first place.
@@ -37,13 +37,13 @@ where the data can come from, not about how convenient it is to get back.
 
 ## The categories that are genuinely irreplaceable
 
-Three targets are not regenerable in any sense. All three are
+Three targets can contain data that is not regenerable. All three are
 [interactive-only](./guards.md#guard-3--personal-data-is-interactive-only), and all three deserve real
 attention when you are answering prompts.
 
 | Target | Why nothing can bring it back |
 |---|---|
-| **Personal files** in `~/Downloads`, `~/Desktop` | No source to re-fetch from. If it was the only copy, that was the copy. |
+| **Personal files** in `~/Downloads` or configured unprotected roots | No source to re-fetch from. If it was the only copy, that was the copy. |
 | **Partial downloads** (`.crdownload`, `.part`, …) | Resumable only by the original browser session, which is usually long gone. |
 | **Uncommitted work inside a stale `node_modules`** | Rare, but a patched dependency you edited in place is not in any registry. |
 
@@ -70,15 +70,14 @@ This is a reasonable trade for caches. It is a trade you should understand befor
 
 ## What you actually have afterwards
 
-If a deletion surprises you, two artefacts exist. Both are records, not backups.
+If a deletion surprises you, inspect the available local records. Neither is a backup.
 
 | Artefact | Location | Contains |
 |---|---|---|
-| Session log | `~/.linux-cleanup/logs/cleanup-<timestamp>.log` | Every path touched, its size, and the result of each removal |
-| JSON report | `~/.linux-cleanup/reports/report-<timestamp>.json` | The same information, structured and schema-versioned |
+| Session log | `~/.linux-cleanup/logs/cleanup-<timestamp>.log` | Human output for the run, unless the log was removed |
+| JSON report | `~/.linux-cleanup/reports/report-<timestamp>.json` | Walkthrough step summary, unless reporting was disabled |
 
-They tell you exactly **what** was removed and **when** — which is what you need to decide whether to
-restore from your own backup, re-download, or file a bug. They contain none of the deleted content.
+They can help identify the mode and selected targets, but do not list every deleted file. They contain none of the deleted content.
 
 Full procedure: [Recovery](../recovery.md).
 

@@ -60,8 +60,8 @@ Since [1.3.0](../changelog.md#130--2026-05-10), an unexpected non-zero exit writ
 
 It holds the active log, the most recent record, and a system manifest including the exit code.
 
-**Nothing is sent.** The tool has no network code path — see [Privacy](#privacy-what-leaves-your-machine).
-The bundle sits on your disk until you decide.
+**The bundle is not uploaded.** The release check reads a public text file, but it does not send a bundle or
+local paths. The bundle stays on your disk until you decide whether to share it.
 
 Crash bundles are **not** written for expected exits: `0`, `130` (`Ctrl-C`), `143` (SIGTERM) and `2`
 (argument error) are all excluded. See
@@ -102,14 +102,15 @@ Anything contradicting the documented safety model:
 - A *current* editor extension version removed, not just a superseded one
 - A file deleted despite being newer than `--days`, without `--purge-all`
 - A personal-data mode acting without confirmation
-- Any network connection made by the tool
+- A network request that sends local cleanup paths or reports
 
 Each of those is a safety-model violation rather than an inconvenience.
 
 ## Privacy: what leaves your machine
 
-:::note Nothing, unless you send it
-linux-cleanup makes **zero network calls**. No telemetry, no analytics, no crash upload, no update check.
+:::note Release check and local reports
+At start, linux-cleanup reads one public release record over HTTPS when online. It does not upload scans,
+logs or crash bundles. Installing or updating a copy uses npm or GitHub.
 
 Verify on a clone:
 
@@ -117,8 +118,7 @@ Verify on a clone:
 grep -rE 'curl|wget|http://|https://' cleanup.sh lib/ modules/ bin/
 ```
 
-The only matches are the author's URLs in the version banner, the `mailto:` helper, and comments. There is no
-network code path.
+Read `modules/update_check.sh` for the release request and the command offered for a newer copy.
 :::
 
 Logs, records and bundles are local files. The maintainer cannot see them, and cannot push a fix to your

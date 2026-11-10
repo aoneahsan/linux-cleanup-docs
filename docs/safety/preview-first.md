@@ -1,128 +1,51 @@
 ---
 title: Preview before deleting
-description: linux-cleanup has no --dry-run flag. Use --scan, --list-targets and --self-test to see exactly what would be removed before anything is deleted.
+description: Use a read-only scan and a dry run to inspect linux-cleanup paths before permanent deletion.
 tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 
 # Preview before deleting
 
-**linux-cleanup has no `--dry-run` flag.** Previewing is done with three separate read-only modes. None of
-them deletes anything, and running all three takes about a minute.
-
-:::info Why there is no `--dry-run`
-A `--dry-run` flag usually pairs with a destructive command that runs the same code path either way. Here
-the read-only work is a genuinely different mode — [`--scan`](../modes/scan.md) walks and measures,
-[`--list-targets`](#2---list-targets--what-it-could-ever-touch) enumerates configuration, neither shares a
-code path with deletion.
-
-The practical consequence: **adding `--dry-run` to a cleanup command does nothing and will not protect
-you.** Unknown flags exit with code `2`, so the command simply fails — but do not rely on that as a
-safety net. Use `--scan`.
-:::
-
-## The three preview commands
-
-Run them in this order. Each answers a different question.
+**Start with `--scan`, then run the cleanup mode with `--dry-run`.** The scan shows paths and sizes without deleting. A dry run walks the selected cleanup and prints the actions it would take, without removing files or changing settings. Both still create a local session log.
 
 ```bash
-npx linux-cleanup --self-test      # Are the safety guards actually working?
-npx linux-cleanup --list-targets   # What paths could this ever touch?
-npx linux-cleanup --scan           # What would it reclaim on THIS machine, right now?
+linux-cleanup --self-test
+linux-cleanup --scan
+linux-cleanup --all-safe --dry-run
 ```
 
-### 1. `--self-test` — are the guards working?
+`--self-test` checks dependencies, Bash syntax and the protected-path guard. Stop if it fails.
 
-Verifies required dependencies, checks the syntax of every shell file, and asserts that the protection
-logic returns the right answer for known paths: `/`, `$HOME`, `~/Documents`, `~/.ssh` and `/etc` must be
-protected, while `~/.cache/yarn` must not be.
+## What does the scan show?
 
-A single failed assertion aborts with a non-zero exit code. A clean run ends with a pass message.
+`--scan` lists cache roots, partial downloads, likely duplicate downloads, large stale personal-file candidates and system observations. Its size for a cache root is **everything currently there**, not the amount that a later cleanup will remove. The 100-day default staleness threshold, current use and mode-specific rules may keep most of it.
 
-This is the cheapest possible way to confirm the copy you downloaded behaves as documented. Run it after
-every install or upgrade.
+The scan does not create a JSON session report. If you need a machine-readable scan, use `linux-cleanup --scan --json-events`. The event stream can include full local paths; keep it on your machine.
 
-### 2. `--list-targets` — what it could ever touch
+## What does a dry run show?
 
-Prints every path the script is capable of targeting, grouped by category, plus the protected paths it
-refuses. This is *configuration*, not a measurement — it does not stat your disk and does not care what
-actually exists.
-
-Use it to answer "is my `X` in scope?" without running anything.
-
-### 3. `--scan` — what would be reclaimed here
-
-The one that matters most. `--scan` walks every category, measures real sizes on your machine, and prints
-what each would reclaim. It writes a [JSON report](../reference/report-schema.md) and deletes nothing.
+`--dry-run` walks the selected cleanup path and prints proposed actions. For example:
 
 ```bash
-npx linux-cleanup --scan
+linux-cleanup --all-safe --dry-run
+linux-cleanup --all-safe --yes --dry-run --json-events > preview.ndjson
 ```
 
-Typical output on a developer laptop:
+The first command still asks for confirmation, just as a real run would. The second is non-interactive and writes versioned JSON events to stdout; human text goes to stderr. Neither deletes files. A dry run writes no JSON session report.
 
-| Category | Typical range |
-|---|---|
-| Yarn + npm + pnpm caches | 5–25 GB |
-| Browser profile caches | 2–8 GB |
-| `~/.gradle/caches` | 3–10 GB |
-| Cypress + Playwright binaries | 1–4 GB |
-| Android emulator images | 6–30 GB |
-| Stale `node_modules` | 5–50 GB |
+A preview is a snapshot of the current machine, not a promise about a later run. Files may be used, modified or removed between preview and confirmation. The tool has no undo or backup.
 
-:::warning A scan is a snapshot, not a promise
-The numbers are what exists at scan time. By the time you run the real cleanup, the staleness gate may
-exclude files that a running build has just touched — so the amount actually reclaimed is often **lower**
-than the scan suggested. That is the gate doing its job.
-:::
+## Check the boundary before a real run
 
-## Reading a scan before acting on it
+`--list-targets` prints configured target roots and protected paths without measuring the disk. It helps answer whether a directory is in scope. The [protected-path reference](../reference/protected-paths.md) describes the refusal rules.
 
-Three things are worth checking in the output:
+Personal-file and project-adjacent modes are separate from routine cache cleanup. Review their candidates individually. `--yes` applies to `--all-safe` only; it does not approve personal-file deletion.
 
-1. **Anything under a path you did not expect.** If a cache lives behind a symlink into a directory you
-   care about, this is where you see it. Investigate with `realpath` before proceeding.
-2. **Anything in the Expensive column.** Gradle wrapper distributions, Cypress and Playwright binaries,
-   and Android AVDs cost real time to re-download. See
-   [What it deletes](./what-it-deletes.md#browser-and-application-caches).
-3. **The personal-file candidates.** These are the only entries that can be irreplaceable. Read every one.
+When the preview matches your intent, choose the mode you want and read its confirmation. A real deletion is permanent.
 
-## Previewing a single category
+## Read next
 
-Several modes are read-only in their own right and can be run individually:
-
-| Command | Shows | Deletes |
-|---|---|---|
-| [`--scan`](../modes/scan.md) | Every cache category with sizes | Never |
-| [`--audit`](../modes/home-audit.md) | The 20 largest entries in `$HOME` | Never |
-| [`--globals`](../modes/globals-audit.md) | Global npm/pnpm/yarn/bun/deno packages | Never |
-| [`--list-targets`](#2---list-targets--what-it-could-ever-touch) | Every targetable path | Never |
-| [`--self-test`](#1---self-test--are-the-guards-working) | Dependency and guard checks | Never |
-
-The interactive modes — [`--node-modules`](../modes/node-modules-finder.md),
-[`--stale`](../modes/personal-stale-files.md), [`--partials`](../modes/partial-downloads.md) — print their
-full candidate list *before* asking for confirmation, so they double as a preview if you answer no to
-everything. Nothing is removed until you say yes.
-
-## Then run the real thing, carefully
-
-When the scan looks right, the safest first run is the guided walkthrough with no flags:
-
-```bash
-npx linux-cleanup
-```
-
-It asks before every step and before every target. Answer `n` to anything that surprises you, `s` to skip
-a whole step, or `q` to quit — partial progress is kept in the log and report.
-
-:::danger Do not start with `--all-safe -y`
-`--all-safe -y` skips every confirmation for regenerable caches. It is the right tool for a weekly cron job
-on a machine you already trust. It is the wrong way to meet this tool for the first time, because you will
-not see what it decided until it is finished.
-:::
-
-## Next
-
-- [Safety guards](./guards.md) — what stops a bad deletion
-- [Scan mode](../modes/scan.md) — the full read-only reference
-- [Quick start](../getting-started/quick-start.md) — the guided first run
+- [What it deletes](./what-it-deletes.md)
+- [Safety guards](./guards.md)
+- [CLI flags](../reference/cli-flags.md)

@@ -26,7 +26,7 @@ filled your disk, `--scan` will never mention it and `--audit` will put it at th
 |---|---|---|
 | Scope | Everything in `$HOME` | Only cleanable categories |
 | Answers | What is using my disk? | What can this tool reclaim? |
-| Writes a report | No | Yes |
+| Writes a JSON session report | No | No |
 | Deletes | Never | Never |
 
 ## The usual workflow

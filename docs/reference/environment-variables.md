@@ -57,7 +57,7 @@ scanners walk:
 
 | File | Used by | Default roots |
 |---|---|---|
-| `personal-roots.txt` | [`--stale`](../modes/personal-stale-files.md) | `~/Downloads`, `~/Desktop` |
+| `personal-roots.txt` | [`--stale`](../modes/personal-stale-files.md) | `~/Downloads`; protected roots such as `~/Desktop` are ignored |
 | `project-roots.txt` | [`--node-modules`](../modes/node-modules-finder.md) | Your project directories |
 
 One path per line. This follows the
@@ -76,11 +76,11 @@ make it deletable.
 ## For CI and scripts
 
 ```bash
-NO_COLOR=1 linux-cleanup --scan --no-report > /tmp/scan.log
+NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 ```
 
-`--no-report` skips JSON generation when only the log matters. Check the
-[exit code](./exit-codes.md) rather than parsing output.
+The standalone scan does not create the walkthrough's JSON session report. Check the
+[exit code](./exit-codes.md) when scripting it, or use [`--json-events`](./json-events.md) for structured output.
 
 ## What it does not read
 

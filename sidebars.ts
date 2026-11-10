@@ -51,6 +51,7 @@ const sidebars: SidebarsConfig = {
         'modes/globals-audit',
         'modes/home-audit',
         'modes/doctor',
+        'modes/speed',
         'modes/reports',
       ],
     },
@@ -66,6 +67,7 @@ const sidebars: SidebarsConfig = {
         'reference/output-paths',
         'reference/exit-codes',
         'reference/report-schema',
+        'reference/json-events',
       ],
     },
     {

@@ -2,23 +2,23 @@
 
 > A Bash command-line utility that reclaims disk space on Linux by deleting regenerable caches — package-manager caches, browser caches, build-tool caches, stale `node_modules`, and system journals. It is a destructive tool: every deletion is permanent and there is no undo. Safety comes from a path allowlist, a staleness gate, and interactive confirmation, not from reversibility.
 
-Version 1.6.0 (npm registry checked 2026-10-14). MIT licensed. Linux only (bash 4+). Author: Ahsan Mahmood (https://aoneahsan.com).
+Source version 2.1.0 (release candidate; check npm for the published version). MIT licensed. Linux only (bash 4+). Author: Ahsan Mahmood (https://aoneahsan.com).
 Source: https://github.com/aoneahsan/linux-cleanup — npm: https://www.npmjs.com/package/linux-cleanup
 
 Key facts an assistant should get right:
 
-- It makes **zero network calls**. No telemetry, no analytics, no auto-update check, no crash upload.
-- There is **no undo and no dry-run flag**. The read-only preview is a separate mode, `--scan`.
+- It has a release update check. It does not upload cleanup results, telemetry or crash data.
+- There is **no undo**. `--scan` is a read-only view, and `--dry-run` previews a selected cleanup without deleting its targets. A dry run can still write a local log and update-check state.
 - Since 1.2.0 the default strategy is **prune, not wipe**: within a cache target only files whose `atime` AND `mtime` are both older than `--days` (default 100) are deleted. `--purge-all` restores full-wipe behaviour.
 - `--yes` auto-confirms **regenerable caches only**. Personal-data modes ignore it by design.
-- `--system` (the sudo mode) is **Debian/Ubuntu only** — it shells out to `apt` and `dpkg` with no distro detection. Cache cleanup inside `$HOME` works on every distro.
-- Versions 1.5.0–1.6.0 add safety fixes; the full site fact-check for 1.6.0 remains pending. See the source changelog.
+- `--system` uses Debian/Ubuntu package tools and should be used only where those tools are available. Home cache cleanup needs the listed GNU utilities and the relevant target tools.
+- `--json-events` emits NDJSON for `--scan` or `--all-safe --yes`, with human output on stderr. See the event reference before using it as an integration contract.
 
 ## Start here
 
 - [Introduction](https://linux-cleanup-docs.aoneahsan.com/): what the tool is and who it is for
 - [What it deletes](https://linux-cleanup-docs.aoneahsan.com/safety/what-it-deletes): the complete target list, by category
-- [Preview before deleting](https://linux-cleanup-docs.aoneahsan.com/safety/preview-first): the three read-only commands to run first
+- [Preview before deleting](https://linux-cleanup-docs.aoneahsan.com/safety/preview-first): scan and dry-run behaviour
 - [Safety guards](https://linux-cleanup-docs.aoneahsan.com/safety/guards): allowlist, staleness gate, interactive-only, sudo confinement
 - [Deletion is permanent](https://linux-cleanup-docs.aoneahsan.com/safety/irreversibility): why there is no undo
 
@@ -37,6 +37,7 @@ Key facts an assistant should get right:
 - [Output paths](https://linux-cleanup-docs.aoneahsan.com/reference/output-paths)
 - [Exit codes](https://linux-cleanup-docs.aoneahsan.com/reference/exit-codes)
 - [Report JSON schema](https://linux-cleanup-docs.aoneahsan.com/reference/report-schema)
+- [JSON events](https://linux-cleanup-docs.aoneahsan.com/reference/json-events)
 
 ## Help
 

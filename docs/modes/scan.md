@@ -1,120 +1,53 @@
 ---
 title: Scan (read-only)
-description: The read-only linux-cleanup mode that measures every cleanup category and reports what could be reclaimed, without deleting anything.
+description: Inspect cache roots, partial downloads and other Linux cleanup candidates without deleting files.
 tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 
 # Scan (read-only)
 
-**`--scan` walks every cleanup category, measures what is there, and prints what could be reclaimed. It
-deletes nothing.** This is the closest thing the tool has to a dry run, and it is the command to reach for
-first.
+**`--scan` lists paths and their current sizes without deleting files.** It is a first look at the machine. Use a dry run of the selected cleanup mode to see proposed actions.
 
 ```bash
-linux-cleanup --scan     # or: -s
+linux-cleanup --scan
 ```
 
-## What it does
+## What does it inspect?
 
-For each category — package-manager caches, application caches, developer-tool data, editor extensions,
-`node_modules`, partial downloads, personal candidates — it stats the paths, sums the sizes, and prints a
-per-category breakdown with a total.
+The scan prints a table of cache and build-tool roots: package managers, browsers, Gradle, test runners, Android tooling and other configured locations. It also lists partial downloads, likely duplicate downloads, large stale personal-file candidates and a few system observations. It does not run package-manager cleanup or ask for `sudo`.
 
-It also writes a [JSON report](../reference/report-schema.md) to `~/.linux-cleanup/reports/`, so you have a
-timestamped record of what the disk looked like before you changed anything.
+A listed cache root's size covers everything currently in that root. It is **not** the amount the tool will remove. The chosen mode, staleness threshold, current use and refusal rules determine what stays.
 
-`--scan` is safe to run:
+The scan writes a local session log. It does not write the walkthrough's [JSON session report](../reference/report-schema.md).
 
-- On a machine you have never run the tool on
-- On someone else's machine
-- From a cron job, purely to record a baseline
-- While other work is in progress
+## Read the paths before choosing a mode
 
-The only side effects are the log and the report.
+Check a path you do not recognise. A symlink can point somewhere different from its visible name; inspect it with `realpath` before a cleanup. The protected-path guard also resolves symlinks before it deletes.
 
-## Reading the output
-
-Three things deserve attention.
-
-**Unexpected paths.** If a cache appears somewhere you did not expect, investigate before cleaning. The
-usual cause is a symlink. Resolve it yourself:
+Personal-file candidates appear for review only. Routine `--all-safe` cleanup does not select them. To preview cache cleanup:
 
 ```bash
-realpath ~/.cache/yarn
+linux-cleanup --all-safe --dry-run
 ```
 
-The [allowlist](../safety/guards.md#guard-1--the-path-allowlist) resolves symlinks too and will refuse a
-target that lands inside a protected directory — but knowing about it beforehand is better than being
-surprised by a refusal message.
+A dry run walks that mode without deleting. It may still write a local log and update-check state. A real deletion has no undo.
 
-**Expensive categories.** Gradle wrapper distributions, Cypress and Playwright binaries, and Android AVDs
-cost minutes and hundreds of megabytes to re-fetch. See
-[What it deletes](../safety/what-it-deletes.md#browser-and-application-caches).
-
-**Personal-file candidates.** The only entries that can be irreplaceable. Read every one.
-
-## Scan numbers are an upper bound
-
-The reclaim figure is what exists at scan time, before the
-[staleness gate](../safety/guards.md#guard-2--the-staleness-gate) is applied at deletion time.
-
-So the actual cleanup usually frees **less** than the scan suggested, because files touched within the
-threshold are kept. The gap between the two numbers is the gate protecting recently-used data — it is the
-tool working correctly, not an inconsistency.
-
-To see how much the gate is holding back, compare:
+## Machine-readable scan
 
 ```bash
-linux-cleanup --scan             # everything present
-linux-cleanup --scan -d 1        # what a 1-day threshold would consider stale
+linux-cleanup --scan --json-events > scan.ndjson
 ```
 
-## Speed
+The [version 1 event stream](../reference/json-events.md) goes to stdout; human text goes to stderr. It can contain full local paths. Keep it on this machine and use the exit code to distinguish a complete run from an interrupted stream.
 
-The first scan on a large `$HOME` can take one to three minutes, dominated by `find` walking thousands of
-`node_modules` directories. Subsequent runs are faster because the kernel caches directory metadata.
+## Other read-only views
 
-If it seems stuck, watch the log rather than the terminal:
-
-```bash
-tail -f ~/.linux-cleanup/logs/cleanup-*.log
-```
-
-New lines every five to ten seconds means it is working. See
-[Troubleshooting](../troubleshooting.md#scan-or---node-modules-seems-to-hang).
-
-## Scripting a scan
-
-```bash
-NO_COLOR=1 linux-cleanup --scan --no-report > /tmp/scan.log
-```
-
-`--no-report` skips JSON generation when you only want the log. Exit code `0` means the scan completed; see
-[Exit codes](../reference/exit-codes.md).
-
-To query a report programmatically, use the JSON rather than parsing terminal output:
-
-```bash
-jq '.totals' ~/.linux-cleanup/reports/report-*.json | tail -20
-```
-
-## The other read-only modes
-
-| Mode | Answers |
+| Command | Question it answers |
 |---|---|
-| `--scan` | What could be reclaimed here, right now |
-| [`--list-targets`](../safety/preview-first.md#2---list-targets--what-it-could-ever-touch) | What paths could ever be touched |
-| [`--audit`](./home-audit.md) | What is largest in `$HOME`, cleanable or not |
-| [`--globals`](./globals-audit.md) | Which global packages are unused |
-| `--self-test` | Whether the safety guards work |
+| `--list-targets` | Which configured paths can a mode target or refuse? |
+| `--audit` | Which entries in `$HOME` are largest, whether or not a cleanup mode covers them? |
+| `--globals` | Which global runtime packages are installed? |
+| `--self-test` | Do required commands, syntax and safety-guard assertions pass? |
 
-`--audit` is worth pairing with `--scan`: the scan only knows about categories the tool cleans, while the
-audit shows the largest things in your home directory whether or not this tool can help with them. A 60 GB
-VM image will show in the audit and never in the scan.
-
-## Next
-
-- [Preview before deleting](../safety/preview-first.md) — the full preview workflow
-- [Walkthrough](./walkthrough.md) — the guided cleanup after scanning
-- [Home audit](./home-audit.md) — what is big, regardless of cleanability
+Read [Preview before deleting](../safety/preview-first.md) for the sequence, then [CLI flags](../reference/cli-flags.md) for mode options.

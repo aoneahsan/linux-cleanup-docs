@@ -11,7 +11,7 @@ sidebar_position: 6
 and the only mode `--yes` applies to.
 
 ```bash
-linux-cleanup --all-safe        # prompts per target
+linux-cleanup --all-safe        # one confirmation for the batch
 linux-cleanup --all-safe -y     # no prompts — the cron form
 ```
 
@@ -46,16 +46,16 @@ linux-cleanup --all-safe -y
 ```
 
 :::caution `-y` means you will not see the decisions until afterwards
-Everything is still gated by the allowlist and the staleness gate, and the log and report record every path
-touched — but you read them after the fact. For a first run, drop the `-y` and answer the prompts, or run
-[`--scan`](./scan.md) first.
+The allowlist and staleness gate still apply, but you review the log after the run. A standalone all-safe
+run does not write the walkthrough's JSON session report. For a first run, inspect a
+[`--scan`](./scan.md) and an `--all-safe --dry-run` first.
 :::
 
 ## Pruning, and what survives
 
-By default `--all-safe` prunes each target rather than wiping it: only files whose `atime` and `mtime` are
-both older than `--days` (default 100) are removed. The summary reports bytes freed **and** bytes kept per
-target, so you can see what survived.
+By default `--all-safe` prunes eligible cache files whose `atime` and `mtime` are both older than `--days`
+(default 100). Extracted packages and versioned tools are handled as whole units under their own idle rules.
+The human output reports selected results; use the dry run to inspect proposed paths before deletion.
 
 ```bash
 linux-cleanup --all-safe -y            # 100-day threshold
@@ -85,15 +85,12 @@ If you write the crontab entry yourself, use an **absolute path** — cron's min
 0 3 * * 0 /usr/local/bin/linux-cleanup --all-safe -y --no-report --cleanup-logs >>~/.linux-cleanup/logs/cron.log 2>&1
 ```
 
-`--no-report` and `--cleanup-logs` keep an unattended job from accumulating files. Note that
-`--cleanup-logs` only removes that run's log; **reports are never auto-deleted**, which is why `--no-report`
-is the flag that actually keeps the directory small.
+`--cleanup-logs` removes that run's log. Standalone all-safe runs do not write the walkthrough's JSON session record, so `--no-report` has no further effect here.
 
 ## Checking what a cron run did
 
 ```bash
 tail -100 ~/.linux-cleanup/logs/cron.log
-jq '.totals' ~/.linux-cleanup/reports/report-*.json | tail -20
 ```
 
 If the cron log shows `command not found`, the crontab is using a bare command name — see
@@ -103,7 +100,7 @@ If the cron log shows `command not found`, the crontab is using a bare command n
 
 | Situation | Better mode |
 |---|---|
-| First time on this machine | [`--scan`](./scan.md), then the [walkthrough](./walkthrough.md) |
+| First time on this machine | [`--scan`](./scan.md), then `--all-safe --dry-run` |
 | You want to see each decision | [Walkthrough](./walkthrough.md) |
 | Only one category needs cleaning | [Menu](./menu.md) or [TUI](./tui.md) |
 | You want to reclaim personal files too | [Stale personal files](./personal-stale-files.md), interactively |

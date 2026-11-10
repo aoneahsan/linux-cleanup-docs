@@ -1,13 +1,13 @@
 ---
 title: Stale personal files
-description: The interactive-only mode that finds large, long-unused files in ~/Downloads and ~/Desktop. The only linux-cleanup mode that can delete something irreplaceable.
+description: The interactive-only mode that finds large, long-unused files in ~/Downloads and configured unprotected roots.
 tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 
 # Stale personal files
 
-**`--stale` finds files over about 10 MB in `~/Downloads` and `~/Desktop` that have been unused for `--days`
+**`--stale` finds files over about 10 MB in `~/Downloads` and configured unprotected roots that have been unused for `--days`
 or more, and offers them for deletion one at a time.**
 
 ```bash
@@ -15,8 +15,8 @@ linux-cleanup --stale         # or: -p
 linux-cleanup --stale -d 180  # only files idle 180+ days
 ```
 
-:::danger This is the only mode that can delete something irreplaceable
-Every other category holds data some program can rebuild. `~/Downloads` and `~/Desktop` hold whatever you
+:::danger Personal files can be irreplaceable
+`~/Downloads` and your configured unprotected roots hold whatever you
 put there — including, sometimes, the only copy of something that matters.
 
 The tool cannot tell an installer you will never open again from a document you have not needed yet. It
@@ -36,7 +36,7 @@ is a legitimate way to audit those directories.
 
 Three conditions together:
 
-1. It lives in a configured personal root — by default `~/Downloads` and `~/Desktop`
+1. It lives in a configured personal root — by default `~/Downloads`; protected roots such as `~/Desktop` are ignored
 2. It is larger than roughly 10 MB
 3. Both `atime` and `mtime` are older than `--days` (default 100)
 

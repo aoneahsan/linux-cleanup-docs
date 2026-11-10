@@ -34,6 +34,7 @@ Pass at most one. With none, you get the [walkthrough](../modes/walkthrough.md).
 | | `--node-modules` | Stale `node_modules` (interactive) | [node_modules finder](../modes/node-modules-finder.md) |
 | | `--globals` | Read-only global-package audit | [Globals audit](../modes/globals-audit.md) |
 | | `--doctor` | Repair missing shell-init for runtimes | [Doctor](../modes/doctor.md) |
+| | `--speed` | Inspect pressure and startup work; ask before changes | [Speed diagnosis](../modes/speed.md) |
 | | `--editor-ext` | Superseded VS Code / Cursor versions | [Editor extensions](../modes/editor-extensions.md) |
 | | `--reports` | Interactive session-record manager | [Reports](../modes/reports.md) |
 | | `--export FMT ID` | Non-interactive record conversion | [Reports](../modes/reports.md#exporting) |
@@ -46,6 +47,7 @@ Pass at most one. With none, you get the [walkthrough](../modes/walkthrough.md).
 | | `--install-cron` | Weekly `--all-safe -y`, Sundays 03:00 | [Alias and cron](../guides/alias-and-cron.md) |
 | | `--uninstall-alias` | Remove the alias | [Uninstall](../guides/uninstall.md) |
 | | `--uninstall-cron` | Remove the cron entry | [Uninstall](../guides/uninstall.md) |
+| | `--refresh-app` | Refresh the persistent copy used by alias and cron | [Installation](../getting-started/installation.md) |
 
 ## Options
 
@@ -56,6 +58,8 @@ Pass at most one. With none, you get the [walkthrough](../modes/walkthrough.md).
 | `-y` `--yes` | off | Auto-confirm regenerable caches. Valid only with `--all-safe`. **Personal modes ignore it** |
 | `--no-report` | off | Skip JSON generation. Logs are still written |
 | `--cleanup-logs` | off | Delete this run's log at the end. **Records are always kept** |
+| `-n` `--dry-run` | off | Walk the selected mode without deleting files or changing settings. A local log remains; no JSON session report is written |
+| `--json-events` | off | [Version 1 NDJSON](./json-events.md) on stdout for `--scan` or `--all-safe --yes`; human text goes to stderr |
 | `--no-color` | off | Disable ANSI colour. `NO_COLOR` is honoured too |
 | `-h` `--help` | — | Print help and exit |
 
@@ -65,9 +69,9 @@ whole regardless of when they were last used. Expensive assets — Gradle wrappe
 browsers, Cypress binaries — go with them. The pre-run banner states which strategy is active.
 :::
 
-:::note There is no `--dry-run`
-Read-only inspection is a separate mode: [`--scan`](../modes/scan.md). Adding `--dry-run` to a destructive
-command does not make it safe — it exits with code `2` for an unknown flag. See
+:::note Scan and dry run answer different questions
+[`--scan`](../modes/scan.md) reads the current paths and sizes. `--dry-run` walks the selected cleanup and
+shows proposed actions without deletion. See
 [Preview before deleting](../safety/preview-first.md).
 :::
 
@@ -77,6 +81,8 @@ command does not make it safe — it exits with code `2` for an unknown flag. Se
 |---|---|
 | Verify the install | `linux-cleanup --self-test` |
 | See what is reclaimable | `linux-cleanup --scan` |
+| Preview a selected cache cleanup | `linux-cleanup --all-safe --dry-run` |
+| Stream a read-only scan as JSON events | `linux-cleanup --scan --json-events` |
 | See every path it can touch | `linux-cleanup --list-targets` |
 | Guided cleanup | `linux-cleanup` |
 | One-shot batch, no prompts | `linux-cleanup --all-safe -y` |
@@ -105,7 +111,8 @@ Most-used, with the [full list](./environment-variables.md) separately:
 | Code | Meaning |
 |---|---|
 | `0` | Clean run |
-| `2` | Argument parse error |
+| `2` | Argument parse error or unsupported event-stream mode |
+| `3` | An older version blocked by the release record |
 | `130` | Aborted with `Ctrl-C` |
 | `143` | Terminated by `SIGTERM` |
 | other | Unexpected — writes a crash bundle |

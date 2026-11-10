@@ -1,15 +1,14 @@
 ---
 title: Reports
-description: Every linux-cleanup session writes a canonical JSON session record. List, view, convert to Markdown or HTML, and export non-interactively.
+description: The guided walkthrough can write a JSON session record. List, view, convert to Markdown or HTML, and export those records.
 tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 
 # Reports
 
-**Every session writes a canonical JSON session record** to
-`~/.linux-cleanup/reports/report-<timestamp>.json`. It is the durable account of what happened, and it is
-never auto-deleted.
+**The guided walkthrough writes a JSON session record** to
+`~/.linux-cleanup/reports/report-<timestamp>.json`, unless `--no-report` or `--dry-run` is set. Other modes do not create that record. Existing records are not auto-deleted.
 
 Markdown and HTML are optional conversions produced on demand.
 
@@ -64,7 +63,7 @@ CSS, dark-mode aware, no external assets — so it can be emailed or archived as
 ## `jq` is required for conversion
 
 :::note JSON is always written; conversion is the optional part
-Without `jq`, the canonical JSON is still produced on every run. Only Markdown and HTML export are
+Without `jq`, a walkthrough can still produce its JSON record. Only Markdown and HTML export are
 unavailable, and step 10 of the walkthrough records itself as `skipped (jq missing)`.
 
 ```bash
@@ -96,7 +95,7 @@ jq -s 'map(.totals.total_reclaimed_bytes) | add' ~/.linux-cleanup/reports/report
 ## Retention
 
 These records are **never** deleted automatically — not even by `--cleanup-logs`, which only removes the
-current run's log file. They are small, 5–50 KB each, so a year of weekly runs stays under a megabyte.
+current run's log file.
 
 To thin them yourself:
 
@@ -108,9 +107,9 @@ Skip generation entirely for a single run with `--no-report`; the log is still w
 
 ## These are records, not backups
 
-:::danger A session record names what was deleted, not the data
-It holds paths and sizes. It contains none of the removed content, and nothing in it can restore anything.
-Its value after an unwanted deletion is telling you exactly what to restore from your own backup, or
+:::danger A session record is a step summary, not a backup
+It records steps and disk observations, not a complete list of every removed file. It contains none of the removed content, and nothing in it can restore anything.
+Its value after an unwanted deletion is helping you identify what to restore from your own backup, or
 re-download. See [Recovery](../recovery.md).
 :::
 

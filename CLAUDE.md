@@ -1,19 +1,19 @@
 # linux-cleanup-docs — agent guide
 
-**Production project since 2026-11-10.** This site documents 1.4.0 and is owed a 2.0 rewrite: TASK-001 in
-`../PENDING-TASKS.md`. Until then the package README is the current reference.
+**Production project since 2026-11-10.** TASK-001 in `../PENDING-TASKS.md` owns the current CLI rewrite.
+Source 2.1.0 is in `../linux-cleanup/`; the last published npm version was 2.0.0 when this rewrite began.
+Do not publish changed docs until the CLI release and story publication gate are complete.
 
 **Mirror of `AGENTS.md`** — byte-identical except the header names. Change one, change both.
 
-**Last Updated:** 2026-10-20
+**Last Updated:** 2026-11-10
 
 | Context Budget Last Verified | 2026-10-14; next routine pass 2026-11-13. See the workspace context tracker for coverage and byte counts. |
 |---|---|
 
-The source package and npm release are now 1.6.0. This site was last
-fact-checked against 1.4.0; its full 1.6.0 safety/content audit remains
-in the workspace package pass. Treat the old facts table below as historical
-evidence, then verify every current claim against `../linux-cleanup/`.
+The old docs were fact-checked against 1.4.0, then published with false claims about dry runs and network
+use. Verify every current claim against `../linux-cleanup/`, especially destructive modes. The custom docs
+domain is configured in GitHub Pages but does not yet resolve in DNS.
 
 ## What this is
 
@@ -24,10 +24,10 @@ CLI that deletes files to reclaim disk space on Linux.
 |---|---|
 | **Stack** | Docusaurus 3.10 · React 19 · TypeScript ~6.0.3 · yarn 4 |
 | **Domain** | `linux-cleanup-docs.aoneahsan.com` (pinned in `static/CNAME`) |
-| **Deploy** | GitHub Pages via Actions on push to `main`. **No Firebase** |
+| **Deploy** | Local build, manually push `build/` to `gh-pages`, request a Pages build. **No Actions or Firebase** |
 | **Repo visibility** | 🔴 **PUBLIC** |
 | **Dev ports** | 5964 (start) · 5965 (serve) |
-| **Source package** | `../linux-cleanup` — **read-only from here** |
+| **Source package** | `../linux-cleanup` — separate repository, edited only through its own guidance |
 
 ## 🔴 The rules that matter most here
 
@@ -59,8 +59,8 @@ permanent, plainly, every time it is relevant.
 ## Verifying a change
 
 ```bash
-yarn build      # ALSO the link checker — onBrokenLinks is 'throw'
 yarn typecheck
+yarn build      # ALSO the link checker — onBrokenLinks is 'throw'
 ```
 
 Zero warnings, zero errors. A broken internal link fails the build by design.
@@ -80,11 +80,11 @@ sanctioned path.
 
 ## Prior safety findings to revalidate
 
-These were verified against source 1.4.0. Re-check each against 1.6.0 before changing or reusing a claim:
+These were checked against source 2.1.0 during TASK-001. Re-check before changing or reusing a claim:
 
 | Fact | Detail |
 |---|---|
-| **No `--dry-run`** | Read-only preview is the separate `--scan` mode |
+| **`--dry-run` exists** | It walks a selected mode without deletion; a local log and update-check state may still be written. `--scan` only reads current paths and sizes |
 | **JSON schema** | `schema_version: 1` + `credits`/`meta`/`disk`/`memory`/`steps`/`totals`. The source's own `report-schema.md` describes a different, non-existent shape |
 | **`--system` is Debian/Ubuntu only** | `apt`/`dpkg` with no distro detection and no guard. The source FAQ's dnf/pacman/zypper table is fiction |
 | **`/tmp` aging is hardcoded to 7 days** | It does not follow `--days` |
@@ -93,13 +93,14 @@ These were verified against source 1.4.0. Re-check each against 1.6.0 before cha
 | **`~/.password-store` and `~/.aws` are NOT protected** | The source `safety.md` claims they are |
 | **`~/Downloads` is NOT protected** | Deliberately — cleaning it is a feature. Guard 3 covers it instead |
 | **Refusal string** | `✗ REFUSE: protected path: <path>` |
-| **Current npm release** | 1.6.0 was verified from the npm registry on 2026-10-14. Re-query before future release claims. |
+| **Release check** | The CLI fetches a public release record on start when online. It does not upload paths or reports. |
+| **Current npm release** | Re-query before a release claim; source 2.1.0 is not evidence that npm has published it. |
 
 ## Never
 
 - Commit a secret, or a real `.env`
 - Remove `MANUAL-TASKS.md` from the docs `exclude` list
-- Add a Firebase config or deploy path
+- Add a Firebase config, Actions workflow or deploy path
 - Edit anything in `../linux-cleanup` from this repo
 - Start a dev server in an automated session
 - State or imply that a deletion can be undone

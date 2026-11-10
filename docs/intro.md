@@ -9,17 +9,16 @@ sidebar_position: 1
 
 # linux-cleanup
 
-**linux-cleanup is a Bash command-line utility that reclaims disk space on Linux by deleting regenerable
-caches** — package-manager caches, browser caches, build-tool caches, unused Android emulator images, stale
-`node_modules` directories, and system journals. It is aimed at developer machines, where tens of gigabytes
-of this material accumulates without anyone noticing.
+**linux-cleanup shows the paths before it removes regenerable caches on Linux.** It covers package-manager,
+browser and build-tool caches, with separate modes for system work and personal-file candidates. Start with
+a read-only scan or a dry run before choosing a real cleanup.
 
 It is a **destructive tool**. Every deletion is permanent, and there is no undo. Its safety comes from
 refusing to touch the wrong things in the first place, not from being able to put them back.
 
 :::danger This tool deletes files permanently
-There is no undo, no trash, no backup step, and no `--dry-run` flag. Deleted data is gone unless you have
-your own backup.
+There is no undo, Trash or backup step. A real cleanup permanently removes the selected files. Use
+`--dry-run` to preview the chosen mode before you confirm it.
 
 Read **[What it deletes](./safety/what-it-deletes.md)** and run
 **[the read-only preview](./safety/preview-first.md)** before you let it remove anything.
@@ -27,10 +26,10 @@ Read **[What it deletes](./safety/what-it-deletes.md)** and run
 
 | | |
 |---|---|
-| **Current package** | npm and source version **1.6.0** (checked 2026-10-14); this site's full 1.6.0 safety audit is pending |
+| **Package version** | 2.1.0 in the current source; check `linux-cleanup --version` for the installed copy |
 | **Platform** | Linux only — `bash` ≥ 4 and GNU coreutils |
 | **License** | [MIT](https://github.com/aoneahsan/linux-cleanup/blob/main/LICENSE) — since 1.4.0 |
-| **Network access** | None. Zero calls, no telemetry, no update check |
+| **Network access** | One public release-record request on start when online; installing or updating also uses npm or GitHub |
 | **Author** | [Ahsan Mahmood](https://aoneahsan.com) · [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com) |
 
 ## Read this in order
@@ -41,7 +40,7 @@ that keep you out of trouble.
 | Step | Page | Why |
 |---|---|---|
 | 1 | [What it deletes](./safety/what-it-deletes.md) | The complete target list, by category |
-| 2 | [Preview before deleting](./safety/preview-first.md) | Three read-only commands that show you the outcome first |
+| 2 | [Preview before deleting](./safety/preview-first.md) | Read-only scan, then a dry run of the selected mode |
 | 3 | [Safety guards](./safety/guards.md) | The four gates a path must clear before deletion |
 | 4 | [Deletion is permanent](./safety/irreversibility.md) | What "no undo" means in practice |
 | 5 | [Installation](./getting-started/installation.md) | `npx`, global `npm`, or `git clone` |
@@ -49,23 +48,23 @@ that keep you out of trouble.
 
 ## What it is good at
 
-- **Finding the big, boring wins.** Yarn, npm and pnpm caches routinely hold 10–30 GB on a machine that
-  has been building projects for a year.
+- **Showing the candidates.** A scan names cache roots and their current size. A dry run walks the selected
+  cleanup and names proposed actions.
 - **Not deleting the wrong thing.** A [path allowlist](./reference/protected-paths.md) hard-refuses
   `~/Documents`, `~/.ssh`, `~/.config`, `/etc` and friends, after symlink resolution.
 - **Leaving recently-used files alone.** Since 1.2.0 the default is to *prune*, not wipe: within a cache,
   only files untouched for 100+ days are removed. See [the staleness gate](./safety/guards.md#guard-2--the-staleness-gate).
-- **Telling you what it did.** Every session writes a [JSON report](./reference/report-schema.md) and a
-  log naming every path it touched.
-- **Staying offline.** No network code path exists. Nothing leaves your machine unless you email it.
+- **Recording the run.** The CLI keeps a local log. Guided walkthroughs write a
+  [JSON session report](./reference/report-schema.md) unless disabled; dry runs do not.
+- **Checking updates.** On start, the CLI reads a public release record over HTTPS when available.
 
 ## What it is not
 
 Being clear about the boundaries is more useful than a feature list.
 
 - **Not a backup tool.** It deletes; it never archives. Nothing it removes is recoverable from within the tool.
-- **Not a dry-run-first tool.** There is no `--dry-run` flag. The read-only mode is a separate command,
-  [`--scan`](./modes/scan.md), and it is on you to run it.
+- **Not an undo tool.** [`--scan`](./modes/scan.md) reads only; `--dry-run` previews the selected cleanup;
+  neither can recover files after a real run.
 - **Not a security scanner.** It will not find secrets, malware, or vulnerabilities.
 - **Not cross-platform.** Linux only. The npm package declares `"os": ["linux"]`.
 - **Not fully cross-distro.** Cache cleanup inside `$HOME` works anywhere, but the
@@ -78,10 +77,10 @@ Being clear about the boundaries is more useful than a feature list.
 # 1. See what could be reclaimed. Deletes nothing.
 npx linux-cleanup --scan
 
-# 2. See exactly which paths are eligible, and which are refused outright.
-npx linux-cleanup --list-targets
+# 2. Preview the selected cleanup without deleting.
+npx linux-cleanup --all-safe --dry-run
 
-# 3. Run the guided walkthrough. Every step asks before it deletes.
+# 3. Run the guided walkthrough. Review each choice before deletion.
 npx linux-cleanup
 ```
 

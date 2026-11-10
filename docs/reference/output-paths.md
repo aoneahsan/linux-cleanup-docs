@@ -18,7 +18,7 @@ $DATA_HOME/
 │   ├── cleanup-<YYYY-MM-DD_HHMMSS>.log     # one per session
 │   └── cron.log                             # appended by the weekly cron
 ├── reports/
-│   ├── report-<YYYY-MM-DD_HHMMSS>.json     # canonical session record
+│   ├── report-<YYYY-MM-DD_HHMMSS>.json     # guided walkthrough record, unless disabled
 │   ├── report-<YYYY-MM-DD_HHMMSS>.md       # created by --export md
 │   └── report-<YYYY-MM-DD_HHMMSS>.html     # created by --export html
 └── feedback/
@@ -54,15 +54,10 @@ directories individually.
 `--cleanup-logs` is the only automatic deletion the tool performs on its own output, and it only ever touches
 `.log` files.
 
-## Size
+## Size and retention
 
-| Artefact | Typical |
-|---|---|
-| Session log | 50–500 KB |
-| JSON record | 5–50 KB |
-| Feedback or crash bundle | 50–200 KB |
-
-A year of weekly cron runs totals a few megabytes. To thin older files:
+Log and bundle size depends on the paths and events in a run. Inspect what has accumulated before deleting
+old records. To thin older files deliberately:
 
 ```bash
 find ~/.linux-cleanup/logs/    -name 'cleanup-*.log' -mtime +90 -delete
@@ -78,14 +73,9 @@ touch ~/.linux-cleanup/logs/cron.log
 
 ## Permissions
 
-| Artefact | Mode |
-|---|---|
-| Logs and records | `0644` |
-| Feedback bundles | `0640` |
-| `logs/`, `reports/` | `0755` |
-| `feedback/` | `0750` |
-
-All owned by the invoking user. The tool does not `chown` or `chmod` anything outside `$DATA_HOME`.
+Files are owned by the invoking user. Inspect their effective modes with `stat` on your machine; the tool's
+configured directory modes and the process umask both matter. Avoid sharing a log or bundle without reading
+it first.
 
 ## What these files contain
 

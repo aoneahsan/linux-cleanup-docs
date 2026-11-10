@@ -246,8 +246,8 @@ hash -r
 linux-cleanup --version
 ```
 
-The npm registry reported **1.6.0** on 2026-10-14. Review the
-[changelog](./changelog.md) for fixes since 1.4.0.
+Check the [npm package](https://www.npmjs.com/package/linux-cleanup) for the current published version.
+Review the [changelog](./changelog.md) for changes since your installed copy.
 
 ## Still stuck
 

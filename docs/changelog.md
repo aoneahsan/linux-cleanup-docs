@@ -1,6 +1,6 @@
 ---
 title: Changelog
-description: Release history for linux-cleanup from 1.0.0 through 1.6.0, including the newer cache-safety fixes and speed check.
+description: Release history for linux-cleanup, including dry runs, release notices and local JSON events.
 tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
@@ -10,11 +10,22 @@ sidebar_position: 94
 Release history for `linux-cleanup`. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and the project uses [semantic versioning](https://semver.org/spec/v2.0.0.html).
 
-:::info Current release
-The npm registry reported **1.6.0** on 2026-10-14. The safety and feature
-changes since 1.4.0 are summarised below; the [source changelog](https://github.com/aoneahsan/linux-cleanup/blob/main/CHANGELOG.md)
-has the complete release record. The rest of this site still needs its 1.6.0 fact-check.
-:::
+Check the [npm package](https://www.npmjs.com/package/linux-cleanup) for the current published version.
+The [source changelog](https://github.com/aoneahsan/linux-cleanup/blob/main/CHANGELOG.md) carries the
+complete record. The entries below explain changes that affect the cleanup decision.
+
+## 2.1.0 — 2026-11-10
+
+`--json-events` streams local, versioned JSON events for `--scan` and non-interactive `--all-safe --yes`.
+Adding `--dry-run` to all-safe reports proposed paths without deleting them. The stream can contain full
+local paths, so keep it on the machine.
+
+## 2.0.0 — 2026-11-10
+
+Added `--dry-run`, a public release-record check on start, and `--refresh-app` for the persistent CLI copy.
+Normal release notices allow the first run and block from the next start; urgent notices block an older copy
+at once. Offline runs continue. A dry run does not remove cleanup targets or change settings, though it may
+write a local log and update-check state.
 
 ## 1.6.0 — 2026-09-18
 

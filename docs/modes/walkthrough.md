@@ -53,11 +53,7 @@ target.
 
 ## Running totals
 
-After each step that ran, the tool prints what that step freed and the session total so far:
-
-```text
-  ✓ this step freed: 12.4 GB   running total: 18.7 GB
-```
+After each step that ran, the tool prints its measured change and the session total so far.
 
 The final summary reports disk free before and after. That figure is measured from `df`, so it reflects
 everything happening on the machine — if a build ran during your session, the reported recovery can be lower
@@ -68,8 +64,7 @@ than the sum of the steps, or even negative. That is not a bug; see
 
 `q` at any step prompt, or `Ctrl-C` at any point, ends the session cleanly:
 
-- The current removal finishes first — usually well under a second
-- The log keeps everything up to that moment
+- Earlier deletions remain permanent; inspect the log for the steps attempted before interruption
 - `Ctrl-C` exits with code `130`, which the
   [crash trap deliberately ignores](../reference/exit-codes.md#how-the-crash-trap-decides), so no crash
   bundle is written
@@ -77,8 +72,9 @@ than the sum of the steps, or even negative. That is not a bug; see
 
 ## The session report
 
-Every walkthrough writes a canonical JSON report to `~/.linux-cleanup/reports/report-<timestamp>.json`,
-containing per-step status and bytes freed, disk and memory before/after, and session totals. Full field
+The walkthrough writes a JSON report to `~/.linux-cleanup/reports/report-<timestamp>.json` unless
+`--no-report` or `--dry-run` is set. It contains per-step status and bytes freed, disk and memory before/after,
+and session totals. Full field
 list: [Report schema](../reference/report-schema.md).
 
 Step 10 optionally converts it to Markdown and HTML. That step needs `jq`; without it the step is recorded

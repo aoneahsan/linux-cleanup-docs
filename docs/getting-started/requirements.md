@@ -23,10 +23,9 @@ macOS and WSL are worth separating:
 
 - **macOS is not supported.** The paths, `find` flags and package managers differ. A sibling tool exists for
   it; do not point this one at a Mac.
-- **WSL works.** linux-cleanup runs on the Linux side and behaves identically to a native install. It does
-  not go looking inside `/mnt/c/`. If you have symlinked `~/Downloads` to a Windows directory, the
-  [allowlist](../reference/protected-paths.md) resolves the symlink before deciding, so Windows-side
-  `Documents` and `Pictures` are still refused.
+- **WSL runs on the Linux side.** Review any symlink from `$HOME` into `/mnt/c/` before a cleanup. The
+  [allowlist](../reference/protected-paths.md) resolves symlinks, but its protected Linux home paths do not
+  imply that every Windows directory is protected.
 
 ## Required commands
 
@@ -91,11 +90,11 @@ openSUSE its package steps fail with "command not found".
 Full breakdown of which steps work where: [Distro support](../distro-support.md).
 :::
 
-## Disk footprint
+## Output on disk
 
-The tool's own output is negligible: a session log is 50–500 KB, a JSON report 5–50 KB, a feedback bundle
-50–200 KB. A year of weekly cron runs totals a few megabytes. See
-[Output paths](../reference/output-paths.md) for the layout and how to thin old files.
+Each run can write a local log. A guided walkthrough can also write a JSON report, and a debug bundle is
+created when requested or after an unexpected failure. Their size depends on the run. See
+[Output paths](../reference/output-paths.md) for the layout.
 
 ## Next
 

@@ -52,8 +52,8 @@ amplification on the disk you are freeing, and it breeds carelessness.
 **Auditable over convenient.** Bash, because it is already installed and can be read. A compiled binary would
 be more ergonomic and much harder to trust.
 
-**No network, ever.** No telemetry, no analytics, no update check. Nothing leaves your machine unless you
-email it.
+**Release checks are narrow.** On start, the CLI reads one public release record when online. It does not
+upload cleanup paths, reports or crash bundles; sending a report remains your choice.
 
 ## Corrections shape the tool
 
