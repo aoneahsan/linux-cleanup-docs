@@ -17,6 +17,7 @@ sidebar_position: 4
 | `LINUX_CLEANUP_REPORTS_DIR` | `~/.linux-cleanup/reports/` or `<repo>/reports/` | Where JSON session records go. Created if missing |
 | `LINUX_CLEANUP_DATA_HOME` | unset — falls back to the parent of the log dir | Parent for `logs/`, `reports/` and `feedback/` together |
 | `LINUX_CLEANUP_NPX` | unset | **Internal.** Set to `1` by the Node launcher. Do not set it yourself |
+| `LINUX_CLEANUP_LAUNCHER` | unset | **Internal.** The Node launcher sets `node`; the desktop app sets `desktop`, which skips the CLI's own update check because the app runs its own (since 2.1.0). Do not set it yourself |
 | `XDG_CONFIG_HOME` | `~/.config` | Where `personal-roots.txt` and `project-roots.txt` are looked up |
 
 ## Redirecting all output

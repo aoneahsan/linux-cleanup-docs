@@ -34,6 +34,17 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Desktop app',
+      collapsed: true,
+      items: [
+        'desktop/overview',
+        'desktop/install',
+        'desktop/schedules',
+        'desktop/accounts-and-plans',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Modes',
       collapsed: true,
       items: [
@@ -55,6 +66,25 @@ const sidebars: SidebarsConfig = {
         'modes/reports',
       ],
     },
+    {
+      type: 'category',
+      label: 'Compare',
+      collapsed: true,
+      items: [
+        'compare/index',
+        'compare/bleachbit',
+        'compare/stacer',
+        'compare/sweeper',
+        'compare/cross-cleaner',
+        'compare/cleanmate',
+        'compare/tuxcleaner',
+        'compare/ubuntu-cleaner',
+        'compare/disk-cleaner',
+        'compare/czkawka',
+        'compare/safe-disk-cleaner',
+      ],
+    },
+    'white-label',
     {
       type: 'category',
       label: 'Reference',
