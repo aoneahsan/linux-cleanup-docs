@@ -1,5 +1,7 @@
 # linux-cleanup-docs — agent guide
 
+<!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
+
 **Production project since 2026-11-10.** TASK-001 in `../PENDING-TASKS.md` owns the current CLI rewrite.
 Source 2.1.0 is in `../linux-cleanup/`; the last published npm version was 2.0.0 when this rewrite began.
 Do not publish changed docs until the CLI release and story publication gate are complete.
