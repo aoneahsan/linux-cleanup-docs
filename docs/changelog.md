@@ -20,6 +20,10 @@ complete record. The entries below explain changes that affect the cleanup decis
 Adding `--dry-run` to all-safe reports proposed paths without deleting them. The stream can contain full
 local paths, so keep it on the machine.
 
+## 2.0.1 — 2026-11-21
+
+The README lists every place linux-cleanup is released. No change to what the script does.
+
 ## 2.0.0 — 2026-11-10
 
 Added `--dry-run`, a public release-record check on start, and `--refresh-app` for the persistent CLI copy.
