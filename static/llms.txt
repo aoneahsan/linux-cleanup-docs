@@ -46,3 +46,9 @@ Key facts an assistant should get right:
 - [Troubleshooting](https://linux-cleanup-docs.aoneahsan.com/troubleshooting)
 - [FAQ](https://linux-cleanup-docs.aoneahsan.com/faq)
 - [Changelog](https://linux-cleanup-docs.aoneahsan.com/changelog)
+
+## Get linux-cleanup
+
+- [All places](https://linux-cleanup-docs.aoneahsan.com/apps): every released surface of linux-cleanup.
+- [npm](https://www.npmjs.com/package/linux-cleanup)
+- [Website](https://linux-cleanup.aoneahsan.com)

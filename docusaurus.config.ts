@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { OTHER_PLATFORMS } from './src/data/platforms';
 
 // ---------------------------------------------------------------------------
 // linux-cleanup — Documentation site config
@@ -272,6 +273,15 @@ const config: Config = {
         { to: '/reference/cli-flags', label: 'CLI', position: 'left' },
         { to: '/changelog', label: 'Changelog', position: 'right' },
         {
+          type: 'dropdown',
+          label: 'Get linux-cleanup',
+          position: 'right',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All places', to: '/apps' },
+          ],
+        },
+        {
           href: 'https://github.com/aoneahsan/linux-cleanup',
           label: 'GitHub',
           position: 'right',
@@ -305,6 +315,13 @@ const config: Config = {
             { label: 'Source (GitHub)', href: 'https://github.com/aoneahsan/linux-cleanup' },
             { label: 'npm package', href: 'https://www.npmjs.com/package/linux-cleanup' },
             { label: 'Report an issue', href: 'https://github.com/aoneahsan/linux-cleanup/issues' },
+          ],
+        },
+        {
+          title: 'Get linux-cleanup',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All places', to: '/apps' },
           ],
         },
         {

@@ -13,6 +13,8 @@ sidebar_position: 1
 browser and build-tool caches, with separate modes for system work and personal-file candidates. Start with
 a read-only scan or a dry run before choosing a real cleanup.
 
+Get linux-cleanup: [on npm](https://www.npmjs.com/package/linux-cleanup) · [the website](https://linux-cleanup.aoneahsan.com) · [all places](/apps)
+
 It is a **destructive tool**. Every deletion is permanent, and there is no undo. Its safety comes from
 refusing to touch the wrong things in the first place, not from being able to put them back.
 
