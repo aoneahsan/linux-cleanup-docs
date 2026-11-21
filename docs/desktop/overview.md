@@ -33,7 +33,7 @@ for its own updates instead; see [Install and update](./install.md).
 |---|---|
 | File and folder paths, file names | Never |
 | Step results, sizes, free space before and after, the distribution name | Only when you sign in, as numbers |
-| Which screens open and which actions run | Counted with Google Analytics and Amplitude, without paths, names or your email |
+| Which screens open and which actions run | Counted with Amplitude, without paths, names or your email |
 
 Signing in is optional. Signed out, dry runs, real runs, receipts and schedules all work on this
 computer; the monthly real-run allowance is counted per computer.

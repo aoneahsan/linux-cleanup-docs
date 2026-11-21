@@ -39,8 +39,11 @@ const sidebars: SidebarsConfig = {
       items: [
         'desktop/overview',
         'desktop/install',
+        'desktop/first-run',
         'desktop/schedules',
         'desktop/accounts-and-plans',
+        'desktop/troubleshooting',
+        'desktop/uninstall',
       ],
     },
     {

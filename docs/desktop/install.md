@@ -6,8 +6,9 @@ description: Install the linux-cleanup desktop app as an AppImage or a .deb, and
 
 # Install and update
 
-Releases are published on [GitHub Releases](https://github.com/aoneahsan/linux-cleanup/releases/latest).
-Each release carries two installers:
+Download the current release from the [download page](https://linux-cleanup.aoneahsan.com/download); every
+release is also on [GitHub Releases](https://github.com/aoneahsan/linux-cleanup/releases) under a
+`desktop-v<version>` tag. Each release carries two installers:
 
 | File | For |
 |---|---|
@@ -28,6 +29,9 @@ The app updates itself. It checks for a signed update when it starts, when its w
 view, and the moment a new release is published. With **Install updates automatically** on (the
 default), it downloads the update, checks its signature, and relaunches at a quiet moment: never while a
 run is in progress.
+
+An **AppImage** is replaced in place. A **`.deb`** install updates through `dpkg`, so your desktop asks for an
+administrator password first (the usual graphical prompt); cancelling it leaves the current version running.
 
 A release can also be marked **required**:
 
