@@ -2,20 +2,18 @@
 
 <!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
 
-**Production project since 2026-11-10.** TASK-001 in `../PENDING-TASKS.md` owns the current CLI rewrite.
-Source 2.1.0 is in `../linux-cleanup/`; the last published npm version was 2.0.0 when this rewrite began.
-Do not publish changed docs until the CLI release and story publication gate are complete.
+**Production project since 2026-11-10.** The site describes CLI 2.1.0 (published 2026-11-21) and the desktop app; the 2.x rewrite passed
+GATE 4 on 2026-11-21. A new claim follows the published CLI and desktop release only, never unreleased code.
 
 **Mirror of `CLAUDE.md`** — byte-identical except the header names. Change one, change both.
 
-**Last Updated:** 2026-11-10
+**Last Updated:** 2026-11-21
 
 | Context Budget Last Verified | 2026-10-14; next routine pass 2026-11-13. See the workspace context tracker for coverage and byte counts. |
 |---|---|
 
 The old docs were fact-checked against 1.4.0, then published with false claims about dry runs and network
-use. Verify every current claim against `../linux-cleanup/`, especially destructive modes. The custom docs
-domain is configured in GitHub Pages but does not yet resolve in DNS.
+use. Verify every current claim against `../linux-cleanup/`, especially destructive modes.
 
 ## What this is
 
@@ -96,7 +94,7 @@ These were checked against source 2.1.0 during TASK-001. Re-check before changin
 | **`~/Downloads` is NOT protected** | Deliberately — cleaning it is a feature. Guard 3 covers it instead |
 | **Refusal string** | `✗ REFUSE: protected path: <path>` |
 | **Release check** | The CLI fetches a public release record on start when online. It does not upload paths or reports. |
-| **Current npm release** | Re-query before a release claim; source 2.1.0 is not evidence that npm has published it. |
+| **Current npm release** | 2.1.0 on 2026-11-21. Re-query before a newer release claim. |
 
 ## Never
 
