@@ -47,10 +47,7 @@ by the allowlist — `~/Downloads` is not a protected path. It is covered by
 [Guard 3](#guard-3--personal-data-is-interactive-only) instead.
 :::
 
-**Why an allowlist rather than a blocklist.** A blocklist fails open: anything the author forgot to list is
-deletable, so one typo in a path is the difference between clearing a cache and clearing a home directory.
-An allowlist fails closed — an unrecognised path is refused by default. For a tool that runs `rm -rf` at
-scale with `sudo` available, failing closed is the only defensible default.
+The cleanup modes select named target paths, then the protected-path check refuses dangerous destinations. A path outside the protected list is not automatically safe to remove: inspect each mode's targets and its dry run.
 
 ## Guard 2 — The staleness gate
 
@@ -91,7 +88,7 @@ happen.
 
 The modes that can touch personal files are interactive by policy:
 
-- [`--stale`](../modes/personal-stale-files.md) — large, idle files in `~/Downloads` and `~/Desktop`
+- [`--stale`](../modes/personal-stale-files.md) — large, idle files in `~/Downloads` and configured unprotected roots
 - [`--partials`](../modes/partial-downloads.md) — orphaned partial downloads
 - [`--node-modules`](../modes/node-modules-finder.md) — stale project dependency directories
 
@@ -116,8 +113,7 @@ enumerated set of operations — each a separate, reviewable invocation, each pr
 | Remove `/tmp` files with `atime` older than 7 days | Yes |
 | `sync` then `sysctl vm.drop_caches=3` | **No** |
 
-The script does not hold a long-lived root session, does not edit `/etc/sudoers`, does not install or
-modify any service, and never escalates silently. If `sudo` is unavailable the mode aborts rather than
+The script does not edit `/etc/sudoers`, and `--system` asks for each operation. If `sudo` is unavailable the mode aborts rather than
 continuing in a degraded state.
 
 Two values here are **hardcoded and ignore `--days`**: the journal vacuum target (100 MB) and the `/tmp`
@@ -130,7 +126,7 @@ Being explicit about the gaps is more useful than reassurance.
 | Gap | What it means |
 |---|---|
 | **No undo** | Nothing here makes a deletion reversible. See [Deletion is permanent](./irreversibility.md). |
-| **`~/Downloads` and `~/Desktop` are not allowlisted** | They are reachable. Only Guard 3 stands between them and deletion — read the candidates. |
+| **`~/Downloads` is not protected** | It is reachable through the interactive personal-file mode — read the candidates. `~/Desktop` is protected. |
 | **`--purge-all` removes Guard 2** | Guards 1, 3 and 4 still apply; the staleness gate does not. |
 | **Running as root widens the blast radius** | The tool is designed to run as a normal user. `--system` handles the legitimate sudo needs internally. |
 | **Guards protect paths, not content** | A protected directory is safe wherever it sits; a valuable file outside one is not. |

@@ -1,14 +1,15 @@
 ---
 title: Report schema
-description: The JSON structure linux-cleanup writes for every session — schema_version 1, with credits, meta, disk, memory, steps and totals — plus how to parse and validate it.
+description: The JSON structure a linux-cleanup guided walkthrough writes, with credits, meta, disk, memory, steps and totals.
 tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 
 # Report schema
 
-**Every session writes a JSON record with `"schema_version": 1`.** This page documents the structure the
-tool actually emits, verified against the source of 1.4.0.
+**The guided walkthrough writes a JSON record with `"schema_version": 1`**, unless `--no-report` or
+`--dry-run` is set. The standalone `--scan` does not write this report. For a machine-readable scan, use
+`--scan --json-events`; that stream has a different structure.
 
 :::warning Older documentation describes a different structure
 Some material — including a reference page inside the source repository — describes a shape built around
@@ -51,7 +52,7 @@ jq 'keys' "$(ls -t ~/.linux-cleanup/reports/report-*.json | head -1)"
 ```json
 {
   "tool": "linux-cleanup",
-  "tool_version": "1.4.0",
+  "tool_version": "2.1.0",
   "tool_homepage": "https://aoneahsan.com",
   "tool_license": "MIT",
   "author": {

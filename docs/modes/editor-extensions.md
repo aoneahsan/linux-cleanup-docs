@@ -48,8 +48,8 @@ code --install-extension <publisher>.<name>
 
 ## Expected reclaim
 
-Typically 100 MB to 1 GB. Modest next to caches, but it also trims editor startup: VS Code scans the
-extensions directory at launch, so fewer directories means a marginally faster start.
+The size depends on the superseded versions installed on this machine. Use a scan to inspect the current
+directory before deciding whether to clean it.
 
 ## In the walkthrough and all-safe
 

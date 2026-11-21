@@ -1,0 +1,33 @@
+---
+sidebar_position: 4
+title: linux-cleanup and Sweeper
+description: How linux-cleanup and Sweeper differ, from their own pages, checked 2026-11-10.
+---
+
+# linux-cleanup and Sweeper
+
+*Last checked 2026-11-10 against <a href="https://apps.kde.org/en-gb/sweeper/" target="_blank" rel="noopener noreferrer nofollow">Sweeper’s own page</a>.*
+
+**What it is:** A KDE utility for clearing cookies, caches and other user traces.
+
+**Price there:** Not stated on the pages we checked. **Here:** the CLI is free under the MIT License; the desktop app's plans are on the [pricing page](https://linux-cleanup.aoneahsan.com/pricing).
+
+| | linux-cleanup | Sweeper |
+|---|---|---|
+| Command-line interface | Yes | Not stated on the pages we checked |
+| Preview before deletion | Yes | Not stated on the pages we checked |
+| Dry run | Yes | Not stated on the pages we checked |
+| Cache cleanup | Yes | Yes (<a href="https://apps.kde.org/en-gb/sweeper/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
+| Duplicate-file finding | Partly | Not stated on the pages we checked |
+
+## Who is better served by Sweeper
+
+Choose Sweeper for a KDE desktop utility focused on user traces.
+
+## Where linux-cleanup is ahead
+
+Choose linux-cleanup for package-manager and developer caches past an idle threshold, which a trace cleaner does not aim at.
+
+## Where to start here
+
+There is no import from one tool to the other: each keeps its own rules. To see what linux-cleanup would do on your computer, start with [Preview first](../safety/preview-first.md) and run `npx -y linux-cleanup --all-safe --yes --dry-run`, which removes nothing.

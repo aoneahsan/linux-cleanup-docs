@@ -14,7 +14,8 @@ Modes are mutually exclusive — pass one. Options like `--days` and `--yes` com
 
 ## Read-only — never deletes anything
 
-Safe to run at any time, on any machine, without thinking about it.
+These modes do not delete cleanup targets. They may still write a local log, and the release check may read
+a public record when online.
 
 | Mode | Flag | Shows |
 |---|---|---|
@@ -27,7 +28,7 @@ Safe to run at any time, on any machine, without thinking about it.
 
 ## Cleanup — regenerable data
 
-These delete, and every one of them asks first unless you pass `--yes`.
+These modes can delete cleanup targets. `--yes` skips the batch confirmation only for `--all-safe`; other modes keep their own prompts.
 
 | Mode | Flag | Behaviour |
 |---|---|---|
@@ -45,7 +46,7 @@ Personal or project data. These **ignore `--yes`** and require per-entry confirm
 
 | Mode | Flag | Finds |
 |---|---|---|
-| [Stale personal files](./personal-stale-files.md) | `-p` `--stale` | Large idle files in `~/Downloads`, `~/Desktop` |
+| [Stale personal files](./personal-stale-files.md) | `-p` `--stale` | Large idle files in `~/Downloads` and configured unprotected roots |
 | [Partial downloads](./partial-downloads.md) | `--partials` | `.fdmdownload`, `.crdownload`, `.part` |
 | [node_modules finder](./node-modules-finder.md) | `--node-modules` | Project dependency dirs idle N+ days |
 
@@ -56,6 +57,7 @@ Personal or project data. These **ignore `--yes`** and require per-entry confirm
 | [Reports](./reports.md) | `--reports` | List, convert, view past session reports |
 | [Export](./reports.md#exporting) | `--export FMT ID` | Non-interactive conversion |
 | [Doctor](./doctor.md) | `--doctor` | Repair broken shell-init for nvm, pnpm, bun, deno, cargo |
+| [Speed diagnosis](./speed.md) | `--speed` | Measure pressure and startup work; optional fixes ask separately |
 | Feedback | `--feedback` | Bug-report instructions, optional mailto draft |
 | Debug bundle | `--debug-bundle` | Package latest log + report into a tar.gz |
 | Install alias | `--install-alias` | Add a `cleanup` shell alias |
@@ -66,7 +68,7 @@ Personal or project data. These **ignore `--yes`** and require per-entry confirm
 
 | Goal | Mode |
 |---|---|
-| First time using the tool | `--self-test`, then `--scan`, then no flag |
+| First time using the tool | `--self-test`, then `--scan`, then `--all-safe --dry-run` |
 | Free space now, with control | _(default walkthrough)_ |
 | Free space now, no prompts | `--all-safe -y` |
 | One specific category | `--menu` or `--tui` |
@@ -86,6 +88,8 @@ Personal or project data. These **ignore `--yes`** and require per-entry confirm
 | `--no-report` | off | Skip the JSON report. Logs still written |
 | `--cleanup-logs` | off | Delete this run's log at the end. Reports always kept |
 | `--no-color` | off | Disable ANSI colour. `NO_COLOR` also honoured |
+| `-n` `--dry-run` | off | Walk a selected cleanup without deleting; local log and update-check state may still be written |
+| `--json-events` | off | NDJSON for `--scan` or non-interactive `--all-safe --yes` |
 
 Full detail: [CLI flags](../reference/cli-flags.md) and the
 [modes matrix](../reference/modes-matrix.md).

@@ -1,6 +1,6 @@
 ---
 title: Recovery
-description: What to do after linux-cleanup deleted something you wanted — how to identify exactly what was removed, what regenerates on its own, and what genuinely cannot be recovered.
+description: What to do after an unwanted linux-cleanup deletion — inspect available logs, restore from a backup or source, and avoid further disk writes where recovery matters.
 tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
@@ -18,26 +18,25 @@ That applies only to the [genuinely irreplaceable categories](#3-decide-what-is-
 cache, skip it — just let the tool re-fetch.
 :::
 
-## 1. Find out exactly what was removed
+## 1. Inspect the available record
 
-Two artefacts, written on every run. Both are records, not backups.
+A run can leave a local log. A guided walkthrough can also leave a JSON session record unless reporting was disabled. Neither is a complete per-file deletion record or a backup.
 
 ```bash
-# The most recent session log — every path touched, with sizes
+# The most recent session log
 less "$(ls -t ~/.linux-cleanup/logs/cleanup-*.log | head -1)"
 
-# The structured record of the same session
+# The latest walkthrough record, if one exists
 jq '.' "$(ls -t ~/.linux-cleanup/reports/report-*.json | head -1)"
 ```
 
-To search for a specific path across every session you have ever run:
+To search retained logs for a specific path:
 
 ```bash
 grep -rn 'the-filename-you-are-missing' ~/.linux-cleanup/logs/
 ```
 
-If nothing matches, **linux-cleanup did not delete it.** The log records every removal attempt, including the
-refusals. That is worth checking before assuming this tool is the cause.
+No match does not prove the tool left that file alone. A helper may report a whole cache directory or a command rather than each file, and `--cleanup-logs` can remove a run's log. Check the selected mode and target roots too.
 
 Narrow to a single session's steps:
 
@@ -111,7 +110,7 @@ something genuinely important, and only after you have stopped writing to the di
 | Change | Effect |
 |---|---|
 | Run [`--scan`](./modes/scan.md) before every cleanup | You see the outcome while it is still hypothetical |
-| Move valuables out of `~/Downloads` and `~/Desktop` | `~/Documents` and friends are [protected](./reference/protected-paths.md) |
+| Move valuables out of `~/Downloads` | `~/Documents` and `~/Desktop` are [protected](./reference/protected-paths.md) |
 | Skip step 7 in the walkthrough | Personal files then need a deliberate separate run |
 | Raise the threshold: `-d 365` | Only genuinely ancient files become candidates |
 | Never use `-y` outside `--all-safe` on a trusted machine | `-y` cannot touch personal data, but you see decisions only afterwards |
@@ -128,7 +127,7 @@ linux-cleanup --debug-bundle
 linux-cleanup --feedback
 ```
 
-Include the log and the session record. See [Send a bug report](./guides/send-a-bug-report.md).
+Include the log and a walkthrough record if one exists. See [Send a bug report](./guides/send-a-bug-report.md).
 
 ## Next
 

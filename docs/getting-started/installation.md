@@ -11,10 +11,9 @@ sidebar_position: 2
 three run the same Bash script — the npm package is a thin Node launcher that locates `cleanup.sh` and
 points logs and reports at a persistent directory.
 
-:::info Version note
-The npm registry reported **1.6.0** on 2026-10-14. Versions 1.5.0–1.6.0
-include safety fixes; they are not behaviorally identical to 1.4.0.
-See the [changelog](../changelog.md) before upgrading an older install.
+:::info Check the installed version
+Run `linux-cleanup --version` after installation or upgrade. The [changelog](../changelog.md) records changes
+to the dry run and release notices.
 :::
 
 ## Option 1 — `npx`, no install
@@ -101,7 +100,7 @@ see [Alias and cron](../guides/alias-and-cron.md).
 ## What installing does not do
 
 - No system service, no background daemon, no scheduled task (until you ask for one)
-- No telemetry agent, no update checker, no remote configuration fetch
+- No telemetry agent. On start, the CLI fetches one public release record when online; it continues when offline
 - No shell configuration changes unless you run `--install-alias` or `--doctor`
 - No files outside the package and `~/.linux-cleanup/`, and the latter only once you actually run it
 

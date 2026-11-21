@@ -8,8 +8,7 @@ sidebar_position: 8
 # Stale node_modules finder
 
 **`--node-modules` finds `node_modules` directories in projects you have not touched for `--days` or more,
-and offers each for deletion.** On a machine with years of side projects this is frequently the biggest
-single reclaim available — 5 to 50 GB.
+and offers each for deletion.** The space available depends on the projects present on this machine.
 
 ```bash
 linux-cleanup --node-modules          # 100-day default

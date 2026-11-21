@@ -7,8 +7,8 @@ sidebar_position: 3
 
 # Quick start
 
-**A first session takes about ten minutes and typically reclaims 5–30 GB on a developer machine.** This page
-walks it end to end: verify, preview, run guided, read the report.
+**Verify the guards, inspect the scan, and preview the selected mode before deleting.** Space recovered depends
+on the paths and files on this machine.
 
 :::caution Do not skip steps 1 and 2
 They take two minutes and they are the difference between a cleanup you controlled and one you discovered
@@ -32,24 +32,22 @@ you should stop there.
 npx linux-cleanup --scan
 ```
 
-`--scan` is read-only. It walks every category, measures real sizes, prints what could be reclaimed, and
-writes a [JSON report](../reference/report-schema.md). Nothing is deleted.
+`--scan` is read-only. It lists cache roots and their current sizes, along with other candidates and system
+observations. It does not delete or write a JSON session report.
 
-Read the output before continuing. Common findings on a developer laptop:
+Read the paths before continuing. A cache root's size is not a claim that the whole directory is eligible
+for removal. Check any unexpected path and each personal-file candidate separately.
 
-| Category | Typical size |
-|---|---|
-| `~/.cache/yarn` + `~/.npm` + pnpm store | 5–25 GB |
-| Chrome / Brave / Firefox profile caches | 2–8 GB |
-| `~/.gradle/caches` | 3–10 GB |
-| Cypress + Playwright browser binaries | 1–4 GB |
-| `~/.android/avd` (emulator images) | 6–30 GB |
-| Stale `node_modules` in old projects | 5–50 GB |
+## Step 3 — Preview the cleanup
 
-Two things to look for specifically: any path you did not expect (a symlinked cache, for instance), and any
-personal-file candidate — those are the only entries that can be irreplaceable.
+```bash
+npx linux-cleanup --all-safe --dry-run
+```
 
-## Step 3 — Run the guided walkthrough
+This walks the all-safe cache mode without deleting files or changing settings. Read the proposed actions,
+then choose whether to run it. A real deletion has no undo.
+
+## Step 4 — Run the guided walkthrough
 
 ```bash
 npx linux-cleanup
@@ -88,20 +86,16 @@ candidate rather than accepting the batch. Skip both with `s` on a first run if 
 separately later.
 :::
 
-Aborting with `Ctrl-C` is safe at any point. The current removal finishes, the script exits with code `130`,
-and partial progress is preserved in the log.
+`Ctrl-C` stops the walkthrough with code `130`. Any earlier deletion remains permanent. Read the log to see
+which steps ran before the interruption.
 
-## Step 4 — Read the report
+## Step 5 — Read the report
 
-The session ends with a summary naming the log and report files:
+The session ends with a summary naming its log and, when generated, its report. Read the named paths from
+your own run rather than assuming a fixed location for every install method.
 
-```text
-✓ Recovered: 18.7 GB
-ℹ Log saved: ~/.linux-cleanup/logs/cleanup-2026-05-10_140312.log
-ℹ Report:    ~/.linux-cleanup/reports/report-2026-05-10_140312.json
-```
-
-The JSON report is canonical and always written. To convert it for reading or archiving — this needs `jq`:
+The guided walkthrough writes a JSON report unless you pass `--no-report` or `--dry-run`. To convert an
+existing report for reading or archiving, install `jq` and run:
 
 ```bash
 linux-cleanup --export both latest   # Markdown + HTML beside the JSON
@@ -110,7 +104,7 @@ linux-cleanup --reports              # interactive reports manager
 
 See [Reports](../modes/reports.md).
 
-## Step 5 — Automate it, once you trust it
+## Step 6 — Automate it, once you trust it
 
 Only after a manual run you were happy with:
 

@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { OTHER_PLATFORMS } from './src/data/platforms';
 
 // ---------------------------------------------------------------------------
 // linux-cleanup — Documentation site config
@@ -12,12 +13,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 // npm package with no separate marketing site, so its docs domain is
 // <npm-package-name>-docs.aoneahsan.com. Pinned in static/CNAME.
 //
-// Deployment: GitHub Pages ONLY (.github/workflows/deploy-pages.yml).
+// Deployment: locally built output is pushed to the GitHub Pages branch by hand.
 // This repo is PUBLIC and contains no Firebase config and no secrets.
 // ---------------------------------------------------------------------------
 
 const SITE_URL = 'https://linux-cleanup-docs.aoneahsan.com';
-const TOOL_VERSION = '1.6.0';
+const TOOL_VERSION = '2.1.0';
 
 // Analytics are env-gated: an absent key means the provider is skipped
 // entirely, so a clone with no secrets still builds. Never inline a real key.
@@ -26,7 +27,7 @@ const gaMeasurementId = process.env.GA_MEASUREMENT_ID?.trim();
 const config: Config = {
   title: 'linux-cleanup',
   tagline:
-    'Safe, modular disk and cache cleanup for Linux — allowlist-guarded, interactive by default, and it never phones home.',
+    'Preview Linux cleanup paths before permanent removal.',
   favicon: 'img/favicon.svg',
 
   url: SITE_URL,
@@ -35,8 +36,7 @@ const config: Config = {
   organizationName: 'aoneahsan',
   projectName: 'linux-cleanup-docs',
 
-  // The build IS the link checker. Anything broken fails CI rather than
-  // shipping a dead link to a page about deleting files.
+  // The local build checks links and anchors before the manual Pages deploy.
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
 
@@ -44,10 +44,6 @@ const config: Config = {
   // Results, Perplexity, ChatGPT and Claude extract structured entity data
   // when citing this documentation.
   headTags: [
-    {
-      tagName: 'link',
-      attributes: { rel: 'canonical', href: `${SITE_URL}/` },
-    },
     {
       tagName: 'meta',
       attributes: { name: 'application-name', content: 'linux-cleanup Docs' },
@@ -195,6 +191,8 @@ const config: Config = {
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
             'MANUAL-TASKS.md',
+            'PACKAGES.md',
+            'story/**',
           ],
           routeBasePath: '/',
           editUrl: 'https://github.com/aoneahsan/linux-cleanup-docs/edit/main/',
@@ -275,6 +273,15 @@ const config: Config = {
         { to: '/reference/cli-flags', label: 'CLI', position: 'left' },
         { to: '/changelog', label: 'Changelog', position: 'right' },
         {
+          type: 'dropdown',
+          label: 'Get linux-cleanup',
+          position: 'right',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All places', to: '/apps' },
+          ],
+        },
+        {
           href: 'https://github.com/aoneahsan/linux-cleanup',
           label: 'GitHub',
           position: 'right',
@@ -308,6 +315,13 @@ const config: Config = {
             { label: 'Source (GitHub)', href: 'https://github.com/aoneahsan/linux-cleanup' },
             { label: 'npm package', href: 'https://www.npmjs.com/package/linux-cleanup' },
             { label: 'Report an issue', href: 'https://github.com/aoneahsan/linux-cleanup/issues' },
+          ],
+        },
+        {
+          title: 'Get linux-cleanup',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All places', to: '/apps' },
           ],
         },
         {
