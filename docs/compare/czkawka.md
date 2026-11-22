@@ -1,12 +1,12 @@
 ---
 sidebar_position: 10
 title: linux-cleanup and Czkawka
-description: How linux-cleanup and Czkawka differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and Czkawka differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and Czkawka
 
-*Last checked 2026-11-10 against <a href="https://github.com/qarmin/czkawka" target="_blank" rel="noopener noreferrer nofollow">Czkawka’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://github.com/qarmin/czkawka" target="_blank" rel="noopener noreferrer nofollow">Czkawka’s own page</a>.*
 
 **What it is:** A file-finding utility for duplicates, empty folders, similar media and other clutter.
 
@@ -14,7 +14,7 @@ description: How linux-cleanup and Czkawka differ, from their own pages, checked
 
 | | linux-cleanup | Czkawka |
 |---|---|---|
-| Command-line interface | Yes | Not stated on the pages we checked |
+| Command-line interface | Yes | Yes (<a href="https://github.com/qarmin/czkawka" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Preview before deletion | Yes | Not stated on the pages we checked |
 | Dry run | Yes | Not stated on the pages we checked |
 | Cache cleanup | Yes | Not stated on the pages we checked |

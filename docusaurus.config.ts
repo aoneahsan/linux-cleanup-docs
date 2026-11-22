@@ -20,11 +20,25 @@ import { OTHER_PLATFORMS } from './src/data/platforms';
 const SITE_URL = 'https://linux-cleanup-docs.aoneahsan.com';
 const TOOL_VERSION = '2.1.0';
 
-// Analytics are env-gated: an absent key means the provider is skipped
-// entirely, so a clone with no secrets still builds. Never inline a real key.
+// Build values come from a local, git-ignored `.env` (see `.env.example`); a clone with none still builds. Analytics
+// and the release gate are skipped when their keys are absent. Never inline a real key: this repository is public.
+try {
+  process.loadEnvFile('.env');
+} catch {
+  // no .env: every optional provider is skipped
+}
 const gaMeasurementId = process.env.GA_MEASUREMENT_ID?.trim();
+const DOCS_VERSION = (require('./package.json') as { version: string }).version;
 
 const config: Config = {
+  // Update flow layer 2 and the legal notice (src/clientModules/siteChrome.ts) read these at runtime.
+  customFields: {
+    docsVersion: DOCS_VERSION,
+    releaseUrl: process.env.SUPABASE_URL?.trim() ?? '',
+    releaseKey: process.env.SUPABASE_PUBLISHABLE_KEY?.trim() ?? '',
+    releaseChannel: process.env.RELEASE_CHANNEL?.trim() === 'test' ? 'test' : 'production',
+  },
+  clientModules: [require.resolve('./src/clientModules/siteChrome.ts')],
   title: 'linux-cleanup',
   tagline:
     'Preview Linux cleanup paths before permanent removal.',
@@ -54,7 +68,7 @@ const config: Config = {
     },
     {
       tagName: 'meta',
-      attributes: { name: 'theme-color', content: '#0f766e' },
+      attributes: { name: 'theme-color', content: '#13120d' },
     },
     {
       tagName: 'script',
@@ -146,8 +160,8 @@ const config: Config = {
   ],
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'en-GB',
+    locales: ['en-GB'],
   },
 
   trailingSlash: false,
@@ -199,7 +213,27 @@ const config: Config = {
           showLastUpdateTime: true,
           breadcrumbs: true,
         },
-        blog: false,
+        // Release notes: the docs site's /feed page and its RSS (copied to /feed.xml by the plugin below).
+        blog: {
+          routeBasePath: 'feed',
+          path: 'blog',
+          blogTitle: 'Release notes',
+          blogDescription: 'Every linux-cleanup release, command line and desktop app, newest first.',
+          blogSidebarTitle: 'Releases',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 'ALL',
+          showReadingTime: false,
+          authorsMapPath: undefined,
+          onInlineAuthors: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
+          feedOptions: {
+            type: 'rss',
+            title: 'linux-cleanup release notes',
+            description: 'Every linux-cleanup release, command line and desktop app.',
+            copyright: `© ${new Date().getFullYear()} Ahsan Mahmood`,
+            language: 'en-GB',
+          },
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -214,7 +248,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/social-card.svg',
+    image: 'img/social-card.png',
     metadata: [
       {
         name: 'description',
@@ -236,7 +270,7 @@ const config: Config = {
       { name: 'twitter:site', content: '@aoneahsan' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'linux-cleanup Docs' },
-      { property: 'og:locale', content: 'en_US' },
+      { property: 'og:locale', content: 'en_GB' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
       { property: 'article:author', content: 'Ahsan Mahmood' },
@@ -307,6 +341,7 @@ const config: Config = {
             { label: 'Protected paths', to: '/reference/protected-paths' },
             { label: 'Report schema', to: '/reference/report-schema' },
             { label: 'Changelog', to: '/changelog' },
+            { label: 'Release notes', to: '/feed' },
           ],
         },
         {

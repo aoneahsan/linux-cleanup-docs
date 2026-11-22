@@ -14,7 +14,7 @@ Check the [npm package](https://www.npmjs.com/package/linux-cleanup) for the cur
 The [source changelog](https://github.com/aoneahsan/linux-cleanup/blob/main/CHANGELOG.md) carries the
 complete record. The entries below explain changes that affect the cleanup decision.
 
-## 2.1.0 — 2026-11-10
+## 2.1.0 — 2026-11-21
 
 `--json-events` streams local, versioned JSON events for `--scan` and non-interactive `--all-safe --yes`.
 Adding `--dry-run` to all-safe reports proposed paths without deleting them. The stream can contain full

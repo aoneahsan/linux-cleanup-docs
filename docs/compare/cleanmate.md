@@ -1,24 +1,24 @@
 ---
 sidebar_position: 6
 title: linux-cleanup and CleanMate
-description: How linux-cleanup and CleanMate differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and CleanMate differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and CleanMate
 
-*Last checked 2026-11-10 against <a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">CleanMate’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">CleanMate’s own page</a>.*
 
 **What it is:** A macOS and Ubuntu cleaner with a desktop app, terminal app and review-before-removal flow.
 
-**Price there:** Free: free (<a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">source</a>, checked 2026-11-10). **Here:** the CLI is free under the MIT License; the desktop app's plans are on the [pricing page](https://linux-cleanup.aoneahsan.com/pricing).
+**Price there:** Free: free (<a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">source</a>, checked 2026-11-22). **Here:** the CLI is free under the MIT License; the desktop app's plans are on the [pricing page](https://linux-cleanup.aoneahsan.com/pricing).
 
 | | linux-cleanup | CleanMate |
 |---|---|---|
-| Command-line interface | Yes | Not stated on the pages we checked |
+| Command-line interface | Yes | Yes (<a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Preview before deletion | Yes | Yes (<a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Dry run | Yes | Not stated on the pages we checked |
-| Cache cleanup | Yes | Not stated on the pages we checked |
-| Duplicate-file finding | Partly | Not stated on the pages we checked |
+| Cache cleanup | Yes | Yes (<a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
+| Duplicate-file finding | Partly | Yes (<a href="https://cleanmate.homielab.com/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 
 ## Who is better served by CleanMate
 

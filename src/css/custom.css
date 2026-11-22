@@ -1,41 +1,43 @@
 /**
  * linux-cleanup docs — Infima theme overrides.
  *
- * Palette: teal. Chosen to read as "maintenance / system utility" rather than
- * alarm-red, while keeping destructive callouts (:::danger) visually distinct.
- * All colours are Infima CSS variables so light and dark stay in step.
+ * Palette: Survey Chartreuse, OKLCH hue 95, the product's registered colour (website brand kit and click dummy).
+ * Light: deep olive links on warm paper (8.45:1 on white); dark: the signal yellow on near-black olive.
+ * :::danger callouts keep Infima's red so a destructive step never reads as brand colour.
  */
 
 :root {
-  --ifm-color-primary: #0f766e;
-  --ifm-color-primary-dark: #0e6a63;
-  --ifm-color-primary-darker: #0d645d;
-  --ifm-color-primary-darkest: #0a524d;
-  --ifm-color-primary-light: #108279;
-  --ifm-color-primary-lighter: #11887f;
-  --ifm-color-primary-lightest: #149a8f;
+  --ifm-color-primary: #5d4c00;
+  --ifm-color-primary-dark: #544400;
+  --ifm-color-primary-darker: #4f4100;
+  --ifm-color-primary-darkest: #413500;
+  --ifm-color-primary-light: #665400;
+  --ifm-color-primary-lighter: #6b5700;
+  --ifm-color-primary-lightest: #7a6400;
 
+  --ifm-background-color: #f8f6ef;
+  --ifm-background-surface-color: #fffdf6;
   --ifm-code-font-size: 92%;
   --ifm-font-family-monospace: ui-monospace, SFMono-Regular, 'SF Mono', Menlo,
     Consolas, 'Liberation Mono', monospace;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
+  --docusaurus-highlighted-code-line-bg: rgba(93, 76, 0, 0.1);
 
-  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --ifm-navbar-shadow: 0 1px 0 0 #e4dfcb;
   --ifm-toc-border-color: var(--ifm-color-emphasis-200);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #5eead4;
-  --ifm-color-primary-dark: #3ee5c8;
-  --ifm-color-primary-darker: #2ce2c2;
-  --ifm-color-primary-darkest: #17bda0;
-  --ifm-color-primary-light: #7ef0e0;
-  --ifm-color-primary-lighter: #90f2e6;
-  --ifm-color-primary-lightest: #c0f8f1;
+  --ifm-color-primary: #dcbc33;
+  --ifm-color-primary-dark: #d2b026;
+  --ifm-color-primary-darker: #c6a723;
+  --ifm-color-primary-darkest: #a3891d;
+  --ifm-color-primary-light: #e0c450;
+  --ifm-color-primary-lighter: #e3c95e;
+  --ifm-color-primary-lightest: #e9d585;
 
-  --ifm-background-color: #0d1117;
-  --ifm-background-surface-color: #161b22;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  --ifm-background-color: #12110c;
+  --ifm-background-surface-color: #1d1b13;
+  --docusaurus-highlighted-code-line-bg: rgba(220, 188, 51, 0.12);
 }
 
 /* Tables carry most of the reference content here — make them breathe and
@@ -97,3 +99,19 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Legal notice and release gate (src/clientModules/siteChrome.ts), in the website's survey look: a night slip with
+   the signal edge, and for the block a card dropping from the top with the page inert behind it. */
+.lc-legal-bar, .lc-release-note { position: fixed; z-index: 400; left: 1rem; right: 1rem; max-width: 44rem; margin-inline: auto; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding: .85rem 1rem; background: #13120d; color: #f4f1e6; border-left: .45rem solid #dcbc33; font-size: .88rem; }
+.lc-legal-bar { bottom: 1rem; }
+.lc-release-note { top: .75rem; }
+.lc-legal-bar p, .lc-release-note p { margin: 0; flex: 1 1 18rem; }
+.lc-legal-bar a { color: inherit; }
+.lc-legal-bar button, .lc-release-note button, .lc-release-card button { min-height: 2.75rem; padding: 0 1rem; border: 1px solid #f4f1e6; background: none; color: inherit; font-weight: 700; cursor: pointer; }
+.lc-release-note div { display: flex; gap: .5rem; }
+.lc-legal-bar button, .lc-release-go { background: #dcbc33 !important; color: #13120d !important; border-color: #dcbc33 !important; }
+.lc-release-gate { position: fixed; z-index: 500; inset: 0; display: grid; place-items: start center; padding: 0 1rem 1rem; background: rgb(246 244 237 / .7); backdrop-filter: blur(3px); }
+.lc-release-card { width: min(100%, 34rem); background: #fffdf6; color: #13120d; border: 2px solid #13120d; border-top: 0; box-shadow: .6rem .6rem 0 #13120d; padding: 0 1.25rem 1.5rem; }
+.lc-release-head { margin: 0 -1.25rem 1.25rem; padding: .9rem 1.25rem; background: #13120d; color: #dcbc33; font: 700 .68rem/1.2 var(--ifm-font-family-monospace); letter-spacing: .07em; }
+.lc-release-card h2 { font-size: clamp(2rem, 6vw, 2.6rem); }
+.lc-release-fine { font: .75rem/1.4 var(--ifm-font-family-monospace); color: #4a483f; }

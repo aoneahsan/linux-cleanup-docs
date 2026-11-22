@@ -1,12 +1,12 @@
 ---
 sidebar_position: 4
 title: linux-cleanup and Sweeper
-description: How linux-cleanup and Sweeper differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and Sweeper differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and Sweeper
 
-*Last checked 2026-11-10 against <a href="https://apps.kde.org/en-gb/sweeper/" target="_blank" rel="noopener noreferrer nofollow">Sweeper’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://apps.kde.org/en-gb/sweeper/" target="_blank" rel="noopener noreferrer nofollow">Sweeper’s own page</a>.*
 
 **What it is:** A KDE utility for clearing cookies, caches and other user traces.
 

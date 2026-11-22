@@ -1,12 +1,12 @@
 ---
 sidebar_position: 7
 title: linux-cleanup and TuxCleaner
-description: How linux-cleanup and TuxCleaner differ, from their own pages, checked 2026-11-14.
+description: How linux-cleanup and TuxCleaner differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and TuxCleaner
 
-*Last checked 2026-11-14 against <a href="https://github.com/debba/tuxcleaner" target="_blank" rel="noopener noreferrer nofollow">TuxCleaner’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://github.com/debba/tuxcleaner" target="_blank" rel="noopener noreferrer nofollow">TuxCleaner’s own page</a>.*
 
 **What it is:** A Linux CLI for cleanup, app uninstall, disk analysis and status.
 
@@ -15,7 +15,7 @@ description: How linux-cleanup and TuxCleaner differ, from their own pages, chec
 | | linux-cleanup | TuxCleaner |
 |---|---|---|
 | Command-line interface | Yes | Yes (<a href="https://github.com/debba/tuxcleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
-| Preview before deletion | Yes | Not stated on the pages we checked |
+| Preview before deletion | Yes | Yes (<a href="https://github.com/debba/tuxcleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Dry run | Yes | Yes (<a href="https://github.com/debba/tuxcleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Cache cleanup | Yes | Yes (<a href="https://github.com/debba/tuxcleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Duplicate-file finding | Partly | Not stated on the pages we checked |

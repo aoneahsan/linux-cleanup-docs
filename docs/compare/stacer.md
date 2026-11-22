@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 title: linux-cleanup and Stacer
-description: How linux-cleanup and Stacer differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and Stacer differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and Stacer
 
-*Last checked 2026-11-10 against <a href="https://stacer.quentium.fr/" target="_blank" rel="noopener noreferrer nofollow">Stacer’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://stacer.quentium.fr/" target="_blank" rel="noopener noreferrer nofollow">Stacer’s own page</a>.*
 
 **What it is:** A Linux system monitor and optimizer with a system cleaner.
 

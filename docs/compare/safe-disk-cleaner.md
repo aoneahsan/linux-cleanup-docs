@@ -1,12 +1,12 @@
 ---
 sidebar_position: 11
 title: linux-cleanup and Safe Disk Cleaner
-description: How linux-cleanup and Safe Disk Cleaner differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and Safe Disk Cleaner differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and Safe Disk Cleaner
 
-*Last checked 2026-11-10 against <a href="https://github.com/cyb3rl00m/safe-disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">Safe Disk Cleaner’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://github.com/cyb3rl00m/safe-disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">Safe Disk Cleaner’s own page</a>.*
 
 **What it is:** A GTK 4 app that explains disk categories and asks before deletion.
 
@@ -17,7 +17,7 @@ description: How linux-cleanup and Safe Disk Cleaner differ, from their own page
 | Command-line interface | Yes | Not stated on the pages we checked |
 | Preview before deletion | Yes | Yes (<a href="https://github.com/cyb3rl00m/safe-disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Dry run | Yes | Not stated on the pages we checked |
-| Cache cleanup | Yes | Not stated on the pages we checked |
+| Cache cleanup | Yes | Yes (<a href="https://github.com/cyb3rl00m/safe-disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Duplicate-file finding | Partly | Not stated on the pages we checked |
 
 ## Who is better served by Safe Disk Cleaner

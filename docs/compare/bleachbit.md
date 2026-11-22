@@ -1,16 +1,16 @@
 ---
 sidebar_position: 2
 title: linux-cleanup and BleachBit
-description: How linux-cleanup and BleachBit differ, from their own pages, checked 2026-11-14.
+description: How linux-cleanup and BleachBit differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and BleachBit
 
-*Last checked 2026-11-14 against <a href="https://www.bleachbit.org/features" target="_blank" rel="noopener noreferrer nofollow">BleachBit’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://www.bleachbit.org/features" target="_blank" rel="noopener noreferrer nofollow">BleachBit’s own page</a>.*
 
 **What it is:** An open-source cleaner for disk space and privacy, with a graphical preview and CLI.
 
-**Price there:** Free: free (<a href="https://www.bleachbit.org/features" target="_blank" rel="noopener noreferrer nofollow">source</a>, checked 2026-11-10). **Here:** the CLI is free under the MIT License; the desktop app's plans are on the [pricing page](https://linux-cleanup.aoneahsan.com/pricing).
+**Price there:** Free: free (<a href="https://www.bleachbit.org/features" target="_blank" rel="noopener noreferrer nofollow">source</a>, checked 2026-11-22). **Here:** the CLI is free under the MIT License; the desktop app's plans are on the [pricing page](https://linux-cleanup.aoneahsan.com/pricing).
 
 | | linux-cleanup | BleachBit |
 |---|---|---|

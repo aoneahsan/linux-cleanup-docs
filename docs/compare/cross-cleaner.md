@@ -1,23 +1,23 @@
 ---
 sidebar_position: 5
 title: linux-cleanup and Cross Cleaner
-description: How linux-cleanup and Cross Cleaner differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and Cross Cleaner differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and Cross Cleaner
 
-*Last checked 2026-11-10 against <a href="https://cross-cleaner.github.io/" target="_blank" rel="noopener noreferrer nofollow">Cross Cleaner’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://cross-cleaner.github.io/" target="_blank" rel="noopener noreferrer nofollow">Cross Cleaner’s own page</a>.*
 
 **What it is:** A cross-platform cleaner with window, terminal and command-line editions.
 
-**Price there:** Free: free (<a href="https://cross-cleaner.github.io/" target="_blank" rel="noopener noreferrer nofollow">source</a>, checked 2026-11-10). **Here:** the CLI is free under the MIT License; the desktop app's plans are on the [pricing page](https://linux-cleanup.aoneahsan.com/pricing).
+**Price there:** Free: free (<a href="https://cross-cleaner.github.io/" target="_blank" rel="noopener noreferrer nofollow">source</a>, checked 2026-11-22). **Here:** the CLI is free under the MIT License; the desktop app's plans are on the [pricing page](https://linux-cleanup.aoneahsan.com/pricing).
 
 | | linux-cleanup | Cross Cleaner |
 |---|---|---|
 | Command-line interface | Yes | Yes (<a href="https://cross-cleaner.github.io/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Preview before deletion | Yes | Not stated on the pages we checked |
-| Dry run | Yes | Not stated on the pages we checked |
-| Cache cleanup | Yes | Not stated on the pages we checked |
+| Dry run | Yes | Yes (<a href="https://cross-cleaner.github.io/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
+| Cache cleanup | Yes | Yes (<a href="https://cross-cleaner.github.io/" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Duplicate-file finding | Partly | Not stated on the pages we checked |
 
 ## Who is better served by Cross Cleaner

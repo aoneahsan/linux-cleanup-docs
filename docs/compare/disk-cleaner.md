@@ -1,12 +1,12 @@
 ---
 sidebar_position: 9
 title: linux-cleanup and Disk Cleaner
-description: How linux-cleanup and Disk Cleaner differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and Disk Cleaner differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and Disk Cleaner
 
-*Last checked 2026-11-10 against <a href="https://github.com/codechu/disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">Disk Cleaner’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://github.com/codechu/disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">Disk Cleaner’s own page</a>.*
 
 **What it is:** A Linux GTK cleaner with disk visualizations and suggested cleanup tasks.
 
@@ -14,9 +14,9 @@ description: How linux-cleanup and Disk Cleaner differ, from their own pages, ch
 
 | | linux-cleanup | Disk Cleaner |
 |---|---|---|
-| Command-line interface | Yes | Not stated on the pages we checked |
+| Command-line interface | Yes | Yes (<a href="https://github.com/codechu/disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Preview before deletion | Yes | Not stated on the pages we checked |
-| Dry run | Yes | Not stated on the pages we checked |
+| Dry run | Yes | Yes (<a href="https://github.com/codechu/disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Cache cleanup | Yes | Yes (<a href="https://github.com/codechu/disk-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Duplicate-file finding | Partly | Not stated on the pages we checked |
 

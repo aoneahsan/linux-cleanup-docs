@@ -1,12 +1,12 @@
 ---
 sidebar_position: 8
 title: linux-cleanup and Ubuntu Cleaner
-description: How linux-cleanup and Ubuntu Cleaner differ, from their own pages, checked 2026-11-10.
+description: How linux-cleanup and Ubuntu Cleaner differ, from their own pages, checked 2026-11-22.
 ---
 
 # linux-cleanup and Ubuntu Cleaner
 
-*Last checked 2026-11-10 against <a href="https://github.com/basantmandal/ubuntu-cleaner" target="_blank" rel="noopener noreferrer nofollow">Ubuntu Cleaner’s own page</a>.*
+*Last checked 2026-11-22 against <a href="https://github.com/basantmandal/ubuntu-cleaner" target="_blank" rel="noopener noreferrer nofollow">Ubuntu Cleaner’s own page</a>.*
 
 **What it is:** A Bash cleaner for Ubuntu, Debian and Linux Mint with package and developer-cache maintenance.
 
@@ -14,9 +14,9 @@ description: How linux-cleanup and Ubuntu Cleaner differ, from their own pages, 
 
 | | linux-cleanup | Ubuntu Cleaner |
 |---|---|---|
-| Command-line interface | Yes | Not stated on the pages we checked |
-| Preview before deletion | Yes | Not stated on the pages we checked |
-| Dry run | Yes | Not stated on the pages we checked |
+| Command-line interface | Yes | Yes (<a href="https://github.com/basantmandal/ubuntu-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
+| Preview before deletion | Yes | Yes (<a href="https://github.com/basantmandal/ubuntu-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
+| Dry run | Yes | Yes (<a href="https://github.com/basantmandal/ubuntu-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Cache cleanup | Yes | Yes (<a href="https://github.com/basantmandal/ubuntu-cleaner" target="_blank" rel="noopener noreferrer nofollow">source</a>) |
 | Duplicate-file finding | Partly | Not stated on the pages we checked |
 

@@ -1,6 +1,6 @@
 {
   "name": "linux-cleanup-docs",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Public documentation site for linux-cleanup, a Bash CLI that reclaims disk space on Linux by deleting regenerable caches behind allowlist, staleness, and confirmation guards. Built with Docusaurus, deployed to GitHub Pages.",
   "author": {
@@ -24,7 +24,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start --port 5968 --host 0.0.0.0",
-    "build": "NODE_OPTIONS=--no-experimental-webstorage docusaurus build",
+    "build": "NODE_OPTIONS=--no-experimental-webstorage docusaurus build && cp build/feed/rss.xml build/feed.xml",
     "swizzle": "docusaurus swizzle",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve --port 5969",
@@ -40,10 +40,12 @@
     "@docusaurus/theme-mermaid": "^3.10.2",
     "@easyops-cn/docusaurus-search-local": "^0.55.3",
     "@mdx-js/react": "^3.1.1",
+    "@supabase/realtime-js": "^2.119.2",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "strata-storage": "^3.1.4"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.2",

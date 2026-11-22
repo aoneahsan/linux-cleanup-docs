@@ -3737,6 +3737,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@supabase/phoenix@npm:0.4.5":
+  version: 0.4.5
+  resolution: "@supabase/phoenix@npm:0.4.5"
+  checksum: 10c0/33be3994c870eb3a5f89d3bf6d57783a14f49f710b15e852f85c9750b45f3db5a637b30f7046474fa88f40cce50620e3bce18a27d9819ae16be792776bbfeb9c
+  languageName: node
+  linkType: hard
+
+"@supabase/realtime-js@npm:^2.119.2":
+  version: 2.119.2
+  resolution: "@supabase/realtime-js@npm:2.119.2"
+  dependencies:
+    "@supabase/phoenix": "npm:0.4.5"
+    tslib: "npm:2.8.1"
+  checksum: 10c0/db5115a1719f987bd63a62f9e4c440b1960c99ac57f1b9fe53b4f0e05c3ada7c8c26f3b029bfbf732fc943bc539c734f981185453dc00e7c6fdf71f8d1372aa1
+  languageName: node
+  linkType: hard
+
 "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0":
   version: 8.0.0
   resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0"
@@ -9113,11 +9130,13 @@ __metadata:
     "@docusaurus/types": "npm:^3.10.2"
     "@easyops-cn/docusaurus-search-local": "npm:^0.55.3"
     "@mdx-js/react": "npm:^3.1.1"
+    "@supabase/realtime-js": "npm:^2.119.2"
     "@types/react": "npm:^19.3.0"
     clsx: "npm:^2.1.1"
     prism-react-renderer: "npm:^2.4.1"
     react: "npm:^19.3.1"
     react-dom: "npm:^19.3.1"
+    strata-storage: "npm:^3.1.4"
     typescript: "npm:~7.0.2"
   languageName: unknown
   linkType: soft
@@ -12978,6 +12997,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"strata-storage@npm:^3.1.4":
+  version: 3.1.7
+  resolution: "strata-storage@npm:3.1.7"
+  peerDependencies:
+    "@angular/core": ">=21.0.6"
+    "@angular/forms": ">=21.0.6"
+    "@capacitor/core": ">=8.0.0"
+    firebase: ">=10.0.0"
+    react: ">=19.2.3"
+    vue: ">=3.5.26"
+  peerDependenciesMeta:
+    "@angular/core":
+      optional: true
+    "@angular/forms":
+      optional: true
+    "@capacitor/core":
+      optional: true
+    firebase:
+      optional: true
+    react:
+      optional: true
+    vue:
+      optional: true
+  bin:
+    strata-storage: bin/cli.js
+  checksum: 10c0/11fd49358204e667eef3997a04f7527d0d55b4010afa8991e58f8d4a4dc743726f05c2be785ea7f82ea1553d766a632cac33e4aaaca8ca849ad91d6d330c527c
+  languageName: node
+  linkType: hard
+
 "string-width@npm:^4.1.0, string-width@npm:^4.2.0":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
@@ -13351,17 +13399,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.8.1, tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.4.0, tslib@npm:^2.6.0, tslib@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.9.3":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: 10c0/69ae09c49eea644bc5ebe1bca4fa4cc2c82b7b3e02f43b84bd891504edf66dbc6b2ec0eef31a957042de2269139e4acff911e6d186a258fb14069cd7f6febce2
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.4.0, tslib@npm:^2.6.0, tslib@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "tslib@npm:2.8.1"
-  checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
   languageName: node
   linkType: hard
 
