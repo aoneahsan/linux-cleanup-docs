@@ -4,11 +4,35 @@
         <title>linux-cleanup release notes</title>
         <link>https://linux-cleanup-docs.aoneahsan.com/feed</link>
         <description>Every linux-cleanup release, command line and desktop app.</description>
-        <lastBuildDate>Sat, 21 Nov 2026 14:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 09:40:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en-GB</language>
         <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[Desktop 1.0.2]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.2</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.2</guid>
+            <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
+            <description><![CDATA[Clearer wording on the Updates screen and a working check command on the errors screen.]]></description>
+            <content:encoded><![CDATA[<p>Clearer wording on the Updates screen, and the errors screen now copies a command that works:
+<code>npx -y linux-cleanup --self-test</code>. The app updates itself.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[Desktop 1.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.1</guid>
+            <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
+            <description><![CDATA[Error reports with no paths or file names, a walkthrough with real screens, a Get linux-cleanup page and steadier page tours.]]></description>
+            <content:encoded><![CDATA[<p>Error reports reach us without paths or file names, the walkthrough shows real screens, and Help has a Get
+linux-cleanup page listing every place it runs.</p>
+<p>Page tours keep each step in view as you move through them. The app updated itself from 1.0.0. See
+<a class="" href="https://linux-cleanup-docs.aoneahsan.com/desktop/install">installing the desktop app</a>.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[Desktop 1.0.0]]></title>
             <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.0</link>
