@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>linux-cleanup release notes</title>
+        <link>https://linux-cleanup-docs.aoneahsan.com/feed</link>
+        <description>Every linux-cleanup release, command line and desktop app.</description>
+        <lastBuildDate>Sat, 21 Nov 2026 14:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en-GB</language>
+        <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[Desktop 1.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.0</guid>
+            <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[The first desktop release, an AppImage and .deb for x86_64 Linux bundling CLI 2.1.0.]]></description>
+            <content:encoded><![CDATA[<p>The first desktop release: the all-safe cleanup in a window, with a dry run before every real run and a receipt
+after it.</p>
+<p>AppImage and .deb for x86_64 Linux, bundling CLI 2.1.0. It updates itself from signed releases. Start with
+<a class="" href="https://linux-cleanup-docs.aoneahsan.com/desktop/install">installing the desktop app</a>.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.1.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.0</guid>
+            <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[--json-events streams local, versioned JSON events for --scan and non-interactive all-safe runs, dry runs included.]]></description>
+            <content:encoded><![CDATA[<p><code>--json-events</code> streams local, versioned JSON events for <code>--scan</code> and non-interactive <code>--all-safe --yes</code>.</p>
+<p>Adding <code>--dry-run</code> to all-safe reports proposed paths without deleting them. The stream can contain full local
+paths, so keep it on the machine. The <a class="" href="https://linux-cleanup-docs.aoneahsan.com/reference/json-events">JSON events reference</a> and the <a class="" href="https://linux-cleanup-docs.aoneahsan.com/changelog">changelog</a>
+have the details.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.1</guid>
+            <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
+            <description><![CDATA[The README lists every place linux-cleanup is released. No change to what the script does.]]></description>
+            <content:encoded><![CDATA[<p>The README lists every place linux-cleanup is released. No change to what the script does.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.0</guid>
+            <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[linux-cleanup 2.0.0 adds --dry-run, a release-record check on start and --refresh-app.]]></description>
+            <content:encoded><![CDATA[<p>Added <code>--dry-run</code>, a public release-record check on start, and <code>--refresh-app</code> for the persistent CLI copy.</p>
+<p>Normal release notices allow the first run and block from the next start; urgent notices block an older copy at
+once. Offline runs continue. A dry run does not remove cleanup targets or change settings, though it may write a
+local log and update-check state. Read the <a class="" href="https://linux-cleanup-docs.aoneahsan.com/changelog">changelog</a> for the full entry.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>
