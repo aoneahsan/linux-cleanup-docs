@@ -2,7 +2,7 @@
  * Every place linux-cleanup is released — the ONLY place a store or surface URL lives in this docs site
  * (standard aoneahsan-cccs-platform-links). Each surface passed its release proof on `verified`:
  * `npm view linux-cleanup` answers 2.1.1, the website and this site answered 200, and the desktop release
- * `desktop-v1.0.3` serves its AppImage and .deb (200, 2026-11-22). The desktop entry opens the website's download
+ * `desktop-v1.0.4` serves its AppImage and .deb (200, 2026-11-22). The desktop entry opens the website's download
  * page, which names the published version's files.
  */
 export type PlatformId = 'npm' | 'desktop' | 'web' | 'docs';

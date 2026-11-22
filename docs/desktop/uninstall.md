@@ -21,7 +21,7 @@ systemctl --user daemon-reload
 
 | Installed as | Remove with |
 |---|---|
-| AppImage | Delete the `.AppImage` file |
+| AppImage | Delete the `.AppImage` file, then its menu entry: `rm ~/.local/share/applications/linux-cleanup-desktop.desktop ~/.local/share/icons/hicolor/*/apps/linux-cleanup-desktop.png` |
 | `.deb` | `sudo apt remove linux-cleanup` |
 
 ## What stays behind

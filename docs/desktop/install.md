@@ -20,6 +20,11 @@ chmod +x linux-cleanup_*_amd64.AppImage
 ./linux-cleanup_*_amd64.AppImage
 ```
 
+From version 1.0.4, the AppImage adds itself to your applications menu the first time it runs: it writes
+`~/.local/share/applications/linux-cleanup-desktop.desktop` and its icon under `~/.local/share/icons/hicolor/`,
+and points the entry at wherever the file is. If you move the AppImage, run it once from the new place and the
+entry follows. The `.deb` installs its own menu entry.
+
 The desktop app needs WebKitGTK 4.1 and GTK 3, which current desktop distributions ship. The `.deb`
 declares them as dependencies.
 
