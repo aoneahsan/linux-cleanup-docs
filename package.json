@@ -1,6 +1,6 @@
 {
   "name": "linux-cleanup-docs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Public documentation site for linux-cleanup, a Bash CLI that reclaims disk space on Linux by deleting regenerable caches behind allowlist, staleness, and confirmation guards. Built with Docusaurus, deployed to GitHub Pages.",
   "author": {
@@ -45,7 +45,7 @@
     "prism-react-renderer": "^2.4.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "strata-storage": "^3.1.4"
+    "strata-storage": "^3.1.7"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.2",

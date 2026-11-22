@@ -52,8 +52,8 @@ jq 'keys' "$(ls -t ~/.linux-cleanup/reports/report-*.json | head -1)"
 ```json
 {
   "tool": "linux-cleanup",
-  "tool_version": "2.1.0",
-  "tool_homepage": "https://aoneahsan.com",
+  "tool_version": "2.1.1",
+  "tool_homepage": "https://linux-cleanup.aoneahsan.com",
   "tool_license": "MIT",
   "author": {
     "name": "Ahsan Mahmood",

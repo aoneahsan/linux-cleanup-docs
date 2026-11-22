@@ -2,12 +2,12 @@
 
 <!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
 
-**Production project since 2026-11-10.** The site describes CLI 2.1.0 (published 2026-11-21) and the desktop app; the 2.x rewrite passed
+**Production project since 2026-11-10.** The site describes CLI 2.1.1 (published 2026-11-22) and the desktop app; the 2.x rewrite passed
 GATE 4 on 2026-11-21. A new claim follows the published CLI and desktop release only, never unreleased code.
 
 **Mirror of `AGENTS.md`** — byte-identical except the header names. Change one, change both.
 
-**Last Updated:** 2026-11-21
+**Last Updated:** 2026-11-22
 
 | Context Budget Last Verified | 2026-10-14; next routine pass 2026-11-13. See the workspace context tracker for coverage and byte counts. |
 |---|---|
@@ -94,7 +94,7 @@ These were checked against source 2.1.0 during TASK-001. Re-check before changin
 | **`~/Downloads` is NOT protected** | Deliberately — cleaning it is a feature. Guard 3 covers it instead |
 | **Refusal string** | `✗ REFUSE: protected path: <path>` |
 | **Release check** | The CLI fetches a public release record on start when online. It does not upload paths or reports. |
-| **Current npm release** | 2.1.0 on 2026-11-21. Re-query before a newer release claim. |
+| **Current npm release** | 2.1.1 on 2026-11-22. Re-query before a newer release claim. |
 
 ## Never
 

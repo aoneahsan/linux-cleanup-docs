@@ -9136,7 +9136,7 @@ __metadata:
     prism-react-renderer: "npm:^2.4.1"
     react: "npm:^19.3.1"
     react-dom: "npm:^19.3.1"
-    strata-storage: "npm:^3.1.4"
+    strata-storage: "npm:^3.1.7"
     typescript: "npm:~7.0.2"
   languageName: unknown
   linkType: soft
@@ -12997,7 +12997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strata-storage@npm:^3.1.4":
+"strata-storage@npm:^3.1.7":
   version: 3.1.7
   resolution: "strata-storage@npm:3.1.7"
   peerDependencies:

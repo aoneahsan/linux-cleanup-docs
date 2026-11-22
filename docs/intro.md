@@ -28,7 +28,7 @@ Read **[What it deletes](./safety/what-it-deletes.md)** and run
 
 | | |
 |---|---|
-| **Package version** | 2.1.0 in the current source; check `linux-cleanup --version` for the installed copy |
+| **Package version** | 2.1.1 on npm (2026-11-22); check `linux-cleanup --version` for the installed copy |
 | **Platform** | Linux only — `bash` ≥ 4 and GNU coreutils |
 | **License** | [MIT](https://github.com/aoneahsan/linux-cleanup/blob/main/LICENSE) — since 1.4.0 |
 | **Network access** | One public release-record request on start when online; installing or updating also uses npm or GitHub |

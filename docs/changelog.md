@@ -14,6 +14,13 @@ Check the [npm package](https://www.npmjs.com/package/linux-cleanup) for the cur
 The [source changelog](https://github.com/aoneahsan/linux-cleanup/blob/main/CHANGELOG.md) carries the
 complete record. The entries below explain changes that affect the cleanup decision.
 
+## 2.1.1 — 2026-11-22
+
+`--help`, `--version`, the menu's About box and the feedback screen list the website, this manual and the
+desktop app's download page. The run report's `credits.tool_homepage` is now the product website. The About
+box no longer says the script makes no network calls: it reads the public release record once at start. No
+change to what any mode removes.
+
 ## 2.1.0 — 2026-11-21
 
 `--json-events` streams local, versioned JSON events for `--scan` and non-interactive `--all-safe --yes`.
