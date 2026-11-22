@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunklinux_cleanup_docs||=[]).push([[165],{80235(e){e.exports=JSON.parse('{"metadata":{"permalink":"/feed","page":1,"postsPerPage":8,"totalPages":1,"totalCount":8,"blogDescription":"Every linux-cleanup release, command line and desktop app, newest first.","blogTitle":"Release notes"}}')}}]);

@@ -4,11 +4,23 @@
         <title>linux-cleanup release notes</title>
         <link>https://linux-cleanup-docs.aoneahsan.com/feed</link>
         <description>Every linux-cleanup release, command line and desktop app.</description>
-        <lastBuildDate>Sun, 22 Nov 2026 12:16:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 14:45:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en-GB</language>
         <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[Desktop 1.0.4]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.4</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.4</guid>
+            <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
+            <description><![CDATA[The AppImage adds itself to the applications menu, and the window shows the linux-cleanup icon.]]></description>
+            <content:encoded><![CDATA[<p>The AppImage now adds itself to your applications menu, with its icon, the first time it runs, and keeps that
+entry pointing at wherever the file lives. The open window and the dock show the linux-cleanup icon instead of a
+blank one. The .deb already did this. Nothing changed in what the app cleans. The app updates itself.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[Desktop 1.0.3]]></title>
             <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.3</link>
