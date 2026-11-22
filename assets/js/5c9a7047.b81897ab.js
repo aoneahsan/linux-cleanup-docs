@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunklinux_cleanup_docs||=[]).push([[6543],{8677(e){e.exports=JSON.parse('{"tags":[{"label":"desktop","permalink":"/feed/tags/desktop","count":3},{"label":"release","permalink":"/feed/tags/release","count":6},{"label":"cli","permalink":"/feed/tags/cli","count":3}]}')}}]);

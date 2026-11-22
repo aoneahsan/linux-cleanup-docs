@@ -4,11 +4,34 @@
         <title>linux-cleanup release notes</title>
         <link>https://linux-cleanup-docs.aoneahsan.com/feed</link>
         <description>Every linux-cleanup release, command line and desktop app.</description>
-        <lastBuildDate>Sun, 22 Nov 2026 09:40:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 17:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en-GB</language>
         <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[Desktop 1.0.3]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.3</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.3</guid>
+            <pubDate>Sun, 22 Nov 2026 17:30:00 GMT</pubDate>
+            <description><![CDATA[Ships with the command line 2.1.1 and current libraries.]]></description>
+            <content:encoded><![CDATA[<p>The app now ships with the command line 2.1.1 and current libraries. Nothing changed in what it cleans. The app
+updates itself.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.1.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.1</guid>
+            <pubDate>Sun, 22 Nov 2026 17:00:00 GMT</pubDate>
+            <description><![CDATA[The help, version and About screens point to the website, this manual and the desktop download.]]></description>
+            <content:encoded><![CDATA[<p><code>--help</code>, <code>--version</code> and the menu's About box now point to the website, this manual and the desktop app's
+download page. The About box also says plainly that the script reads the public release record once at start.
+Nothing changed in what any mode removes. Run it with <code>npx -y linux-cleanup@2.1.1 --version</code>.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[Desktop 1.0.2]]></title>
             <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.2</link>
