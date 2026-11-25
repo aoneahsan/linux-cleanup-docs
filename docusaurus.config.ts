@@ -1,5 +1,7 @@
+import { readdirSync, readFileSync } from 'node:fs';
+import path from 'node:path';
 import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
+import type { Config, LoadContext, Plugin } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { OTHER_PLATFORMS } from './src/data/platforms';
 
@@ -30,6 +32,25 @@ try {
 const gaMeasurementId = process.env.GA_MEASUREMENT_ID?.trim();
 const DOCS_VERSION = (require('./package.json') as { version: string }).version;
 
+/**
+ * Docusaurus ships this config and every route module path to the browser, so a require.resolve() entry or any
+ * other absolute path would publish this machine's folders in main.js. This plugin fails the build when one appears.
+ */
+function noLocalPaths({ siteDir }: LoadContext): Plugin {
+  return {
+    name: 'no-local-paths',
+    postBuild({ outDir }) {
+      const jsDir = path.join(outDir, 'assets', 'js');
+      const forms = [siteDir.split(path.sep).join('/'), siteDir.split(path.sep).join('\\\\')];
+      for (const file of readdirSync(jsDir).filter((name) => name.endsWith('.js'))) {
+        const text = readFileSync(path.join(jsDir, file), 'utf8');
+        const found = forms.find((form) => text.includes(form));
+        if (found) throw new Error(`${file} carries the local path ${found}: name plugins by package and client modules by relative path`);
+      }
+    },
+  };
+}
+
 const config: Config = {
   // Update flow layer 2 and the legal notice (src/clientModules/siteChrome.ts) read these at runtime.
   customFields: {
@@ -38,7 +59,9 @@ const config: Config = {
     releaseKey: process.env.SUPABASE_PUBLISHABLE_KEY?.trim() ?? '',
     releaseChannel: process.env.RELEASE_CHANNEL?.trim() === 'test' ? 'test' : 'production',
   },
-  clientModules: [require.resolve('./src/clientModules/siteChrome.ts')],
+  // Relative to the site folder, never require.resolve(): a resolved path would ship this machine's folders.
+  clientModules: ['./src/clientModules/siteChrome.ts'],
+  plugins: [noLocalPaths],
   title: 'linux-cleanup',
   tagline:
     'Preview Linux cleanup paths before permanent removal.',
@@ -176,8 +199,8 @@ const config: Config = {
     '@docusaurus/theme-mermaid',
     [
       // Offline/local search — no third-party service, no API key, nothing to
-      // leak from a public repo.
-      require.resolve('@easyops-cn/docusaurus-search-local'),
+      // leak from a public repo. Named by package, never require.resolve().
+      '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
         indexDocs: true,
