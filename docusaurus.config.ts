@@ -4,6 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config, LoadContext, Plugin } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { OTHER_PLATFORMS } from './src/data/platforms';
+import rehypeLinkLaw from './src/data/linkLaw';
 
 // ---------------------------------------------------------------------------
 // linux-cleanup — Documentation site config
@@ -188,6 +189,8 @@ const config: Config = {
   },
 
   trailingSlash: false,
+  // The banner script embeds an unfollowable third-party link in every page; the site has one fixed baseUrl.
+  baseUrlIssueBanner: false,
 
   markdown: {
     mermaid: true,
@@ -235,12 +238,14 @@ const config: Config = {
           editUrl: 'https://github.com/aoneahsan/linux-cleanup-docs/edit/main/',
           showLastUpdateTime: true,
           breadcrumbs: true,
+          rehypePlugins: [rehypeLinkLaw],
         },
         // Release notes: the docs site's /feed page and its RSS (copied to /feed.xml by the plugin below).
         blog: {
           routeBasePath: 'feed',
           path: 'blog',
           blogTitle: 'Release notes',
+          rehypePlugins: [rehypeLinkLaw],
           blogDescription: 'Every linux-cleanup release, command line and desktop app, newest first.',
           blogSidebarTitle: 'Releases',
           blogSidebarCount: 'ALL',
