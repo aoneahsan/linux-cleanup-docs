@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Notas de versão",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Cada versão do linux-cleanup, linha de comando e aplicativo para desktop, da mais nova para a mais antiga.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Versões",
+    "description": "The label for the left sidebar"
+  }
+}

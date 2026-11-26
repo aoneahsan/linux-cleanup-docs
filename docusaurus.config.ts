@@ -1,3 +1,4 @@
+import { execFileSync } from 'node:child_process';
 import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { themes as prismThemes } from 'prism-react-renderer';
@@ -5,6 +6,10 @@ import type { Config, LoadContext, Plugin } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { OTHER_PLATFORMS } from './src/data/platforms';
 import rehypeLinkLaw from './src/data/linkLaw';
+import OWNER from './src/data/owner-profile.json';
+import { LOCALES } from './src/data/locales';
+import ecosystemPages from './src/plugins/ecosystem';
+import { missingPages } from './src/data/localeReady';
 
 // ---------------------------------------------------------------------------
 // linux-cleanup — Documentation site config
@@ -21,7 +26,9 @@ import rehypeLinkLaw from './src/data/linkLaw';
 // ---------------------------------------------------------------------------
 
 const SITE_URL = 'https://linux-cleanup-docs.aoneahsan.com';
-const TOOL_VERSION = '2.1.0';
+/** The published CLI version, read from npm at build time; the build stops rather than print a guessed one. */
+const CLI_VERSION = execFileSync('npm', ['view', 'linux-cleanup', 'version'], { encoding: 'utf8' }).trim();
+if (!/^\d+\.\d+\.\d+$/.test(CLI_VERSION)) throw new Error(`npm answered "${CLI_VERSION}" for the linux-cleanup version`);
 
 // Build values come from a local, git-ignored `.env` (see `.env.example`); a clone with none still builds. Analytics
 // and the release gate are skipped when their keys are absent. Never inline a real key: this repository is public.
@@ -52,6 +59,14 @@ function noLocalPaths({ siteDir }: LoadContext): Plugin {
   };
 }
 
+/** The locales that ship: English, plus every locale whose pages are all translated. */
+const READY = LOCALES.filter((l) => {
+  if (l.code === 'en-GB') return true;
+  const missing = missingPages(__dirname, l.code);
+  if (missing.length) process.stdout.write(`i18n: ${l.code} not built yet, ${missing.length} page(s) untranslated (first: ${missing[0]})\n`);
+  return missing.length === 0;
+});
+
 const config: Config = {
   // Update flow layer 2 and the legal notice (src/clientModules/siteChrome.ts) read these at runtime.
   customFields: {
@@ -61,8 +76,8 @@ const config: Config = {
     releaseChannel: process.env.RELEASE_CHANNEL?.trim() === 'test' ? 'test' : 'production',
   },
   // Relative to the site folder, never require.resolve(): a resolved path would ship this machine's folders.
-  clientModules: ['./src/clientModules/siteChrome.ts'],
-  plugins: [noLocalPaths],
+  clientModules: ['./src/clientModules/siteChrome.ts', './src/clientModules/scriptFont.ts'],
+  plugins: [noLocalPaths, ecosystemPages],
   title: 'linux-cleanup',
   tagline:
     'Preview Linux cleanup paths before permanent removal.',
@@ -94,98 +109,78 @@ const config: Config = {
       tagName: 'meta',
       attributes: { name: 'theme-color', content: '#13120d' },
     },
+    { tagName: 'meta', attributes: { name: 'author', content: `${OWNER.person.name} (aoneahsan)` } },
+    { tagName: 'meta', attributes: { name: 'keywords', content: `linux cleanup, linux cache cleaner, disk space, dry run, ${OWNER.keywords}` } },
+    // The owner and Zaions as one entity on every surface (aoneahsan-cccs-seo-aeo-standard): the same @id values the
+    // website uses, so search engines join the two sites to one Person and one Organization.
     {
       tagName: 'script',
       attributes: { type: 'application/ld+json' },
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'WebSite',
-        name: 'linux-cleanup Documentation',
-        url: SITE_URL,
-        description:
-          'Documentation for linux-cleanup, a Bash command-line utility that reclaims disk space on Linux by deleting regenerable package-manager, browser and build caches behind allowlist, staleness and confirmation guards. Author: Ahsan Mahmood.',
-        inLanguage: 'en',
-        publisher: {
-          '@type': 'Person',
-          name: 'Ahsan Mahmood',
-          url: 'https://aoneahsan.com',
-          email: 'aoneahsan@gmail.com',
-          sameAs: [
-            'https://linkedin.com/in/aoneahsan',
-            'https://github.com/aoneahsan',
-            'https://www.npmjs.com/~aoneahsan',
-          ],
-        },
-        license: 'https://opensource.org/licenses/MIT',
-      }),
-    },
-    {
-      tagName: 'script',
-      attributes: { type: 'application/ld+json' },
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'SoftwareSourceCode',
-        name: 'linux-cleanup',
-        codeRepository: 'https://github.com/aoneahsan/linux-cleanup',
-        programmingLanguage: 'Shell',
-        runtimePlatform: 'Bash 4+ on Linux',
-        license: 'https://opensource.org/licenses/MIT',
-        author: {
-          '@type': 'Person',
-          name: 'Ahsan Mahmood',
-          url: 'https://aoneahsan.com',
-        },
-        description:
-          'Modular Bash cleanup utility for Linux. Prunes yarn/npm/pnpm/pip/composer caches, browser and Gradle caches, Cypress and Playwright binaries, Android emulator images, stale node_modules, partial downloads, and system journals — each behind a path allowlist, a staleness gate, and an interactive confirmation.',
-        keywords:
-          'linux, cleanup, disk-cleanup, cache-cleanup, disk-space, yarn-cache, npm-cache, node-modules, gradle, cypress, playwright, bash, cli',
-      }),
-    },
-    {
-      tagName: 'script',
-      attributes: { type: 'application/ld+json' },
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'SoftwareApplication',
-        name: 'linux-cleanup',
-        applicationCategory: 'DeveloperApplication',
-        operatingSystem: 'Linux (bash 4+)',
-        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-        url: 'https://www.npmjs.com/package/linux-cleanup',
-        author: {
-          '@type': 'Person',
-          name: 'Ahsan Mahmood',
-          url: 'https://aoneahsan.com',
-        },
-        description:
-          'Command-line disk and cache cleanup for Linux developers, with a guided walkthrough, read-only scan mode, JSON session reports, and a safety model built on path allowlists and staleness gates.',
-        softwareVersion: TOOL_VERSION,
-        license: 'https://opensource.org/licenses/MIT',
-      }),
-    },
-    {
-      tagName: 'script',
-      attributes: { type: 'application/ld+json' },
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: 'Ahsan Mahmood',
-        alternateName: 'aoneahsan',
-        url: 'https://aoneahsan.com',
-        email: 'aoneahsan@gmail.com',
-        sameAs: [
-          'https://linkedin.com/in/aoneahsan',
-          'https://github.com/aoneahsan',
-          'https://www.npmjs.com/~aoneahsan',
+        '@graph': [
+          {
+            '@type': 'Person',
+            '@id': 'https://aoneahsan.com/#person',
+            name: OWNER.person.name,
+            alternateName: OWNER.person.alternateName,
+            url: OWNER.person.url,
+            sameAs: OWNER.person.sameAs,
+            jobTitle: OWNER.person.jobTitle,
+            worksFor: { '@id': 'https://zaions.com/#organization' },
+          },
+          {
+            '@type': 'Organization',
+            '@id': 'https://zaions.com/#organization',
+            name: OWNER.organization.name,
+            alternateName: OWNER.organization.alternateName,
+            url: OWNER.organization.url,
+            founder: { '@id': 'https://aoneahsan.com/#person' },
+            sameAs: OWNER.organization.sameAs,
+          },
+          {
+            '@type': 'WebSite',
+            '@id': `${SITE_URL}/#website`,
+            name: 'linux-cleanup Documentation',
+            url: SITE_URL,
+            inLanguage: LOCALES.map((l) => l.htmlLang),
+            creator: { '@id': 'https://aoneahsan.com/#person' },
+            publisher: { '@id': 'https://zaions.com/#organization' },
+          },
+          {
+            '@type': 'SoftwareApplication',
+            name: 'linux-cleanup',
+            applicationCategory: 'UtilitiesApplication',
+            operatingSystem: 'Linux',
+            softwareVersion: CLI_VERSION,
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+            url: 'https://linux-cleanup.aoneahsan.com/',
+            downloadUrl: 'https://www.npmjs.com/package/linux-cleanup',
+            license: 'https://opensource.org/license/mit',
+            creator: { '@id': 'https://aoneahsan.com/#person' },
+            author: { '@id': 'https://aoneahsan.com/#person' },
+            publisher: { '@id': 'https://zaions.com/#organization' },
+          },
+          {
+            '@type': 'SoftwareSourceCode',
+            name: 'linux-cleanup',
+            codeRepository: 'https://github.com/aoneahsan/linux-cleanup',
+            programmingLanguage: 'Shell',
+            runtimePlatform: 'Bash 4+ on Linux',
+            license: 'https://opensource.org/license/mit',
+            author: { '@id': 'https://aoneahsan.com/#person' },
+          },
         ],
-        founder: { '@type': 'Person', name: 'Ahsan Mahmood' },
       }),
     },
   ],
 
+  // Ten locales; English stays at the root. Each locale is built only when every page of it is translated
+  // (the build fails on a missing page, see src/plugins/localeComplete.ts).
   i18n: {
     defaultLocale: 'en-GB',
-    locales: ['en-GB'],
+    locales: READY.map((l) => l.code),
+    localeConfigs: Object.fromEntries(READY.map((l) => [l.code, { label: l.label, direction: l.direction, htmlLang: l.htmlLang }])),
   },
 
   trailingSlash: false,
@@ -298,7 +293,6 @@ const config: Config = {
       { name: 'twitter:site', content: '@aoneahsan' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'linux-cleanup Docs' },
-      { property: 'og:locale', content: 'en_GB' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
       { property: 'article:author', content: 'Ahsan Mahmood' },
@@ -348,6 +342,7 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        { type: 'localeDropdown', position: 'right' },
       ],
     },
     footer: {
@@ -390,6 +385,8 @@ const config: Config = {
         {
           title: 'Built by Ahsan Mahmood',
           items: [
+            { label: 'About the developer', to: '/about-developer' },
+            { label: 'More from Zaions', to: '/ecosystem' },
             { label: 'aoneahsan.com', href: 'https://aoneahsan.com' },
             { label: 'LinkedIn', href: 'https://linkedin.com/in/aoneahsan' },
             { label: 'GitHub', href: 'https://github.com/aoneahsan' },
@@ -397,7 +394,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Ahsan Mahmood. Built with Docusaurus. linux-cleanup is MIT-licensed and provided without warranty — it deletes files.`,
+      copyright: `linux-cleanup — developed with love by the Zaions team · © ${new Date().getFullYear()} linux-cleanup · MIT-licensed and provided without warranty: it deletes files.`,
     },
     prism: {
       theme: prismThemes.github,

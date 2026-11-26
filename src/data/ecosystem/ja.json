@@ -1,0 +1,775 @@
+{
+  "ecosystem": {
+    "band": {
+      "title": "Zaions のほかの製品",
+      "lead": "linux-cleanup をつくるチームのほかのツールです。削除の前にパスを読む人の目線で、それぞれを紹介します。",
+      "seeAll": "Zaions のすべての製品を見る",
+      "visit": "{product} を開く",
+      "details": "詳細",
+      "pause": "製品カルーセルを一時停止",
+      "play": "製品カルーセルを再生",
+      "prev": "前の製品",
+      "next": "次の製品",
+      "slide": "{count} 件中 {index} 件目",
+      "eyebrow": "Zaions"
+    },
+    "page": {
+      "eyebrow": "ZAIONS の製品",
+      "h1": "棚に並ぶほかの製品。",
+      "intro_other": "同じチームの {count} 製品を、それぞれ何をするかの一行とともに紹介します。linux-cleanup は一覧にありません。いまご覧のサイトだからです。"
+    },
+    "view": {
+      "label": "表示",
+      "grid": "カード",
+      "list": "リスト",
+      "table": "表"
+    },
+    "table": {
+      "product": "製品",
+      "what": "できること",
+      "link": "リンク"
+    },
+    "detail": {
+      "back": "Zaions のすべての製品",
+      "facts": "製品自身のページをもとに、{date} 確認。"
+    },
+    "kind": {
+      "web-app": "ウェブアプリ",
+      "mobile-app": "Android アプリ",
+      "package": "npm パッケージ",
+      "desktop-app-cli": "デスクトップアプリ + CLI",
+      "browser-extension": "ブラウザー拡張機能",
+      "wordpress-plugin-saas": "WordPress プラグイン",
+      "saas-package": "サービス + npm パッケージ"
+    },
+    "footer": {
+      "credit": "linux-cleanup — Zaions チームが心を込めて開発",
+      "copyright": "© {year} linux-cleanup",
+      "aboutDeveloper": "開発者について",
+      "ecosystem": "Zaions のほかの製品"
+    },
+    "products": {
+      "achat": {
+        "card": "選んだ相手とメッセージ。電話番号は渡さない。",
+        "title": "AchatAI：番号を教えずに話す",
+        "intro": "AchatAI は、あなたが選んだ相手とやりとりするためのウェブと Android のメッセージアプリです。ユーザー名、招待リンク、QR コードで見つけてもらえます。",
+        "sections": [
+          {
+            "heading": "AchatAI は誰のため？",
+            "body": "ウェブや Android で、自分が選んだ相手とだけメッセージをしたい人のためのアプリです。"
+          },
+          {
+            "heading": "相手に電話番号は必要？",
+            "body": "いいえ。ユーザー名、招待リンク、QR コードのどれかで見つけてもらえます。"
+          },
+          {
+            "heading": "アカウントなしで話せる？",
+            "body": "はい。匿名ルームなら登録なしで開けます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "どちらも、思っているより少ししか外に出しません。linux-cleanup はファイルのパスをマシンに残し、AchatAI はあなたの番号を会話に出しません。"
+          }
+        ],
+        "facts": [
+          "achat-1",
+          "achat-2",
+          "achat-3"
+        ]
+      },
+      "callvault": {
+        "card": "通話の録音は、あなたが決めるまでスマホの中に。",
+        "title": "CallVault と録音の保存場所",
+        "intro": "CallVault は、スマホが提供する音声ソースを使って Android で通話を録音します。プライベートなクラウドバックアップをオンにしない限り、録音はそのスマホに残ります。",
+        "sections": [
+          {
+            "heading": "CallVault はどうやって録音する？",
+            "body": "Android スマホが通話用に提供している音声ソースを使います。"
+          },
+          {
+            "heading": "録音はどこに保存される？",
+            "body": "スマホの中です。プライベートなクラウドバックアップをオンにしたときだけ外に出ます。"
+          },
+          {
+            "heading": "録音で何ができる？",
+            "body": "再生、ライブラリ内の検索、メモの追加、書き出しができます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "データについての同じ原則です。移すと決めるまで、データはあなたのデバイスに残ります。"
+          }
+        ],
+        "facts": [
+          "callvault-1",
+          "callvault-2",
+          "callvault-3"
+        ]
+      },
+      "capacitor-auth-manager": {
+        "card": "Capacitor アプリに Google ログインを。Firebase には依存しない。",
+        "title": "Capacitor Auth Manager：Firebase に依存しない",
+        "intro": "Capacitor Auth Manager は、ウェブ、Android、iOS で使える Google ログインをひとつの呼び出しで提供する npm パッケージです。Firebase は持ち込みません。",
+        "sections": [
+          {
+            "heading": "このパッケージは何をする？",
+            "body": "Capacitor アプリに、ウェブ、Android、iOS で動く Google ログインの呼び出しをひとつ提供します。"
+          },
+          {
+            "heading": "Firebase は必要？",
+            "body": "いいえ。Firebase は依存関係に含まれません。"
+          },
+          {
+            "heading": "バージョン 3.x で有効なプロバイダーは？",
+            "body": "3.x で有効なのは Google だけです。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "どちらも npm で公開されています。依存関係が node_modules に何を持ち込むかを気にするなら、このパッケージは Firebase を外しています。"
+          }
+        ],
+        "facts": [
+          "capacitor-auth-manager-1",
+          "capacitor-auth-manager-2",
+          "capacitor-auth-manager-3"
+        ]
+      },
+      "clearhire": {
+        "card": "送る前に、履歴書を ATS のルールで確認する。",
+        "title": "ClearHire：応募を送る前に",
+        "intro": "ClearHire は、構造化されたプロフィールと 50 以上のキャリアツールを備えた履歴書作成ツールです。そのひとつが、応募者追跡システム（ATS）に照らして履歴書を確認します。",
+        "sections": [
+          {
+            "heading": "ClearHire とは？",
+            "body": "プロフィールを構造化された項目に保存し、応募者追跡システムが読み取りやすい形にする履歴書作成ツールです。"
+          },
+          {
+            "heading": "送る前に何を確認できる？",
+            "body": "箇条書きの作成から ATS チェックまで、50 以上のキャリアツールがあります。"
+          },
+          {
+            "heading": "プロフィールの信頼性はどう高まる？",
+            "body": "在籍確認のワークフローが、記載した職歴に裏付けを加えます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "行動する前に見る習慣です。ドライランは先に掃除の内容を、ATS チェックは先に履歴書の評価を見せます。"
+          }
+        ],
+        "facts": [
+          "clearhire-2",
+          "clearhire-3",
+          "clearhire-4"
+        ]
+      },
+      "eatthis": {
+        "card": "選ぶ前に、一食分で何がとれるかを見る。",
+        "title": "Eat This：一食分の数字",
+        "intro": "Eat This は、栄養素、体調、時間帯から食べ物を探せるアプリです。一食分でその栄養素がどれだけとれるかを表示します。",
+        "sections": [
+          {
+            "heading": "Eat This ではどう探す？",
+            "body": "栄養素、体調、時間帯から探せます。"
+          },
+          {
+            "heading": "食べ物について何がわかる？",
+            "body": "一食分でその栄養素がどれだけとれるかがわかります。"
+          },
+          {
+            "heading": "安い選択肢も教えてくれる？",
+            "body": "はい。手頃な選択肢を示し、医師に聞くべき質問かどうかも伝えます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "どちらも決める前に量を見せます。掃除の前にはキャッシュの大きさを、食べる前には栄養素の量を。"
+          }
+        ],
+        "facts": [
+          "eatthis-1",
+          "eatthis-2",
+          "eatthis-3"
+        ]
+      },
+      "empora": {
+        "card": "WooCommerce のモジュールを、ひとつずつオンに。",
+        "title": "Empora：ストアが使うモジュールだけ",
+        "intro": "Empora は、WooCommerce のストア用モジュールをひとつの WordPress プラグインにまとめたものです。どのモジュールをオンにするかは販売者が決めます。",
+        "sections": [
+          {
+            "heading": "Empora とは？",
+            "body": "WooCommerce のストア用モジュールを複数含む WordPress プラグインです。"
+          },
+          {
+            "heading": "すべてのモジュールが同時に動く？",
+            "body": "いいえ。オンにするものは販売者が選びます。"
+          },
+          {
+            "heading": "ウェブのダッシュボードは何をする？",
+            "body": "ライセンスと、任意のストア連携を扱います。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "名前で選ぶことです。linux-cleanup は選んだセクションだけを、Empora は選んだモジュールだけを動かします。"
+          }
+        ],
+        "facts": [
+          "empora-1",
+          "empora-2",
+          "empora-3"
+        ]
+      },
+      "habitforge": {
+        "card": "途切れた日がはっきりわかる習慣の記録。",
+        "title": "HabitForge：見える空白",
+        "intro": "HabitForge は継続を一本のロープとして描きます。チェックインのたびに太くなり、止まったところからほつれていきます。",
+        "sections": [
+          {
+            "heading": "HabitForge は習慣をどう見せる？",
+            "body": "チェックインのたびに太くなるロープとして見せます。"
+          },
+          {
+            "heading": "日を飛ばすとどうなる？",
+            "body": "止まったところでロープがほつれるので、空白がひと目でわかります。"
+          },
+          {
+            "heading": "ほかの人と一緒に使える？",
+            "body": "友だち、チャレンジ、ランキングがあり、ランキングは抜けることもできます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "あとから読めるレシートです。linux-cleanup は実行で削除したものを、HabitForge は毎日の出来事を示します。ウェブと Android でひとつのアカウントを使えます。"
+          }
+        ],
+        "facts": [
+          "habitforge-1",
+          "habitforge-2",
+          "habitforge-3",
+          "habitforge-4"
+        ]
+      },
+      "labflow": {
+        "card": "検査結果が、下書きから公開まで一歩ずつ進む。",
+        "title": "LabFlow：ひとつの結果がたどる道",
+        "intro": "LabFlow は、患者とオーダーから検体と結果まで、診断ラボを一貫して運営するためのシステムです。結果は公開前に検証のワークフローを通ります。",
+        "sections": [
+          {
+            "heading": "LabFlow の対象は？",
+            "body": "患者、オーダー、検体、結果をひとつのシステムで扱います。"
+          },
+          {
+            "heading": "結果はどう公開される？",
+            "body": "検証のワークフローを通って、下書きから公開へ進みます。"
+          },
+          {
+            "heading": "ほかにラボで何を扱える？",
+            "body": "請求、在庫、品質管理です。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "最後の一歩の前に、決まった一歩があることです。本番実行の前にドライランが、公開の前に検証があります。"
+          }
+        ],
+        "facts": [
+          "labflow-1",
+          "labflow-2",
+          "labflow-3",
+          "labflow-4"
+        ]
+      },
+      "lifewell": {
+        "card": "バイタル、水分、服薬、睡眠をひとつの記録に。",
+        "title": "LifeWell：いくつもの健康記録をひとつに",
+        "intro": "LifeWell は、バイタル、水分、服薬、睡眠、栄養をひとつのアプリで記録します。ウェブと Android で動き、両方の間で同期します。",
+        "sections": [
+          {
+            "heading": "LifeWell で何を記録できる？",
+            "body": "バイタル、水分、服薬、睡眠、栄養です。"
+          },
+          {
+            "heading": "生理や赤ちゃんの成長も扱える？",
+            "body": "生理、妊活、赤ちゃんの成長の記録も含まれます。"
+          },
+          {
+            "heading": "どのデバイスで使える？",
+            "body": "ウェブと Android で、デバイス間で同期します。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "いくつもの場所をひとつに。linux-cleanup は散らばったキャッシュをひとつの調査に、LifeWell は散らばった健康メモをひとつの記録にまとめます。"
+          }
+        ],
+        "facts": [
+          "lifewell-2",
+          "lifewell-3",
+          "lifewell-4"
+        ]
+      },
+      "macleanup": {
+        "card": "同じセクションのカタログを、Mac で。",
+        "title": "macleanup：隣の Mac のために",
+        "intro": "macleanup は linux-cleanup の macOS 版です。同じセクションのカタログを使い、何かを削除する前に本物のドライランを実行します。",
+        "sections": [
+          {
+            "heading": "linux-cleanup とどれくらい近い？",
+            "body": "同じセクションのカタログを、macOS 向けに書いたものです。"
+          },
+          {
+            "heading": "何を拒否する？",
+            "body": "個人フォルダーを、例外なく拒否します。"
+          },
+          {
+            "heading": "実行をプレビューできる？",
+            "body": "はい。何かを削除する前に、本物のドライランを実行します。"
+          },
+          {
+            "heading": "両方を使うのは誰？",
+            "body": "Linux と Mac が混在するチームや家庭なら、どのマシンでも同じ手順で進められます。"
+          }
+        ],
+        "facts": [
+          "macleanup-2",
+          "macleanup-3",
+          "macleanup-4"
+        ]
+      },
+      "native-update": {
+        "card": "Capacitor アプリのウェブ層の修正を、ストアを待たずに。",
+        "title": "Native Update：審査を待てない修正のために",
+        "intro": "Native Update は、Capacitor アプリにライブの OTA（無線）バンドル更新を届けます。アプリ内で、ストアの更新やレビューを促す表示も行います。",
+        "sections": [
+          {
+            "heading": "何を解決する？",
+            "body": "Capacitor アプリの更新を、ストアを待たずにユーザーへ届けます。"
+          },
+          {
+            "heading": "更新はどう届く？",
+            "body": "ライブの OTA バンドルとして届きます。"
+          },
+          {
+            "heading": "ストアでのフルリリースは？",
+            "body": "アプリ内の案内で、ストアの更新やレビューをお願いします。"
+          },
+          {
+            "heading": "バックエンドは自分でホストできる？",
+            "body": "はい。バックエンドはオープンソースで、セルフホストできます。"
+          }
+        ],
+        "facts": [
+          "native-update-1",
+          "native-update-2",
+          "native-update-3",
+          "native-update-4"
+        ]
+      },
+      "netcage": {
+        "card": "選んだ日に、Android アプリをひとつだけオフラインに。",
+        "title": "NetCage：スマホ全体ではなく、ひとつのアプリだけ",
+        "intro": "NetCage は、選んだ Android アプリだけの Wi-Fi とモバイル通信を止められます。スマホのほかの部分はオンラインのままです。",
+        "sections": [
+          {
+            "heading": "NetCage は何を止める？",
+            "body": "選んだアプリの Wi-Fi、モバイルデータ、またはその両方です。"
+          },
+          {
+            "heading": "スマホ全体がオフラインになる？",
+            "body": "いいえ。接続を失うのは選んだアプリだけです。"
+          },
+          {
+            "heading": "ルールをスケジュールで動かせる？",
+            "body": "はい。プロファイルでアプリをまとめ、選んだ曜日と時間にルールを適用できます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "意図して範囲を絞っていることです。linux-cleanup は選んだセクションだけを削除し、NetCage は選んだアプリだけを止めます。"
+          }
+        ],
+        "facts": [
+          "netcage-1",
+          "netcage-2",
+          "netcage-3"
+        ]
+      },
+      "pregnancypal": {
+        "card": "医師に渡せる PDF に書き出せる妊娠の記録。",
+        "title": "PregnancyPal：健診に持っていく書き出し",
+        "intro": "PregnancyPal は、栄養と運動を含めて妊娠を週ごとに記録します。バイタル、症状、気分、予約も同じ記録に残せます。",
+        "sections": [
+          {
+            "heading": "PregnancyPal は何を記録する？",
+            "body": "妊娠の各週を、栄養と運動とともに記録します。"
+          },
+          {
+            "heading": "何を記録できる？",
+            "body": "バイタル、症状、気分、予約です。"
+          },
+          {
+            "heading": "医師は読める？",
+            "body": "はい。医師が読みやすい PDF に書き出せます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "人に渡せる記録です。linux-cleanup は実行後にレポートを書き、PregnancyPal は健診用の PDF をつくります。"
+          }
+        ],
+        "facts": [
+          "pregnancypal-2",
+          "pregnancypal-3",
+          "pregnancypal-4"
+        ]
+      },
+      "rentparty": {
+        "card": "1 台のスマホを回して遊ぶ、不動産取引ゲームの夜。",
+        "title": "RentParty：夕食で中断するときに",
+        "intro": "RentParty は、一時停止できる不動産取引ゲームです。1 台のスマホを回したり、CPU キャラクターと対戦したり、オンラインルームを開いたりできます。",
+        "sections": [
+          {
+            "heading": "何台のデバイスが必要？",
+            "body": "回して使うスマホが 1 台あれば十分です。オンラインルームもあります。"
+          },
+          {
+            "heading": "ひとりで遊べる？",
+            "body": "はい。CPU キャラクターと対戦できます。"
+          },
+          {
+            "heading": "一時停止するとどうなる？",
+            "body": "再開するまで、銀行とすべての権利書がそのまま保たれます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "ディスクとは関係ありません。それこそが狙いで、掃除が終わったあとに開けるものです。"
+          }
+        ],
+        "facts": [
+          "rentparty-1",
+          "rentparty-2",
+          "rentparty-3"
+        ]
+      },
+      "smsapp": {
+        "card": "自分の Android の SIM から、予約した SMS をまとめて送信。",
+        "title": "SMS App：自分の番号から送る",
+        "intro": "SMS App は、自分の Android 端末から SMS を大量に送信します。1 通ずつ、まとめて、または予約して送れます。",
+        "sections": [
+          {
+            "heading": "メッセージはどこから送られる？",
+            "body": "自分の Android 端末とその SIM から送られます。"
+          },
+          {
+            "heading": "どんな送り方ができる？",
+            "body": "1 通ずつ、まとめて、または予約送信です。"
+          },
+          {
+            "heading": "複数のスマホで分担できる？",
+            "body": "端末をボランティアプールに登録できます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "どちらも、すでに持っているハードウェアで動きます。SMS App は Android ネイティブで、プライバシーを優先します。"
+          }
+        ],
+        "facts": [
+          "smsapp-1",
+          "smsapp-2",
+          "smsapp-3",
+          "smsapp-4"
+        ]
+      },
+      "strata-storage": {
+        "card": "Keychain と Keystore を、ひとつのストレージ API の奥に。",
+        "title": "Strata Storage：localStorage に置くべきでない秘密のために",
+        "intro": "Strata Storage は、localStorage、IndexedDB、Cookie、ネイティブストレージをまとめるひとつのストレージ API です。iOS と Android では Keychain と Keystore を使います。",
+        "sections": [
+          {
+            "heading": "Strata Storage は何を置き換える？",
+            "body": "localStorage、IndexedDB、Cookie、ネイティブストレージごとに書いていたコードです。"
+          },
+          {
+            "heading": "スマホでは秘密はどこに保存される？",
+            "body": "同じインターフェースで、iOS では Keychain、Android では Keystore に保存されます。"
+          },
+          {
+            "heading": "依存関係は増える？",
+            "body": "いいえ。依存関係はゼロで、ウェブ、iOS、Android で動きます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "linux-cleanup のデスクトップアプリとウェブサイトは、設定を Strata Storage で保存しています。"
+          }
+        ],
+        "facts": [
+          "strata-storage-1",
+          "strata-storage-2",
+          "strata-storage-3",
+          "strata-storage-4"
+        ]
+      },
+      "tilawah": {
+        "card": "あなたのタイムゾーンで予約できる、クルアーン朗誦のライブレッスン。",
+        "title": "Tilawah：都合のよい時間に先生と",
+        "intro": "Tilawah は、タジュウィードとタフスィールの録画レッスンと、1 対 1 のライブ朗誦レッスンを提供します。ライブレッスンは学習者のタイムゾーンで予約できます。",
+        "sections": [
+          {
+            "heading": "Tilawah では何を学べる？",
+            "body": "録画レッスンで、タジュウィードとタフスィールを学べます。"
+          },
+          {
+            "heading": "自分のペースで学べる？",
+            "body": "はい。自分のペースで進めるレッスンの進捗が記録されます。"
+          },
+          {
+            "heading": "ライブレッスンはどう行う？",
+            "body": "1 対 1 の朗誦レッスンを、あなたのタイムゾーンで予約します。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "つくり手だけです。どちらも Zaions チームの製品で、Tilawah はそれ単体で完結しています。"
+          }
+        ],
+        "facts": [
+          "tilawah-1",
+          "tilawah-2",
+          "tilawah-3"
+        ]
+      },
+      "trizlink": {
+        "card": "ブランド入りの短縮リンクと、クリック数の計測。",
+        "title": "Trizlink：リンクを共有したあとのこと",
+        "intro": "Trizlink は、独自のスラッグでブランド入りの短縮リンクをつくり、クリックを数えます。独自ドメインでリンクインバイオのページもつくれます。",
+        "sections": [
+          {
+            "heading": "何を短縮できる？",
+            "body": "どんなリンクでも、自分のブランドと独自のスラッグで短縮できます。"
+          },
+          {
+            "heading": "何を数える？",
+            "body": "内蔵のクリック分析で、クリック数を数えます。"
+          },
+          {
+            "heading": "プロフィール用のページはある？",
+            "body": "はい。独自ドメインで使えるリンクインバイオのページがあります。"
+          },
+          {
+            "heading": "ほかに何が含まれる？",
+            "body": "50 以上の内蔵ユーティリティです。"
+          }
+        ],
+        "facts": [
+          "trizlink-1",
+          "trizlink-2",
+          "trizlink-3",
+          "trizlink-4"
+        ]
+      },
+      "video-controls-plus": {
+        "card": "どんな HTML5 動画も、コマ送りと A–B ループでじっくり見る。",
+        "title": "Video Controls Plus：一部分をもう一度見る",
+        "intro": "Video Controls Plus は、あらゆる HTML5 動画を操作できるブラウザー拡張機能です。A–B 区間のループ、コマ送り、0.1× から 16× までの速度調整ができます。",
+        "sections": [
+          {
+            "heading": "動画の短い部分をじっくり見るには？",
+            "body": "A–B ループを設定し、その区間をコマ送りします。"
+          },
+          {
+            "heading": "どこまで遅く、速くできる？",
+            "body": "0.1× から 16× までです。"
+          },
+          {
+            "heading": "メモは取れる？",
+            "body": "はい。スクリーンショットとタイムスタンプ付きメモ、40 以上のショートカットがあります。"
+          },
+          {
+            "heading": "音と映像は？",
+            "body": "最大 400% の音量ブースト、フィルター、色補正があります。"
+          }
+        ],
+        "facts": [
+          "video-controls-plus-1",
+          "video-controls-plus-2",
+          "video-controls-plus-4",
+          "video-controls-plus-3"
+        ]
+      },
+      "waylock": {
+        "card": "曲がり角を間違えても、選んだルートは画面に残る。",
+        "title": "Waylock：すでに決めたルート",
+        "intro": "Waylock は、ドライバーや配達員のための、Google マップ上で動く Android の計画レイヤーです。選んだ立ち寄り先を固定し、残りをその周りに並べます。",
+        "sections": [
+          {
+            "heading": "Waylock は誰のため？",
+            "body": "Android の Google マップ上で立ち寄り先を計画するドライバーや配達員のためのアプリです。"
+          },
+          {
+            "heading": "一部の立ち寄り先を固定できる？",
+            "body": "はい。選んだ立ち寄り先は固定され、残りはその周りに並べられます。"
+          },
+          {
+            "heading": "曲がり角を間違えたら？",
+            "body": "選んだルートは表示されたままで、その横に戻るか新しいルートにするかの選択肢が出ます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "決めた計画は計画のまま。本番実行は確認したセクションだけを進め、途中で何も加えません。"
+          }
+        ],
+        "facts": [
+          "waylock-1",
+          "waylock-2",
+          "waylock-3"
+        ]
+      },
+      "windowsweep": {
+        "card": "個人ファイルを 1 行ずつ選んで進める Windows の掃除。",
+        "title": "windowsweep：Linux の隣にある Windows のために",
+        "intro": "windowsweep は、まずドライランを行う Windows 向けの掃除ツールです。個人ファイルは 1 行ずつ選び、まとめて掃除することはありません。",
+        "sections": [
+          {
+            "heading": "個人ファイルはどう扱う？",
+            "body": "1 行ずつ、あなたが選びます。"
+          },
+          {
+            "heading": "先にパスを見せてくれる？",
+            "body": "はい。30 のセクションで、触れる前にすべてのパスを示し、本物のドライランを行います。"
+          },
+          {
+            "heading": "ネットワークに接続する？",
+            "body": "製品自身の説明によれば、ネットワーク通信は一切しません。"
+          },
+          {
+            "heading": "どう実行する？",
+            "body": "npx windowsweep で、または Windows デスクトップアプリとして実行します。"
+          }
+        ],
+        "facts": [
+          "windowsweep-1",
+          "windowsweep-2",
+          "windowsweep-3",
+          "windowsweep-4"
+        ]
+      },
+      "ztools": {
+        "card": "ブラウザーで動き、何もアップロードしない開発者向けツール。",
+        "title": "ZTools：入力をマシンの外に出したくないときに",
+        "intro": "ZTools は、開発者とクリエイターのためのツールボックスです。どのツールもブラウザーで動くので、入力した内容はアップロードされません。",
+        "sections": [
+          {
+            "heading": "どんなツールがある？",
+            "body": "フォーマッター、コンバーター、エンコーダー、ジェネレーターです。"
+          },
+          {
+            "heading": "入力した内容はどこへ行く？",
+            "body": "どこにも行きません。ツールはブラウザーで動き、何もアップロードしません。"
+          },
+          {
+            "heading": "オフラインで使える？",
+            "body": "はい。検索でき、ダークモードが基本で、オフラインでも使えます。"
+          },
+          {
+            "heading": "linux-cleanup との共通点は？",
+            "body": "掃除のあいだ、パスはあなたのマシンに残ります。ZTools では、入力はあなたのブラウザーに残ります。"
+          }
+        ],
+        "facts": [
+          "ztools-1",
+          "ztools-2",
+          "ztools-3",
+          "ztools-4"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "開発者について · linux-cleanup",
+    "description": "Ahsan Mahmood は、Linux マシンが個人ファイルに触れずにキャッシュや残りものを片付けられるよう linux-cleanup をつくりました。つくった理由と、ここまでの歩みを日付とともに紹介します。",
+    "eyebrow": "開発者について",
+    "h1": "Ahsan Mahmood がつくりました。",
+    "lead": "Ahsan Mahmood（aoneahsan）は、自分のディスクが誰も必要としないキャッシュで何度もいっぱいになったことから linux-cleanup をつくりました。開発チーム Zaions を率いています。",
+    "portfolio": "Ahsan のポートフォリオを見る",
+    "zaions": "Zaions",
+    "sections": [
+      {
+        "id": "why",
+        "h2": "なぜつくったのか",
+        "p": [
+          "開発用のマシンは、作り直せるものでいっぱいになります。パッケージのキャッシュ、ビルドの出力、ログ、もう削除したソフトウェアの残りもの。Ahsan は、それらを片付けつつ個人ファイルには手を出さない、ひとつのツールを求めていました。",
+          "必要な人なら誰でも無料で使えるようにしたいと考えました。コマンドラインは無料で MIT ライセンスです。デスクトップアプリは、必要な人のためにウィンドウ、スケジュール、レシートを加えています。",
+          "開発者だけでなく、Linux を使うすべての人のためのツールです。Mac 向けの macleanup で形にしたのと同じ考えを、Linux に持ち込んだのが始まりでした。"
+        ]
+      },
+      {
+        "id": "journey",
+        "h2": "ここまでの歩み",
+        "timeline": [
+          [
+            "2026-05-09",
+            "linux-cleanup 1.0.0：npx で動く Bash スクリプト。インストール不要。"
+          ],
+          [
+            "2026-09-18",
+            "1.6.0：最初の系列の最後のリリース。"
+          ],
+          [
+            "2026-11-10",
+            "2.0.0 として作り直し、本物のドライランとリリース確認を搭載。"
+          ],
+          [
+            "2026-11-13",
+            "このウェブサイトを公開。"
+          ],
+          [
+            "2026-11-21",
+            "ドキュメントを 2.x に更新し、CLI 2.1.0 を公開、x86_64 Linux 向けデスクトップアプリ 1.0.0 をリリース。"
+          ],
+          [
+            "2026-11-22",
+            "デスクトップアプリのプランを開始。現在のリリースはデスクトップ 1.0.4 と CLI 2.1.1。"
+          ]
+        ]
+      },
+      {
+        "id": "built",
+        "h2": "どうつくられているか",
+        "p": [
+          "エンジンは npm で公開している Bash のコマンドラインです。デスクトップアプリは同じエンジンを包む Tauri のウィンドウなので、どちらもまったく同じパスを削除します。",
+          "ファイルのパスはあなたのマシンから出ません。アカウントがある場合、実行ごとのサマリーに残るのはサイズ、セクション番号、OS のバージョンだけで、パスは一切残りません。ウェブサイトとアプリは、次のリリースをよくするために利用状況を数え、エラーを報告します。各サービスはプライバシーポリシーに記載しています。",
+          "削除はすべて元に戻せません。ドライランは本番実行で削除されるものを一覧にし、レシートは実際に削除したものを一覧にします。"
+        ]
+      },
+      {
+        "id": "more",
+        "h2": "Ahsan と Zaions のほかの取り組み",
+        "links": [
+          [
+            "/ecosystem",
+            "Zaions の製品"
+          ],
+          [
+            "https://aoneahsan.com/projects",
+            "Ahsan のプロジェクト"
+          ],
+          [
+            "https://zaions.com",
+            "zaions.com"
+          ],
+          [
+            "https://github.com/aoneahsan",
+            "GitHub"
+          ],
+          [
+            "https://www.linkedin.com/in/aoneahsan",
+            "LinkedIn"
+          ]
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "質問と不具合の報告",
+        "p": [
+          "linux-cleanup のリポジトリで issue を作成してください。linux-cleanup --version で表示されるバージョンと、実行した内容を書き添えてください。"
+        ],
+        "link": [
+          "https://github.com/aoneahsan/linux-cleanup/issues",
+          "issue を作成"
+        ]
+      }
+    ]
+  }
+}

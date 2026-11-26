@@ -1,0 +1,114 @@
+{
+  "link.title.Start here": {
+    "message": "Comece aqui",
+    "description": "The title of the footer links column with title=Start here in the footer"
+  },
+  "link.title.Reference": {
+    "message": "Referência",
+    "description": "The title of the footer links column with title=Reference in the footer"
+  },
+  "link.title.Project": {
+    "message": "Projeto",
+    "description": "The title of the footer links column with title=Project in the footer"
+  },
+  "link.title.Get linux-cleanup": {
+    "message": "Baixar o linux-cleanup",
+    "description": "The title of the footer links column with title=Get linux-cleanup in the footer"
+  },
+  "link.title.Built by Ahsan Mahmood": {
+    "message": "Feito por Ahsan Mahmood",
+    "description": "The title of the footer links column with title=Built by Ahsan Mahmood in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "Introdução",
+    "description": "The label of footer link with label=Introduction linking to /"
+  },
+  "link.item.label.What it deletes": {
+    "message": "O que ele apaga",
+    "description": "The label of footer link with label=What it deletes linking to /safety/what-it-deletes"
+  },
+  "link.item.label.Preview before deleting": {
+    "message": "Visualizar antes de apagar",
+    "description": "The label of footer link with label=Preview before deleting linking to /safety/preview-first"
+  },
+  "link.item.label.Installation": {
+    "message": "Instalação",
+    "description": "The label of footer link with label=Installation linking to /getting-started/installation"
+  },
+  "link.item.label.CLI flags": {
+    "message": "Opções da CLI",
+    "description": "The label of footer link with label=CLI flags linking to /reference/cli-flags"
+  },
+  "link.item.label.Protected paths": {
+    "message": "Caminhos protegidos",
+    "description": "The label of footer link with label=Protected paths linking to /reference/protected-paths"
+  },
+  "link.item.label.Report schema": {
+    "message": "Esquema do relatório",
+    "description": "The label of footer link with label=Report schema linking to /reference/report-schema"
+  },
+  "link.item.label.Changelog": {
+    "message": "Registro de mudanças",
+    "description": "The label of footer link with label=Changelog linking to /changelog"
+  },
+  "link.item.label.Release notes": {
+    "message": "Notas de versão",
+    "description": "The label of footer link with label=Release notes linking to /feed"
+  },
+  "link.item.label.Source (GitHub)": {
+    "message": "Código-fonte (GitHub)",
+    "description": "The label of footer link with label=Source (GitHub) linking to https://github.com/aoneahsan/linux-cleanup"
+  },
+  "link.item.label.npm package": {
+    "message": "Pacote npm",
+    "description": "The label of footer link with label=npm package linking to https://www.npmjs.com/package/linux-cleanup"
+  },
+  "link.item.label.Report an issue": {
+    "message": "Relatar um problema",
+    "description": "The label of footer link with label=Report an issue linking to https://github.com/aoneahsan/linux-cleanup/issues"
+  },
+  "link.item.label.npm": {
+    "message": "npm",
+    "description": "The label of footer link with label=npm linking to https://www.npmjs.com/package/linux-cleanup"
+  },
+  "link.item.label.Desktop app for Linux": {
+    "message": "Aplicativo para desktop Linux",
+    "description": "The label of footer link with label=Desktop app for Linux linking to https://linux-cleanup.aoneahsan.com/download"
+  },
+  "link.item.label.linux-cleanup website": {
+    "message": "Site do linux-cleanup",
+    "description": "The label of footer link with label=linux-cleanup website linking to https://linux-cleanup.aoneahsan.com"
+  },
+  "link.item.label.All places": {
+    "message": "Todos os lugares",
+    "description": "The label of footer link with label=All places linking to /apps"
+  },
+  "link.item.label.About the developer": {
+    "message": "Sobre o desenvolvedor",
+    "description": "The label of footer link with label=About the developer linking to /about-developer"
+  },
+  "link.item.label.More from Zaions": {
+    "message": "Mais da Zaions",
+    "description": "The label of footer link with label=More from Zaions linking to /ecosystem"
+  },
+  "link.item.label.aoneahsan.com": {
+    "message": "aoneahsan.com",
+    "description": "The label of footer link with label=aoneahsan.com linking to https://aoneahsan.com"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://linkedin.com/in/aoneahsan"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/aoneahsan"
+  },
+  "link.item.label.npm packages": {
+    "message": "Pacotes npm",
+    "description": "The label of footer link with label=npm packages linking to https://www.npmjs.com/~aoneahsan"
+  },
+  "copyright": {
+    "message": "linux-cleanup — feito com carinho pela equipe Zaions · © 2026 linux-cleanup · Licença MIT e sem garantia: ele apaga arquivos.",
+    "description": "The footer copyright"
+  }
+}

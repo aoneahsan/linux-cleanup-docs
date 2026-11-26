@@ -1,0 +1,54 @@
+{
+  "$schema": "owner-profile",
+  "lastUpdated": "2026-11-25",
+  "source": "owner's words 2026-11-25 + the master links JSON (ahsan-notebook static/assets/personal/projects-info-as-portfolio-item/PROJECT-LINKS-IDENTIFIERS-CONTACT.json)",
+  "person": {
+    "name": "Ahsan Mahmood",
+    "alternateName": [
+      "Ahsan",
+      "aoneahsan",
+      "a1ahsan",
+      "A1 Ahsan",
+      "AOne Ahsan"
+    ],
+    "url": "https://aoneahsan.com",
+    "projectsUrl": "https://aoneahsan.com/projects",
+    "sameAs": [
+      "https://aoneahsan.com",
+      "https://zaions.com",
+      "https://github.com/aoneahsan",
+      "https://www.linkedin.com/in/aoneahsan"
+    ],
+    "jobTitle": "Founder and developer, Zaions"
+  },
+  "organization": {
+    "name": "Zaions",
+    "alternateName": [
+      "Zaions products",
+      "Zaions projects"
+    ],
+    "url": "https://zaions.com",
+    "founder": "Ahsan Mahmood",
+    "sameAs": [
+      "https://zaions.com",
+      "https://github.com/aoneahsan"
+    ]
+  },
+  "keywords": "ahsan, ahsan mahmood, a1, aone, aoneahsan, a1ahsan, zaions, aoneahsan.com, zaions.com, ahsan projects, zaions projects, zaions products, ahsan products",
+  "keywordsNote": "Verbatim from the owner, 2026-11-25. Used per aoneahsan-cccs-seo-aeo-standard owner-entity-keywords reference; never as a visible list.",
+  "ownedHosts": [
+    "aoneahsan.com",
+    "*.aoneahsan.com",
+    "zaions.com",
+    "*.zaions.com",
+    "trizlink.com",
+    "github.com/aoneahsan",
+    "www.linkedin.com/in/aoneahsan",
+    "play.google.com/store/apps/details?id=com.aoneahsan.*",
+    "chromewebstore.google.com (our listings)",
+    "microsoftedge.microsoft.com (our listings)",
+    "addons.mozilla.org (our listings)",
+    "www.npmjs.com/package/<our packages>"
+  ],
+  "ownedHostsNote": "Every liveUrl, docsUrl and platform URL in products.json is owned too. Links to all of these are do-follow; everything else is nofollow (rules-detail/seo-aeo-ranking.md)."
+}

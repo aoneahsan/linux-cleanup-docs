@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "रिलीज़ नोट",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "linux-cleanup की हर रिलीज़, कमांड लाइन और डेस्कटॉप ऐप, सबसे नई पहले।",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "रिलीज़",
+    "description": "The label for the left sidebar"
+  }
+}

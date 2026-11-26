@@ -1,0 +1,777 @@
+{
+  "ecosystem": {
+    "band": {
+      "title": "Plus de Zaions",
+      "lead": "D’autres outils de l’équipe derrière linux-cleanup. Chacun est présenté du point de vue de quelqu’un qui lit déjà les chemins avant de supprimer.",
+      "seeAll": "Voir tous les produits Zaions",
+      "visit": "Visiter {product}",
+      "details": "Détails",
+      "pause": "Mettre en pause le carrousel",
+      "play": "Relancer le carrousel",
+      "prev": "Produit précédent",
+      "next": "Produit suivant",
+      "slide": "{index} sur {count}",
+      "eyebrow": "Zaions"
+    },
+    "page": {
+      "eyebrow": "PRODUITS ZAIONS",
+      "h1": "Le reste de l’étagère.",
+      "intro_one": "{count} produit de la même équipe, avec une ligne sur ce qu’il fait. linux-cleanup n’est pas dans la liste : vous y êtes déjà.",
+      "intro_many": "{count} de produits de la même équipe, chacun avec une ligne sur ce qu’il fait. linux-cleanup n’est pas dans la liste : vous y êtes déjà.",
+      "intro_other": "{count} produits de la même équipe, chacun avec une ligne sur ce qu’il fait. linux-cleanup n’est pas dans la liste : vous y êtes déjà."
+    },
+    "view": {
+      "label": "Affichage",
+      "grid": "Cartes",
+      "list": "Liste",
+      "table": "Tableau"
+    },
+    "table": {
+      "product": "Produit",
+      "what": "Ce qu’il fait",
+      "link": "Lien"
+    },
+    "detail": {
+      "back": "Tous les produits Zaions",
+      "facts": "D’après les pages du produit lui-même, vérifié le {date}."
+    },
+    "kind": {
+      "web-app": "Application web",
+      "mobile-app": "Application Android",
+      "package": "Paquet npm",
+      "desktop-app-cli": "Application de bureau + CLI",
+      "browser-extension": "Extension de navigateur",
+      "wordpress-plugin-saas": "Extension WordPress",
+      "saas-package": "Service + paquet npm"
+    },
+    "footer": {
+      "credit": "linux-cleanup — conçu avec soin par l’équipe Zaions",
+      "copyright": "© {year} linux-cleanup",
+      "aboutDeveloper": "À propos du développeur",
+      "ecosystem": "Plus de Zaions"
+    },
+    "products": {
+      "achat": {
+        "card": "Écrire aux personnes choisies, sans donner son numéro.",
+        "title": "AchatAI, pour parler sans donner son numéro",
+        "intro": "AchatAI est une messagerie sur le web et Android pour les personnes que vous choisissez. On peut vous trouver par nom d’utilisateur, lien d’invitation ou QR code.",
+        "sections": [
+          {
+            "heading": "À qui s’adresse AchatAI ?",
+            "body": "À ceux qui veulent échanger uniquement avec les personnes qu’ils ont choisies, sur le web ou sur Android."
+          },
+          {
+            "heading": "Faut-il donner son numéro de téléphone ?",
+            "body": "Non. Un nom d’utilisateur, un lien d’invitation ou un QR code suffit pour vous trouver."
+          },
+          {
+            "heading": "Peut-on discuter sans compte ?",
+            "body": "Oui, dans un salon anonyme, qui s’ouvre sans inscription."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Les deux livrent moins que ce que vous imaginez. linux-cleanup garde les chemins de fichiers sur votre machine ; AchatAI garde votre numéro hors de la conversation."
+          }
+        ],
+        "facts": [
+          "achat-1",
+          "achat-2",
+          "achat-3"
+        ]
+      },
+      "callvault": {
+        "card": "Des enregistrements d’appels qui restent sur le téléphone, sauf décision contraire.",
+        "title": "CallVault et l’endroit où vivent vos enregistrements",
+        "intro": "CallVault enregistre les appels sur Android grâce à la source audio que le téléphone met à disposition. Les enregistrements restent sur ce téléphone, sauf si vous activez la sauvegarde privée dans le cloud.",
+        "sections": [
+          {
+            "heading": "Comment CallVault enregistre-t-il un appel ?",
+            "body": "Il utilise la source audio que le téléphone Android met à disposition pour l’appel."
+          },
+          {
+            "heading": "Où sont conservés les enregistrements ?",
+            "body": "Sur le téléphone. Ils n’en sortent que si vous activez la sauvegarde privée dans le cloud."
+          },
+          {
+            "heading": "Que peut-on faire d’un enregistrement ?",
+            "body": "L’écouter, chercher dans la bibliothèque, ajouter des notes et l’exporter."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "La même règle pour les données : elles restent sur l’appareil qui vous appartient jusqu’à ce que vous décidiez de les déplacer."
+          }
+        ],
+        "facts": [
+          "callvault-1",
+          "callvault-2",
+          "callvault-3"
+        ]
+      },
+      "capacitor-auth-manager": {
+        "card": "La connexion Google pour les apps Capacitor, sans dépendre de Firebase.",
+        "title": "Capacitor Auth Manager sans la dépendance Firebase",
+        "intro": "Capacitor Auth Manager est un paquet npm qui offre un seul appel de connexion Google pour le web, Android et iOS. Il n’embarque pas Firebase.",
+        "sections": [
+          {
+            "heading": "Que fait ce paquet ?",
+            "body": "Il donne à une app Capacitor un seul appel de connexion Google, valable sur le web, Android et iOS."
+          },
+          {
+            "heading": "A-t-il besoin de Firebase ?",
+            "body": "Non. Firebase n’est pas une dépendance."
+          },
+          {
+            "heading": "Quels fournisseurs sont actifs en version 3.x ?",
+            "body": "Google est le seul fournisseur actif en 3.x."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Les deux sont publiés sur npm. Si vous comptez ce qu’une dépendance ajoute à node_modules, celui-ci laisse Firebase dehors."
+          }
+        ],
+        "facts": [
+          "capacitor-auth-manager-1",
+          "capacitor-auth-manager-2",
+          "capacitor-auth-manager-3"
+        ]
+      },
+      "clearhire": {
+        "card": "Vérifier un CV selon les règles ATS avant de l’envoyer.",
+        "title": "ClearHire avant l’envoi de la candidature",
+        "intro": "ClearHire est un générateur de CV avec des profils structurés et plus de 50 outils de carrière. L’un d’eux vérifie le CV face aux logiciels de suivi des candidatures (ATS).",
+        "sections": [
+          {
+            "heading": "Qu’est-ce que ClearHire ?",
+            "body": "Un générateur de CV qui range votre profil dans des champs structurés, lisibles par les logiciels de suivi des candidatures."
+          },
+          {
+            "heading": "Que peut-on vérifier avant l’envoi ?",
+            "body": "Plus de 50 outils de carrière, de la rédaction des puces aux vérifications ATS."
+          },
+          {
+            "heading": "Comment un profil gagne-t-il en confiance ?",
+            "body": "Les parcours de vérification d’emploi ajoutent des preuves à l’historique professionnel indiqué."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "L’habitude de regarder avant d’agir. Une simulation montre d’abord le nettoyage ; une vérification ATS montre d’abord le CV."
+          }
+        ],
+        "facts": [
+          "clearhire-2",
+          "clearhire-3",
+          "clearhire-4"
+        ]
+      },
+      "eatthis": {
+        "card": "Voir ce qu’apporte une portion avant de la choisir.",
+        "title": "Eat This et les chiffres d’une portion",
+        "intro": "Eat This permet de chercher un aliment par nutriment, par ressenti ou selon le moment de la journée. Il indique combien d’un nutriment apporte une portion.",
+        "sections": [
+          {
+            "heading": "Comment chercher dans Eat This ?",
+            "body": "Par nutriment, par ressenti ou selon le moment de la journée."
+          },
+          {
+            "heading": "Qu’indique-t-il pour un aliment ?",
+            "body": "La quantité d’un nutriment apportée par une portion."
+          },
+          {
+            "heading": "Signale-t-il une option moins chère ?",
+            "body": "Oui. Il repère une option bon marché et indique quand une question relève d’un médecin."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Les deux montrent une quantité avant la décision : la taille d’un cache avant le nettoyage, la quantité d’un nutriment avant le repas."
+          }
+        ],
+        "facts": [
+          "eatthis-1",
+          "eatthis-2",
+          "eatthis-3"
+        ]
+      },
+      "empora": {
+        "card": "Des modules WooCommerce à activer un par un.",
+        "title": "Empora, avec seulement les modules utiles à la boutique",
+        "intro": "Empora regroupe des modules de boutique WooCommerce dans une seule extension WordPress. Le marchand choisit quels modules activer.",
+        "sections": [
+          {
+            "heading": "Qu’est-ce qu’Empora ?",
+            "body": "Une extension WordPress qui contient plusieurs modules de boutique WooCommerce."
+          },
+          {
+            "heading": "Tous les modules tournent-ils en même temps ?",
+            "body": "Non. Le marchand choisit ceux qu’il active."
+          },
+          {
+            "heading": "De quoi s’occupe le tableau de bord web ?",
+            "body": "Des licences et des connexions facultatives à la boutique."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Le choix par le nom. linux-cleanup lance les sections que vous choisissez ; Empora, les modules que vous choisissez."
+          }
+        ],
+        "facts": [
+          "empora-1",
+          "empora-2",
+          "empora-3"
+        ]
+      },
+      "habitforge": {
+        "card": "Un suivi d’habitudes qui montre le jour exact de l’arrêt.",
+        "title": "HabitForge et le trou visible",
+        "intro": "HabitForge dessine la régularité comme une corde. Elle s’épaissit à chaque validation et s’effiloche là où vous vous êtes arrêté.",
+        "sections": [
+          {
+            "heading": "Comment HabitForge montre-t-il une habitude ?",
+            "body": "Comme une corde qui s’épaissit à chaque validation."
+          },
+          {
+            "heading": "Que se passe-t-il quand on saute des jours ?",
+            "body": "La corde s’effiloche à l’endroit de l’arrêt : le trou se voit."
+          },
+          {
+            "heading": "D’autres personnes peuvent-elles participer ?",
+            "body": "Il y a des amis, des défis et un classement, que l’on peut quitter."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Un reçu qu’on relit plus tard. linux-cleanup liste ce qu’une exécution a supprimé ; HabitForge montre ce qui s’est passé chaque jour. Il fonctionne sur le web et Android avec un seul compte."
+          }
+        ],
+        "facts": [
+          "habitforge-1",
+          "habitforge-2",
+          "habitforge-3",
+          "habitforge-4"
+        ]
+      },
+      "labflow": {
+        "card": "Des résultats de laboratoire qui passent du brouillon à la publication, étape par étape.",
+        "title": "LabFlow et le parcours d’un résultat",
+        "intro": "LabFlow gère un laboratoire d’analyses de bout en bout, du patient et de la prescription à l’échantillon et au résultat. Chaque résultat passe par une validation avant d’être publié.",
+        "sections": [
+          {
+            "heading": "Que couvre LabFlow ?",
+            "body": "Patients, prescriptions, échantillons et résultats dans un seul système."
+          },
+          {
+            "heading": "Comment un résultat est-il publié ?",
+            "body": "Par un circuit de validation qui le fait passer du brouillon à la publication."
+          },
+          {
+            "heading": "Que gère encore le laboratoire avec lui ?",
+            "body": "La facturation, les stocks et le contrôle qualité."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Une étape définie avant la dernière. La simulation précède l’exécution réelle ; la validation précède la publication."
+          }
+        ],
+        "facts": [
+          "labflow-1",
+          "labflow-2",
+          "labflow-3",
+          "labflow-4"
+        ]
+      },
+      "lifewell": {
+        "card": "Constantes, eau, médicaments et sommeil dans un seul dossier.",
+        "title": "LifeWell, un seul dossier pour plusieurs suivis de santé",
+        "intro": "LifeWell réunit constantes, eau, médicaments, sommeil et nutrition dans une seule app. Il fonctionne sur le web et Android, synchronisé entre les deux.",
+        "sections": [
+          {
+            "heading": "Que peut-on noter dans LifeWell ?",
+            "body": "Constantes, eau, médicaments, sommeil et nutrition."
+          },
+          {
+            "heading": "Couvre-t-il les règles et les étapes du bébé ?",
+            "body": "Les règles, la fertilité et les étapes du bébé sont incluses."
+          },
+          {
+            "heading": "Sur quels appareils fonctionne-t-il ?",
+            "body": "Sur le web et Android, synchronisé entre les appareils."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Un seul endroit au lieu de plusieurs. linux-cleanup rassemble des caches éparpillés en une analyse ; LifeWell rassemble des notes de santé éparpillées en un dossier."
+          }
+        ],
+        "facts": [
+          "lifewell-2",
+          "lifewell-3",
+          "lifewell-4"
+        ]
+      },
+      "macleanup": {
+        "card": "Le même catalogue de sections, sur Mac.",
+        "title": "macleanup pour le Mac d’à côté",
+        "intro": "macleanup est l’équivalent macOS de linux-cleanup. Il reprend le même catalogue de sections et fait une vraie simulation avant de supprimer quoi que ce soit.",
+        "sections": [
+          {
+            "heading": "À quel point ressemble-t-il à linux-cleanup ?",
+            "body": "Il reprend le même catalogue de sections, écrit pour macOS."
+          },
+          {
+            "heading": "Que refuse-t-il ?",
+            "body": "Les dossiers personnels, sans condition."
+          },
+          {
+            "heading": "Peut-on prévisualiser une exécution ?",
+            "body": "Oui. Une vraie simulation précède toute suppression."
+          },
+          {
+            "heading": "Qui utiliserait les deux ?",
+            "body": "Une équipe ou un foyer avec des machines Linux et Mac peut suivre les mêmes étapes sur chacune."
+          }
+        ],
+        "facts": [
+          "macleanup-2",
+          "macleanup-3",
+          "macleanup-4"
+        ]
+      },
+      "native-update": {
+        "card": "Un correctif de la couche web pour les apps Capacitor, sans attendre le store.",
+        "title": "Native Update pour le correctif qui ne peut pas attendre la validation",
+        "intro": "Native Update livre des mises à jour de bundle en direct, par voie aérienne (OTA), aux apps Capacitor. Il affiche aussi dans l’app des invitations à installer les mises à jour du store et à laisser un avis.",
+        "sections": [
+          {
+            "heading": "Quel problème résout-il ?",
+            "body": "La mise à jour d’une app Capacitor atteint les utilisateurs sans attendre le store."
+          },
+          {
+            "heading": "Comment la mise à jour est-elle livrée ?",
+            "body": "Sous forme de bundle en direct, par voie aérienne."
+          },
+          {
+            "heading": "Et les versions complètes du store ?",
+            "body": "Des invitations dans l’app proposent d’installer la mise à jour du store ou de laisser un avis."
+          },
+          {
+            "heading": "Peut-on héberger le backend soi-même ?",
+            "body": "Oui. Le backend est open source et auto-hébergeable."
+          }
+        ],
+        "facts": [
+          "native-update-1",
+          "native-update-2",
+          "native-update-3",
+          "native-update-4"
+        ]
+      },
+      "netcage": {
+        "card": "Couper internet à une app Android, les jours de votre choix.",
+        "title": "NetCage pour une app, pas pour tout le téléphone",
+        "intro": "NetCage peut refuser le Wi-Fi et les données mobiles à une app Android choisie, pendant que le reste du téléphone reste en ligne.",
+        "sections": [
+          {
+            "heading": "Que bloque NetCage ?",
+            "body": "Le Wi-Fi, les données mobiles ou les deux, pour l’app que vous choisissez."
+          },
+          {
+            "heading": "Le reste du téléphone est-il coupé ?",
+            "body": "Non. Seule l’app choisie perd sa connexion."
+          },
+          {
+            "heading": "Une règle peut-elle suivre un horaire ?",
+            "body": "Oui. Les profils regroupent des apps et appliquent des règles les jours et aux heures choisis."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Un périmètre étroit à dessein. linux-cleanup ne supprime que les sections choisies ; NetCage ne bloque que les apps choisies."
+          }
+        ],
+        "facts": [
+          "netcage-1",
+          "netcage-2",
+          "netcage-3"
+        ]
+      },
+      "pregnancypal": {
+        "card": "Un suivi de grossesse exportable en PDF pour votre médecin.",
+        "title": "PregnancyPal et l’export à apporter au rendez-vous",
+        "intro": "PregnancyPal suit la grossesse semaine après semaine, avec la nutrition et l’activité physique. Constantes, symptômes, humeur et rendez-vous vont dans le même dossier.",
+        "sections": [
+          {
+            "heading": "Que suit PregnancyPal ?",
+            "body": "Chaque semaine de la grossesse, avec la nutrition et l’activité physique."
+          },
+          {
+            "heading": "Que peut-on noter ?",
+            "body": "Constantes, symptômes, humeur et rendez-vous."
+          },
+          {
+            "heading": "Un médecin peut-il le lire ?",
+            "body": "Oui. Le dossier s’exporte en PDF lisible par le médecin."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Un dossier qu’on peut transmettre. linux-cleanup rédige un rapport après une exécution ; PregnancyPal produit un PDF pour un rendez-vous."
+          }
+        ],
+        "facts": [
+          "pregnancypal-2",
+          "pregnancypal-3",
+          "pregnancypal-4"
+        ]
+      },
+      "rentparty": {
+        "card": "Une soirée de jeu immobilier sur un seul téléphone qui passe de main en main.",
+        "title": "RentParty quand il faut s’arrêter pour dîner",
+        "intro": "RentParty est un jeu d’échange de propriétés que l’on peut mettre en pause. On peut se passer un téléphone, jouer contre des personnages gérés par l’ordinateur ou ouvrir un salon en ligne.",
+        "sections": [
+          {
+            "heading": "Combien d’appareils faut-il ?",
+            "body": "Un seul téléphone qui circule suffit ; il existe aussi des salons en ligne."
+          },
+          {
+            "heading": "Peut-on jouer seul ?",
+            "body": "Oui, contre des personnages gérés par l’ordinateur."
+          },
+          {
+            "heading": "Que se passe-t-il à la pause ?",
+            "body": "Le jeu garde la banque et chaque titre de propriété en place jusqu’à la reprise."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Rien à voir avec les disques, et c’est justement l’idée : de quoi s’occuper une fois le nettoyage fini."
+          }
+        ],
+        "facts": [
+          "rentparty-1",
+          "rentparty-2",
+          "rentparty-3"
+        ]
+      },
+      "smsapp": {
+        "card": "Des lots de SMS programmés, envoyés depuis la SIM de votre propre Android.",
+        "title": "SMS App pour écrire depuis votre propre numéro",
+        "intro": "SMS App envoie des SMS à grande échelle depuis votre propre appareil Android. Les messages partent un par un, par lots ou à l’heure programmée.",
+        "sections": [
+          {
+            "heading": "D’où partent les messages ?",
+            "body": "De votre propre appareil Android et de sa SIM."
+          },
+          {
+            "heading": "Comment peut-on envoyer ?",
+            "body": "Message par message, par lots ou en envoi programmé."
+          },
+          {
+            "heading": "Plusieurs téléphones peuvent-ils se partager le travail ?",
+            "body": "On peut inscrire des appareils dans un groupe de bénévoles."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Les deux tournent sur du matériel que vous possédez déjà. SMS App est natif Android et pense d’abord à la vie privée."
+          }
+        ],
+        "facts": [
+          "smsapp-1",
+          "smsapp-2",
+          "smsapp-3",
+          "smsapp-4"
+        ]
+      },
+      "strata-storage": {
+        "card": "Keychain et Keystore derrière une seule interface de stockage.",
+        "title": "Strata Storage pour le secret qui n’a rien à faire dans localStorage",
+        "intro": "Strata Storage est une seule API de stockage au-dessus de localStorage, IndexedDB, des cookies et du stockage natif. Sur iOS et Android, elle atteint Keychain et Keystore.",
+        "sections": [
+          {
+            "heading": "Que remplace Strata Storage ?",
+            "body": "Le code séparé pour localStorage, IndexedDB, les cookies et le stockage natif."
+          },
+          {
+            "heading": "Où va un secret sur un téléphone ?",
+            "body": "Dans Keychain sur iOS et Keystore sur Android, par la même interface."
+          },
+          {
+            "heading": "Ajoute-t-il des dépendances ?",
+            "body": "Non. Il n’a aucune dépendance et fonctionne sur le web, iOS et Android."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "L’application de bureau et le site de linux-cleanup conservent leurs réglages avec Strata Storage."
+          }
+        ],
+        "facts": [
+          "strata-storage-1",
+          "strata-storage-2",
+          "strata-storage-3",
+          "strata-storage-4"
+        ]
+      },
+      "tilawah": {
+        "card": "Des séances de récitation du Coran en direct, réservées dans votre fuseau horaire.",
+        "title": "Tilawah et un enseignant à l’heure qui vous convient",
+        "intro": "Tilawah propose des leçons enregistrées de Tajweed et de Tafseer, ainsi que des séances de récitation en direct, en tête-à-tête. Elles se réservent dans le fuseau horaire de l’apprenant.",
+        "sections": [
+          {
+            "heading": "Qu’enseigne Tilawah ?",
+            "body": "Le Tajweed et le Tafseer, par des leçons enregistrées."
+          },
+          {
+            "heading": "Peut-on avancer à son rythme ?",
+            "body": "Oui. La progression dans les leçons à son rythme est suivie."
+          },
+          {
+            "heading": "Comment se passent les séances en direct ?",
+            "body": "En tête-à-tête, réservées dans votre fuseau horaire."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Seulement l’éditeur. Les deux viennent de l’équipe Zaions, et Tilawah se suffit à lui-même."
+          }
+        ],
+        "facts": [
+          "tilawah-1",
+          "tilawah-2",
+          "tilawah-3"
+        ]
+      },
+      "trizlink": {
+        "card": "Des liens courts à votre marque, avec les clics comptés.",
+        "title": "Trizlink et ce qui se passe après le partage d’un lien",
+        "intro": "Trizlink crée des liens courts à votre marque avec des slugs personnalisés et compte les clics. Il construit aussi des pages « lien en bio » sur vos propres domaines.",
+        "sections": [
+          {
+            "heading": "Que peut-on raccourcir ?",
+            "body": "N’importe quel lien, sous votre marque et avec un slug personnalisé."
+          },
+          {
+            "heading": "Que compte-t-il ?",
+            "body": "Les clics, grâce aux statistiques intégrées."
+          },
+          {
+            "heading": "Y a-t-il une page pour une bio de profil ?",
+            "body": "Oui. Des pages « lien en bio », avec domaines personnalisés."
+          },
+          {
+            "heading": "Que comprend-il d’autre ?",
+            "body": "Plus de 50 utilitaires intégrés."
+          }
+        ],
+        "facts": [
+          "trizlink-1",
+          "trizlink-2",
+          "trizlink-3",
+          "trizlink-4"
+        ]
+      },
+      "video-controls-plus": {
+        "card": "Avance image par image et boucle A–B pour étudier n’importe quelle vidéo HTML5.",
+        "title": "Video Controls Plus pour revoir un passage",
+        "intro": "Video Controls Plus est une extension de navigateur qui contrôle n’importe quelle vidéo HTML5. Elle boucle un passage A–B, avance image par image et règle la vitesse de 0,1× à 16×.",
+        "sections": [
+          {
+            "heading": "Comment étudier un court passage d’une vidéo ?",
+            "body": "Placez une boucle A–B et parcourez-la image par image."
+          },
+          {
+            "heading": "Jusqu’où peut-on ralentir ou accélérer ?",
+            "body": "De 0,1× à 16×."
+          },
+          {
+            "heading": "Peut-on prendre des notes ?",
+            "body": "Oui. Captures d’écran et notes horodatées, avec plus de 40 raccourcis."
+          },
+          {
+            "heading": "Et le son et l’image ?",
+            "body": "Amplification du son jusqu’à 400 %, filtres et correction des couleurs."
+          }
+        ],
+        "facts": [
+          "video-controls-plus-1",
+          "video-controls-plus-2",
+          "video-controls-plus-4",
+          "video-controls-plus-3"
+        ]
+      },
+      "waylock": {
+        "card": "L’itinéraire choisi reste à l’écran après une erreur de direction.",
+        "title": "Waylock et l’itinéraire déjà décidé",
+        "intro": "Waylock est une couche de planification Android posée sur Google Maps, pour les chauffeurs et les livreurs. Le chauffeur fixe les arrêts choisis et ordonne les autres autour.",
+        "sections": [
+          {
+            "heading": "À qui s’adresse Waylock ?",
+            "body": "Aux chauffeurs et livreurs qui planifient leurs arrêts sur Android, par-dessus Google Maps."
+          },
+          {
+            "heading": "Peut-on fixer certains arrêts ?",
+            "body": "Oui. Les arrêts choisis restent en place et les autres s’ordonnent autour."
+          },
+          {
+            "heading": "Que se passe-t-il après une erreur de direction ?",
+            "body": "L’itinéraire choisi reste visible, à côté du choix d’y revenir ou d’en prendre un nouveau."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Le plan fixé reste le plan. Une exécution réelle suit les sections que vous avez confirmées, sans rien ajouter en route."
+          }
+        ],
+        "facts": [
+          "waylock-1",
+          "waylock-2",
+          "waylock-3"
+        ]
+      },
+      "windowsweep": {
+        "card": "Un nettoyage Windows où l’on choisit les fichiers personnels ligne par ligne.",
+        "title": "windowsweep pour le Windows à côté de votre Linux",
+        "intro": "windowsweep est un outil de nettoyage pour Windows qui commence par une simulation. Les fichiers personnels se choisissent ligne par ligne, jamais en bloc.",
+        "sections": [
+          {
+            "heading": "Comment traite-t-il les fichiers personnels ?",
+            "body": "Vous les choisissez ligne par ligne."
+          },
+          {
+            "heading": "Montre-t-il d’abord les chemins ?",
+            "body": "Oui. Il nomme chaque chemin avant d’y toucher, sur 30 sections, avec une vraie simulation."
+          },
+          {
+            "heading": "Fait-il des appels réseau ?",
+            "body": "Aucun, selon le produit lui-même."
+          },
+          {
+            "heading": "Comment le lancer ?",
+            "body": "Avec npx windowsweep, ou comme application de bureau Windows."
+          }
+        ],
+        "facts": [
+          "windowsweep-1",
+          "windowsweep-2",
+          "windowsweep-3",
+          "windowsweep-4"
+        ]
+      },
+      "ztools": {
+        "card": "Des utilitaires pour développeurs qui tournent dans le navigateur et n’envoient rien.",
+        "title": "ZTools quand vos données ne doivent pas quitter votre machine",
+        "intro": "ZTools est une boîte à outils pour développeurs et créateurs. Chaque outil tourne dans le navigateur : ce que vous saisissez n’est pas envoyé.",
+        "sections": [
+          {
+            "heading": "Quels outils contient-il ?",
+            "body": "Des outils de mise en forme, de conversion, d’encodage et de génération."
+          },
+          {
+            "heading": "Où vont vos données ?",
+            "body": "Nulle part. Les outils tournent dans le navigateur et rien n’est envoyé."
+          },
+          {
+            "heading": "Fonctionne-t-il hors ligne ?",
+            "body": "Oui. Il a une recherche, le mode sombre d’abord, et fonctionne hors ligne."
+          },
+          {
+            "heading": "Quel lien avec linux-cleanup ?",
+            "body": "Pendant un nettoyage, vos chemins restent sur votre machine ; dans ZTools, vos données restent dans votre navigateur."
+          }
+        ],
+        "facts": [
+          "ztools-1",
+          "ztools-2",
+          "ztools-3",
+          "ztools-4"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "À propos du développeur · linux-cleanup",
+    "description": "Ahsan Mahmood a créé linux-cleanup pour qu’une machine Linux se débarrasse de ses caches et de ses restes sans toucher aux fichiers personnels. Pourquoi il l’a créé et comment il en est arrivé là, dates à l’appui.",
+    "eyebrow": "À PROPOS DU DÉVELOPPEUR",
+    "h1": "Créé par Ahsan Mahmood.",
+    "lead": "Ahsan Mahmood (aoneahsan) a créé linux-cleanup après que ses propres disques se sont remplis, encore et encore, de caches dont personne n’avait besoin. Il dirige Zaions, l’équipe qui le développe.",
+    "portfolio": "Voir le portfolio d’Ahsan",
+    "zaions": "Zaions",
+    "sections": [
+      {
+        "id": "why",
+        "h2": "Pourquoi il existe",
+        "p": [
+          "Une machine de développeur se remplit de choses qui se reconstruisent : caches de paquets, sorties de compilation, journaux, restes de logiciels déjà désinstallés. Ahsan voulait un seul outil qui fasse ce ménage et laisse les fichiers personnels tranquilles.",
+          "Il voulait qu’il soit gratuit pour qui en a besoin. La ligne de commande est gratuite et sous licence MIT ; l’application de bureau ajoute une fenêtre, une planification et un reçu pour ceux qui le souhaitent.",
+          "Il s’adresse à toute personne qui utilise Linux, pas seulement aux développeurs. Il est né comme le pendant Linux de l’idée qu’il avait appliquée au Mac avec macleanup."
+        ]
+      },
+      {
+        "id": "journey",
+        "h2": "Comment il en est arrivé là",
+        "timeline": [
+          [
+            "2026-05-09",
+            "linux-cleanup 1.0.0 : un script Bash lancé avec npx, rien à installer."
+          ],
+          [
+            "2026-09-18",
+            "1.6.0, la dernière version de la première lignée."
+          ],
+          [
+            "2026-11-10",
+            "Reconstruit en 2.0.0, avec une vraie simulation et une vérification des versions."
+          ],
+          [
+            "2026-11-13",
+            "Mise en ligne de ce site."
+          ],
+          [
+            "2026-11-21",
+            "La documentation passe en 2.x, la CLI 2.1.0 sort et l’application de bureau 1.0.0 est publiée pour Linux x86_64."
+          ],
+          [
+            "2026-11-22",
+            "Ouverture des offres de l’application de bureau ; les versions actuelles sont bureau 1.0.4 et CLI 2.1.1."
+          ]
+        ]
+      },
+      {
+        "id": "built",
+        "h2": "Comment il est construit",
+        "p": [
+          "Le moteur est la ligne de commande Bash, publiée sur npm. L’application de bureau est une fenêtre Tauri autour de ce même moteur : les deux suppriment exactement les mêmes chemins.",
+          "Les chemins de fichiers restent sur votre machine. Avec un compte, le résumé de chaque exécution conserve des tailles, des numéros de section et la version du système, jamais les chemins. Le site et l’application comptent l’utilisation et signalent les erreurs pour améliorer la version suivante ; la politique de confidentialité nomme chaque service.",
+          "Chaque suppression est définitive. Une simulation liste ce qu’une exécution réelle supprimerait, et un reçu liste ce qui a été supprimé."
+        ]
+      },
+      {
+        "id": "more",
+        "h2": "Plus d’Ahsan et de Zaions",
+        "links": [
+          [
+            "/ecosystem",
+            "Les produits Zaions"
+          ],
+          [
+            "https://aoneahsan.com/projects",
+            "Les projets d’Ahsan"
+          ],
+          [
+            "https://zaions.com",
+            "zaions.com"
+          ],
+          [
+            "https://github.com/aoneahsan",
+            "GitHub"
+          ],
+          [
+            "https://www.linkedin.com/in/aoneahsan",
+            "LinkedIn"
+          ]
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "Questions et signalements de bugs",
+        "p": [
+          "Ouvrez une issue sur le dépôt linux-cleanup. Indiquez la version affichée par linux-cleanup --version et ce que vous avez lancé."
+        ],
+        "link": [
+          "https://github.com/aoneahsan/linux-cleanup/issues",
+          "Ouvrir une issue"
+        ]
+      }
+    ]
+  }
+}

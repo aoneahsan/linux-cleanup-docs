@@ -1,0 +1,54 @@
+{
+  "title": {
+    "message": "linux-cleanup",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logotipo de linux-cleanup",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Documentación",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.What it deletes": {
+    "message": "Qué elimina",
+    "description": "Navbar item with label What it deletes"
+  },
+  "item.label.Quick start": {
+    "message": "Inicio rápido",
+    "description": "Navbar item with label Quick start"
+  },
+  "item.label.CLI": {
+    "message": "CLI",
+    "description": "Navbar item with label CLI"
+  },
+  "item.label.Changelog": {
+    "message": "Registro de cambios",
+    "description": "Navbar item with label Changelog"
+  },
+  "item.label.Get linux-cleanup": {
+    "message": "Obtener linux-cleanup",
+    "description": "Navbar item with label Get linux-cleanup"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.npm": {
+    "message": "npm",
+    "description": "Navbar item with label npm"
+  },
+  "item.label.Desktop app for Linux": {
+    "message": "Aplicación de escritorio para Linux",
+    "description": "Navbar item with label Desktop app for Linux"
+  },
+  "item.label.linux-cleanup website": {
+    "message": "Sitio web de linux-cleanup",
+    "description": "Navbar item with label linux-cleanup website"
+  },
+  "item.label.All places": {
+    "message": "Todos los lugares",
+    "description": "Navbar item with label All places"
+  }
+}

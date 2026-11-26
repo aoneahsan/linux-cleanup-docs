@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "次期版",
+    "description": "The label for version current"
+  },
+  "sidebar.mainSidebar.category.Before you delete anything": {
+    "message": "何かを削除する前に",
+    "description": "The label for category 'Before you delete anything' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Getting started": {
+    "message": "はじめに",
+    "description": "The label for category 'Getting started' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Desktop app": {
+    "message": "デスクトップアプリ",
+    "description": "The label for category 'Desktop app' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Modes": {
+    "message": "モード",
+    "description": "The label for category 'Modes' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Compare": {
+    "message": "比較",
+    "description": "The label for category 'Compare' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Reference": {
+    "message": "リファレンス",
+    "description": "The label for category 'Reference' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Guides": {
+    "message": "ガイド",
+    "description": "The label for category 'Guides' in sidebar 'mainSidebar'"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Suivante",
+    "description": "The label for version current"
+  },
+  "sidebar.mainSidebar.category.Before you delete anything": {
+    "message": "Avant de supprimer quoi que ce soit",
+    "description": "The label for category 'Before you delete anything' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Getting started": {
+    "message": "Prise en main",
+    "description": "The label for category 'Getting started' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Desktop app": {
+    "message": "Application de bureau",
+    "description": "The label for category 'Desktop app' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Modes": {
+    "message": "Modes",
+    "description": "The label for category 'Modes' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Compare": {
+    "message": "Comparer",
+    "description": "The label for category 'Compare' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Reference": {
+    "message": "Référence",
+    "description": "The label for category 'Reference' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category 'Guides' in sidebar 'mainSidebar'"
+  }
+}

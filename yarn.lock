@@ -9128,6 +9128,7 @@ __metadata:
     "@docusaurus/theme-common": "npm:^3.10.2"
     "@docusaurus/theme-mermaid": "npm:^3.10.2"
     "@docusaurus/types": "npm:^3.10.2"
+    "@docusaurus/utils": "npm:3.10.2"
     "@easyops-cn/docusaurus-search-local": "npm:^0.55.3"
     "@mdx-js/react": "npm:^3.1.1"
     "@supabase/realtime-js": "npm:^2.119.2"

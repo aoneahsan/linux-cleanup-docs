@@ -1,0 +1,114 @@
+{
+  "link.title.Start here": {
+    "message": "यहाँ से शुरू करें",
+    "description": "The title of the footer links column with title=Start here in the footer"
+  },
+  "link.title.Reference": {
+    "message": "संदर्भ",
+    "description": "The title of the footer links column with title=Reference in the footer"
+  },
+  "link.title.Project": {
+    "message": "प्रोजेक्ट",
+    "description": "The title of the footer links column with title=Project in the footer"
+  },
+  "link.title.Get linux-cleanup": {
+    "message": "linux-cleanup पाएँ",
+    "description": "The title of the footer links column with title=Get linux-cleanup in the footer"
+  },
+  "link.title.Built by Ahsan Mahmood": {
+    "message": "Ahsan Mahmood ने बनाया",
+    "description": "The title of the footer links column with title=Built by Ahsan Mahmood in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "परिचय",
+    "description": "The label of footer link with label=Introduction linking to /"
+  },
+  "link.item.label.What it deletes": {
+    "message": "यह क्या हटाता है",
+    "description": "The label of footer link with label=What it deletes linking to /safety/what-it-deletes"
+  },
+  "link.item.label.Preview before deleting": {
+    "message": "हटाने से पहले पूर्वावलोकन",
+    "description": "The label of footer link with label=Preview before deleting linking to /safety/preview-first"
+  },
+  "link.item.label.Installation": {
+    "message": "इंस्टॉलेशन",
+    "description": "The label of footer link with label=Installation linking to /getting-started/installation"
+  },
+  "link.item.label.CLI flags": {
+    "message": "CLI फ़्लैग",
+    "description": "The label of footer link with label=CLI flags linking to /reference/cli-flags"
+  },
+  "link.item.label.Protected paths": {
+    "message": "संरक्षित पथ",
+    "description": "The label of footer link with label=Protected paths linking to /reference/protected-paths"
+  },
+  "link.item.label.Report schema": {
+    "message": "रिपोर्ट स्कीमा",
+    "description": "The label of footer link with label=Report schema linking to /reference/report-schema"
+  },
+  "link.item.label.Changelog": {
+    "message": "बदलाव सूची",
+    "description": "The label of footer link with label=Changelog linking to /changelog"
+  },
+  "link.item.label.Release notes": {
+    "message": "रिलीज़ नोट",
+    "description": "The label of footer link with label=Release notes linking to /feed"
+  },
+  "link.item.label.Source (GitHub)": {
+    "message": "सोर्स (GitHub)",
+    "description": "The label of footer link with label=Source (GitHub) linking to https://github.com/aoneahsan/linux-cleanup"
+  },
+  "link.item.label.npm package": {
+    "message": "npm पैकेज",
+    "description": "The label of footer link with label=npm package linking to https://www.npmjs.com/package/linux-cleanup"
+  },
+  "link.item.label.Report an issue": {
+    "message": "समस्या रिपोर्ट करें",
+    "description": "The label of footer link with label=Report an issue linking to https://github.com/aoneahsan/linux-cleanup/issues"
+  },
+  "link.item.label.npm": {
+    "message": "npm",
+    "description": "The label of footer link with label=npm linking to https://www.npmjs.com/package/linux-cleanup"
+  },
+  "link.item.label.Desktop app for Linux": {
+    "message": "Linux के लिए डेस्कटॉप ऐप",
+    "description": "The label of footer link with label=Desktop app for Linux linking to https://linux-cleanup.aoneahsan.com/download"
+  },
+  "link.item.label.linux-cleanup website": {
+    "message": "linux-cleanup वेबसाइट",
+    "description": "The label of footer link with label=linux-cleanup website linking to https://linux-cleanup.aoneahsan.com"
+  },
+  "link.item.label.All places": {
+    "message": "सभी जगहें",
+    "description": "The label of footer link with label=All places linking to /apps"
+  },
+  "link.item.label.About the developer": {
+    "message": "डेवलपर के बारे में",
+    "description": "The label of footer link with label=About the developer linking to /about-developer"
+  },
+  "link.item.label.More from Zaions": {
+    "message": "Zaions से और",
+    "description": "The label of footer link with label=More from Zaions linking to /ecosystem"
+  },
+  "link.item.label.aoneahsan.com": {
+    "message": "aoneahsan.com",
+    "description": "The label of footer link with label=aoneahsan.com linking to https://aoneahsan.com"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://linkedin.com/in/aoneahsan"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/aoneahsan"
+  },
+  "link.item.label.npm packages": {
+    "message": "npm पैकेज",
+    "description": "The label of footer link with label=npm packages linking to https://www.npmjs.com/~aoneahsan"
+  },
+  "copyright": {
+    "message": "linux-cleanup — Zaions टीम ने प्यार से बनाया · © 2026 linux-cleanup · MIT लाइसेंस, बिना वारंटी: यह फ़ाइलें हटाता है।",
+    "description": "The footer copyright"
+  }
+}

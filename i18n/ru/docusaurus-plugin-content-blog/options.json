@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Заметки о выпусках",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Все выпуски linux-cleanup, командной строки и настольного приложения, от новых к старым.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Выпуски",
+    "description": "The label for the left sidebar"
+  }
+}

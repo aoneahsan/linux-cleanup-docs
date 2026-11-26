@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "ملاحظات الإصدار",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "كل إصدارات linux-cleanup، سطر الأوامر وتطبيق سطح المكتب، الأحدث أولًا.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "الإصدارات",
+    "description": "The label for the left sidebar"
+  }
+}

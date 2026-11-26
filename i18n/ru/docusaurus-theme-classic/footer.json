@@ -1,0 +1,114 @@
+{
+  "link.title.Start here": {
+    "message": "С чего начать",
+    "description": "The title of the footer links column with title=Start here in the footer"
+  },
+  "link.title.Reference": {
+    "message": "Справочник",
+    "description": "The title of the footer links column with title=Reference in the footer"
+  },
+  "link.title.Project": {
+    "message": "Проект",
+    "description": "The title of the footer links column with title=Project in the footer"
+  },
+  "link.title.Get linux-cleanup": {
+    "message": "Скачать linux-cleanup",
+    "description": "The title of the footer links column with title=Get linux-cleanup in the footer"
+  },
+  "link.title.Built by Ahsan Mahmood": {
+    "message": "Создано Ahsan Mahmood",
+    "description": "The title of the footer links column with title=Built by Ahsan Mahmood in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "Введение",
+    "description": "The label of footer link with label=Introduction linking to /"
+  },
+  "link.item.label.What it deletes": {
+    "message": "Что удаляется",
+    "description": "The label of footer link with label=What it deletes linking to /safety/what-it-deletes"
+  },
+  "link.item.label.Preview before deleting": {
+    "message": "Предпросмотр перед удалением",
+    "description": "The label of footer link with label=Preview before deleting linking to /safety/preview-first"
+  },
+  "link.item.label.Installation": {
+    "message": "Установка",
+    "description": "The label of footer link with label=Installation linking to /getting-started/installation"
+  },
+  "link.item.label.CLI flags": {
+    "message": "Флаги CLI",
+    "description": "The label of footer link with label=CLI flags linking to /reference/cli-flags"
+  },
+  "link.item.label.Protected paths": {
+    "message": "Защищённые пути",
+    "description": "The label of footer link with label=Protected paths linking to /reference/protected-paths"
+  },
+  "link.item.label.Report schema": {
+    "message": "Схема отчёта",
+    "description": "The label of footer link with label=Report schema linking to /reference/report-schema"
+  },
+  "link.item.label.Changelog": {
+    "message": "Список изменений",
+    "description": "The label of footer link with label=Changelog linking to /changelog"
+  },
+  "link.item.label.Release notes": {
+    "message": "Заметки о выпусках",
+    "description": "The label of footer link with label=Release notes linking to /feed"
+  },
+  "link.item.label.Source (GitHub)": {
+    "message": "Исходный код (GitHub)",
+    "description": "The label of footer link with label=Source (GitHub) linking to https://github.com/aoneahsan/linux-cleanup"
+  },
+  "link.item.label.npm package": {
+    "message": "Пакет npm",
+    "description": "The label of footer link with label=npm package linking to https://www.npmjs.com/package/linux-cleanup"
+  },
+  "link.item.label.Report an issue": {
+    "message": "Сообщить о проблеме",
+    "description": "The label of footer link with label=Report an issue linking to https://github.com/aoneahsan/linux-cleanup/issues"
+  },
+  "link.item.label.npm": {
+    "message": "npm",
+    "description": "The label of footer link with label=npm linking to https://www.npmjs.com/package/linux-cleanup"
+  },
+  "link.item.label.Desktop app for Linux": {
+    "message": "Настольное приложение для Linux",
+    "description": "The label of footer link with label=Desktop app for Linux linking to https://linux-cleanup.aoneahsan.com/download"
+  },
+  "link.item.label.linux-cleanup website": {
+    "message": "Сайт linux-cleanup",
+    "description": "The label of footer link with label=linux-cleanup website linking to https://linux-cleanup.aoneahsan.com"
+  },
+  "link.item.label.All places": {
+    "message": "Все варианты",
+    "description": "The label of footer link with label=All places linking to /apps"
+  },
+  "link.item.label.About the developer": {
+    "message": "О разработчике",
+    "description": "The label of footer link with label=About the developer linking to /about-developer"
+  },
+  "link.item.label.More from Zaions": {
+    "message": "Ещё от Zaions",
+    "description": "The label of footer link with label=More from Zaions linking to /ecosystem"
+  },
+  "link.item.label.aoneahsan.com": {
+    "message": "aoneahsan.com",
+    "description": "The label of footer link with label=aoneahsan.com linking to https://aoneahsan.com"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://linkedin.com/in/aoneahsan"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/aoneahsan"
+  },
+  "link.item.label.npm packages": {
+    "message": "Пакеты npm",
+    "description": "The label of footer link with label=npm packages linking to https://www.npmjs.com/~aoneahsan"
+  },
+  "copyright": {
+    "message": "linux-cleanup — сделано с любовью командой Zaions · © 2026 linux-cleanup · Лицензия MIT, без гарантий: программа удаляет файлы.",
+    "description": "The footer copyright"
+  }
+}

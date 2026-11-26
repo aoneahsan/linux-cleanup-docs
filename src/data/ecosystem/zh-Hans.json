@@ -1,0 +1,775 @@
+{
+  "ecosystem": {
+    "band": {
+      "title": "更多来自 Zaions",
+      "lead": "linux-cleanup 团队的其他工具。每一个都从习惯先看路径再删除的人的角度来介绍。",
+      "seeAll": "查看 Zaions 的全部产品",
+      "visit": "访问 {product}",
+      "details": "详情",
+      "pause": "暂停产品轮播",
+      "play": "播放产品轮播",
+      "prev": "上一个产品",
+      "next": "下一个产品",
+      "slide": "第 {index} 个，共 {count} 个",
+      "eyebrow": "Zaions"
+    },
+    "page": {
+      "eyebrow": "ZAIONS 产品",
+      "h1": "货架上的其他产品。",
+      "intro_other": "来自同一团队的 {count} 款产品，每款用一句话说明它做什么。linux-cleanup 不在列表里，因为您已经在这里了。"
+    },
+    "view": {
+      "label": "视图",
+      "grid": "卡片",
+      "list": "列表",
+      "table": "表格"
+    },
+    "table": {
+      "product": "产品",
+      "what": "用途",
+      "link": "链接"
+    },
+    "detail": {
+      "back": "Zaions 的全部产品",
+      "facts": "依据该产品自己的页面，核实于 {date}。"
+    },
+    "kind": {
+      "web-app": "网页应用",
+      "mobile-app": "Android 应用",
+      "package": "npm 软件包",
+      "desktop-app-cli": "桌面应用 + 命令行",
+      "browser-extension": "浏览器扩展",
+      "wordpress-plugin-saas": "WordPress 插件",
+      "saas-package": "服务 + npm 软件包"
+    },
+    "footer": {
+      "credit": "linux-cleanup — 由 Zaions 团队用心打造",
+      "copyright": "© {year} linux-cleanup",
+      "aboutDeveloper": "关于开发者",
+      "ecosystem": "更多来自 Zaions"
+    },
+    "products": {
+      "achat": {
+        "card": "与您选择的人聊天，无需交出手机号。",
+        "title": "AchatAI：不用留号码也能聊",
+        "intro": "AchatAI 是一款面向您所选之人的消息应用，支持网页和 Android。别人可以通过用户名、邀请链接或二维码找到您。",
+        "sections": [
+          {
+            "heading": "AchatAI 适合谁？",
+            "body": "想在网页或 Android 上，只和自己挑选的人发消息的人。"
+          },
+          {
+            "heading": "别人需要您的手机号吗？",
+            "body": "不需要。用户名、邀请链接或二维码就能找到您。"
+          },
+          {
+            "heading": "没有账户也能聊吗？",
+            "body": "可以，在匿名房间里。无需注册即可打开。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "两者交出去的都比您想的少。linux-cleanup 把文件路径留在您的电脑上；AchatAI 让您的号码不进入对话。"
+          }
+        ],
+        "facts": [
+          "achat-1",
+          "achat-2",
+          "achat-3"
+        ]
+      },
+      "callvault": {
+        "card": "通话录音留在手机上，除非您另作选择。",
+        "title": "CallVault 与录音存放的位置",
+        "intro": "CallVault 通过手机提供的音频源，在 Android 上录制通话。除非您开启私有云备份，录音只保存在这部手机上。",
+        "sections": [
+          {
+            "heading": "CallVault 如何录制通话？",
+            "body": "它使用 Android 手机为通话提供的音频源。"
+          },
+          {
+            "heading": "录音保存在哪里？",
+            "body": "保存在手机上。只有开启私有云备份后，录音才会离开手机。"
+          },
+          {
+            "heading": "录音可以做什么？",
+            "body": "播放、在录音库中搜索、添加备注和导出。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "对数据的同一条原则：在您决定移动之前，数据留在您自己的设备上。"
+          }
+        ],
+        "facts": [
+          "callvault-1",
+          "callvault-2",
+          "callvault-3"
+        ]
+      },
+      "capacitor-auth-manager": {
+        "card": "Capacitor 应用的 Google 登录，不依赖 Firebase。",
+        "title": "Capacitor Auth Manager：不依赖 Firebase",
+        "intro": "Capacitor Auth Manager 是一个 npm 软件包，用一次 Google 登录调用覆盖网页、Android 和 iOS，并且不引入 Firebase。",
+        "sections": [
+          {
+            "heading": "这个软件包做什么？",
+            "body": "它为 Capacitor 应用提供一次 Google 登录调用，可在网页、Android 和 iOS 上使用。"
+          },
+          {
+            "heading": "它需要 Firebase 吗？",
+            "body": "不需要。Firebase 不是它的依赖。"
+          },
+          {
+            "heading": "3.x 版本启用了哪些提供方？",
+            "body": "3.x 中唯一启用的提供方是 Google。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "两者都从 npm 发布。如果您在意依赖会往 node_modules 里塞多少东西，这个包把 Firebase 排除在外。"
+          }
+        ],
+        "facts": [
+          "capacitor-auth-manager-1",
+          "capacitor-auth-manager-2",
+          "capacitor-auth-manager-3"
+        ]
+      },
+      "clearhire": {
+        "card": "投递之前，先按 ATS 规则检查简历。",
+        "title": "ClearHire：在申请发出之前",
+        "intro": "ClearHire 是一款简历生成工具，用结构化资料保存信息，并提供 50 多种求职工具，其中一种会按申请人跟踪系统（ATS）检查简历。",
+        "sections": [
+          {
+            "heading": "ClearHire 是什么？",
+            "body": "一款简历生成工具，把您的资料保存在结构化字段里，便于申请人跟踪系统读取。"
+          },
+          {
+            "heading": "发送前可以检查什么？",
+            "body": "从撰写要点到 ATS 检查，共有 50 多种求职工具。"
+          },
+          {
+            "heading": "资料如何获得更多信任？",
+            "body": "工作经历验证流程为您列出的工作经历提供证明。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "都习惯先看再做。试运行先展示清理内容；ATS 检查先展示简历效果。"
+          }
+        ],
+        "facts": [
+          "clearhire-2",
+          "clearhire-3",
+          "clearhire-4"
+        ]
+      },
+      "eatthis": {
+        "card": "选择之前，先看一份能提供多少。",
+        "title": "Eat This：一份背后的数字",
+        "intro": "Eat This 让您按营养素、身体感受或一天中的时间查找食物，并显示一份食物能提供多少某种营养素。",
+        "sections": [
+          {
+            "heading": "在 Eat This 里怎么搜索？",
+            "body": "按营养素、身体感受或一天中的时间。"
+          },
+          {
+            "heading": "它会显示食物的什么信息？",
+            "body": "一份食物能提供多少某种营养素。"
+          },
+          {
+            "heading": "它会推荐更便宜的选择吗？",
+            "body": "会。它会指出便宜的选择，也会说明什么问题应该去问医生。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "两者都在决定之前先给出数量：清理前看缓存大小，吃之前看营养含量。"
+          }
+        ],
+        "facts": [
+          "eatthis-1",
+          "eatthis-2",
+          "eatthis-3"
+        ]
+      },
+      "empora": {
+        "card": "WooCommerce 模块，逐个开启。",
+        "title": "Empora：只开启店铺需要的模块",
+        "intro": "Empora 把多个 WooCommerce 店铺模块放进一个 WordPress 插件里，由商家决定开启哪些模块。",
+        "sections": [
+          {
+            "heading": "Empora 是什么？",
+            "body": "一个包含多个 WooCommerce 店铺模块的 WordPress 插件。"
+          },
+          {
+            "heading": "所有模块会同时运行吗？",
+            "body": "不会。由商家选择开启哪些。"
+          },
+          {
+            "heading": "网页后台负责什么？",
+            "body": "许可证和可选的店铺连接。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "都按名称选择。linux-cleanup 只运行您选中的分区；Empora 只运行您选中的模块。"
+          }
+        ],
+        "facts": [
+          "empora-1",
+          "empora-2",
+          "empora-3"
+        ]
+      },
+      "habitforge": {
+        "card": "一份能清楚显示从哪天中断的习惯记录。",
+        "title": "HabitForge：看得见的空档",
+        "intro": "HabitForge 把坚持画成一根绳子。每次打卡它就变粗，在您停下的地方开始磨损。",
+        "sections": [
+          {
+            "heading": "HabitForge 怎么显示一个习惯？",
+            "body": "画成一根绳子，每次打卡都会变粗。"
+          },
+          {
+            "heading": "漏掉几天会怎样？",
+            "body": "绳子会在您停下的地方磨损，所以空档一眼可见。"
+          },
+          {
+            "heading": "可以和别人一起吗？",
+            "body": "有好友、挑战和排行榜，排行榜随时可以退出。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "一份之后还能读懂的记录。linux-cleanup 列出一次运行删了什么；HabitForge 显示每一天发生了什么。它支持网页和 Android，同一个账户。"
+          }
+        ],
+        "facts": [
+          "habitforge-1",
+          "habitforge-2",
+          "habitforge-3",
+          "habitforge-4"
+        ]
+      },
+      "labflow": {
+        "card": "化验结果从草稿到发布，一步一步走。",
+        "title": "LabFlow：一份结果走过的路",
+        "intro": "LabFlow 把一间诊断实验室从患者和医嘱，到样本和结果，完整地管起来。结果在发布前要经过验证流程。",
+        "sections": [
+          {
+            "heading": "LabFlow 管哪些事？",
+            "body": "患者、医嘱、样本和结果，都在一个系统里。"
+          },
+          {
+            "heading": "结果如何发布？",
+            "body": "经过验证流程，从草稿变为已发布。"
+          },
+          {
+            "heading": "实验室还用它做什么？",
+            "body": "收费、库存和质量控制。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "最后一步之前都有一个明确的步骤。实际运行之前有试运行；发布之前有验证。"
+          }
+        ],
+        "facts": [
+          "labflow-1",
+          "labflow-2",
+          "labflow-3",
+          "labflow-4"
+        ]
+      },
+      "lifewell": {
+        "card": "生命体征、饮水、用药和睡眠，记在同一份记录里。",
+        "title": "LifeWell：多种健康记录合而为一",
+        "intro": "LifeWell 把生命体征、饮水、用药、睡眠和营养放在一个应用里。它支持网页和 Android，并在两者之间同步。",
+        "sections": [
+          {
+            "heading": "LifeWell 可以记录什么？",
+            "body": "生命体征、饮水、用药、睡眠和营养。"
+          },
+          {
+            "heading": "它包括经期和宝宝成长吗？",
+            "body": "包括经期、生育和宝宝成长里程碑。"
+          },
+          {
+            "heading": "它在哪些设备上运行？",
+            "body": "网页和 Android，跨设备同步。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "都把分散的东西收到一处。linux-cleanup 把零散的缓存汇成一次调查；LifeWell 把零散的健康记录汇成一份记录。"
+          }
+        ],
+        "facts": [
+          "lifewell-2",
+          "lifewell-3",
+          "lifewell-4"
+        ]
+      },
+      "macleanup": {
+        "card": "同样的分区目录，用在 Mac 上。",
+        "title": "macleanup：给旁边那台 Mac",
+        "intro": "macleanup 是 linux-cleanup 的 macOS 版本。它使用同样的分区目录，在删除任何东西之前都会先做一次真正的试运行。",
+        "sections": [
+          {
+            "heading": "它和 linux-cleanup 有多接近？",
+            "body": "它使用同样的分区目录，为 macOS 编写。"
+          },
+          {
+            "heading": "它拒绝什么？",
+            "body": "个人文件夹，无条件拒绝。"
+          },
+          {
+            "heading": "可以预览一次运行吗？",
+            "body": "可以。删除任何东西之前，都会先做一次真正的试运行。"
+          },
+          {
+            "heading": "谁会两个都用？",
+            "body": "同时有 Linux 和 Mac 的团队或家庭，可以在每台电脑上按同样的步骤操作。"
+          }
+        ],
+        "facts": [
+          "macleanup-2",
+          "macleanup-3",
+          "macleanup-4"
+        ]
+      },
+      "native-update": {
+        "card": "把网页层修复推给 Capacitor 应用，无需等待商店审核。",
+        "title": "Native Update：等不及审核的修复",
+        "intro": "Native Update 为 Capacitor 应用提供实时的空中（OTA）包更新，还能在应用内提示用户安装商店更新或留下评价。",
+        "sections": [
+          {
+            "heading": "它解决什么问题？",
+            "body": "让 Capacitor 应用的更新无需等待商店就能到达用户。"
+          },
+          {
+            "heading": "更新如何送达？",
+            "body": "以实时 OTA 包的形式。"
+          },
+          {
+            "heading": "完整的商店版本怎么办？",
+            "body": "应用内提示会请用户安装商店更新或留下评价。"
+          },
+          {
+            "heading": "后端可以自己部署吗？",
+            "body": "可以。后端开源，可自行托管。"
+          }
+        ],
+        "facts": [
+          "native-update-1",
+          "native-update-2",
+          "native-update-3",
+          "native-update-4"
+        ]
+      },
+      "netcage": {
+        "card": "在您选定的日子里，让一个 Android 应用断网。",
+        "title": "NetCage：只管一个应用，不管整部手机",
+        "intro": "NetCage 可以拒绝某个选定 Android 应用的 Wi-Fi 和移动网络连接，手机的其他部分照常在线。",
+        "sections": [
+          {
+            "heading": "NetCage 阻止什么？",
+            "body": "为您选定的应用阻止 Wi-Fi、移动数据或两者。"
+          },
+          {
+            "heading": "手机其他部分会断网吗？",
+            "body": "不会。只有选定的应用失去连接。"
+          },
+          {
+            "heading": "规则可以按时间表执行吗？",
+            "body": "可以。配置文件可以把应用分组，在选定的日期和时间应用规则。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "刻意缩小范围。linux-cleanup 只删除您选中的分区；NetCage 只阻止您选中的应用。"
+          }
+        ],
+        "facts": [
+          "netcage-1",
+          "netcage-2",
+          "netcage-3"
+        ]
+      },
+      "pregnancypal": {
+        "card": "一份可以导出 PDF、交给医生的孕期记录。",
+        "title": "PregnancyPal：带去产检的那份导出",
+        "intro": "PregnancyPal 按周记录孕期，包括营养和运动。生命体征、症状、情绪和预约也都记在同一份记录里。",
+        "sections": [
+          {
+            "heading": "PregnancyPal 记录什么？",
+            "body": "孕期的每一周，包括营养和运动。"
+          },
+          {
+            "heading": "可以记录哪些内容？",
+            "body": "生命体征、症状、情绪和预约。"
+          },
+          {
+            "heading": "医生能看懂吗？",
+            "body": "能。记录可以导出为便于医生阅读的 PDF。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "一份可以交出去的记录。linux-cleanup 在运行后写出报告；PregnancyPal 为产检生成 PDF。"
+          }
+        ],
+        "facts": [
+          "pregnancypal-2",
+          "pregnancypal-3",
+          "pregnancypal-4"
+        ]
+      },
+      "rentparty": {
+        "card": "一部手机轮流传，一晚上的地产交易游戏。",
+        "title": "RentParty：晚饭时可以暂停的游戏",
+        "intro": "RentParty 是一款可以暂停的地产交易游戏。玩家可以轮流传一部手机、和电脑角色对战，或者开一个在线房间。",
+        "sections": [
+          {
+            "heading": "需要几台设备？",
+            "body": "一部手机轮流传就够了；也可以开在线房间。"
+          },
+          {
+            "heading": "可以一个人玩吗？",
+            "body": "可以，和电脑角色对战。"
+          },
+          {
+            "heading": "暂停时会怎样？",
+            "body": "游戏会保留银行和每一张地契，直到继续游戏。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "和磁盘毫无关系，这正是重点：清理完之后可以打开的东西。"
+          }
+        ],
+        "facts": [
+          "rentparty-1",
+          "rentparty-2",
+          "rentparty-3"
+        ]
+      },
+      "smsapp": {
+        "card": "从您自己的 Android SIM 卡定时批量发送短信。",
+        "title": "SMS App：用您自己的号码发消息",
+        "intro": "SMS App 用您自己的 Android 设备大规模发送短信。可以单条发送、批量发送或定时发送。",
+        "sections": [
+          {
+            "heading": "消息从哪里发出？",
+            "body": "从您自己的 Android 设备和它的 SIM 卡。"
+          },
+          {
+            "heading": "可以怎样发送？",
+            "body": "单条、批量或定时发送。"
+          },
+          {
+            "heading": "多部手机可以分担吗？",
+            "body": "可以把设备注册进志愿者池。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "都运行在您已有的硬件上。SMS App 原生运行于 Android，并以隐私为先。"
+          }
+        ],
+        "facts": [
+          "smsapp-1",
+          "smsapp-2",
+          "smsapp-3",
+          "smsapp-4"
+        ]
+      },
+      "strata-storage": {
+        "card": "Keychain 和 Keystore，统一在一个存储接口之后。",
+        "title": "Strata Storage：不该放进 localStorage 的机密",
+        "intro": "Strata Storage 是一个覆盖 localStorage、IndexedDB、Cookie 和原生存储的统一存储 API。在 iOS 和 Android 上，它能使用 Keychain 和 Keystore。",
+        "sections": [
+          {
+            "heading": "Strata Storage 取代了什么？",
+            "body": "分别为 localStorage、IndexedDB、Cookie 和原生存储写的代码。"
+          },
+          {
+            "heading": "在手机上，机密存到哪里？",
+            "body": "通过同一个接口，存入 iOS 的 Keychain 和 Android 的 Keystore。"
+          },
+          {
+            "heading": "它会增加依赖吗？",
+            "body": "不会。它零依赖，可在网页、iOS 和 Android 上运行。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "linux-cleanup 的桌面应用和网站都通过 Strata Storage 保存设置。"
+          }
+        ],
+        "facts": [
+          "strata-storage-1",
+          "strata-storage-2",
+          "strata-storage-3",
+          "strata-storage-4"
+        ]
+      },
+      "tilawah": {
+        "card": "按您所在时区预约的《古兰经》诵读直播课。",
+        "title": "Tilawah：在合适的时间遇到老师",
+        "intro": "Tilawah 提供录制好的诵读规则（Tajweed）和经注（Tafseer）课程，以及一对一的诵读直播课。直播课按学习者所在时区预约。",
+        "sections": [
+          {
+            "heading": "Tilawah 教什么？",
+            "body": "通过录制课程教授诵读规则（Tajweed）和经注（Tafseer）。"
+          },
+          {
+            "heading": "可以按自己的节奏学吗？",
+            "body": "可以。自定进度课程的学习进度会被记录。"
+          },
+          {
+            "heading": "直播课怎么上？",
+            "body": "一对一诵读课，按您所在的时区预约。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "只有同一个制作者。两者都来自 Zaions 团队，Tilawah 本身独立成立。"
+          }
+        ],
+        "facts": [
+          "tilawah-1",
+          "tilawah-2",
+          "tilawah-3"
+        ]
+      },
+      "trizlink": {
+        "card": "带品牌的短链接，点击都有统计。",
+        "title": "Trizlink：链接分享出去之后",
+        "intro": "Trizlink 用自定义后缀生成带品牌的短链接并统计点击，还能在自定义域名上搭建个人简介链接页。",
+        "sections": [
+          {
+            "heading": "可以缩短什么？",
+            "body": "任何链接，使用您自己的品牌和自定义后缀。"
+          },
+          {
+            "heading": "它统计什么？",
+            "body": "点击量，通过内置的点击分析。"
+          },
+          {
+            "heading": "有个人简介页吗？",
+            "body": "有。个人简介链接页，支持自定义域名。"
+          },
+          {
+            "heading": "还包括什么？",
+            "body": "50 多种内置小工具。"
+          }
+        ],
+        "facts": [
+          "trizlink-1",
+          "trizlink-2",
+          "trizlink-3",
+          "trizlink-4"
+        ]
+      },
+      "video-controls-plus": {
+        "card": "逐帧步进和 A–B 循环，用来研究任何 HTML5 视频。",
+        "title": "Video Controls Plus：把一段再看一遍",
+        "intro": "Video Controls Plus 是一款控制任意 HTML5 视频的浏览器扩展。它可以循环 A–B 片段、逐帧步进，速度可设为 0.1× 到 16×。",
+        "sections": [
+          {
+            "heading": "怎么研究视频里的一小段？",
+            "body": "设置 A–B 循环，再逐帧步进。"
+          },
+          {
+            "heading": "最慢和最快能到多少？",
+            "body": "从 0.1× 到 16×。"
+          },
+          {
+            "heading": "可以做笔记吗？",
+            "body": "可以。截图和带时间戳的笔记，还有 40 多个快捷键。"
+          },
+          {
+            "heading": "声音和画面呢？",
+            "body": "音量最高提升到 400%，还有滤镜和色彩校正。"
+          }
+        ],
+        "facts": [
+          "video-controls-plus-1",
+          "video-controls-plus-2",
+          "video-controls-plus-4",
+          "video-controls-plus-3"
+        ]
+      },
+      "waylock": {
+        "card": "走错一个路口后，选好的路线仍留在屏幕上。",
+        "title": "Waylock：已经定好的路线",
+        "intro": "Waylock 是给司机和快递员用的 Android 规划层，建立在 Google Maps 之上。司机可以固定选中的站点，其余站点围绕它们排序。",
+        "sections": [
+          {
+            "heading": "Waylock 适合谁？",
+            "body": "在 Android 上用 Google Maps 规划停靠点的司机和快递员。"
+          },
+          {
+            "heading": "可以固定某些站点吗？",
+            "body": "可以。选中的站点保持不动，其余站点围绕它们排序。"
+          },
+          {
+            "heading": "走错路口后会怎样？",
+            "body": "选好的路线仍然显示，旁边是返回原路线或改走新路线的选项。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "定好的计划就是计划。实际运行只执行您确认的分区，途中不会多加任何东西。"
+          }
+        ],
+        "facts": [
+          "waylock-1",
+          "waylock-2",
+          "waylock-3"
+        ]
+      },
+      "windowsweep": {
+        "card": "Windows 清理，个人文件逐行选择。",
+        "title": "windowsweep：给您 Linux 旁边那台 Windows",
+        "intro": "windowsweep 是一款先做试运行的 Windows 清理工具。个人文件逐行选择，从不整组清扫。",
+        "sections": [
+          {
+            "heading": "它如何处理个人文件？",
+            "body": "由您逐行选择。"
+          },
+          {
+            "heading": "它会先显示路径吗？",
+            "body": "会。在 30 个分区中，它在触碰任何路径之前都会先说出路径，并做一次真正的试运行。"
+          },
+          {
+            "heading": "它会联网吗？",
+            "body": "按产品自己的说明，不会发出任何网络请求。"
+          },
+          {
+            "heading": "怎么运行？",
+            "body": "用 npx windowsweep，或作为 Windows 桌面应用运行。"
+          }
+        ],
+        "facts": [
+          "windowsweep-1",
+          "windowsweep-2",
+          "windowsweep-3",
+          "windowsweep-4"
+        ]
+      },
+      "ztools": {
+        "card": "在浏览器里运行、什么都不上传的开发者工具。",
+        "title": "ZTools：输入不该离开您的电脑时",
+        "intro": "ZTools 是一个面向开发者和创作者的工具箱。每个工具都在浏览器里运行，所以您的输入不会被上传。",
+        "sections": [
+          {
+            "heading": "里面有哪些工具？",
+            "body": "格式化、转换、编码和生成工具。"
+          },
+          {
+            "heading": "您的输入会去哪里？",
+            "body": "哪里都不去。工具在浏览器里运行，不上传任何内容。"
+          },
+          {
+            "heading": "可以离线使用吗？",
+            "body": "可以。支持搜索，默认深色模式，离线也能用。"
+          },
+          {
+            "heading": "它和 linux-cleanup 有什么共同点？",
+            "body": "清理时，您的路径留在您的电脑上；在 ZTools 里，您的输入留在您的浏览器里。"
+          }
+        ],
+        "facts": [
+          "ztools-1",
+          "ztools-2",
+          "ztools-3",
+          "ztools-4"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "关于开发者 · linux-cleanup",
+    "description": "Ahsan Mahmood 打造了 linux-cleanup，让 Linux 电脑可以清掉缓存和残留文件，而不碰个人文件。这里写着他为什么做它、它一路怎么走来，并附日期。",
+    "eyebrow": "关于开发者",
+    "h1": "由 Ahsan Mahmood 打造。",
+    "lead": "Ahsan Mahmood（aoneahsan）在自己的磁盘一次次被没人需要的缓存塞满之后，做了 linux-cleanup。他负责背后的团队 Zaions。",
+    "portfolio": "访问 Ahsan 的作品集",
+    "zaions": "Zaions",
+    "sections": [
+      {
+        "id": "why",
+        "h2": "为什么做它",
+        "p": [
+          "开发者的电脑会被可以重建的东西塞满：软件包缓存、构建输出、日志，还有早已卸载的软件留下的残留。Ahsan 想要一个工具，清掉这些，同时不碰个人文件。",
+          "他希望任何需要的人都能免费使用。命令行免费，采用 MIT 许可；桌面应用为需要的人增加了窗口、定时清理和清理回执。",
+          "它面向所有使用 Linux 的人，不只是开发者。它最初是他在 macleanup 中为 Mac 实现的同一想法的 Linux 版本。"
+        ]
+      },
+      {
+        "id": "journey",
+        "h2": "一路走来",
+        "timeline": [
+          [
+            "2026-05-09",
+            "linux-cleanup 1.0.0：一个用 npx 运行的 Bash 脚本，无需安装。"
+          ],
+          [
+            "2026-09-18",
+            "1.6.0，第一代的最后一个版本。"
+          ],
+          [
+            "2026-11-10",
+            "重写为 2.0.0，带有真正的试运行和发布检查。"
+          ],
+          [
+            "2026-11-13",
+            "本网站上线。"
+          ],
+          [
+            "2026-11-21",
+            "文档更新到 2.x，命令行 2.1.0 发布，适用于 x86_64 Linux 的桌面应用 1.0.0 发布。"
+          ],
+          [
+            "2026-11-22",
+            "桌面应用开放套餐；当前版本为桌面应用 1.0.4 和命令行 2.1.1。"
+          ]
+        ]
+      },
+      {
+        "id": "built",
+        "h2": "它是怎么做的",
+        "p": [
+          "引擎是发布在 npm 上的 Bash 命令行。桌面应用是包住同一个引擎的 Tauri 窗口，所以两者删除的路径完全相同。",
+          "文件路径留在您的电脑上。登录账户后，运行摘要只保存大小、分区编号和系统版本，从不保存路径。网站和应用会统计使用情况并报告错误，以便下个版本做得更好；隐私政策列出了每一项服务。",
+          "每次删除都是永久的。试运行会列出实际运行将删除的内容，清理回执会列出实际删除了什么。"
+        ]
+      },
+      {
+        "id": "more",
+        "h2": "更多来自 Ahsan 和 Zaions",
+        "links": [
+          [
+            "/ecosystem",
+            "Zaions 的产品"
+          ],
+          [
+            "https://aoneahsan.com/projects",
+            "Ahsan 的项目"
+          ],
+          [
+            "https://zaions.com",
+            "zaions.com"
+          ],
+          [
+            "https://github.com/aoneahsan",
+            "GitHub"
+          ],
+          [
+            "https://www.linkedin.com/in/aoneahsan",
+            "LinkedIn"
+          ]
+        ]
+      },
+      {
+        "id": "contact",
+        "h2": "问题与错误报告",
+        "p": [
+          "请在 linux-cleanup 仓库提交 issue。附上 linux-cleanup --version 显示的版本，以及您运行的命令。"
+        ],
+        "link": [
+          "https://github.com/aoneahsan/linux-cleanup/issues",
+          "提交 issue"
+        ]
+      }
+    ]
+  }
+}

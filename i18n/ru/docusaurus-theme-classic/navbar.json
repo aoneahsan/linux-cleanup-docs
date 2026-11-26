@@ -1,0 +1,54 @@
+{
+  "title": {
+    "message": "linux-cleanup",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Логотип linux-cleanup",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Документация",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.What it deletes": {
+    "message": "Что удаляется",
+    "description": "Navbar item with label What it deletes"
+  },
+  "item.label.Quick start": {
+    "message": "Быстрый старт",
+    "description": "Navbar item with label Quick start"
+  },
+  "item.label.CLI": {
+    "message": "CLI",
+    "description": "Navbar item with label CLI"
+  },
+  "item.label.Changelog": {
+    "message": "Список изменений",
+    "description": "Navbar item with label Changelog"
+  },
+  "item.label.Get linux-cleanup": {
+    "message": "Скачать linux-cleanup",
+    "description": "Navbar item with label Get linux-cleanup"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.npm": {
+    "message": "npm",
+    "description": "Navbar item with label npm"
+  },
+  "item.label.Desktop app for Linux": {
+    "message": "Настольное приложение для Linux",
+    "description": "Navbar item with label Desktop app for Linux"
+  },
+  "item.label.linux-cleanup website": {
+    "message": "Сайт linux-cleanup",
+    "description": "Navbar item with label linux-cleanup website"
+  },
+  "item.label.All places": {
+    "message": "Все варианты",
+    "description": "Navbar item with label All places"
+  }
+}

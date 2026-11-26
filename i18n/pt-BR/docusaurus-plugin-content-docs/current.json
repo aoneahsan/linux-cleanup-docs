@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Próxima",
+    "description": "The label for version current"
+  },
+  "sidebar.mainSidebar.category.Before you delete anything": {
+    "message": "Antes de apagar qualquer coisa",
+    "description": "The label for category 'Before you delete anything' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Getting started": {
+    "message": "Primeiros passos",
+    "description": "The label for category 'Getting started' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Desktop app": {
+    "message": "Aplicativo para desktop",
+    "description": "The label for category 'Desktop app' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Modes": {
+    "message": "Modos",
+    "description": "The label for category 'Modes' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Compare": {
+    "message": "Comparar",
+    "description": "The label for category 'Compare' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Reference": {
+    "message": "Referência",
+    "description": "The label for category 'Reference' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Guides": {
+    "message": "Guias",
+    "description": "The label for category 'Guides' in sidebar 'mainSidebar'"
+  }
+}
