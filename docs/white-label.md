@@ -63,8 +63,5 @@ build, sign, publish and update it under your name.
 
 **Do I get the desktop app's source with a licence?** No. Source changes hands only with a buyout.
 
-**Can I get a refund?** No. White-label purchases are final; the
-[Terms of Service](https://linux-cleanup.aoneahsan.com/terms) set out the details.
-
 The full agreement, in plain words, is on the
 [licence terms page](https://linux-cleanup.aoneahsan.com/white-label/license-terms).
