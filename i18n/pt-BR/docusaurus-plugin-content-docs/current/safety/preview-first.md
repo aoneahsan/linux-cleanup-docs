@@ -17,13 +17,13 @@ linux-cleanup --all-safe --dry-run
 
 `--self-test` confere as dependências, a sintaxe do Bash e a proteção de caminhos. Pare se ele falhar.
 
-## O que a verificação mostra?
+## O que a verificação mostra? {#what-does-the-scan-show}
 
 `--scan` lista raízes de cache, downloads incompletos, downloads provavelmente duplicados, arquivos pessoais grandes e sem uso que são candidatos e observações sobre o sistema. O tamanho que ela mostra para uma raiz de cache é **tudo o que existe ali agora**, e não o quanto uma limpeza posterior vai remover. O limite padrão de ociosidade de 100 dias, o uso atual e as regras de cada modo podem manter a maior parte.
 
 A verificação não cria um relatório JSON da sessão. Se precisar de uma verificação legível por máquina, use `linux-cleanup --scan --json-events`. O fluxo de eventos pode incluir caminhos locais completos; mantenha-o na sua máquina.
 
-## O que a simulação mostra?
+## O que a simulação mostra? {#what-does-a-dry-run-show}
 
 `--dry-run` percorre a limpeza escolhida e mostra as ações propostas. Por exemplo:
 
@@ -36,7 +36,7 @@ O primeiro comando ainda pede confirmação, como uma execução real. O segundo
 
 Uma visualização é um retrato da máquina naquele momento, e não uma promessa sobre uma execução posterior. Entre a visualização e a confirmação, arquivos podem ser usados, alterados ou removidos. A ferramenta não tem desfazer nem backup.
 
-## Confira o limite antes de uma execução real
+## Confira o limite antes de uma execução real {#check-the-boundary-before-a-real-run}
 
 `--list-targets` mostra as raízes de destino configuradas e os caminhos protegidos sem medir o disco. Ajuda a saber se uma pasta está no escopo. A [referência de caminhos protegidos](../reference/protected-paths.md) descreve as regras de recusa.
 
@@ -44,7 +44,7 @@ Os modos de arquivos pessoais e os ligados a projetos são separados da limpeza 
 
 Quando a visualização corresponder ao que você quer, escolha o modo e leia a confirmação dele. Uma exclusão real é permanente.
 
-## Leia também
+## Leia também {#read-next}
 
 - [O que ele apaga](./what-it-deletes.md)
 - [Proteções](./guards.md)

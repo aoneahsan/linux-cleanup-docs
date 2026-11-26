@@ -17,13 +17,13 @@ linux-cleanup --all-safe --dry-run
 
 `--self-test` vérifie les dépendances, la syntaxe Bash et la protection des chemins. Arrêtez-vous s’il échoue.
 
-## Que montre l’analyse ?
+## Que montre l’analyse ? {#what-does-the-scan-show}
 
 `--scan` liste les racines de cache, les téléchargements partiels, les téléchargements probablement en double, les gros fichiers personnels inutilisés candidats et des observations sur le système. La taille indiquée pour une racine de cache correspond à **tout ce qui s’y trouve actuellement**, pas à ce qu’un nettoyage ultérieur supprimera. Le seuil d’inactivité par défaut de 100 jours, l’utilisation en cours et les règles propres à chaque mode peuvent en conserver la plus grande partie.
 
 L’analyse ne crée pas de rapport de session JSON. Pour une analyse lisible par une machine, utilisez `linux-cleanup --scan --json-events`. Le flux d’événements peut contenir des chemins locaux complets ; gardez-le sur votre machine.
 
-## Que montre une simulation ?
+## Que montre une simulation ? {#what-does-a-dry-run-show}
 
 `--dry-run` parcourt le nettoyage choisi et affiche les actions proposées. Par exemple :
 
@@ -36,7 +36,7 @@ La première commande demande toujours une confirmation, comme une exécution r�
 
 Une prévisualisation est un instantané de la machine, pas une promesse sur une exécution ultérieure. Entre la prévisualisation et la confirmation, des fichiers peuvent être utilisés, modifiés ou supprimés. L’outil n’a ni annulation ni sauvegarde.
 
-## Vérifier le périmètre avant une exécution réelle
+## Vérifier le périmètre avant une exécution réelle {#check-the-boundary-before-a-real-run}
 
 `--list-targets` affiche les racines cibles configurées et les chemins protégés sans mesurer le disque. Il aide à savoir si un dossier est concerné. La [référence des chemins protégés](../reference/protected-paths.md) décrit les règles de refus.
 
@@ -44,7 +44,7 @@ Les modes pour les fichiers personnels et ceux liés aux projets sont séparés 
 
 Quand la prévisualisation correspond à votre intention, choisissez le mode voulu et lisez sa confirmation. Une suppression réelle est définitive.
 
-## À lire ensuite
+## À lire ensuite {#read-next}
 
 - [Ce qu’il supprime](./what-it-deletes.md)
 - [Garde-fous](./guards.md)

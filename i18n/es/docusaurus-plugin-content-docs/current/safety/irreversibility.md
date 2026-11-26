@@ -19,7 +19,7 @@ Una vez eliminada una ruta, esta herramienta no puede recuperarla, ni ninguna op
 La seguridad de la herramienta viene por completo de [negarse a eliminar lo que no debe](./guards.md) desde el principio.
 :::
 
-## Lo que de verdad promete «regenerable»
+## Lo que de verdad promete «regenerable» {#what-regenerable-actually-promises}
 
 Casi todo lo que elimina esta herramienta se describe como regenerable. Esa palabra tiene un significado preciso, y conviene tener claro lo que implica y lo que no.
 
@@ -32,7 +32,7 @@ Casi todo lo que elimina esta herramienta se describe como regenerable. Esa pala
 
 El paquete de navegadores de Playwright es regenerable, y volver a descargarlo lleva varios minutos y unos cientos de megabytes. Un equipo sin conexión no puede regenerarlo en absoluto. Regenerable describe de dónde pueden venir los datos, no lo cómodo que es recuperarlos.
 
-## Las categorías que de verdad son irreemplazables
+## Las categorías que de verdad son irreemplazables {#the-categories-that-are-genuinely-irreplaceable}
 
 Tres objetivos pueden contener datos que no se regeneran. Los tres son [solo interactivos](./guards.md#guard-3--personal-data-is-interactive-only) y los tres merecen atención real cuando responda a las preguntas.
 
@@ -44,7 +44,7 @@ Tres objetivos pueden contener datos que no se regeneran. Los tres son [solo int
 
 La primera es la que hace perder datos a la gente. `~/Downloads` no es una ruta protegida (*no puede* serlo, porque limpiarla es una función central), así que lo único que separa un archivo de ahí de su eliminación es que usted lea la lista de candidatos.
 
-## Por qué no hay deshacer
+## Por qué no hay deshacer {#why-there-is-no-undo}
 
 Las razones del diseño, sin rodeos:
 
@@ -54,7 +54,7 @@ Las razones del diseño, sin rodeos:
 
 Es un trato razonable para las cachés. Es un trato que debe entender antes de usar la herramienta sobre `~/Downloads`.
 
-## Lo que tiene realmente después
+## Lo que tiene realmente después {#what-you-actually-have-afterwards}
 
 Si una eliminación le sorprende, revise los registros locales disponibles. Ninguno es una copia de seguridad.
 
@@ -67,7 +67,7 @@ Pueden ayudar a identificar el modo y los objetivos elegidos, pero no listan cad
 
 Procedimiento completo: [Recuperación](../recovery.md).
 
-## Reducir el riesgo antes de ejecutar
+## Reducir el riesgo antes de ejecutar {#reducing-the-risk-before-you-run}
 
 ```bash
 # 1. Confirme que las protecciones funcionan en esta instalación
@@ -91,7 +91,7 @@ Además:
 Ejecute `--scan` antes de `--all-safe`, siempre. Cuesta un minuto y es el único paso que le muestra el resultado mientras todavía es hipotético.
 :::
 
-## Siguiente
+## Siguiente {#next}
 
 - [Recuperación](../recovery.md): el procedimiento tras una eliminación no deseada
 - [Protecciones](./guards.md): lo que impide la eliminación desde el principio

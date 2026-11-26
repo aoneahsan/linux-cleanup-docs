@@ -19,7 +19,7 @@ Une fois un chemin supprimé, cet outil ne peut pas le récupérer, et aucune op
 La sécurité de l’outil repose entièrement sur son [refus de supprimer ce qu’il ne faut pas](./guards.md) dès le départ.
 :::
 
-## Ce que « régénérable » promet vraiment
+## Ce que « régénérable » promet vraiment {#what-regenerable-actually-promises}
 
 La plupart de ce que supprime cet outil est décrit comme régénérable. Ce mot a un sens précis, et il vaut la peine d’être exact sur ce qu’il implique et ce qu’il n’implique pas.
 
@@ -32,7 +32,7 @@ La plupart de ce que supprime cet outil est décrit comme régénérable. Ce mot
 
 Le paquet de navigateurs de Playwright est régénérable, et le retélécharger prend plusieurs minutes et quelques centaines de mégaoctets. Une machine hors ligne ne peut pas le régénérer du tout. « Régénérable » dit d’où peuvent venir les données, pas à quel point il est commode de les récupérer.
 
-## Les catégories vraiment irremplaçables
+## Les catégories vraiment irremplaçables {#the-categories-that-are-genuinely-irreplaceable}
 
 Trois cibles peuvent contenir des données non régénérables. Les trois sont [interactives uniquement](./guards.md#guard-3--personal-data-is-interactive-only), et les trois méritent une vraie attention au moment de répondre aux questions.
 
@@ -44,7 +44,7 @@ Trois cibles peuvent contenir des données non régénérables. Les trois sont [
 
 C’est la première qui fait perdre des données. `~/Downloads` n’est pas un chemin protégé (il ne *peut* pas l’être, puisque le nettoyer est une fonction centrale) : la seule chose entre un fichier qui s’y trouve et sa suppression, c’est votre lecture de la liste des candidats.
 
-## Pourquoi il n’y a pas d’annulation
+## Pourquoi il n’y a pas d’annulation {#why-there-is-no-undo}
 
 Les raisons de conception, sans détour :
 
@@ -54,7 +54,7 @@ Les raisons de conception, sans détour :
 
 C’est un compromis raisonnable pour des caches. C’est un compromis à comprendre avant de diriger l’outil vers `~/Downloads`.
 
-## Ce qu’il vous reste réellement après
+## Ce qu’il vous reste réellement après {#what-you-actually-have-afterwards}
 
 Si une suppression vous surprend, examinez les enregistrements locaux disponibles. Aucun n’est une sauvegarde.
 
@@ -67,7 +67,7 @@ Ils aident à identifier le mode et les cibles choisies, mais ne listent pas cha
 
 Procédure complète : [Récupération](../recovery.md).
 
-## Réduire le risque avant de lancer
+## Réduire le risque avant de lancer {#reducing-the-risk-before-you-run}
 
 ```bash
 # 1. Confirmer que les garde-fous fonctionnent sur cette installation
@@ -91,7 +91,7 @@ Au-delà :
 Lancez `--scan` avant `--all-safe`, à chaque fois. Cela prend une minute, et c’est la seule étape qui vous montre le résultat tant qu’il est encore hypothétique.
 :::
 
-## Ensuite
+## Ensuite {#next}
 
 - [Récupération](../recovery.md) — la marche à suivre après une suppression non voulue
 - [Garde-fous](./guards.md) — ce qui empêche la suppression dès le départ

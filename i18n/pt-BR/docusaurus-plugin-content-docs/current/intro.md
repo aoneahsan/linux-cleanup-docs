@@ -29,7 +29,7 @@ Leia **[O que ele apaga](./safety/what-it-deletes.md)** e rode **[a visualizaç�
 | **Acesso à rede** | Uma consulta ao registro público de versões ao iniciar, quando há conexão; instalar ou atualizar também usa o npm ou o GitHub |
 | **Autor** | [Ahsan Mahmood](https://aoneahsan.com) · [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com) |
 
-## Leia na ordem
+## Leia na ordem {#read-this-in-order}
 
 Esta documentação segue de propósito uma ordem pensada para uma ferramenta que apaga dados. As três primeiras páginas são as que evitam dor de cabeça.
 
@@ -42,7 +42,7 @@ Esta documentação segue de propósito uma ordem pensada para uma ferramenta qu
 | 5 | [Instalação](./getting-started/installation.md) | `npx`, `npm` global ou `git clone` |
 | 6 | [Início rápido](./getting-started/quick-start.md) | Sua primeira limpeza real |
 
-## No que ele é bom
+## No que ele é bom {#what-it-is-good-at}
 
 - **Mostrar os candidatos.** Uma verificação nomeia as raízes de cache e o tamanho atual de cada uma. Uma simulação percorre a limpeza escolhida e nomeia as ações propostas.
 - **Não apagar a coisa errada.** Uma [lista de caminhos permitidos](./reference/protected-paths.md) recusa sem exceção `~/Documents`, `~/.ssh`, `~/.config`, `/etc` e similares, depois de resolver links simbólicos.
@@ -50,7 +50,7 @@ Esta documentação segue de propósito uma ordem pensada para uma ferramenta qu
 - **Registrar cada execução.** A CLI mantém um log local. Os passeios guiados gravam um [relatório JSON da sessão](./reference/report-schema.md), a menos que desativado; simulações não.
 - **Verificar atualizações.** Ao iniciar, a CLI lê um registro público de versões por HTTPS quando disponível.
 
-## O que ele não é
+## O que ele não é {#what-it-is-not}
 
 Deixar os limites claros ajuda mais do que uma lista de recursos.
 
@@ -61,7 +61,7 @@ Deixar os limites claros ajuda mais do que uma lista de recursos.
 - **Não funciona por completo em todas as distribuições.** A limpeza de caches dentro do `$HOME` funciona em qualquer lugar, mas [o modo `--system` é só para Debian/Ubuntu](./distro-support.md): ele chama `apt` e `dpkg` diretamente.
 - **Não substitui o seu julgamento.** Leia o que ele propõe antes de confirmar.
 
-## A versão de 30 segundos
+## A versão de 30 segundos {#the-30-second-version}
 
 ```bash
 # 1. Veja o que pode ser recuperado. Não apaga nada.
@@ -76,7 +76,7 @@ npx linux-cleanup
 
 O passo 3 é o modo padrão. Ele passa por dez categorias, pergunta antes de cada uma, mostra o total acumulado de bytes recuperados e grava um relatório no fim. Veja [Passeio guiado](./modes/walkthrough.md).
 
-## Para onde ir depois
+## Para onde ir depois {#where-to-go-next}
 
 - Quer o espaço de volta o quanto antes? → [Recuperar o máximo de espaço](./guides/reclaim-the-most-space.md)
 - Algo deu errado? → [Recuperação](./recovery.md) e depois [Solução de problemas](./troubleshooting.md)

@@ -29,7 +29,7 @@ Lisez **[Ce qu’il supprime](./safety/what-it-deletes.md)** et lancez **[la pr�
 | **Accès réseau** | Une requête au registre public des versions au démarrage, si connecté ; l’installation et la mise à jour passent aussi par npm ou GitHub |
 | **Auteur** | [Ahsan Mahmood](https://aoneahsan.com) · [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com) |
 
-## À lire dans l’ordre
+## À lire dans l’ordre {#read-this-in-order}
 
 Cette documentation suit volontairement un ordre pensé pour un outil qui efface des données. Les trois premières pages sont celles qui vous évitent les ennuis.
 
@@ -42,7 +42,7 @@ Cette documentation suit volontairement un ordre pensé pour un outil qui efface
 | 5 | [Installation](./getting-started/installation.md) | `npx`, `npm` global ou `git clone` |
 | 6 | [Démarrage rapide](./getting-started/quick-start.md) | Votre premier nettoyage réel |
 
-## Ce qu’il fait bien
+## Ce qu’il fait bien {#what-it-is-good-at}
 
 - **Montrer les candidats.** Une analyse nomme les racines de cache et leur taille actuelle. Une simulation parcourt le nettoyage choisi et nomme les actions proposées.
 - **Ne pas supprimer ce qu’il ne faut pas.** Une [liste de chemins autorisés](./reference/protected-paths.md) refuse catégoriquement `~/Documents`, `~/.ssh`, `~/.config`, `/etc` et apparentés, après résolution des liens symboliques.
@@ -50,7 +50,7 @@ Cette documentation suit volontairement un ordre pensé pour un outil qui efface
 - **Garder une trace.** La CLI tient un journal local. Les parcours guidés écrivent un [rapport de session JSON](./reference/report-schema.md) sauf désactivation ; les simulations non.
 - **Vérifier les mises à jour.** Au démarrage, la CLI lit un registre public des versions en HTTPS quand il est disponible.
 
-## Ce qu’il n’est pas
+## Ce qu’il n’est pas {#what-it-is-not}
 
 Être clair sur les limites sert davantage qu’une liste de fonctions.
 
@@ -61,7 +61,7 @@ Cette documentation suit volontairement un ordre pensé pour un outil qui efface
 - **Pas complet sur toutes les distributions.** Le nettoyage des caches dans `$HOME` fonctionne partout, mais [le mode `--system` est réservé à Debian/Ubuntu](./distro-support.md) : il appelle directement `apt` et `dpkg`.
 - **Pas un substitut à votre jugement.** Lisez ce qu’il propose avant de confirmer.
 
-## La version en 30 secondes
+## La version en 30 secondes {#the-30-second-version}
 
 ```bash
 # 1. Voir ce qui pourrait être libéré. Ne supprime rien.
@@ -76,7 +76,7 @@ npx linux-cleanup
 
 L’étape 3 est le mode par défaut. Elle parcourt dix catégories, demande avant chacune, affiche le total des octets libérés au fil de l’eau et écrit un rapport à la fin. Voir [Parcours guidé](./modes/walkthrough.md).
 
-## Et ensuite
+## Et ensuite {#where-to-go-next}
 
 - Récupérer l’espace au plus vite ? → [Libérer le plus d’espace](./guides/reclaim-the-most-space.md)
 - Un problème ? → [Récupération](./recovery.md) puis [Dépannage](./troubleshooting.md)

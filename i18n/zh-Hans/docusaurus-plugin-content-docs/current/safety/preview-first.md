@@ -17,13 +17,13 @@ linux-cleanup --all-safe --dry-run
 
 `--self-test` 会检查依赖、Bash 语法和受保护路径的防护。如果它失败，请停下。
 
-## 扫描会显示什么？
+## 扫描会显示什么？ {#what-does-the-scan-show}
 
 `--scan` 列出缓存根目录、未完成的下载、可能重复的下载、体积大且长期未用的个人文件候选项，以及系统观察结果。它给出的缓存根目录大小是**当前存在的全部内容**，而不是之后清理会删除的量。默认 100 天的闲置阈值、正在使用的文件以及各模式的规则，可能会保留其中的大部分。
 
 扫描不会生成 JSON 会话报告。如果需要机器可读的扫描结果，请使用 `linux-cleanup --scan --json-events`。事件流可能包含完整的本地路径，请把它留在本机。
 
-## 试运行会显示什么？
+## 试运行会显示什么？ {#what-does-a-dry-run-show}
 
 `--dry-run` 走完所选的清理流程并列出拟执行的操作。例如：
 
@@ -36,7 +36,7 @@ linux-cleanup --all-safe --yes --dry-run --json-events > preview.ndjson
 
 预览只是当前机器的一份快照，并不保证之后的运行结果。在预览和确认之间，文件可能被使用、修改或删除。该工具没有撤销，也没有备份。
 
-## 实际运行前先确认边界
+## 实际运行前先确认边界 {#check-the-boundary-before-a-real-run}
 
 `--list-targets` 会列出已配置的目标根目录和受保护路径，不测量磁盘。它可以帮您判断某个目录是否在范围内。[受保护路径参考](../reference/protected-paths.md)说明了拒绝规则。
 
@@ -44,7 +44,7 @@ linux-cleanup --all-safe --yes --dry-run --json-events > preview.ndjson
 
 当预览与您的意图一致时，选择需要的模式并阅读它的确认提示。实际删除是永久的。
 
-## 接下来阅读
+## 接下来阅读 {#read-next}
 
 - [会删除什么](./what-it-deletes.md)
 - [安全防护](./guards.md)

@@ -29,7 +29,7 @@ sidebar_position: 1
 | **网络访问** | 联网时启动会请求一次公开的版本记录；安装或更新时还会用到 npm 或 GitHub |
 | **作者** | [Ahsan Mahmood](https://aoneahsan.com) · [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com) |
 
-## 请按顺序阅读
+## 请按顺序阅读 {#read-this-in-order}
 
 这份文档是为一个会擦除数据的工具刻意排好顺序的。前三页能让您避开麻烦。
 
@@ -42,7 +42,7 @@ sidebar_position: 1
 | 5 | [安装](./getting-started/installation.md) | `npx`、全局 `npm` 或 `git clone` |
 | 6 | [快速开始](./getting-started/quick-start.md) | 您的第一次实际清理 |
 
-## 它擅长什么
+## 它擅长什么 {#what-it-is-good-at}
 
 - **展示候选项。** 扫描会列出缓存根目录及其当前大小。试运行会走完所选清理流程并列出拟执行的操作。
 - **不删错东西。** [路径白名单](./reference/protected-paths.md)会在解析符号链接之后，硬性拒绝 `~/Documents`、`~/.ssh`、`~/.config`、`/etc` 等目录。
@@ -50,7 +50,7 @@ sidebar_position: 1
 - **记录每次运行。** 命令行会保留本地日志。引导式流程会写一份 [JSON 会话报告](./reference/report-schema.md)（除非被关闭）；试运行不会。
 - **检查更新。** 启动时，命令行会在可用时通过 HTTPS 读取一份公开的版本记录。
 
-## 它不是什么
+## 它不是什么 {#what-it-is-not}
 
 说清边界比列功能更有用。
 
@@ -61,7 +61,7 @@ sidebar_position: 1
 - **并非支持所有发行版。** `$HOME` 内的缓存清理在任何发行版上都能用，但 [`--system` 模式仅支持 Debian/Ubuntu](./distro-support.md)——它会直接调用 `apt` 和 `dpkg`。
 - **不能代替您的判断。** 确认之前，请先看清它打算做什么。
 
-## 30 秒版本
+## 30 秒版本 {#the-30-second-version}
 
 ```bash
 # 1. 看看能回收多少空间。不删除任何内容。
@@ -76,7 +76,7 @@ npx linux-cleanup
 
 第 3 步是默认模式。它会依次走过十个类别，每个类别前都会询问，显示已回收字节的累计数，并在最后写一份报告。见[引导流程](./modes/walkthrough.md)。
 
-## 接下来去哪里
+## 接下来去哪里 {#where-to-go-next}
 
 - 想尽快拿回空间？→ [回收最多的空间](./guides/reclaim-the-most-space.md)
 - 出了问题？→ 先看[恢复](./recovery.md)，再看[故障排查](./troubleshooting.md)

@@ -29,7 +29,7 @@ linux-cleanup を入手: [npm](https://www.npmjs.com/package/linux-cleanup) · [
 | **ネットワーク** | オンライン時、起動時に公開リリース記録を 1 回取得。インストールや更新では npm または GitHub も使用 |
 | **作者** | [Ahsan Mahmood](https://aoneahsan.com) · [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com) |
 
-## 順番に読んでください
+## 順番に読んでください {#read-this-in-order}
 
 このドキュメントは、データを消すツールのために意図して順序立てています。最初の 3 ページが、トラブルを避けるためのページです。
 
@@ -42,7 +42,7 @@ linux-cleanup を入手: [npm](https://www.npmjs.com/package/linux-cleanup) · [
 | 5 | [インストール](./getting-started/installation.md) | `npx`、グローバルの `npm`、または `git clone` |
 | 6 | [クイックスタート](./getting-started/quick-start.md) | 最初の本番クリーンアップ |
 
-## 得意なこと
+## 得意なこと {#what-it-is-good-at}
 
 - **候補を示す。** スキャンはキャッシュのルートと現在のサイズを示します。ドライランは選んだクリーンアップをたどり、予定している操作を示します。
 - **間違ったものを消さない。** [パスの許可リスト](./reference/protected-paths.md)は、シンボリックリンクを解決したうえで `~/Documents`、`~/.ssh`、`~/.config`、`/etc` などを必ず拒否します。
@@ -50,7 +50,7 @@ linux-cleanup を入手: [npm](https://www.npmjs.com/package/linux-cleanup) · [
 - **実行を記録する。** CLI はローカルにログを残します。ガイド付きの手順は、無効にしない限り [JSON のセッションレポート](./reference/report-schema.md)を書き出します。ドライランでは書き出しません。
 - **更新を確認する。** 起動時、利用できる場合は HTTPS で公開リリース記録を読み込みます。
 
-## できないこと
+## できないこと {#what-it-is-not}
 
 機能一覧より、境界をはっきりさせるほうが役に立ちます。
 
@@ -61,7 +61,7 @@ linux-cleanup を入手: [npm](https://www.npmjs.com/package/linux-cleanup) · [
 - **すべてのディストリビューションで同じではありません。** `$HOME` 内のキャッシュ削除はどこでも動きますが、[`--system` モードは Debian/Ubuntu 専用](./distro-support.md)です。`apt` と `dpkg` を直接呼び出します。
 - **あなたの判断の代わりにはなりません。** 確定する前に、提案内容を読んでください。
 
-## 30 秒版
+## 30 秒版 {#the-30-second-version}
 
 ```bash
 # 1. 取り戻せる容量を確認。何も削除しません。
@@ -76,7 +76,7 @@ npx linux-cleanup
 
 手順 3 が既定のモードです。10 のカテゴリを順にたどり、各カテゴリの前に確認し、取り戻したバイト数の合計を表示して、最後にレポートを書き出します。[ガイド付きの手順](./modes/walkthrough.md)を参照。
 
-## 次に読むページ
+## 次に読むページ {#where-to-go-next}
 
 - いちばん早く容量を取り戻したい → [できるだけ多くの容量を取り戻す](./guides/reclaim-the-most-space.md)
 - 問題が起きた → [復旧](./recovery.md)、次に[トラブルシューティング](./troubleshooting.md)

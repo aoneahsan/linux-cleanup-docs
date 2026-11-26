@@ -19,7 +19,7 @@ Depois que um caminho é removido, esta ferramenta não consegue trazê-lo de vo
 A segurança da ferramenta vem inteiramente de [se recusar a apagar a coisa errada](./guards.md) desde o início.
 :::
 
-## O que "regenerável" realmente promete
+## O que "regenerável" realmente promete {#what-regenerable-actually-promises}
 
 Quase tudo o que esta ferramenta remove é descrito como regenerável. Essa palavra tem um sentido preciso, e vale ser exato sobre o que ela quer e não quer dizer.
 
@@ -32,7 +32,7 @@ Quase tudo o que esta ferramenta remove é descrito como regenerável. Essa pala
 
 O pacote de navegadores do Playwright é regenerável, e baixá-lo de novo leva vários minutos e algumas centenas de megabytes. Uma máquina offline não consegue regenerá-lo de jeito nenhum. Regenerável diz de onde os dados podem vir, não o quanto é prático recuperá-los.
 
-## As categorias que são mesmo insubstituíveis
+## As categorias que são mesmo insubstituíveis {#the-categories-that-are-genuinely-irreplaceable}
 
 Três alvos podem conter dados que não se regeneram. Os três são [só interativos](./guards.md#guard-3--personal-data-is-interactive-only), e os três merecem atenção de verdade na hora de responder às perguntas.
 
@@ -44,7 +44,7 @@ Três alvos podem conter dados que não se regeneram. Os três são [só interat
 
 A primeira é a que faz as pessoas perderem dados. `~/Downloads` não é um caminho protegido (e *não pode* ser, porque limpá-lo é uma função central), então a única coisa entre um arquivo ali e a exclusão é você ler a lista de candidatos.
 
-## Por que não há desfazer
+## Por que não há desfazer {#why-there-is-no-undo}
 
 Os motivos do projeto, sem rodeios:
 
@@ -54,7 +54,7 @@ Os motivos do projeto, sem rodeios:
 
 É uma troca razoável para caches. É uma troca que você precisa entender antes de apontar a ferramenta para `~/Downloads`.
 
-## O que você realmente tem depois
+## O que você realmente tem depois {#what-you-actually-have-afterwards}
 
 Se uma exclusão te pegar de surpresa, confira os registros locais disponíveis. Nenhum deles é backup.
 
@@ -67,7 +67,7 @@ Eles ajudam a identificar o modo e os alvos escolhidos, mas não listam cada arq
 
 Procedimento completo: [Recuperação](../recovery.md).
 
-## Reduzindo o risco antes de rodar
+## Reduzindo o risco antes de rodar {#reducing-the-risk-before-you-run}
 
 ```bash
 # 1. Confirme que as proteções funcionam nesta instalação
@@ -91,7 +91,7 @@ Além disso:
 Rode `--scan` antes de `--all-safe`, toda vez. Leva um minuto e é a única etapa que mostra o resultado enquanto ele ainda é hipotético.
 :::
 
-## Próximos passos
+## Próximos passos {#next}
 
 - [Recuperação](../recovery.md) — o procedimento depois de uma exclusão indesejada
 - [Proteções](./guards.md) — o que impede a exclusão desde o início

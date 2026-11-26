@@ -17,7 +17,7 @@ linux-cleanup --all-safe --dry-run
 
 La [protection des chemins](../reference/protected-paths.md) refuse les emplacements personnels et système configurés, après résolution des liens symboliques. Lisez chaque chemin proposé avant une exécution réelle.
 
-## Caches des gestionnaires de paquets
+## Caches des gestionnaires de paquets {#package-manager-caches}
 
 Le nettoyage courant entièrement sûr peut élaguer ces racines de cache. Réinstaller un paquet ensuite peut demander un téléchargement.
 
@@ -35,29 +35,29 @@ Le nettoyage courant entièrement sûr peut élaguer ces racines de cache. Réin
 
 Les paquets extraits de Yarn v1 sont élagués par entrées entières dans `~/.cache/yarn`. Les paquets installés globalement et les racines d’installation des gestionnaires de paquets sont distincts de ces caches.
 
-## Caches des navigateurs et des applications
+## Caches des navigateurs et des applications {#browser-and-application-caches}
 
 Les cibles courantes comprennent les caches de navigateur configurés, les unités de version de Gradle, les binaires de Cypress et Playwright, et le cache de l’observateur TypeScript. Un navigateur ou un outil de compilation peut devoir reconstruire ou retélécharger ce qui a été supprimé à sa prochaine utilisation. La distribution Gradle actuelle et la version actuelle d’Android Studio sont conservées par leurs propres règles ; une ancienne unité éligible est supprimée en entier pour ne pas laisser d’installation à moitié effacée.
 
 Le mode vérifie le dernier accès et la dernière modification avant d’élaguer fichier par fichier. Un système de fichiers aux temps d’accès peu fiables empêche l’élagage par âge. `--purge-all` retire ce filtre d’âge et demande une décision à part.
 
-## Données des outils de développement
+## Données des outils de développement {#developer-tool-data}
 
 L’analyse peut afficher des AVD Android, le cache pub de Flutter, les données utilisateur de Flatpak et d’autres racines volumineuses. **Qu’un chemin apparaisse dans l’analyse ne garantit pas que `--all-safe` le supprimera.** Lisez la page du mode et la sortie de la simulation pour voir ce que le mode choisi vise réellement. Les émulateurs Android et les applications Flatpak installées ne relèvent pas du cache courant.
 
-## Extensions d’éditeurs
+## Extensions d’éditeurs {#editor-extensions}
 
 `--editor-ext` examine les versions d’extensions VS Code et Cursor remplacées. Il exige une version plus récente et une ancienne version inutilisée ; la version actuelle est conservée. Voir [Extensions d’éditeurs](../modes/editor-extensions.md).
 
-## Fichiers de projets et personnels — en interactif uniquement
+## Fichiers de projets et personnels — en interactif uniquement {#project-and-personal-files--interactive-only}
 
 Les `node_modules` de projets délaissés, les téléchargements partiels et les gros fichiers personnels inutilisés candidats passent par des modes interactifs séparés. `--yes` n’autorise pas ces modes. Un téléchargement partiel ou un fichier dans `~/Downloads` peut être votre seule copie. Lisez chaque chemin et sa conséquence avant de confirmer.
 
-## Nettoyage du système (sudo requis)
+## Nettoyage du système (sudo requis) {#system-cleanup-requires-sudo}
 
 `--system` demande avant chacune de ses étapes apt, journal, Snap, `/tmp` et cache de pages. Ses commandes de paquets utilisent `apt` et `dpkg` ; elles ne s’adaptent ni à Fedora, ni à Arch, ni à openSUSE. L’étape du noyau liste les versions installées ; elle n’en supprime aucune directement. Le nettoyage du journal vise 100 MB, et l’ancienneté de `/tmp` est de 7 jours quel que soit `--days`. Vider le cache de pages agit sur la RAM, pas sur l’espace disque. Voir [Nettoyage du système](../modes/system-cleanup.md) et [Distributions prises en charge](../distro-support.md).
 
-## Ce qu’il refuse de supprimer
+## Ce qu’il refuse de supprimer {#what-it-refuses-to-delete}
 
 La protection refuse la racine et les chemins protégés du dossier personnel tels que `~/Documents`, `~/Pictures`, `~/.ssh`, `~/.config` et `~/.claude`. La liste exacte et ses exceptions figurent dans [Chemins protégés](../reference/protected-paths.md). `--self-test` vérifie certains cas de refus dans la copie installée.
 

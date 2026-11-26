@@ -17,7 +17,7 @@ linux-cleanup --all-safe --dry-run
 
 La [protección de rutas](../reference/protected-paths.md) rechaza las ubicaciones personales y del sistema configuradas, después de resolver los enlaces simbólicos. Lea cada ruta propuesta antes de una ejecución real.
 
-## Cachés de gestores de paquetes
+## Cachés de gestores de paquetes {#package-manager-caches}
 
 La limpieza habitual totalmente segura puede podar estas raíces de caché. Reinstalar un paquete después puede requerir una descarga.
 
@@ -35,29 +35,29 @@ La limpieza habitual totalmente segura puede podar estas raíces de caché. Rein
 
 Los paquetes extraídos de Yarn v1 se podan como entradas completas en `~/.cache/yarn`. Los paquetes instalados globalmente y las raíces de instalación de los gestores de paquetes son independientes de estas cachés.
 
-## Cachés de navegadores y aplicaciones
+## Cachés de navegadores y aplicaciones {#browser-and-application-caches}
 
 Los destinos habituales incluyen las cachés de navegador configuradas, las unidades de versión de Gradle, los binarios de Cypress y Playwright y la caché del observador de TypeScript. Un navegador o una herramienta de compilación puede tener que regenerar o volver a descargar lo eliminado la próxima vez que se use. La distribución actual de Gradle y la versión actual de Android Studio se conservan por sus propias reglas; una unidad antigua que cumple los requisitos se elimina entera para no dejar una instalación a medio borrar.
 
 El modo comprueba el último acceso y la última modificación antes de podar archivo por archivo. Un sistema de archivos con tiempos de acceso poco fiables impide la poda por antigüedad. `--purge-all` quita ese filtro de antigüedad y exige una decisión aparte.
 
-## Datos de herramientas de desarrollo
+## Datos de herramientas de desarrollo {#developer-tool-data}
 
 El análisis puede mostrar AVD de Android, la caché de pub de Flutter, datos de usuario de Flatpak y otras raíces grandes. **Que una ruta aparezca en el análisis no garantiza que `--all-safe` la elimine.** Lea la página del modo y la salida de la simulación para ver lo que el modo elegido abarca de verdad. Los emuladores de Android y las aplicaciones Flatpak instaladas no son caché habitual.
 
-## Extensiones de editores
+## Extensiones de editores {#editor-extensions}
 
 `--editor-ext` considera las versiones de extensiones de VS Code y Cursor que ya fueron sustituidas. Requiere una versión más nueva y una versión antigua sin uso; la versión actual se conserva. Vea [Extensiones de editores](../modes/editor-extensions.md).
 
-## Archivos de proyectos y personales: solo de forma interactiva
+## Archivos de proyectos y personales: solo de forma interactiva {#project-and-personal-files--interactive-only}
 
 Los `node_modules` de proyectos abandonados, las descargas incompletas y los archivos personales grandes sin uso tienen sus propios modos interactivos. `--yes` no aprueba estos modos. Una descarga incompleta o un archivo en `~/Downloads` puede ser la única copia que tiene. Lea cada ruta y su consecuencia antes de confirmar.
 
-## Limpieza del sistema (requiere sudo)
+## Limpieza del sistema (requiere sudo) {#system-cleanup-requires-sudo}
 
 `--system` pregunta antes de cada paso de apt, registros del sistema, Snap, `/tmp` y caché de páginas. Sus comandos de paquetes usan `apt` y `dpkg`; no se adaptan a Fedora, Arch ni openSUSE. El paso del kernel lista las versiones instaladas; no elimina ninguna directamente. La limpieza del registro apunta a 100 MB, y la antigüedad de `/tmp` es de 7 días sin importar `--days`. Vaciar la caché de páginas afecta a la RAM, no al espacio en disco. Vea [Limpieza del sistema](../modes/system-cleanup.md) y [Compatibilidad con distribuciones](../distro-support.md).
 
-## Lo que se niega a eliminar
+## Lo que se niega a eliminar {#what-it-refuses-to-delete}
 
 La protección rechaza la raíz y rutas protegidas del directorio personal como `~/Documents`, `~/Pictures`, `~/.ssh`, `~/.config` y `~/.claude`. La lista exacta y sus excepciones están en [Rutas protegidas](../reference/protected-paths.md). `--self-test` comprueba algunos casos de rechazo en la copia instalada.
 
