@@ -20,7 +20,7 @@ sidebar_position: 4
 | `LINUX_CLEANUP_LAUNCHER` | 未設定 | **内部用。** Node のランチャーは `node`、デスクトップアプリは `desktop` にします。`desktop` のときは、アプリが自分で更新を確認するので CLI 側の確認を飛ばします（2.1.0 から）。自分で設定しないでください |
 | `XDG_CONFIG_HOME` | `~/.config` | `personal-roots.txt` と `project-roots.txt` を探す場所 |
 
-## 出力をすべて別の場所へ
+## 出力をすべて別の場所へ {#redirecting-all-output}
 
 `LINUX_CLEANUP_DATA_HOME` は、ログ、記録、フィードバック用バンドルのすべてをまとめて移す唯一の設定です。
 
@@ -37,7 +37,7 @@ linux-cleanup --scan
 
 細かく制御したい場合は、`LINUX_CLEANUP_LOG_DIR` と `LINUX_CLEANUP_REPORTS_DIR` を個別に上書きできます。こちらがデータのルートより優先されます。
 
-## 色の制御
+## 色の制御 {#colour-control}
 
 ```bash
 export NO_COLOR=1          # このマシン上のすべてのツール
@@ -47,7 +47,7 @@ linux-cleanup --no-color   # この実行だけ
 
 `CLEANUP_NO_COLOR` は、ほかのツールでは色を使い、このツールだけはプレーンな出力にしたい場合のためのものです。エスケープシーケンスを崩してしまう場所に出力をパイプで渡すときなどに使います。
 
-## スキャンするルートの設定
+## スキャンするルートの設定 {#configuring-the-scanned-roots}
 
 `$XDG_CONFIG_HOME`（既定は `~/.config`）の下にある 2 つのファイルで、個人ファイルとプロジェクトのスキャンがたどるディレクトリを決めます。
 
@@ -64,7 +64,7 @@ linux-cleanup --no-color   # この実行だけ
 [パスの許可リスト](./protected-paths.md)は引き続き適用され、こちらが優先されます。ここに `~/Documents` を足しても削除できるようにはなりません。
 :::
 
-## CI とスクリプトでは
+## CI とスクリプトでは {#for-ci-and-scripts}
 
 ```bash
 NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
@@ -72,7 +72,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 単独のスキャンでは、ガイド付きの手順の JSON セッションレポートは作りません。スクリプトでは[終了コード](./exit-codes.md)を確認するか、構造化された出力がほしい場合は [`--json-events`](./json-events.md) を使ってください。
 
-## 読まないもの
+## 読まないもの {#what-it-does-not-read}
 
 - `PATH`（どの任意のツールが入っているかを調べる場合を除く）
 - `USER` と `LOGNAME`（ログの先頭に書く場合を除く）
@@ -81,7 +81,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 `$HOME` が設定されていなければ、推測せずにすぐ止まります。[トラブルシューティング](../troubleshooting.md#home-is-not-set)を参照。
 
-## 次へ
+## 次へ {#next}
 
 - [出力先のパス](./output-paths.md) — ファイルが実際に置かれる場所
 - [CLI のフラグ](./cli-flags.md)

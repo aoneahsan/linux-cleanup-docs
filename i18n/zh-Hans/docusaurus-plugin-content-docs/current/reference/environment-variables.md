@@ -20,7 +20,7 @@ sidebar_position: 4
 | `LINUX_CLEANUP_LAUNCHER` | 未设置 | **内部使用。** Node 启动器设为 `node`；桌面应用设为 `desktop`，这会跳过命令行自身的更新检查，因为应用有自己的检查（自 2.1.0 起）。请勿自行设置 |
 | `XDG_CONFIG_HOME` | `~/.config` | 查找 `personal-roots.txt` 和 `project-roots.txt` 的位置 |
 
-## 重定向所有输出
+## 重定向所有输出 {#redirecting-all-output}
 
 `LINUX_CLEANUP_DATA_HOME` 是移动所有内容的唯一开关——日志、记录和反馈包：
 
@@ -37,7 +37,7 @@ linux-cleanup --scan
 
 需要更细的控制时，`LINUX_CLEANUP_LOG_DIR` 和 `LINUX_CLEANUP_REPORTS_DIR` 可以分别覆盖，且优先于数据根目录。
 
-## 颜色控制
+## 颜色控制 {#colour-control}
 
 ```bash
 export NO_COLOR=1          # 这台机器上的所有工具
@@ -47,7 +47,7 @@ linux-cleanup --no-color   # 只针对这一次调用
 
 `CLEANUP_NO_COLOR` 适用于这种情况：您希望其他工具都有颜色，而这个工具输出纯文本——通常是在把输出管道到会搞乱转义序列的地方时。
 
-## 配置要扫描的根目录
+## 配置要扫描的根目录 {#configuring-the-scanned-roots}
 
 `$XDG_CONFIG_HOME`（默认 `~/.config`）下的两个文件决定个人文件扫描和项目扫描会遍历哪些目录：
 
@@ -64,7 +64,7 @@ linux-cleanup --no-color   # 只针对这一次调用
 [路径白名单](./protected-paths.md)依然适用，并且优先：在这里加入 `~/Documents` 并不会让它变得可删除。
 :::
 
-## 用于 CI 和脚本
+## 用于 CI 和脚本 {#for-ci-and-scripts}
 
 ```bash
 NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
@@ -72,7 +72,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 单独的扫描不会生成引导流程的 JSON 会话报告。在脚本中请检查[退出码](./exit-codes.md)，或使用 [`--json-events`](./json-events.md) 获取结构化输出。
 
-## 它不会读取的内容
+## 它不会读取的内容 {#what-it-does-not-read}
 
 - `PATH`，除了用来检测安装了哪些可选工具
 - `USER` 和 `LOGNAME`，除了用来标注日志开头
@@ -81,7 +81,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 如果 `$HOME` 未设置，脚本会立即中止，而不是去猜。见[故障排查](../troubleshooting.md#home-is-not-set)。
 
-## 接下来
+## 接下来 {#next}
 
 - [输出路径](./output-paths.md) — 文件实际存放的位置
 - [命令行参数](./cli-flags.md)

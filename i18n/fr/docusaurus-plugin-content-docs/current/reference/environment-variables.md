@@ -20,7 +20,7 @@ sidebar_position: 4
 | `LINUX_CLEANUP_LAUNCHER` | non définie | **Interne.** Le lanceur Node met `node` ; l’application de bureau met `desktop`, ce qui saute la vérification de mise à jour de la CLI, car l’application fait la sienne (depuis 2.1.0). Ne la définissez pas vous-même |
 | `XDG_CONFIG_HOME` | `~/.config` | Où sont cherchés `personal-roots.txt` et `project-roots.txt` |
 
-## Rediriger toute la sortie
+## Rediriger toute la sortie {#redirecting-all-output}
 
 `LINUX_CLEANUP_DATA_HOME` est le seul levier qui déplace tout — journaux, enregistrements et paquets de retour :
 
@@ -37,7 +37,7 @@ Vérifiez que la cible est montée et accessible en écriture avant de vous y fi
 
 Pour un contrôle plus fin, `LINUX_CLEANUP_LOG_DIR` et `LINUX_CLEANUP_REPORTS_DIR` se remplacent séparément et l’emportent sur la racine de données.
 
-## Contrôle de la couleur
+## Contrôle de la couleur {#colour-control}
 
 ```bash
 export NO_COLOR=1          # tout sur cette machine, tous les outils
@@ -47,7 +47,7 @@ linux-cleanup --no-color   # cet appel seulement
 
 `CLEANUP_NO_COLOR` sert quand vous voulez de la couleur dans tous les autres outils et une sortie brute dans celui-ci — en général quand vous redirigez sa sortie vers quelque chose qui abîme les séquences d’échappement.
 
-## Configurer les racines analysées
+## Configurer les racines analysées {#configuring-the-scanned-roots}
 
 Deux fichiers sous `$XDG_CONFIG_HOME` (par défaut `~/.config`) décident des dossiers que parcourent les analyses des fichiers personnels et des projets :
 
@@ -64,7 +64,7 @@ L’analyse des fichiers personnels est [interactive uniquement](../safety/guard
 La [liste des chemins autorisés](./protected-paths.md) s’applique toujours et l’emporte toujours : ajouter `~/Documents` ici ne le rend pas supprimable.
 :::
 
-## Pour la CI et les scripts
+## Pour la CI et les scripts {#for-ci-and-scripts}
 
 ```bash
 NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
@@ -72,7 +72,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 L’analyse seule ne crée pas le rapport de session JSON du parcours guidé. Vérifiez le [code de sortie](./exit-codes.md) dans vos scripts, ou utilisez [`--json-events`](./json-events.md) pour une sortie structurée.
 
-## Ce qu’il ne lit pas
+## Ce qu’il ne lit pas {#what-it-does-not-read}
 
 - `PATH`, sauf pour savoir quels outils facultatifs sont installés
 - `USER` et `LOGNAME`, sauf pour annoter l’en-tête du journal
@@ -81,7 +81,7 @@ L’analyse seule ne crée pas le rapport de session JSON du parcours guidé. V�
 
 Si `$HOME` n’est pas défini, le script s’arrête aussitôt au lieu de deviner. Voir [Dépannage](../troubleshooting.md#home-is-not-set).
 
-## Ensuite
+## Ensuite {#next}
 
 - [Chemins de sortie](./output-paths.md) — où les fichiers atterrissent vraiment
 - [Options de la CLI](./cli-flags.md)

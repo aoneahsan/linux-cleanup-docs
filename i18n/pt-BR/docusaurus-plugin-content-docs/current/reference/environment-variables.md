@@ -20,7 +20,7 @@ sidebar_position: 4
 | `LINUX_CLEANUP_LAUNCHER` | não definida | **Interna.** O inicializador Node define `node`; o aplicativo para desktop define `desktop`, o que pula a checagem de atualização da CLI, porque o aplicativo faz a própria (desde a 2.1.0). Não defina você mesmo |
 | `XDG_CONFIG_HOME` | `~/.config` | Onde `personal-roots.txt` e `project-roots.txt` são procurados |
 
-## Redirecionando toda a saída
+## Redirecionando toda a saída {#redirecting-all-output}
 
 O `LINUX_CLEANUP_DATA_HOME` é a única alavanca que move tudo — logs, registros e pacotes de feedback:
 
@@ -37,7 +37,7 @@ Confirme que o destino está montado e aceita gravação antes de contar com ele
 
 Para um controle mais fino, `LINUX_CLEANUP_LOG_DIR` e `LINUX_CLEANUP_REPORTS_DIR` trocam cada um separadamente e têm prioridade sobre a raiz de dados.
 
-## Controle de cor
+## Controle de cor {#colour-control}
 
 ```bash
 export NO_COLOR=1          # tudo nesta máquina, todas as ferramentas
@@ -47,7 +47,7 @@ linux-cleanup --no-color   # só esta execução
 
 O `CLEANUP_NO_COLOR` existe para quando você quer cor em todas as outras ferramentas e texto puro nesta — normalmente ao mandar a saída por pipe para algo que estraga as sequências de escape.
 
-## Configurando as raízes verificadas
+## Configurando as raízes verificadas {#configuring-the-scanned-roots}
 
 Dois arquivos em `$XDG_CONFIG_HOME` (padrão `~/.config`) definem quais pastas as verificações de arquivos pessoais e de projetos percorrem:
 
@@ -64,7 +64,7 @@ A verificação de arquivos pessoais é [somente interativa](../safety/guards.md
 A [lista de caminhos permitidos](./protected-paths.md) continua valendo e continua tendo a palavra final: acrescentar `~/Documents` aqui não o torna apagável.
 :::
 
-## Para CI e scripts
+## Para CI e scripts {#for-ci-and-scripts}
 
 ```bash
 NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
@@ -72,7 +72,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 A verificação sozinha não cria o relatório JSON de sessão do passeio guiado. Confira o [código de saída](./exit-codes.md) nos scripts, ou use [`--json-events`](./json-events.md) para uma saída estruturada.
 
-## O que ele não lê
+## O que ele não lê {#what-it-does-not-read}
 
 - `PATH`, a não ser para detectar quais ferramentas opcionais estão instaladas
 - `USER` e `LOGNAME`, a não ser para anotar o cabeçalho do log
@@ -81,7 +81,7 @@ A verificação sozinha não cria o relatório JSON de sessão do passeio guiado
 
 Se `$HOME` não estiver definido, o script para na hora em vez de adivinhar. Veja [Solução de problemas](../troubleshooting.md#home-is-not-set).
 
-## Próximos passos
+## Próximos passos {#next}
 
 - [Caminhos de saída](./output-paths.md) — onde os arquivos vão parar de fato
 - [Opções da CLI](./cli-flags.md)

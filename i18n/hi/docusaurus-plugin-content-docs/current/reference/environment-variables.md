@@ -20,7 +20,7 @@ sidebar_position: 4
 | `LINUX_CLEANUP_LAUNCHER` | सेट नहीं | **भीतरी।** Node लॉन्चर `node` सेट करता है; डेस्कटॉप ऐप `desktop` सेट करता है, जिससे CLI की अपनी अपडेट जाँच छूट जाती है क्योंकि ऐप अपनी जाँच करता है (2.1.0 से)। खुद सेट न करें |
 | `XDG_CONFIG_HOME` | `~/.config` | `personal-roots.txt` और `project-roots.txt` कहाँ खोजे जाते हैं |
 
-## सारा आउटपुट कहीं और भेजना
+## सारा आउटपुट कहीं और भेजना {#redirecting-all-output}
 
 `LINUX_CLEANUP_DATA_HOME` वह अकेला लीवर है जो सब कुछ हटाता है — लॉग, रिकॉर्ड और फ़ीडबैक बंडल:
 
@@ -37,7 +37,7 @@ linux-cleanup --scan
 
 बारीक नियंत्रण के लिए `LINUX_CLEANUP_LOG_DIR` और `LINUX_CLEANUP_REPORTS_DIR` अलग-अलग बदलते हैं और डेटा होम से ऊपर माने जाते हैं।
 
-## रंग नियंत्रण
+## रंग नियंत्रण {#colour-control}
 
 ```bash
 export NO_COLOR=1          # इस मशीन पर सब कुछ, सभी टूल
@@ -47,7 +47,7 @@ linux-cleanup --no-color   # केवल यह एक बार
 
 `CLEANUP_NO_COLOR` उस हालत के लिए है जब आप बाकी हर टूल से रंग चाहते हैं और इससे सादा आउटपुट — आम तौर पर तब, जब इसका आउटपुट किसी ऐसी जगह पाइप होता है जो एस्केप क्रम बिगाड़ देती है।
 
-## स्कैन होने वाले रूट तय करना
+## स्कैन होने वाले रूट तय करना {#configuring-the-scanned-roots}
 
 `$XDG_CONFIG_HOME` (डिफ़ॉल्ट `~/.config`) के नीचे दो फ़ाइलें तय करती हैं कि निजी और प्रोजेक्ट स्कैनर किन फ़ोल्डरों में जाते हैं:
 
@@ -64,7 +64,7 @@ linux-cleanup --no-color   # केवल यह एक बार
 [पथ अनुमति सूची](./protected-paths.md) फिर भी लागू है और जीतती है: यहाँ `~/Documents` जोड़ने से वह हटाने योग्य नहीं बनता।
 :::
 
-## CI और स्क्रिप्ट के लिए
+## CI और स्क्रिप्ट के लिए {#for-ci-and-scripts}
 
 ```bash
 NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
@@ -72,7 +72,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 अलग से चलने वाला स्कैन वॉकथ्रू की JSON सत्र रिपोर्ट नहीं बनाता। स्क्रिप्ट में [एग्ज़िट कोड](./exit-codes.md) देखें, या ढाँचेदार आउटपुट के लिए [`--json-events`](./json-events.md) इस्तेमाल करें।
 
-## यह क्या नहीं पढ़ता
+## यह क्या नहीं पढ़ता {#what-it-does-not-read}
 
 - `PATH`, सिवाय यह जानने के कि कौन-से वैकल्पिक टूल इंस्टॉल हैं
 - `USER` और `LOGNAME`, सिवाय लॉग के शीर्ष पर लिखने के
@@ -81,7 +81,7 @@ NO_COLOR=1 linux-cleanup --scan > /tmp/scan.log
 
 अगर `$HOME` सेट नहीं है तो स्क्रिप्ट अंदाज़ा लगाने के बजाय तुरंत रुक जाती है। देखें [समस्या निवारण](../troubleshooting.md#home-is-not-set)।
 
-## आगे
+## आगे {#next}
 
 - [आउटपुट पथ](./output-paths.md) — फ़ाइलें असल में कहाँ पहुँचती हैं
 - [CLI फ़्लैग](./cli-flags.md)
