@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklinux_cleanup_docs||=[]).push([[4284],{1912(e){e.exports=JSON.parse('{"blogBasePath":"/pt-BR/feed","blogTitle":"Notas de vers\xe3o","authorsListPath":"/pt-BR/feed/authors"}')}}]);

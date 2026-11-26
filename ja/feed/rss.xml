@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>linux-cleanup release notes</title>
+        <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed</link>
+        <description>Every linux-cleanup release, command line and desktop app.</description>
+        <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en-GB</language>
+        <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[デスクトップ 1.0.5]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.5</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.5</guid>
+            <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
+            <description><![CDATA[アプリが 10 言語に対応し、サインインしたアカウントではどのコンピューターでもメールでも同じ言語が使われます。]]></description>
+            <content:encoded><![CDATA[<p>アプリが 10 言語に対応しました。英語、簡体字中国語、ヒンディー語、スペイン語、アラビア語、フランス語、ブラジルポルトガル語、ロシア語、日本語、ウルドゥー語です。「設定 → 一般 → 言語」で選べます。</p>
+<p>サインインしていれば、選んだ言語はアカウントとともにほかのコンピューターにも引き継がれ、アカウントのメールもその言語で届きます。アラビア語とウルドゥー語は右から左に表示され、パスとコマンドは左から右のままです。ヘルプに「Zaions のほかの製品」と「開発者について」が加わりました。同梱のコマンドラインは引き続き 2.1.1 で、アプリは 1.0.4 から自動で更新されます。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[デスクトップ 1.0.4]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.4</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.4</guid>
+            <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
+            <description><![CDATA[AppImage がアプリケーションメニューに自身を追加し、ウィンドウに linux-cleanup のアイコンが表示されます。]]></description>
+            <content:encoded><![CDATA[<p>AppImage は初回起動時にアイコン付きでアプリケーションメニューに自身を追加し、ファイルを移動してもその項目が正しい場所を指すよう保ちます。開いたウィンドウとドックには、空白ではなく linux-cleanup のアイコンが表示されます。.deb は以前から対応済みです。アプリがクリーンアップする内容は変わりません。アプリは自動で更新されます。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[デスクトップ 1.0.3]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.3</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.3</guid>
+            <pubDate>Sun, 22 Nov 2026 12:16:00 GMT</pubDate>
+            <description><![CDATA[コマンドライン 2.1.1 と最新のライブラリを同梱。]]></description>
+            <content:encoded><![CDATA[<p>アプリにコマンドライン 2.1.1 と最新のライブラリを同梱しました。クリーンアップの内容は変わりません。アプリは自動で更新されます。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.1.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.1.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.1.1</guid>
+            <pubDate>Sun, 22 Nov 2026 12:01:00 GMT</pubDate>
+            <description><![CDATA[ヘルプ、バージョン、About 画面がウェブサイト、このマニュアル、デスクトップ版のダウンロードを案内します。]]></description>
+            <content:encoded><![CDATA[<p><code>--help</code>、<code>--version</code>、メニューの About 画面が、ウェブサイト、このマニュアル、デスクトップアプリのダウンロードページを案内するようになりました。About 画面には、スクリプトが起動時に公開リリース記録を 1 回読み込むことも明記しています。各モードが削除する内容は変わりません。<code>npx -y linux-cleanup@2.1.1 --version</code> で実行できます。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[デスクトップ 1.0.2]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.2</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.2</guid>
+            <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
+            <description><![CDATA[「更新」画面の文言をわかりやすくし、エラー画面に動作するチェックコマンドを用意。]]></description>
+            <content:encoded><![CDATA[<p>「更新」画面の文言をわかりやすくし、エラー画面では動作するコマンド <code>npx -y linux-cleanup --self-test</code> をコピーできるようになりました。アプリは自動で更新されます。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[デスクトップ 1.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.1</guid>
+            <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
+            <description><![CDATA[パスやファイル名を含まないエラーレポート、実際の画面を使ったウォークスルー、「linux-cleanup を入手」ページ、安定したページツアー。]]></description>
+            <content:encoded><![CDATA[<p>エラーレポートはパスやファイル名を含まずに届き、ウォークスルーは実際の画面を表示します。ヘルプには、動作するすべての場所を載せた「linux-cleanup を入手」ページが加わりました。</p>
+<p>ページツアーは、進めるあいだ各ステップを画面内に表示し続けます。アプリは 1.0.0 から自動で更新されました。<a class="" href="https://linux-cleanup-docs.aoneahsan.com/ja/desktop/install">デスクトップアプリのインストール</a>を参照。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[デスクトップ 1.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/desktop-1.0.0</guid>
+            <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[初のデスクトップ版。x86_64 Linux 向けの AppImage と .deb で、CLI 2.1.0 を同梱。]]></description>
+            <content:encoded><![CDATA[<p>初のデスクトップ版です。完全安全モードのクリーンアップをウィンドウで実行し、本番実行の前には必ずドライラン、後にはレシートが付きます。</p>
+<p>x86_64 Linux 向けの AppImage と .deb で、CLI 2.1.0 を同梱しています。署名付きリリースから自動で更新されます。まずは<a class="" href="https://linux-cleanup-docs.aoneahsan.com/ja/desktop/install">デスクトップアプリのインストール</a>から。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.1.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.1.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.1.0</guid>
+            <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[--json-events は、--scan と非対話の完全安全モード（ドライランを含む）について、バージョン付きの JSON イベントをローカルに出力します。]]></description>
+            <content:encoded><![CDATA[<p><code>--json-events</code> は、<code>--scan</code> と非対話の <code>--all-safe --yes</code> について、バージョン付きの JSON イベントをローカルに出力します。</p>
+<p>完全安全モードに <code>--dry-run</code> を加えると、削除予定のパスを削除せずに報告します。出力にはローカルの完全なパスが含まれることがあるため、マシンの外に出さないでください。詳しくは <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ja/reference/json-events">JSON イベントのリファレンス</a>と<a class="" href="https://linux-cleanup-docs.aoneahsan.com/ja/changelog">変更履歴</a>をご覧ください。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.0.1</guid>
+            <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
+            <description><![CDATA[README に linux-cleanup の公開先をすべて記載しました。スクリプトの動作は変わりません。]]></description>
+            <content:encoded><![CDATA[<p>README に linux-cleanup の公開先をすべて記載しました。スクリプトの動作は変わりません。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ja/feed/cli-2.0.0</guid>
+            <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[linux-cleanup 2.0.0 で --dry-run、起動時のリリース記録チェック、--refresh-app が加わりました。]]></description>
+            <content:encoded><![CDATA[<p><code>--dry-run</code>、起動時の公開リリース記録のチェック、常設 CLI コピー向けの <code>--refresh-app</code> を追加しました。</p>
+<p>通常のリリース通知は初回の実行を許可し、次回の起動から止めます。緊急の通知は古いコピーをすぐに止めます。オフラインでの実行はそのまま続きます。ドライランはクリーンアップ対象を削除せず設定も変えませんが、ローカルのログと更新チェックの状態を書き込むことがあります。全文は<a class="" href="https://linux-cleanup-docs.aoneahsan.com/ja/changelog">変更履歴</a>をご覧ください。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>

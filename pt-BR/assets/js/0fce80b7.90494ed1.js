@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklinux_cleanup_docs||=[]).push([[1208],{15951(a){a.exports=JSON.parse('{"metadata":{"permalink":"/pt-BR/feed","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Cada vers\xe3o do linux-cleanup, linha de comando e aplicativo para desktop, da mais nova para a mais antiga.","blogTitle":"Notas de vers\xe3o"}}')}}]);

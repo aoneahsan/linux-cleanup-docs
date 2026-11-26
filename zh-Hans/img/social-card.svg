@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Docs preview card master, drawn from the website card (brand kit): the manual's own line. PNG: social-card.png. -->
+  <rect width="1200" height="630" fill="#F6F4ED"/>
+  <rect x="0" y="0" width="1200" height="44" fill="#13120D"/>
+  <text x="56" y="29" fill="#F6F4ED" font-family="DejaVu Sans Mono, monospace" font-size="17" font-weight="700" letter-spacing="2">THE MANUAL</text>
+  <g transform="translate(56 120) scale(2.4) rotate(-8 32 32)">
+    <rect x="8" y="8" width="48" height="48" fill="#DCBC33"/>
+    <rect x="15" y="21" width="34" height="4" rx="2" fill="#2B2A24"/>
+    <rect x="15" y="30" width="25.5" height="4" rx="2" fill="#2B2A24"/>
+    <rect x="15" y="39" width="17" height="4" rx="2" fill="#2B2A24"/>
+  </g>
+  <text x="250" y="210" fill="#13120D" font-family="DejaVu Sans, sans-serif" font-size="40" font-weight="700">linux-cleanup</text>
+  <text x="56" y="380" fill="#13120D" font-family="Georgia, DejaVu Serif, serif" font-size="88">Every mode, flag</text>
+  <text x="56" y="482" fill="#13120D" font-family="Georgia, DejaVu Serif, serif" font-size="88">and protected path.</text>
+  <rect x="56" y="530" width="300" height="4" fill="#DCBC33"/>
+  <text x="56" y="584" fill="#4A483F" font-family="DejaVu Sans Mono, monospace" font-size="24">linux-cleanup-docs.aoneahsan.com</text>
+</svg>

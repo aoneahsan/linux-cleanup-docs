@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklinux_cleanup_docs||=[]).push([[1903],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/ar/feed","blogTitle":"\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0625\u0635\u062f\u0627\u0631","authorsListPath":"/ar/feed/authors"}')}}]);

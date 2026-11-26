@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>linux-cleanup release notes</title>
+        <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed</link>
+        <description>Every linux-cleanup release, command line and desktop app.</description>
+        <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en-GB</language>
+        <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[桌面版 1.0.5]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.5</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.5</guid>
+            <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
+            <description><![CDATA[应用支持十种语言，已登录的账户会在每台电脑和邮件中沿用这一选择。]]></description>
+            <content:encoded><![CDATA[<p>应用支持十种语言：英语、简体中文、印地语、西班牙语、阿拉伯语、法语、巴西葡萄牙语、俄语、日语和乌尔都语。在“设置 → 常规 → 语言”中选择。</p>
+<p>登录后，这一选择会随您的账户带到其他电脑，账户邮件也会使用这种语言。阿拉伯语和乌尔都语从右向左显示，路径和命令仍从左向右。“帮助”中新增“更多 Zaions 产品”和“关于开发者”。内置的命令行仍是 2.1.1，应用会从 1.0.4 自动更新。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[桌面版 1.0.4]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.4</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.4</guid>
+            <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
+            <description><![CDATA[AppImage 会把自己加入应用菜单，窗口显示 linux-cleanup 图标。]]></description>
+            <content:encoded><![CDATA[<p>AppImage 现在会在首次运行时把自己连同图标加入应用菜单，并让该入口始终指向文件所在的位置。打开的窗口和程序坞显示 linux-cleanup 图标，而不再是空白图标。.deb 本来就会这样做。应用清理的内容没有变化。应用会自动更新。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[桌面版 1.0.3]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.3</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.3</guid>
+            <pubDate>Sun, 22 Nov 2026 12:16:00 GMT</pubDate>
+            <description><![CDATA[内置命令行 2.1.1 和最新的依赖库。]]></description>
+            <content:encoded><![CDATA[<p>应用现在内置命令行 2.1.1 和最新的依赖库。清理的内容没有变化。应用会自动更新。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[命令行 2.1.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.1.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.1.1</guid>
+            <pubDate>Sun, 22 Nov 2026 12:01:00 GMT</pubDate>
+            <description><![CDATA[帮助、版本和“关于”界面指向网站、本手册和桌面版下载页。]]></description>
+            <content:encoded><![CDATA[<p><code>--help</code>、<code>--version</code> 和菜单中的“关于”框现在指向网站、本手册和桌面应用的下载页。“关于”框还明确说明脚本会在启动时读取一次公开的版本记录。各模式删除的内容没有变化。用 <code>npx -y linux-cleanup@2.1.1 --version</code> 运行它。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[桌面版 1.0.2]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.2</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.2</guid>
+            <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
+            <description><![CDATA[“更新”界面的说明更清楚，错误界面提供了可用的检查命令。]]></description>
+            <content:encoded><![CDATA[<p>“更新”界面的说明更清楚，错误界面现在复制的是一条可用的命令：<code>npx -y linux-cleanup --self-test</code>。应用会自动更新。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[桌面版 1.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.1</guid>
+            <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
+            <description><![CDATA[错误报告不含路径或文件名，演示使用真实界面，新增“获取 linux-cleanup”页面，页面导览更稳定。]]></description>
+            <content:encoded><![CDATA[<p>错误报告送达我们时不含路径或文件名，演示展示的是真实界面，“帮助”中新增了“获取 linux-cleanup”页面，列出它能运行的每个地方。</p>
+<p>页面导览在您逐步浏览时让每一步都保持在视野内。应用已从 1.0.0 自动更新。见<a class="" href="https://linux-cleanup-docs.aoneahsan.com/zh-Hans/desktop/install">安装桌面应用</a>。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[桌面版 1.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/desktop-1.0.0</guid>
+            <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[第一个桌面版本，适用于 x86_64 Linux 的 AppImage 和 .deb，内置命令行 2.1.0。]]></description>
+            <content:encoded><![CDATA[<p>第一个桌面版本：在窗口中运行全安全清理，每次实际运行前都有试运行，运行后都有清理回执。</p>
+<p>适用于 x86_64 Linux 的 AppImage 和 .deb，内置命令行 2.1.0。它会通过签名的版本自动更新。从<a class="" href="https://linux-cleanup-docs.aoneahsan.com/zh-Hans/desktop/install">安装桌面应用</a>开始。</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[命令行 2.1.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.1.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.1.0</guid>
+            <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[--json-events 为 --scan 和非交互式全安全运行（包括试运行）输出本地、带版本号的 JSON 事件流。]]></description>
+            <content:encoded><![CDATA[<p><code>--json-events</code> 为 <code>--scan</code> 和非交互式的 <code>--all-safe --yes</code> 输出本地、带版本号的 JSON 事件流。</p>
+<p>在全安全运行中加上 <code>--dry-run</code>，会报告拟删除的路径而不删除它们。事件流可能包含完整的本地路径，请把它留在本机。详情见 <a class="" href="https://linux-cleanup-docs.aoneahsan.com/zh-Hans/reference/json-events">JSON 事件参考</a>和<a class="" href="https://linux-cleanup-docs.aoneahsan.com/zh-Hans/changelog">更新日志</a>。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[命令行 2.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.0.1</guid>
+            <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
+            <description><![CDATA[README 列出了 linux-cleanup 发布的每个地方。脚本的行为没有变化。]]></description>
+            <content:encoded><![CDATA[<p>README 列出了 linux-cleanup 发布的每个地方。脚本的行为没有变化。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[命令行 2.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/zh-Hans/feed/cli-2.0.0</guid>
+            <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[linux-cleanup 2.0.0 新增 --dry-run、启动时的版本记录检查以及 --refresh-app。]]></description>
+            <content:encoded><![CDATA[<p>新增 <code>--dry-run</code>、启动时对公开版本记录的检查，以及用于常驻命令行副本的 <code>--refresh-app</code>。</p>
+<p>普通版本通知允许本次运行，从下次启动起才阻止；紧急通知会立即阻止旧副本。离线运行照常继续。试运行不会删除清理目标或更改设置，但可能写入本地日志和更新检查状态。完整条目见<a class="" href="https://linux-cleanup-docs.aoneahsan.com/zh-Hans/changelog">更新日志</a>。</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>

@@ -4,11 +4,25 @@
         <title>linux-cleanup release notes</title>
         <link>https://linux-cleanup-docs.aoneahsan.com/feed</link>
         <description>Every linux-cleanup release, command line and desktop app.</description>
-        <lastBuildDate>Sun, 22 Nov 2026 14:45:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en-GB</language>
         <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[Desktop 1.0.5]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.5</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.5</guid>
+            <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
+            <description><![CDATA[The app speaks ten languages, and a signed-in account keeps the choice on every computer and in its emails.]]></description>
+            <content:encoded><![CDATA[<p>The app speaks ten languages: English, Simplified Chinese, Hindi, Spanish, Arabic, French, Brazilian Portuguese,
+Russian, Japanese and Urdu. Pick one in Settings → General → Language.</p>
+<p>Signed in, the choice follows your account to your other computers, and account emails arrive in it. Arabic and
+Urdu read right to left, with paths and commands still left to right. Help has More from Zaions and About the
+developer. The bundled command line is still 2.1.1, and the app updates itself from 1.0.4.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[Desktop 1.0.4]]></title>
             <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.4</link>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>linux-cleanup release notes</title>
+        <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed</link>
+        <description>Every linux-cleanup release, command line and desktop app.</description>
+        <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en-GB</language>
+        <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[डेस्कटॉप 1.0.5]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.5</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.5</guid>
+            <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
+            <description><![CDATA[ऐप दस भाषाओं में है, और साइन इन खाता यह चुनाव हर कंप्यूटर और अपने ईमेल में रखता है।]]></description>
+            <content:encoded><![CDATA[<p>ऐप दस भाषाओं में है: अंग्रेज़ी, सरलीकृत चीनी, हिन्दी, स्पेनिश, अरबी, फ़्रेंच, ब्राज़ीली पुर्तगाली, रूसी, जापानी और उर्दू। सेटिंग्स → सामान्य → भाषा में एक चुनें।</p>
+<p>साइन इन रहने पर यह चुनाव आपके खाते के साथ आपके दूसरे कंप्यूटरों पर जाता है, और खाते के ईमेल इसी भाषा में आते हैं। अरबी और उर्दू दाएँ से बाएँ पढ़ी जाती हैं, जबकि पथ और कमांड बाएँ से दाएँ रहते हैं। मदद में Zaions से और तथा डेवलपर के बारे में जोड़े गए। साथ आई कमांड लाइन अब भी 2.1.1 है, और ऐप 1.0.4 से अपने आप अपडेट होता है।</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[डेस्कटॉप 1.0.4]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.4</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.4</guid>
+            <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
+            <description><![CDATA[AppImage खुद को ऐप्लिकेशन मेन्यू में जोड़ता है, और विंडो linux-cleanup का आइकन दिखाती है।]]></description>
+            <content:encoded><![CDATA[<p>AppImage अब पहली बार चलने पर अपने आइकन के साथ खुद को ऐप्लिकेशन मेन्यू में जोड़ता है, और उस प्रविष्टि को फ़ाइल जहाँ भी हो वहीं की ओर रखता है। खुली विंडो और डॉक खाली आइकन की जगह linux-cleanup का आइकन दिखाते हैं। .deb पहले से ऐसा करता था। ऐप जो साफ़ करता है उसमें कुछ नहीं बदला। ऐप अपने आप अपडेट होता है।</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[डेस्कटॉप 1.0.3]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.3</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.3</guid>
+            <pubDate>Sun, 22 Nov 2026 12:16:00 GMT</pubDate>
+            <description><![CDATA[कमांड लाइन 2.1.1 और मौजूदा लाइब्रेरी के साथ।]]></description>
+            <content:encoded><![CDATA[<p>ऐप अब कमांड लाइन 2.1.1 और मौजूदा लाइब्रेरी के साथ आता है। यह जो साफ़ करता है उसमें कुछ नहीं बदला। ऐप अपने आप अपडेट होता है।</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.1.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.1.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.1.1</guid>
+            <pubDate>Sun, 22 Nov 2026 12:01:00 GMT</pubDate>
+            <description><![CDATA[मदद, संस्करण और About स्क्रीन वेबसाइट, इस मैनुअल और डेस्कटॉप डाउनलोड की ओर इशारा करती हैं।]]></description>
+            <content:encoded><![CDATA[<p><code>--help</code>, <code>--version</code> और मेन्यू का About बॉक्स अब वेबसाइट, इस मैनुअल और डेस्कटॉप ऐप के डाउनलोड पेज की ओर इशारा करते हैं। About बॉक्स साफ़ बताता है कि स्क्रिप्ट शुरू में एक बार सार्वजनिक रिलीज़ रिकॉर्ड पढ़ती है। कोई भी मोड जो हटाता है, उसमें कुछ नहीं बदला। इसे <code>npx -y linux-cleanup@2.1.1 --version</code> से चलाएँ।</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[डेस्कटॉप 1.0.2]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.2</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.2</guid>
+            <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
+            <description><![CDATA[अपडेट स्क्रीन पर साफ़ शब्द और त्रुटि स्क्रीन पर काम करने वाला जाँच कमांड।]]></description>
+            <content:encoded><![CDATA[<p>अपडेट स्क्रीन पर साफ़ शब्द, और त्रुटि स्क्रीन अब एक काम करने वाला कमांड कॉपी करती है: <code>npx -y linux-cleanup --self-test</code>। ऐप अपने आप अपडेट होता है।</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[डेस्कटॉप 1.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.1</guid>
+            <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
+            <description><![CDATA[बिना पथ या फ़ाइल नाम वाली त्रुटि रिपोर्ट, असली स्क्रीन वाला वॉकथ्रू, linux-cleanup पाएँ पेज और स्थिर पेज टूर।]]></description>
+            <content:encoded><![CDATA[<p>त्रुटि रिपोर्ट हम तक बिना पथ या फ़ाइल नाम के पहुँचती हैं, वॉकथ्रू असली स्क्रीन दिखाता है, और मदद में linux-cleanup पाएँ पेज है जो हर वह जगह बताता है जहाँ यह चलता है।</p>
+<p>पेज टूर आगे बढ़ते समय हर चरण को दिखाई देता रखते हैं। ऐप 1.0.0 से अपने आप अपडेट हुआ। देखें <a class="" href="https://linux-cleanup-docs.aoneahsan.com/hi/desktop/install">डेस्कटॉप ऐप इंस्टॉल करना</a>।</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[डेस्कटॉप 1.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/desktop-1.0.0</guid>
+            <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[पहली डेस्कटॉप रिलीज़, x86_64 Linux के लिए AppImage और .deb, CLI 2.1.0 के साथ।]]></description>
+            <content:encoded><![CDATA[<p>पहली डेस्कटॉप रिलीज़: एक विंडो में पूरी तरह सुरक्षित सफ़ाई, हर वास्तविक रन से पहले ड्राई रन और उसके बाद रसीद के साथ।</p>
+<p>x86_64 Linux के लिए AppImage और .deb, CLI 2.1.0 के साथ। यह हस्ताक्षरित रिलीज़ से अपने आप अपडेट होता है। <a class="" href="https://linux-cleanup-docs.aoneahsan.com/hi/desktop/install">डेस्कटॉप ऐप इंस्टॉल करने</a> से शुरू करें।</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.1.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.1.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.1.0</guid>
+            <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[--json-events, --scan और गैर-इंटरैक्टिव पूरी तरह सुरक्षित रन (ड्राई रन सहित) के लिए स्थानीय, संस्करणयुक्त JSON इवेंट भेजता है।]]></description>
+            <content:encoded><![CDATA[<p><code>--json-events</code>, <code>--scan</code> और गैर-इंटरैक्टिव <code>--all-safe --yes</code> के लिए स्थानीय, संस्करणयुक्त JSON इवेंट भेजता है।</p>
+<p>पूरी तरह सुरक्षित रन में <code>--dry-run</code> जोड़ने पर प्रस्तावित पथ बिना हटाए बताए जाते हैं। इस स्ट्रीम में पूरे स्थानीय पथ हो सकते हैं, इसलिए इसे मशीन पर ही रखें। विवरण <a class="" href="https://linux-cleanup-docs.aoneahsan.com/hi/reference/json-events">JSON इवेंट संदर्भ</a> और <a class="" href="https://linux-cleanup-docs.aoneahsan.com/hi/changelog">बदलाव सूची</a> में है।</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.0.1</guid>
+            <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
+            <description><![CDATA[README उन सभी जगहों की सूची देता है जहाँ linux-cleanup जारी है। स्क्रिप्ट के काम में कोई बदलाव नहीं।]]></description>
+            <content:encoded><![CDATA[<p>README उन सभी जगहों की सूची देता है जहाँ linux-cleanup जारी है। स्क्रिप्ट के काम में कोई बदलाव नहीं।</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[CLI 2.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/hi/feed/cli-2.0.0</guid>
+            <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[linux-cleanup 2.0.0 में --dry-run, शुरू में रिलीज़-रिकॉर्ड जाँच और --refresh-app जुड़े।]]></description>
+            <content:encoded><![CDATA[<p><code>--dry-run</code>, शुरू होने पर सार्वजनिक रिलीज़-रिकॉर्ड की जाँच, और स्थायी CLI प्रति के लिए <code>--refresh-app</code> जोड़े गए।</p>
+<p>सामान्य रिलीज़ सूचनाएँ पहला रन होने देती हैं और अगली बार से रोकती हैं; ज़रूरी सूचनाएँ पुरानी प्रति को तुरंत रोकती हैं। ऑफ़लाइन रन जारी रहते हैं। ड्राई रन सफ़ाई के लक्ष्य नहीं हटाता और सेटिंग्स नहीं बदलता, हालाँकि यह स्थानीय लॉग और अपडेट-जाँच की स्थिति लिख सकता है। पूरी प्रविष्टि के लिए <a class="" href="https://linux-cleanup-docs.aoneahsan.com/hi/changelog">बदलाव सूची</a> पढ़ें।</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>linux-cleanup release notes</title>
+        <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed</link>
+        <description>Every linux-cleanup release, command line and desktop app.</description>
+        <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en-GB</language>
+        <copyright>© 2026 Ahsan Mahmood</copyright>
+        <item>
+            <title><![CDATA[سطح المكتب 1.0.5]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.5</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.5</guid>
+            <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
+            <description><![CDATA[يتحدث التطبيق عشر لغات، ويحتفظ الحساب المسجّل بالاختيار على كل حاسوب وفي رسائله.]]></description>
+            <content:encoded><![CDATA[<p>يتحدث التطبيق عشر لغات: الإنجليزية والصينية المبسطة والهندية والإسبانية والعربية والفرنسية والبرتغالية البرازيلية والروسية واليابانية والأردية. تُختار إحداها من الإعدادات ← عام ← اللغة.</p>
+<p>عند تسجيل الدخول، تنتقل اللغة المختارة مع الحساب إلى الحواسيب الأخرى، وتصل رسائل الحساب بها. تُقرأ العربية والأردية من اليمين إلى اليسار، مع بقاء المسارات والأوامر من اليسار إلى اليمين. في المساعدة الآن «المزيد من Zaions» و«عن المطوّر». ما يزال سطر الأوامر المرفق 2.1.1، ويحدّث التطبيق نفسه من 1.0.4.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطح المكتب 1.0.4]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.4</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.4</guid>
+            <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
+            <description><![CDATA[يضيف ملف AppImage نفسه إلى قائمة التطبيقات، وتعرض النافذة أيقونة linux-cleanup.]]></description>
+            <content:encoded><![CDATA[<p>يضيف ملف AppImage نفسه الآن إلى قائمة التطبيقات مع أيقونته عند تشغيله لأول مرة، ويُبقي ذلك المدخل مشيرًا إلى مكان الملف أينما كان. تعرض النافذة المفتوحة وشريط التطبيقات أيقونة linux-cleanup بدلًا من أيقونة فارغة. كان ملف .deb يفعل ذلك من قبل. لم يتغير شيء فيما ينظّفه التطبيق. يحدّث التطبيق نفسه.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطح المكتب 1.0.3]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.3</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.3</guid>
+            <pubDate>Sun, 22 Nov 2026 12:16:00 GMT</pubDate>
+            <description><![CDATA[يأتي مع سطر الأوامر 2.1.1 ومكتبات محدّثة.]]></description>
+            <content:encoded><![CDATA[<p>يأتي التطبيق الآن مع سطر الأوامر 2.1.1 ومكتبات محدّثة. لم يتغير شيء فيما ينظّفه. يحدّث التطبيق نفسه.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطر الأوامر 2.1.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.1.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.1.1</guid>
+            <pubDate>Sun, 22 Nov 2026 12:01:00 GMT</pubDate>
+            <description><![CDATA[تشير شاشات المساعدة والإصدار و«حول» إلى الموقع وهذا الدليل وتنزيل سطح المكتب.]]></description>
+            <content:encoded><![CDATA[<p>تشير <code>--help</code> و<code>--version</code> ونافذة «حول» في القائمة الآن إلى الموقع وهذا الدليل وصفحة تنزيل تطبيق سطح المكتب. وتذكر نافذة «حول» بوضوح أن البرنامج النصي يقرأ سجل الإصدارات العام مرة واحدة عند البدء. لم يتغير شيء فيما يحذفه أي وضع. يُشغَّل بالأمر <code>npx -y linux-cleanup@2.1.1 --version</code>.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطح المكتب 1.0.2]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.2</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.2</guid>
+            <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
+            <description><![CDATA[صياغة أوضح في شاشة التحديثات، وأمر فحص يعمل في شاشة الأخطاء.]]></description>
+            <content:encoded><![CDATA[<p>صياغة أوضح في شاشة التحديثات، وتنسخ شاشة الأخطاء الآن أمرًا يعمل: <code>npx -y linux-cleanup --self-test</code>. يحدّث التطبيق نفسه.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطح المكتب 1.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.1</guid>
+            <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
+            <description><![CDATA[تقارير أخطاء بلا مسارات أو أسماء ملفات، وجولة بشاشات حقيقية، وصفحة الحصول على linux-cleanup، وجولات صفحات أثبت.]]></description>
+            <content:encoded><![CDATA[<p>تصلنا تقارير الأخطاء دون مسارات أو أسماء ملفات، وتعرض الجولة شاشات حقيقية، وفي المساعدة صفحة «الحصول على linux-cleanup» تسرد كل مكان يعمل فيه.</p>
+<p>تُبقي جولات الصفحات كل خطوة ظاهرة أثناء التنقل. حدّث التطبيق نفسه من 1.0.0. انظر <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ar/desktop/install">تثبيت تطبيق سطح المكتب</a>.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطح المكتب 1.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/desktop-1.0.0</guid>
+            <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[أول إصدار لسطح المكتب، بصيغتي AppImage و.deb لنظام Linux x86_64، مع سطر الأوامر 2.1.0.]]></description>
+            <content:encoded><![CDATA[<p>أول إصدار لسطح المكتب: التنظيف الآمن بالكامل في نافذة، مع تشغيل تجريبي قبل كل تشغيل فعلي وإيصال بعده.</p>
+<p>بصيغتي AppImage و.deb لنظام Linux x86_64، مع سطر الأوامر 2.1.0. يحدّث نفسه من إصدارات موقّعة. البداية من <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ar/desktop/install">تثبيت تطبيق سطح المكتب</a>.</p>]]></content:encoded>
+            <category>desktop</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطر الأوامر 2.1.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.1.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.1.0</guid>
+            <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[يبث --json-events أحداث JSON محلية ذات إصدارات لـ --scan وللتشغيل الآمن بالكامل غير التفاعلي، بما فيه التشغيل التجريبي.]]></description>
+            <content:encoded><![CDATA[<p>يبث <code>--json-events</code> أحداث JSON محلية ذات إصدارات لـ <code>--scan</code> وللأمر غير التفاعلي <code>--all-safe --yes</code>.</p>
+<p>إضافة <code>--dry-run</code> إلى التنظيف الآمن بالكامل تُبلغ عن المسارات المقترحة دون حذفها. قد يحتوي البث على مسارات محلية كاملة، لذا يبقى على الجهاز. التفاصيل في <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ar/reference/json-events">مرجع أحداث JSON</a> و<a class="" href="https://linux-cleanup-docs.aoneahsan.com/ar/changelog">سجل التغييرات</a>.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطر الأوامر 2.0.1]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.0.1</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.0.1</guid>
+            <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
+            <description><![CDATA[يسرد ملف README كل مكان يُنشر فيه linux-cleanup. لا تغيير في عمل البرنامج النصي.]]></description>
+            <content:encoded><![CDATA[<p>يسرد ملف README كل مكان يُنشر فيه linux-cleanup. لا تغيير في عمل البرنامج النصي.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+        <item>
+            <title><![CDATA[سطر الأوامر 2.0.0]]></title>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.0.0</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ar/feed/cli-2.0.0</guid>
+            <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[يضيف linux-cleanup 2.0.0 الخيار --dry-run وفحص سجل الإصدارات عند البدء و--refresh-app.]]></description>
+            <content:encoded><![CDATA[<p>أُضيف <code>--dry-run</code>، وفحص لسجل الإصدارات العام عند البدء، و<code>--refresh-app</code> للنسخة الدائمة من سطر الأوامر.</p>
+<p>إشعارات الإصدار العادية تسمح بالتشغيل الأول وتحظر من التشغيل التالي؛ والإشعارات العاجلة تحظر النسخة الأقدم فورًا. يستمر التشغيل دون اتصال. لا يحذف التشغيل التجريبي أهداف التنظيف ولا يغيّر الإعدادات، وإن كان قد يكتب سجلًا محليًا وحالة فحص التحديثات. يُقرأ <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ar/changelog">سجل التغييرات</a> للاطلاع على المدخل الكامل.</p>]]></content:encoded>
+            <category>cli</category>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>
