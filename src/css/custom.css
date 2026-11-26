@@ -63,6 +63,15 @@
     white-space: normal;
     word-break: break-word;
   }
+
+  /* Six-column tables in longer scripts (Arabic, Urdu, Japanese) cannot always fit 390 px. Words stay whole (a
+     word split letter by letter is unreadable, Arabic most of all); a table wider than the column scrolls inside
+     its own box instead of widening the page. */
+  .markdown table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
 }
 
 /* Long absolute paths must wrap rather than push the layout sideways. */
