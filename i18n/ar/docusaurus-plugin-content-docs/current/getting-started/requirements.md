@@ -1,0 +1,91 @@
+---
+title: المتطلبات
+description: ما يحتاجه linux-cleanup ليعمل — bash 4 أو أحدث وGNU coreutils وLinux فقط — والاعتماديات الاختيارية التي تتيح تصدير التقارير والقائمة المرئية.
+tags: [requirements, dependencies, installation, jq, whiptail]
+sidebar_position: 1
+---
+
+# المتطلبات
+
+**يعمل linux-cleanup على Linux مع `bash` 4 أو أحدث وGNU coreutils.** وكل ما عدا ذلك اختياري، وتستمر الأداة دونه بلا مشكلات.
+
+## المنصة {#platform}
+
+| | |
+|---|---|
+| **نظام التشغيل** | Linux فقط. تعلن حزمة npm القيمة `"os": ["linux"]` وترفض التثبيت في غيره |
+| **الصدفة** | `bash` ≥ 4.0 |
+| **Node.js** | ≥ 14 — **فقط** لطريقتي `npx` و`npm install -g`، ولا حاجة إليه مع git clone |
+| **الصلاحيات** | يعمل بمستخدم عادي. وحده [`--system`](../modes/system-cleanup.md) يطلب `sudo` |
+
+يستحق macOS وWSL التمييز:
+
+- **macOS غير مدعوم.** المسارات وخيارات `find` ومديرو الحزم مختلفة. توجد أداة شقيقة له؛ ولا تُستخدم هذه الأداة على Mac.
+- **WSL يعمل من جانب Linux.** قبل التنظيف يُراجَع أي رابط رمزي من `$HOME` إلى `/mnt/c/`. فـ[قائمة المسارات المسموحة](../reference/protected-paths.md) تحل الروابط الرمزية، لكن مسارات المجلد الرئيسي المحمية في Linux لا تعني أن كل مجلدات Windows محمية.
+
+## الأوامر المطلوبة {#required-commands}
+
+موجودة في كل التوزيعات الشائعة تقريبًا: `bash`, `find`, `du`, `df`, `rm`, `awk`, `sort`, `grep`, `sed`, `stat`, `realpath`.
+
+`realpath` أهمها: فهو الذي يحل الروابط الرمزية قبل فحص المسارات المحمية. وعلى صورة حاوية مصغرة بلا GNU coreutils تُثبَّت قبل التشغيل.
+
+```bash
+npx linux-cleanup --self-test
+```
+
+يفحص `--self-test` كل أمر مطلوب، ويسمّي أول أمر مفقود مع تلميح للإصلاح. يُشغَّل قبل أي شيء يحذف.
+
+## الاعتماديات الاختيارية {#optional-dependencies}
+
+كل واحدة تتيح ميزة واحدة. ودونها لا تتوفر تلك الميزة، ولا يتأثر باقي الأداة.
+
+| الاعتمادية | تتيح | دونها |
+|---|---|---|
+| `jq` | [تصدير التقارير](../modes/reports.md) بصيغتي Markdown وHTML | تُكتب تقارير JSON كالمعتاد؛ والتحويل غير متاح |
+| `whiptail` | [قائمة TUI](../modes/tui.md) المرئية | يعود `--tui` إلى قائمة سطر الأوامر مع تلميح للتثبيت |
+| `dialog` | بديل TUI حين يغيب `whiptail` | كما سبق |
+| `snap` | تنظيف مراجعات snap المعطّلة في `--system` | تُتخطى تلك الخطوة بسلاسة |
+| `crontab` | [مثبّت cron الأسبوعي](../guides/alias-and-cron.md) | لا يمكن تشغيل `--install-cron` |
+| `numfmt` | أحجام بايت سهلة القراءة | تظهر أعداد البايتات الخام |
+| `xdg-open` | فتح تقارير HTML في المتصفح | يُفتح الملف يدويًا |
+| `less` | عرض JSON مقسّم إلى صفحات في مدير التقارير | يُقرأ الملف مباشرة |
+| `lsb_release` | تعرّف أدق على التوزيعة في حزم الملاحظات | تُنشأ الحزمة مع ذلك |
+
+### تثبيت الاثنتين المهمتين {#installing-the-two-that-matter}
+
+`jq` (تصدير التقارير) و`whiptail` (القائمة المرئية) هما ما يريده معظم الناس.
+
+```bash
+# Debian / Ubuntu / Mint
+sudo apt install jq whiptail
+
+# Fedora / RHEL / Rocky
+sudo dnf install jq newt
+
+# Arch / Manjaro
+sudo pacman -S jq libnewt
+
+# openSUSE
+sudo zypper install jq newt
+```
+
+يأتي ملف `whiptail` التنفيذي في الحزمة `newt` على التوزيعات المبنية على RPM، وفي `libnewt` على Arch.
+
+## تغطية التوزيعات {#distro-coverage}
+
+تنظيف ذاكرة التخزين المؤقت داخل `$HOME` — وهو معظم ما تستعيده هذه الأداة — يعمل بالطريقة نفسها على كل توزيعات Linux.
+
+:::warning `--system` خاص بـ Debian/Ubuntu
+يستدعي وضع sudo الأمرين `apt` و`dpkg` مباشرة، دون اكتشاف للتوزيعة ودون حماية. وعلى Fedora أو Arch أو openSUSE تفشل خطوات الحزم برسالة "command not found".
+
+التفصيل الكامل لما يعمل أين: [دعم التوزيعات](../distro-support.md).
+:::
+
+## المخرجات على القرص {#output-on-disk}
+
+قد يكتب كل تشغيل سجلًا محليًا. وقد تكتب الجولة الموجّهة أيضًا تقرير JSON، وتُنشأ حزمة تصحيح عند طلبها أو بعد فشل غير متوقع. ويتوقف حجمها على التشغيل. البنية في [مسارات المخرجات](../reference/output-paths.md).
+
+## التالي {#next}
+
+- [التثبيت](./installation.md) — طرق التثبيت الثلاث
+- [بداية سريعة](./quick-start.md) — أول تنظيف
