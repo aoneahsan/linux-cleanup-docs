@@ -23,7 +23,7 @@ linux-cleanup          # 或： linux-cleanup -w / --walkthrough
 | 4 | 编辑器旧扩展 | 长期未用 + 已被取代 | VS Code / Cursor |
 | 5 | 长期未用的 `node_modules` | **交互式** | 闲置超过阈值的项目 |
 | 6 | 未完成 / 无主的下载 | **交互式** | `.crdownload`、`.part`、`.fdmdownload` |
-| 7 | 长期未用的个人文件 | **交互式** | `~/Downloads`、`~/Desktop` 中体积大的闲置文件 |
+| 7 | 长期未用的个人文件 | **交互式** | `~/Downloads` 和您配置的个人根目录中体积大的闲置文件 |
 | 8 | 系统清理（sudo） | 系统 | apt、日志、snap、`/tmp`、页面缓存 |
 | 9 | 最终大小检查 | 无 | 只读摘要 |
 | 10 | 生成可读报告 | 无 | Markdown / HTML 导出——需要 `jq` |

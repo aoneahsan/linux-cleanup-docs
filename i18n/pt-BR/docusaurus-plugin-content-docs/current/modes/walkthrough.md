@@ -23,7 +23,7 @@ linux-cleanup          # ou: linux-cleanup -w / --walkthrough
 | 4 | Extensões antigas de editores | Parado + substituído | VS Code / Cursor |
 | 5 | `node_modules` parados | **Interativo** | Projetos ociosos além do limite |
 | 6 | Downloads incompletos ou órfãos | **Interativo** | `.crdownload`, `.part`, `.fdmdownload` |
-| 7 | Arquivos pessoais sem uso | **Interativo** | Arquivos grandes ociosos em `~/Downloads`, `~/Desktop` |
+| 7 | Arquivos pessoais sem uso | **Interativo** | Arquivos grandes ociosos em `~/Downloads` e nas raízes pessoais que você configurou |
 | 8 | Limpeza do sistema (sudo) | Sistema | apt, journal, snap, `/tmp`, cache de páginas |
 | 9 | Checagem final de tamanho | Nada | Resumo somente leitura |
 | 10 | Gerar relatório legível | Nada | Exportação Markdown / HTML — exige `jq` |

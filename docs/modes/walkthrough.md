@@ -24,7 +24,7 @@ linux-cleanup          # or: linux-cleanup -w / --walkthrough
 | 4 | Editor old extensions | Stale + superseded | VS Code / Cursor |
 | 5 | Stale `node_modules` | **Interactive** | Projects idle past the threshold |
 | 6 | Partial / orphan downloads | **Interactive** | `.crdownload`, `.part`, `.fdmdownload` |
-| 7 | Personal stale files | **Interactive** | Large idle files in `~/Downloads`, `~/Desktop` |
+| 7 | Personal stale files | **Interactive** | Large idle files in `~/Downloads` and your configured personal roots |
 | 8 | System cleanup (sudo) | System | apt, journal, snap, `/tmp`, page cache |
 | 9 | Final size audit | Nothing | Read-only summary |
 | 10 | Generate readable report | Nothing | Markdown / HTML export — needs `jq` |
