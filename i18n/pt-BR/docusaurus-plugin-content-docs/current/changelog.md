@@ -71,7 +71,7 @@ O código, as barreiras de segurança e a interface da CLI não mudaram em rela�
 
 Versão de acabamento final: um menu visual e a captura automática de falhas. Sem nova lógica de limpeza; as barreiras de segurança e de inatividade existentes não mudaram.
 
-### Novo {#added}
+### Novo {#added-1}
 
 - **[Modo TUI](./modes/tui.md)** (`-t` / `--tui` / `-g` / `--gui`) — um menu com whiptail ou dialog. Cada escolha volta para a saída normal da CLI durante a execução e depois retorna ao menu. Se nenhuma das duas ferramentas estiver instalada, volta sem problemas para o menu da CLI com uma dica de instalação para a distribuição.
 - **Captura automática do pacote de falha** — uma armadilha EXIT que, numa saída inesperada diferente de zero, grava em `~/.linux-cleanup/feedback/` um `crash-<stamp>.tar.gz` independente com o log da sessão, o registro mais recente e um manifesto do sistema, e depois mostra uma linha que você pode mandar por e-mail.
@@ -79,7 +79,7 @@ Versão de acabamento final: um menu visual e a captura automática de falhas. S
   Não é gerado em saída limpa, `Ctrl-C` (130), `SIGTERM` (143) nem em saídas por erro de argumentos (2). **Nenhuma chamada de rede** — o pacote fica na sua máquina até você decidir compartilhar.
 - Uma caixa **Sobre** na TUI com versão, contatos, licença e o compromisso de privacidade.
 
-### Mudou {#changed}
+### Mudou {#changed-1}
 
 - A supressão do aviso inicial e do resumo da sessão agora inclui o modo `tui`, para que a caixa de diálogo não brigue com a saída do log.
 
@@ -93,13 +93,13 @@ Versão de acabamento final: um menu visual e a captura automática de falhas. S
 
 Estende a barreira de inatividade da 1.2.0 a tudo o que é *ferramenta*, e não cache que se regenera. Apagar algo assim agora exige **as duas coisas**: que nenhum software ativo dependa dele **e** que você não tenha mexido nele em `--days` dias.
 
-### Mudou {#changed}
+### Mudou {#changed-2}
 
 - **AVDs do Android** — antes `~/.android/avd` era apagado inteiro ao confirmar. Agora cada pasta `*.avd` é examinada como uma unidade, junto com o `*.ini` vizinho, e só é limpa quando todos os arquivos do perfil passam do limite de inatividade. Perfis de emulador usados recentemente ficam intactos.
 - **[Extensões substituídas do VS Code / Cursor](./modes/editor-extensions.md)** — a checagem “existe uma versão mais nova” cobria a primeira condição; agora a pasta substituída *também* precisa passar do limite de inatividade. Versões antigas carregadas recentemente são listadas, mas mantidas, com os dias de inatividade de cada uma.
 - **Dados de usuário do Flatpak** — `~/.local/share/flatpak` guarda aplicativos instalados no nível do usuário, não só caches. O módulo agora se recusa a mexer na árvore se houver qualquer aplicativo de usuário instalado, e ainda exige que a árvore passe do limite de inatividade. Indica `flatpak uninstall --user --unused` como caminho mais seguro.
 
-### Novo {#added}
+### Novo {#added-2}
 
 - `newest_access_age_days <path>` — retorna os dias desde o `atime`/`mtime` mais recente em qualquer ponto sob um caminho.
 - `prune_stale_units <root> <days> [glob]` — trata cada item de primeiro nível como indivisível, para que uma limpeza parcial não corrompa o estado.
@@ -112,19 +112,19 @@ Um usuário apontou que a 1.2.0 ainda apagava os AVDs do Android por inteiro, e 
 
 **A estratégia padrão de remoção passou a ser só o que está parado.** Nada dentro de um cache-alvo é removido a menos que os arquivos estejam sem ser tocados — `atime` e `mtime` — há `--days` dias, 100 por padrão.
 
-### Mudou {#changed}
+### Mudou {#changed-3}
 
 - **O `clean_target`, o limpador comum a todos os módulos de cache, agora limpa por partes em vez de apagar tudo.** Remove só os arquivos que passaram do limite e depois varre as pastas vazias. Arquivos usados recentemente ficam, e a estrutura da pasta também, para que as ferramentas continuem encontrando o próprio layout.
 - **O [`--all-safe`](./modes/all-safe.md) limpa cada alvo** do mesmo jeito, e o resumo informa os bytes liberados **e** os mantidos por alvo.
 - **A limpeza do cache do npm respeita a barreira de inatividade** em vez de rodar sempre `npm cache clean --force`, que ignorava a idade por completo.
 - O aviso antes da execução informa a estratégia ativa — “prune ≥Nd” ou “FULL PURGE”.
 
-### Novo {#added}
+### Novo {#added-3}
 
 - **`--purge-all`** restaura o comportamento de antes da 1.2.0, de apagar tudo, documentado com as vantagens e desvantagens.
 - **`prune_stale <root> <days>`** — uma função auxiliar pública para os módulos, que recusa caminhos protegidos, só apaga onde os dois horários passam do limite, varre pastas vazias e informa os bytes liberados.
 
-### Por quê {#why}
+### Por quê {#why-1}
 
 O padrão da 1.1.0 apagava árvores de cache inteiras ao confirmar. Isso estava certo para `~/.cache/yarn`, que se regenera rápido, e errado para `~/.gradle/wrapper/dists/` — um download de 230 MB de que você pode realmente precisar no mês que vem.
 
@@ -134,7 +134,7 @@ Um limite de 100 dias separa bem “mexi nisso há pouco e sentiria falta” de 
 
 Versão de reforço de segurança. Fecha a porta para que pacotes instalados globalmente e arquivos de inicialização do shell sejam tocados.
 
-### Corrigido {#fixed}
+### Corrigido {#fixed-1}
 
 - **Os pacotes globais do pnpm estavam sendo apagados.** A limpeza do armazenamento de conteúdo do pnpm mirava `~/.local/share/pnpm` (`PNPM_HOME`) — que guarda os pacotes instalados globalmente, os atalhos de bin e o próprio binário `pnpm` do `pnpm setup`. Agora mira só `~/.local/share/pnpm/store`, o cache endereçado por conteúdo que se regenera.
 
@@ -157,7 +157,7 @@ Versão de reforço de segurança. Fecha a porta para que pacotes instalados glo
 - **[`--globals`](./modes/globals-audit.md)** — uma auditoria somente leitura que lista os pacotes globais instalados diretamente pelo npm, pnpm, yarn, bun e deno, marca cada um como `recently used`, `needed by: <pkg>` ou `STALE — safe to uninstall` e mostra comandos de desinstalação prontos para copiar. **Nunca apaga nada.** Funciona mesmo quando a CLI do gerenciador de pacotes não está no `PATH`.
 - **[`--doctor`](./modes/doctor.md)** — detecta um runtime presente no disco mas não ligado à inicialização do shell (nvm, pnpm, bun, deno, cargo) e oferece acrescentar o bloco padrão. **Só acrescenta, com confirmação. Nunca remove nem altera linhas existentes.**
 
-### Mudou {#changed}
+### Mudou {#changed-4}
 
 - O `--all-safe` mostra avisos explícitos de “globals are PRESERVED” e “shell-init files are NEVER touched”.
 

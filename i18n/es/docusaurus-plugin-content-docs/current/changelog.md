@@ -71,7 +71,7 @@ El código, las barreras de seguridad y la interfaz de la CLI no cambian respect
 
 Versión de pulido final: un menú visual y la captura automática de fallos. Sin lógica de limpieza nueva; las barreras de seguridad y de inactividad existentes no cambian.
 
-### Novedades {#added}
+### Novedades {#added-1}
 
 - **[Modo TUI](./modes/tui.md)** (`-t` / `--tui` / `-g` / `--gui`): un menú basado en whiptail o dialog. Cada selección vuelve a la salida normal de la CLI para la ejecución y luego regresa al menú. Si no hay ninguna de las dos herramientas, recurre sin problemas al menú de la CLI con una sugerencia de instalación para la distribución.
 - **Captura automática de paquetes de fallo**: una trampa EXIT que, ante una salida inesperada distinta de cero, escribe en `~/.linux-cleanup/feedback/` un `crash-<stamp>.tar.gz` autónomo con el registro de la sesión, el informe más reciente y un manifiesto del sistema, y luego imprime una línea que puede enviar por correo.
@@ -79,7 +79,7 @@ Versión de pulido final: un menú visual y la captura automática de fallos. Si
   No se genera en una salida correcta, con `Ctrl-C` (130), `SIGTERM` (143) ni en salidas por error de argumentos (2). **Sin llamadas de red**: el paquete se queda en su equipo hasta que decida compartirlo.
 - Un cuadro **Acerca de** en la TUI con la versión, los datos de contacto, la licencia y el compromiso de privacidad.
 
-### Cambios {#changed}
+### Cambios {#changed-1}
 
 - La supresión del aviso inicial y del resumen de sesión incluye ahora el modo `tui`, para que el cuadro de diálogo no choque con la salida del registro.
 
@@ -93,13 +93,13 @@ Versión de pulido final: un menú visual y la captura automática de fallos. Si
 
 Amplía la barrera de inactividad de la 1.2.0 a todo lo que es una *herramienta* y no una caché regenerable. Eliminar algo así exige ahora **a la vez** que ningún software activo dependa de ello **y** que usted no lo haya tocado en `--days` días.
 
-### Cambios {#changed}
+### Cambios {#changed-2}
 
 - **AVD de Android**: antes se borraba entero `~/.android/avd` al confirmar. Ahora cada directorio `*.avd` se examina como una unidad, junto con su `*.ini` hermano, y solo se poda cuando todos los archivos del perfil superan el umbral de inactividad. Los perfiles de emulador usados hace poco se conservan intactos.
 - **[Extensiones sustituidas de VS Code / Cursor](./modes/editor-extensions.md)**: la comprobación «existe una versión más nueva» cubría la primera condición; ahora el directorio sustituido *también* debe superar el umbral de inactividad. Las versiones antiguas cargadas hace poco se listan pero se conservan, con los días de inactividad de cada una.
 - **Datos de usuario de Flatpak**: `~/.local/share/flatpak` contiene aplicaciones instaladas a nivel de usuario, no solo cachés. El módulo ahora se niega a tocar el árbol si hay alguna aplicación de usuario instalada y, además, exige que el árbol supere el umbral de inactividad. Remite a `flatpak uninstall --user --unused` como vía más segura.
 
-### Novedades {#added}
+### Novedades {#added-2}
 
 - `newest_access_age_days <path>`: devuelve los días transcurridos desde el `atime`/`mtime` más reciente en cualquier punto bajo una ruta.
 - `prune_stale_units <root> <days> [glob]`: trata cada elemento de primer nivel como indivisible, para que una poda parcial no estropee el estado.
@@ -112,19 +112,19 @@ Un usuario señaló que la 1.2.0 seguía borrando enteros los AVD de Android, y 
 
 **La estrategia de eliminación por defecto pasó a ser solo lo que lleva tiempo sin usarse.** No se elimina nada dentro de una caché de destino salvo que sus archivos lleven sin tocarse —tanto `atime` como `mtime`— `--days` días, 100 por defecto.
 
-### Cambios {#changed}
+### Cambios {#changed-3}
 
 - **`clean_target`, el limpiador común de todos los módulos de caché, ahora poda en lugar de vaciarlo todo.** Elimina solo los archivos que superan el umbral y luego barre los directorios vacíos. Los archivos usados hace poco se conservan y la estructura del directorio se mantiene para que las herramientas sigan encontrando su organización.
 - **[`--all-safe`](./modes/all-safe.md) poda cada destino** del mismo modo, y su resumen indica los bytes liberados **y** los conservados en cada destino.
 - **La limpieza de la caché de npm respeta la barrera de inactividad** en lugar de ejecutar siempre `npm cache clean --force`, que ignoraba por completo la antigüedad.
 - El aviso previo a la ejecución indica la estrategia activa: «prune ≥Nd» o «FULL PURGE».
 
-### Novedades {#added}
+### Novedades {#added-3}
 
 - **`--purge-all`** restablece el comportamiento anterior a la 1.2.0 de borrarlo todo, documentado con sus pros y contras.
 - **`prune_stale <root> <days>`**: una función auxiliar pública para los módulos que rechaza las rutas protegidas, elimina solo donde ambas marcas de tiempo superan el umbral, barre los directorios vacíos e informa de los bytes liberados.
 
-### Por qué {#why}
+### Por qué {#why-1}
 
 El comportamiento por defecto de la 1.1.0 eliminaba árboles de caché enteros al confirmar. Eso era correcto para `~/.cache/yarn`, que se regenera rápido, y un error para `~/.gradle/wrapper/dists/`, una descarga de 230 MB que quizá necesite de verdad el mes que viene.
 
@@ -134,7 +134,7 @@ Un umbral de 100 días separa con claridad «lo toqué hace poco y lo echaría d
 
 Versión de refuerzo de la seguridad. Cierra la puerta a que se toquen alguna vez los paquetes instalados globalmente y los archivos de inicio del shell.
 
-### Correcciones {#fixed}
+### Correcciones {#fixed-1}
 
 - **Se estaban borrando los paquetes globales de pnpm.** La limpieza del almacén de contenido de pnpm apuntaba a `~/.local/share/pnpm` (`PNPM_HOME`), que contiene los paquetes instalados globalmente, los accesos directos de bin y el propio binario `pnpm` de `pnpm setup`. Ahora solo apunta a `~/.local/share/pnpm/store`, la caché regenerable direccionada por contenido.
 
@@ -157,7 +157,7 @@ Versión de refuerzo de la seguridad. Cierra la puerta a que se toquen alguna ve
 - **[`--globals`](./modes/globals-audit.md)**: una revisión de solo lectura que lista los paquetes globales instalados directamente con npm, pnpm, yarn, bun y deno, marca cada uno como `recently used`, `needed by: <pkg>` o `STALE — safe to uninstall` e imprime comandos de desinstalación listos para copiar. **Nunca elimina nada.** Funciona aunque la CLI del gestor de paquetes no esté en `PATH`.
 - **[`--doctor`](./modes/doctor.md)**: detecta un entorno de ejecución presente en el disco pero no conectado al inicio del shell (nvm, pnpm, bun, deno, cargo) y ofrece añadir el bloque estándar. **Solo añade, con confirmación. Nunca elimina ni modifica líneas existentes.**
 
-### Cambios {#changed}
+### Cambios {#changed-4}
 
 - `--all-safe` imprime avisos explícitos de «globals are PRESERVED» y «shell-init files are NEVER touched».
 

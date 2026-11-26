@@ -71,7 +71,7 @@ Gradle 和 Android Studio 缓存的清理改为以完整的版本单元为单位
 
 最后打磨的版本：一个可视化菜单和自动崩溃捕获。没有新的清理逻辑；现有的安全保护和闲置关卡保持不变。
 
-### 新增 {#added}
+### 新增 {#added-1}
 
 - **[TUI 模式](./modes/tui.md)**（`-t` / `--tui` / `-g` / `--gui`）——由 whiptail 或 dialog 驱动的菜单。每次选择后都会回到普通的命令行输出来运行，然后再回到菜单。两个工具都没装时，会平滑地退回到命令行菜单，并给出针对发行版的安装提示。
 - **自动捕获崩溃包**——一个 EXIT 陷阱，在意外的非零退出时，把一个自包含的 `crash-<stamp>.tar.gz` 写入 `~/.linux-cleanup/feedback/`，其中包含会话日志、最近的记录和系统清单，然后打印一行可以通过邮件发送的提示。
@@ -79,7 +79,7 @@ Gradle 和 Android Studio 缓存的清理改为以完整的版本单元为单位
   在正常退出、`Ctrl-C`（130）、`SIGTERM`（143）和参数解析退出（2）时不会生成。**不发起任何网络请求**——在您决定分享之前，包一直留在您的机器上。
 - TUI 中的**关于**对话框，包含版本、联系方式、许可证和隐私承诺。
 
-### 变更 {#changed}
+### 变更 {#changed-1}
 
 - 横幅和会话摘要的抑制现在也包括 `tui` 模式，这样对话框不会和日志输出互相干扰。
 
@@ -93,13 +93,13 @@ Gradle 和 Android Studio 缓存的清理改为以完整的版本单元为单位
 
 把 1.2.0 的闲置关卡扩展到所有属于*工具*而不是可再生缓存的东西。删除这类东西现在需要**同时**满足：没有正在使用的软件依赖它，**并且**您在 `--days` 天内没有碰过它。
 
-### 变更 {#changed}
+### 变更 {#changed-2}
 
 - **Android AVD**——以前确认后会把 `~/.android/avd` 整个清空。现在每个 `*.avd` 目录作为一个整体检查，与同级的 `*.ini` 配对，只有当配置中的每个文件都闲置超过阈值时才会清理。最近使用过的模拟器配置会完整保留。
 - **[VS Code / Cursor 已被取代的扩展](./modes/editor-extensions.md)**——“存在更新版本”的检查满足了第一个条件；现在被取代的目录*还*必须闲置超过阈值。最近加载过的旧版本会被列出但保留，并显示每个版本的闲置天数。
 - **Flatpak 用户数据**——`~/.local/share/flatpak` 存放的是已安装的用户级应用，而不只是缓存。只要装有任何用户级应用，该模块现在就拒绝触碰这棵目录树，并且还要求整棵树闲置超过阈值。它会提示更安全的做法：`flatpak uninstall --user --unused`。
 
-### 新增 {#added}
+### 新增 {#added-2}
 
 - `newest_access_age_days <path>`——返回某个路径下任何位置最新的 `atime`/`mtime` 距今的天数。
 - `prune_stale_units <root> <days> [glob]`——把每个顶层子项视为不可分割的整体，这样部分清理不会破坏状态。
@@ -112,19 +112,19 @@ Gradle 和 Android Studio 缓存的清理改为以完整的版本单元为单位
 
 **默认的删除策略变成了只删长期未用的。** 目标缓存中的内容，只有当其文件在 `--days` 天内（默认 100 天）都没被碰过——`atime` 和 `mtime` 都算——才会被删除。
 
-### 变更 {#changed}
+### 变更 {#changed-3}
 
 - **`clean_target`，也就是所有缓存模块共用的清理函数，现在是修剪而不是整个清空。** 它只删除超过阈值的文件，然后清掉空目录。最近使用的文件会保留，目录外壳也保留，这样工具仍能找到它们的目录结构。
 - **[`--all-safe`](./modes/all-safe.md) 也按目标同样地修剪**，其摘要会按目标报告释放的字节**和**保留的字节。
 - **npm 缓存清理遵循闲置关卡**，而不是总是运行完全不看时间的 `npm cache clean --force`。
 - 运行前的横幅会说明当前的策略——“prune ≥Nd”或“FULL PURGE”。
 
-### 新增 {#added}
+### 新增 {#added-3}
 
 - **`--purge-all`** 恢复 1.2.0 之前清空一切的行为，文档中写明了其中的取舍。
 - **`prune_stale <root> <days>`**——一个供模块使用的公共辅助函数：拒绝受保护的路径，只删除两个时间戳都超过阈值的文件，清掉空目录，并报告释放的字节数。
 
-### 原因 {#why}
+### 原因 {#why-1}
 
 1.1.0 的默认行为是确认后删除整个缓存目录树。这对很快就能重新生成的 `~/.cache/yarn` 是对的，对 `~/.gradle/wrapper/dists/` 就错了——那是一个您下个月可能真的需要的 230 MB 下载。
 
@@ -134,7 +134,7 @@ Gradle 和 Android Studio 缓存的清理改为以完整的版本单元为单位
 
 安全加固版本。彻底杜绝全局安装的包和 shell 初始化文件被触碰的可能。
 
-### 修复 {#fixed}
+### 修复 {#fixed-1}
 
 - **pnpm 全局包曾被清空。** 对 pnpm 内容存储的清理以 `~/.local/share/pnpm`（`PNPM_HOME`）为目标——而那里存放着全局安装的包、bin 垫片，以及 `pnpm setup` 安装的 `pnpm` 二进制文件本身。现在它只以 `~/.local/share/pnpm/store` 为目标，也就是可再生的内容寻址缓存。
 
@@ -157,7 +157,7 @@ Gradle 和 Android Studio 缓存的清理改为以完整的版本单元为单位
 - **[`--globals`](./modes/globals-audit.md)**——只读的检查，列出 npm、pnpm、yarn、bun 和 deno 中直接安装的全局包，把每个标记为 `recently used`、`needed by: <pkg>` 或 `STALE — safe to uninstall`，并打印可直接复制的卸载命令。**从不删除任何东西。** 即使软件包管理器的命令不在 `PATH` 中也能工作。
 - **[`--doctor`](./modes/doctor.md)**——检测磁盘上存在却没有接入 shell 初始化的运行时（nvm、pnpm、bun、deno、cargo），并提议追加标准的配置块。**只追加，且需确认。从不删除或修改已有的行。**
 
-### 变更 {#changed}
+### 变更 {#changed-4}
 
 - `--all-safe` 会明确打印“globals are PRESERVED”和“shell-init files are NEVER touched”的提示。
 
