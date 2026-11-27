@@ -1,7 +1,6 @@
 ---
 title: ڈسٹرو سپورٹ
 description: linux-cleanup ہر Linux ڈسٹری بیوشن پر کیا کرتا ہے — کیش صفائی ہر جگہ کام کرتی ہے، مگر sudo والا --system موڈ صرف Debian اور Ubuntu کے لیے ہے۔
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: मोड तालिका
 description: linux-cleanup के सभी मोड एक साथ — कौन हटाता है, कौन इंटरैक्टिव है, कौन sudo इस्तेमाल करता है, और कौन सत्र रिकॉर्ड लिखता है।
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

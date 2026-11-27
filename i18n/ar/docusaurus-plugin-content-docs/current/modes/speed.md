@@ -1,7 +1,6 @@
 ---
 title: تشخيص السرعة
 description: فحص درجة الحرارة والضغط والأعمال التي تبدأ مع النظام في Linux، ثم تقرير تطبيق كل تغيير مقترح أو عدمه.
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

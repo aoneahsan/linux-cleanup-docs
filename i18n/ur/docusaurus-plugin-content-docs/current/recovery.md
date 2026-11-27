@@ -1,7 +1,6 @@
 ---
 title: ریکوری
 description: linux-cleanup سے ناپسندیدہ حذف کے بعد کیا کریں — دستیاب لاگز دیکھیں، بیک اپ یا اصل ذریعے سے بحال کریں، اور جہاں ریکوری اہم ہو وہاں ڈسک پر مزید لکھنے سے بچیں۔
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

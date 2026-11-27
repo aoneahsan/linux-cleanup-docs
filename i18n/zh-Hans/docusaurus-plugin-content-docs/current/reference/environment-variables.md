@@ -1,7 +1,6 @@
 ---
 title: 环境变量
 description: linux-cleanup 读取的每个环境变量及其默认值和作用——输出目录覆盖、颜色控制以及 XDG 配置查找。
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

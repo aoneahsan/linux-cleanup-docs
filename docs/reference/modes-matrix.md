@@ -1,7 +1,6 @@
 ---
 title: Modes matrix
 description: Every linux-cleanup mode side by side — whether it deletes, whether it is interactive, whether it uses sudo, and whether it writes a session record.
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

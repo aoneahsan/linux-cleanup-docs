@@ -1,7 +1,6 @@
 ---
 title: Диагностика скорости
 description: Проверьте температуру, нагрузку и автозапуск в Linux, а затем решите, применять ли каждое предложенное изменение.
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

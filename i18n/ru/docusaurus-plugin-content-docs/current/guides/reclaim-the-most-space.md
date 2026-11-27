@@ -1,7 +1,6 @@
 ---
 title: Освобождать место осознанно
 description: Проверьте, чем занят диск в Linux, просмотрите каждый режим очистки, а затем выбирайте пути кэша, проектов или системы по одному.
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

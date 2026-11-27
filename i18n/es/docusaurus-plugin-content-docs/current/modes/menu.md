@@ -1,7 +1,6 @@
 ---
 title: Menú
 description: El menú numerado que permite ejecutar una sola categoría de linux-cleanup cada vez en lugar del recorrido completo.
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

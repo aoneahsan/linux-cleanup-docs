@@ -1,7 +1,6 @@
 ---
 title: مینو
 description: نمبر والا مینو جس سے آپ پورے واک تھرو کے بجائے linux-cleanup کا ایک وقت میں ایک زمرہ چلا سکتے ہیں۔
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

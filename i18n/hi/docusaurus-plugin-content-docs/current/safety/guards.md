@@ -1,7 +1,6 @@
 ---
 title: सुरक्षा जाँचें
 description: linux-cleanup किसी पथ को हटाने से पहले जिन चार स्वतंत्र जाँचों से गुज़ारता है — पथ अनुमति-सूची, निष्क्रियता जाँच, केवल-इंटरैक्टिव निजी मोड और sudo की सीमा।
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

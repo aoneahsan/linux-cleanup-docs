@@ -1,7 +1,6 @@
 ---
 title: حذف مستقل ہے
 description: linux-cleanup میں نہ واپسی ہے، نہ ری سائیکل بن، نہ بیک اپ۔ عملی طور پر اس کا مطلب کیا ہے، اسے ایسا کیوں بنایا گیا، اور بعد میں آپ کے پاس واقعی کون سے راستے ہیں۔
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

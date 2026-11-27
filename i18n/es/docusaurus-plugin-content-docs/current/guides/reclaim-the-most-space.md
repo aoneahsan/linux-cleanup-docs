@@ -1,7 +1,6 @@
 ---
 title: Recuperar espacio con criterio
 description: Revise el uso del disco en Linux, previsualice cada modo de limpieza y elija rutas de caché, de proyectos o del sistema de una en una.
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

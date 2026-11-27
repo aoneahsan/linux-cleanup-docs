@@ -1,7 +1,6 @@
 ---
 title: TUI (بصری مینو)
 description: linux-cleanup 1.3.0 میں شامل whiptail یا dialog سے چلنے والا بصری مینو، جو دونوں نہ ہوں تو CLI مینو پر لوٹ آتا ہے۔
-tags: [tui, whiptail, dialog, visual, menu, modes]
 sidebar_position: 5
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 故障排查
 description: linux-cleanup 用户实际遇到的问题的症状、原因和修复方法——拒绝、缺少依赖、cron 失败、扫描缓慢以及版本混乱。
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

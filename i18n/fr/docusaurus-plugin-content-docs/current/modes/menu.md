@@ -1,7 +1,6 @@
 ---
 title: Menu
 description: Le menu numéroté qui permet de lancer une seule catégorie de linux-cleanup à la fois plutôt que tout le parcours guidé.
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

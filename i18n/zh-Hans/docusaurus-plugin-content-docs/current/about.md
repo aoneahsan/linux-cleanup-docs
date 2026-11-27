@@ -1,7 +1,6 @@
 ---
 title: 关于
 description: 谁开发了 linux-cleanup、它背后的设计原则、它的许可证，以及如何联系或参与贡献。
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

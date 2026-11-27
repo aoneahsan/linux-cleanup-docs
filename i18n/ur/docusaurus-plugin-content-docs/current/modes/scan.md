@@ -1,7 +1,6 @@
 ---
 title: اسکین (صرف پڑھنا)
 description: کیش کی جڑیں، ادھورے ڈاؤن لوڈز اور Linux صفائی کے دوسرے امیدوار فائلیں حذف کیے بغیر دیکھیں۔
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

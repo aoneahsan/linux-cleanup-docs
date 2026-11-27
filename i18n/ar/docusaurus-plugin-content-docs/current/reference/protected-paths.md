@@ -1,7 +1,6 @@
 ---
 title: المسارات المحمية
 description: القائمة الكاملة المتحقق منها للمسارات التي يرفض linux-cleanup حذفها — جذور النظام والمجلدات الشخصية وجذور تثبيت مديري الحزم وأسماء ملفات تهيئة الصدفة.
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: पुराने node_modules ढूँढें
 description: N या ज़्यादा दिनों से अनछुए प्रोजेक्ट में node_modules फ़ोल्डर ढूँढें और इंटरैक्टिव रूप से हटाएँ। डेवलपर की मशीन पर अक्सर सबसे ज़्यादा जगह यहीं से मिलती है।
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

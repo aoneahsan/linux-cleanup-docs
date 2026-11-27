@@ -1,7 +1,6 @@
 ---
 title: شیل ایلیاس اور ہفتہ وار cron
 description: cleanup شیل ایلیاس اور ہر ہفتے خود بخود چلنے والی مکمل محفوظ صفائی انسٹال کریں، ہر ایک کیا لکھتا ہے، اور انہیں دوبارہ کیسے ہٹائیں۔
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

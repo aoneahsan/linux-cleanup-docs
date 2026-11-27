@@ -1,7 +1,6 @@
 ---
 title: एग्ज़िट कोड
 description: linux-cleanup के हर एग्ज़िट कोड का मतलब, कौन-से अपने आप क्रैश बंडल बनाते हैं, और स्क्रिप्ट या cron जॉब में उनके आधार पर कैसे शाखा बनाएँ।
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

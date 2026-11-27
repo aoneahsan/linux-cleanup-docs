@@ -1,7 +1,6 @@
 ---
 title: 安装
 description: 三种方式安装 linux-cleanup——用 npx 免安装、用 npm 全局安装，或克隆仓库——并在执行任何删除之前验证安装。
-tags: [installation, npx, npm, git, setup, upgrade]
 sidebar_position: 2
 ---
 

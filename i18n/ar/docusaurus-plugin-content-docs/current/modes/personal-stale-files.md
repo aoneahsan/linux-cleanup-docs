@@ -1,7 +1,6 @@
 ---
 title: الملفات الشخصية المهملة
 description: الوضع التفاعلي فقط الذي يعثر على الملفات الكبيرة غير المستخدمة منذ مدة طويلة في ~/Downloads والجذور غير المحمية المضبوطة.
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

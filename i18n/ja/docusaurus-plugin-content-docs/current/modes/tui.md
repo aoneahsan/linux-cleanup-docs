@@ -1,7 +1,6 @@
 ---
 title: TUI（ビジュアルメニュー）
 description: linux-cleanup 1.3.0 で加わった whiptail または dialog によるビジュアルメニュー。どちらもない場合は CLI メニューに切り替わります。
-tags: [tui, whiptail, dialog, visual, menu, modes]
 sidebar_position: 5
 ---
 

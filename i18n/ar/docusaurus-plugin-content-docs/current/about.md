@@ -1,7 +1,6 @@
 ---
 title: حول
 description: من بنى linux-cleanup، ومبادئ التصميم وراءه، وترخيصه، وكيفية التواصل أو المساهمة.
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

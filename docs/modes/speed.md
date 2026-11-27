@@ -1,7 +1,6 @@
 ---
 title: Speed diagnosis
 description: Inspect Linux temperature, pressure and startup work, then decide whether to apply each suggested change.
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

@@ -24,7 +24,7 @@ export const PLATFORMS: readonly Platform[] = [
   {id: 'npm', name: 'npm', href: 'https://www.npmjs.com/package/linux-cleanup', title: 'npx linux-cleanup', text: 'The cleaner itself: run it once with npx, or install it and let the alias and the weekly cron use it. Preview everything with --dry-run first.', cta: 'View on npm', primary: true, verified: '2026-11-21'},
   {id: 'desktop', name: 'Desktop app for Linux', href: 'https://linux-cleanup.aoneahsan.com/download', title: 'The desktop app', text: 'The all-safe cleanup in a window, as an AppImage or a .deb, with a dry run before every real run and a receipt after it.', cta: 'Download the app', verified: '2026-11-21'},
   {id: 'web', name: 'linux-cleanup website', href: 'https://linux-cleanup.aoneahsan.com', title: 'The website', text: 'What it cleans on Ubuntu, Fedora and Arch, what it never touches, and how the update notices work.', cta: 'Open the website', verified: '2026-11-21'},
-  {id: 'docs', name: 'Documentation', href: 'https://linux-cleanup-docs.aoneahsan.com', title: 'These docs', text: 'Every section it can clean, the protected paths, the flags and the report format.', cta: 'Read the docs', verified: '2026-11-21'},
+  {id: 'docs', name: 'Documentation', href: 'https://linux-cleanup-docs.aoneahsan.com/', title: 'These docs', text: 'Every section it can clean, the protected paths, the flags and the report format.', cta: 'Read the docs', verified: '2026-11-21'},
 ];
 
 export const APPS_PAGE = {

@@ -1,7 +1,6 @@
 ---
 title: باحث node_modules المهملة
 description: العثور على مجلدات node_modules في مشاريع لم تُلمس منذ N يومًا أو أكثر وحذفها تفاعليًا. وغالبًا ما تكون أكبر مساحة تُستعاد على جهاز مطوّر.
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

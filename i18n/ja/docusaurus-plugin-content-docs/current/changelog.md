@@ -1,7 +1,6 @@
 ---
 title: 変更履歴
 description: linux-cleanup のリリースの履歴。ドライラン、リリースのお知らせ、ローカルの JSON イベントなど。
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

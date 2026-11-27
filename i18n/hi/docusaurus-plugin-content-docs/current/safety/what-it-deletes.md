@@ -1,7 +1,6 @@
 ---
 title: यह क्या हटाता है
 description: Linux सफ़ाई मोड और उनके लक्ष्य पथ, साथ में रोज़ के कैश, सिस्टम काम और निजी फ़ाइलों का अंतर।
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

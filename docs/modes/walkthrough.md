@@ -1,7 +1,6 @@
 ---
 title: Walkthrough (default)
 description: The default linux-cleanup mode — ten guided steps through every cleanup category, prompting before each, with a running total and a JSON session report.
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

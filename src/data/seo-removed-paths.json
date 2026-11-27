@@ -1,0 +1,622 @@
+[
+ {
+  "from": "/tags/about",
+  "to": "/about/"
+ },
+ {
+  "from": "/tags/alias",
+  "to": "/guides/alias-and-cron/"
+ },
+ {
+  "from": "/tags/all-safe",
+  "to": "/modes/all-safe/"
+ },
+ {
+  "from": "/tags/allowlist",
+  "to": "/reference/protected-paths/"
+ },
+ {
+  "from": "/tags/apt",
+  "to": "/modes/system-cleanup/"
+ },
+ {
+  "from": "/tags/arch",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/audit",
+  "to": "/modes/home-audit/"
+ },
+ {
+  "from": "/tags/author",
+  "to": "/about/"
+ },
+ {
+  "from": "/tags/automation",
+  "to": "/guides/alias-and-cron/"
+ },
+ {
+  "from": "/tags/bash",
+  "to": "/"
+ },
+ {
+  "from": "/tags/bashrc",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/batch",
+  "to": "/modes/all-safe/"
+ },
+ {
+  "from": "/tags/bug-report",
+  "to": "/guides/send-a-bug-report/"
+ },
+ {
+  "from": "/tags/bun",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/caches",
+  "to": "/safety/what-it-deletes/"
+ },
+ {
+  "from": "/tags/cargo",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/changelog",
+  "to": "/changelog/"
+ },
+ {
+  "from": "/tags/cleanup",
+  "to": "/"
+ },
+ {
+  "from": "/tags/cli",
+  "to": "/reference/cli-flags/"
+ },
+ {
+  "from": "/tags/commands",
+  "to": "/reference/cli-flags/"
+ },
+ {
+  "from": "/tags/comparison",
+  "to": "/reference/modes-matrix/"
+ },
+ {
+  "from": "/tags/compatibility",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/configuration",
+  "to": "/reference/environment-variables/"
+ },
+ {
+  "from": "/tags/contributing",
+  "to": "/about/"
+ },
+ {
+  "from": "/tags/crash",
+  "to": "/guides/send-a-bug-report/"
+ },
+ {
+  "from": "/tags/crash-bundle",
+  "to": "/reference/exit-codes/"
+ },
+ {
+  "from": "/tags/credits",
+  "to": "/about/"
+ },
+ {
+  "from": "/tags/cron",
+  "to": "/modes/all-safe/"
+ },
+ {
+  "from": "/tags/cursor",
+  "to": "/modes/editor-extensions/"
+ },
+ {
+  "from": "/tags/data-loss",
+  "to": "/safety/irreversibility/"
+ },
+ {
+  "from": "/tags/debian",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/debug-bundle",
+  "to": "/guides/send-a-bug-report/"
+ },
+ {
+  "from": "/tags/default",
+  "to": "/modes/walkthrough/"
+ },
+ {
+  "from": "/tags/deletion",
+  "to": "/safety/what-it-deletes/"
+ },
+ {
+  "from": "/tags/deno",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/dependencies",
+  "to": "/getting-started/requirements/"
+ },
+ {
+  "from": "/tags/design",
+  "to": "/safety/guards/"
+ },
+ {
+  "from": "/tags/desktop",
+  "to": "/modes/personal-stale-files/"
+ },
+ {
+  "from": "/tags/diagnosis",
+  "to": "/modes/speed/"
+ },
+ {
+  "from": "/tags/dialog",
+  "to": "/modes/tui/"
+ },
+ {
+  "from": "/tags/disk-space",
+  "to": "/"
+ },
+ {
+  "from": "/tags/disk-usage",
+  "to": "/modes/home-audit/"
+ },
+ {
+  "from": "/tags/distro",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/doctor",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/downloads",
+  "to": "/modes/partial-downloads/"
+ },
+ {
+  "from": "/tags/dry-run",
+  "to": "/reference/json-events/"
+ },
+ {
+  "from": "/tags/editor",
+  "to": "/modes/editor-extensions/"
+ },
+ {
+  "from": "/tags/environment",
+  "to": "/reference/environment-variables/"
+ },
+ {
+  "from": "/tags/errors",
+  "to": "/troubleshooting/"
+ },
+ {
+  "from": "/tags/events",
+  "to": "/reference/json-events/"
+ },
+ {
+  "from": "/tags/exit-codes",
+  "to": "/reference/exit-codes/"
+ },
+ {
+  "from": "/tags/export",
+  "to": "/modes/reports/"
+ },
+ {
+  "from": "/tags/extensions",
+  "to": "/modes/editor-extensions/"
+ },
+ {
+  "from": "/tags/faq",
+  "to": "/faq/"
+ },
+ {
+  "from": "/tags/fedora",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/feedback",
+  "to": "/reference/output-paths/"
+ },
+ {
+  "from": "/tags/first-run",
+  "to": "/getting-started/quick-start/"
+ },
+ {
+  "from": "/tags/fixes",
+  "to": "/troubleshooting/"
+ },
+ {
+  "from": "/tags/flags",
+  "to": "/reference/cli-flags/"
+ },
+ {
+  "from": "/tags/git",
+  "to": "/getting-started/installation/"
+ },
+ {
+  "from": "/tags/globals",
+  "to": "/modes/globals-audit/"
+ },
+ {
+  "from": "/tags/guards",
+  "to": "/safety/guards/"
+ },
+ {
+  "from": "/tags/guide",
+  "to": "/guides/reclaim-the-most-space/"
+ },
+ {
+  "from": "/tags/guided",
+  "to": "/modes/walkthrough/"
+ },
+ {
+  "from": "/tags/history",
+  "to": "/changelog/"
+ },
+ {
+  "from": "/tags/home",
+  "to": "/modes/home-audit/"
+ },
+ {
+  "from": "/tags/html",
+  "to": "/modes/reports/"
+ },
+ {
+  "from": "/tags/installation",
+  "to": "/getting-started/installation/"
+ },
+ {
+  "from": "/tags/interactive",
+  "to": "/modes/menu/"
+ },
+ {
+  "from": "/tags/irreversible",
+  "to": "/safety/irreversibility/"
+ },
+ {
+  "from": "/tags/journal",
+  "to": "/modes/system-cleanup/"
+ },
+ {
+  "from": "/tags/jq",
+  "to": "/reference/report-schema/"
+ },
+ {
+  "from": "/tags/json",
+  "to": "/reference/json-events/"
+ },
+ {
+  "from": "/tags/kernel",
+  "to": "/modes/system-cleanup/"
+ },
+ {
+  "from": "/tags/licence",
+  "to": "/about/"
+ },
+ {
+  "from": "/tags/linux",
+  "to": "/"
+ },
+ {
+  "from": "/tags/logs",
+  "to": "/reference/output-paths/"
+ },
+ {
+  "from": "/tags/markdown",
+  "to": "/modes/reports/"
+ },
+ {
+  "from": "/tags/matrix",
+  "to": "/reference/modes-matrix/"
+ },
+ {
+  "from": "/tags/menu",
+  "to": "/modes/menu/"
+ },
+ {
+  "from": "/tags/modes",
+  "to": "/modes/all-safe/"
+ },
+ {
+  "from": "/tags/no-color",
+  "to": "/reference/environment-variables/"
+ },
+ {
+  "from": "/tags/node-modules",
+  "to": "/modes/node-modules-finder/"
+ },
+ {
+  "from": "/tags/npm",
+  "to": "/modes/globals-audit/"
+ },
+ {
+  "from": "/tags/npx",
+  "to": "/getting-started/installation/"
+ },
+ {
+  "from": "/tags/nvm",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/opensuse",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/options",
+  "to": "/reference/cli-flags/"
+ },
+ {
+  "from": "/tags/orphan",
+  "to": "/modes/partial-downloads/"
+ },
+ {
+  "from": "/tags/output",
+  "to": "/reference/output-paths/"
+ },
+ {
+  "from": "/tags/overview",
+  "to": "/"
+ },
+ {
+  "from": "/tags/parsing",
+  "to": "/reference/report-schema/"
+ },
+ {
+  "from": "/tags/partials",
+  "to": "/modes/partial-downloads/"
+ },
+ {
+  "from": "/tags/paths",
+  "to": "/reference/output-paths/"
+ },
+ {
+  "from": "/tags/performance",
+  "to": "/modes/speed/"
+ },
+ {
+  "from": "/tags/personal",
+  "to": "/modes/personal-stale-files/"
+ },
+ {
+  "from": "/tags/pnpm",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/preview",
+  "to": "/safety/preview-first/"
+ },
+ {
+  "from": "/tags/privacy",
+  "to": "/faq/"
+ },
+ {
+  "from": "/tags/projects",
+  "to": "/modes/node-modules-finder/"
+ },
+ {
+  "from": "/tags/protected",
+  "to": "/reference/protected-paths/"
+ },
+ {
+  "from": "/tags/purge-all",
+  "to": "/guides/reclaim-the-most-space/"
+ },
+ {
+  "from": "/tags/questions",
+  "to": "/faq/"
+ },
+ {
+  "from": "/tags/quick-start",
+  "to": "/getting-started/quick-start/"
+ },
+ {
+  "from": "/tags/read-only",
+  "to": "/modes/globals-audit/"
+ },
+ {
+  "from": "/tags/recipe",
+  "to": "/guides/reclaim-the-most-space/"
+ },
+ {
+  "from": "/tags/reclaim",
+  "to": "/guides/reclaim-the-most-space/"
+ },
+ {
+  "from": "/tags/recovery",
+  "to": "/safety/irreversibility/"
+ },
+ {
+  "from": "/tags/reference",
+  "to": "/reference/cli-flags/"
+ },
+ {
+  "from": "/tags/releases",
+  "to": "/changelog/"
+ },
+ {
+  "from": "/tags/remove",
+  "to": "/guides/uninstall/"
+ },
+ {
+  "from": "/tags/repair",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/reports",
+  "to": "/reference/output-paths/"
+ },
+ {
+  "from": "/tags/requirements",
+  "to": "/getting-started/requirements/"
+ },
+ {
+  "from": "/tags/restore",
+  "to": "/recovery/"
+ },
+ {
+  "from": "/tags/retention",
+  "to": "/reference/output-paths/"
+ },
+ {
+  "from": "/tags/safety",
+  "to": "/safety/irreversibility/"
+ },
+ {
+  "from": "/tags/scan",
+  "to": "/reference/json-events/"
+ },
+ {
+  "from": "/tags/scheduling",
+  "to": "/guides/alias-and-cron/"
+ },
+ {
+  "from": "/tags/schema",
+  "to": "/reference/report-schema/"
+ },
+ {
+  "from": "/tags/scripting",
+  "to": "/reference/exit-codes/"
+ },
+ {
+  "from": "/tags/setup",
+  "to": "/getting-started/installation/"
+ },
+ {
+  "from": "/tags/shell",
+  "to": "/modes/doctor/"
+ },
+ {
+  "from": "/tags/snap",
+  "to": "/modes/system-cleanup/"
+ },
+ {
+  "from": "/tags/speed",
+  "to": "/modes/speed/"
+ },
+ {
+  "from": "/tags/stale",
+  "to": "/modes/personal-stale-files/"
+ },
+ {
+  "from": "/tags/staleness",
+  "to": "/safety/guards/"
+ },
+ {
+  "from": "/tags/startup",
+  "to": "/modes/speed/"
+ },
+ {
+  "from": "/tags/sudo",
+  "to": "/modes/system-cleanup/"
+ },
+ {
+  "from": "/tags/system",
+  "to": "/modes/system-cleanup/"
+ },
+ {
+  "from": "/tags/targets",
+  "to": "/safety/what-it-deletes/"
+ },
+ {
+  "from": "/tags/tmp",
+  "to": "/modes/system-cleanup/"
+ },
+ {
+  "from": "/tags/troubleshooting",
+  "to": "/troubleshooting/"
+ },
+ {
+  "from": "/tags/tui",
+  "to": "/modes/tui/"
+ },
+ {
+  "from": "/tags/tutorial",
+  "to": "/getting-started/quick-start/"
+ },
+ {
+  "from": "/tags/ubuntu",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/unattended",
+  "to": "/modes/all-safe/"
+ },
+ {
+  "from": "/tags/undo",
+  "to": "/safety/irreversibility/"
+ },
+ {
+  "from": "/tags/uninstall",
+  "to": "/guides/uninstall/"
+ },
+ {
+  "from": "/tags/upgrade",
+  "to": "/getting-started/installation/"
+ },
+ {
+  "from": "/tags/variables",
+  "to": "/reference/environment-variables/"
+ },
+ {
+  "from": "/tags/versions",
+  "to": "/changelog/"
+ },
+ {
+  "from": "/tags/visual",
+  "to": "/modes/tui/"
+ },
+ {
+  "from": "/tags/vscode",
+  "to": "/modes/editor-extensions/"
+ },
+ {
+  "from": "/tags/walkthrough",
+  "to": "/getting-started/quick-start/"
+ },
+ {
+  "from": "/tags/whiptail",
+  "to": "/getting-started/requirements/"
+ },
+ {
+  "from": "/tags/wsl",
+  "to": "/distro-support/"
+ },
+ {
+  "from": "/tags/xdg",
+  "to": "/reference/environment-variables/"
+ },
+ {
+  "from": "/tags/yarn",
+  "to": "/modes/globals-audit/"
+ },
+ {
+  "from": "/tags/yes",
+  "to": "/modes/all-safe/"
+ },
+ {
+  "from": "/tags",
+  "to": "/"
+ },
+ {
+  "from": "/feed/tags",
+  "to": "/feed/"
+ },
+ {
+  "from": "/feed/tags/cli",
+  "to": "/feed/"
+ },
+ {
+  "from": "/feed/tags/desktop",
+  "to": "/feed/"
+ },
+ {
+  "from": "/feed/tags/release",
+  "to": "/feed/"
+ }
+]

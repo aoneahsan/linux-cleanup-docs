@@ -1,7 +1,6 @@
 ---
 title: واک تھرو (ڈیفالٹ)
 description: linux-cleanup کا ڈیفالٹ موڈ — ہر صفائی زمرے سے گزرتے دس گائیڈڈ مراحل، ہر ایک سے پہلے سوال، جاری مجموعہ اور JSON سیشن رپورٹ کے ساتھ۔
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

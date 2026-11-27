@@ -1,7 +1,6 @@
 ---
 title: Menu
 description: O menu numerado que permite rodar uma categoria do linux-cleanup por vez em vez do passeio completo.
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Поддержка дистрибутивов
 description: "Что делает linux-cleanup в каждом дистрибутиве Linux: очистка кэшей работает везде, а режим --system с sudo рассчитан только на Debian и Ubuntu."
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

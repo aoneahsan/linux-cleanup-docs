@@ -1,7 +1,6 @@
 ---
 title: 提交 bug 报告
 description: 如何报告 linux-cleanup 的 bug——生成调试包、崩溃包包含什么、发送前要检查什么，以及发送到哪里。
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

@@ -32,7 +32,7 @@ export default function EcosystemPage({ copy }: { copy: Copy }): React.JSX.Eleme
     <Layout title={e.band.title} description={intro}>
       <Head>
         <script type="application/ld+json">{JSON.stringify({
-          '@context': 'https://schema.org', '@type': 'ItemList', name: e.band.title, url: `${site}${row.code === 'en-GB' ? '' : `/${row.code}`}/ecosystem`,
+          '@context': 'https://schema.org', '@type': 'ItemList', name: e.band.title, url: `${site}${row.code === 'en-GB' ? '' : `/${row.code}`}/ecosystem/`,
           itemListElement: products.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: p.liveUrl })),
         })}</script>
       </Head>

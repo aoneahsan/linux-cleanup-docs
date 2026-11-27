@@ -1,7 +1,6 @@
 ---
 title: مسائل کا حل
 description: linux-cleanup کے صارفین کو واقعی پیش آنے والے مسائل کی علامت، وجہ اور حل — انکار، غائب انحصارات، cron کی ناکامیاں، سست اسکین اور ورژن کی الجھن۔
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

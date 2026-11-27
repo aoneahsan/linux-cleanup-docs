@@ -1,7 +1,6 @@
 ---
 title: About
 description: Who built linux-cleanup, the design principles behind it, its licence, and how to get in touch or contribute.
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

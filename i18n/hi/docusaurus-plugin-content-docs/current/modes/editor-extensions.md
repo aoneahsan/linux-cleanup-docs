@@ -1,7 +1,6 @@
 ---
 title: एडिटर एक्सटेंशन
 description: VS Code और Cursor के पुराने पड़ चुके एक्सटेंशन संस्करण हटाएँ — अपडेट के बाद पीछे छूटी पुरानी प्रतियाँ — नए संस्करण की जाँच और निष्क्रियता सीमा के तहत।
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: أحداث تقرؤها الآلة
 description: أحداث NDJSON بالإصدار 1 للفحص المحلي وللتشغيل الآمن بالكامل غير التفاعلي.
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Поиск заброшенных node_modules
 description: Находит каталоги node_modules в проектах, которых не касались N или больше дней, и интерактивно удаляет их. Часто это самое крупное освобождение места на машине разработчика.
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

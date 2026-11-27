@@ -1,7 +1,6 @@
 ---
 title: 削除は元に戻せない
 description: linux-cleanup には元に戻す機能もゴミ箱もバックアップもありません。それが実際に何を意味するのか、なぜそう設計したのか、事後に本当に取れる手段は何か。
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

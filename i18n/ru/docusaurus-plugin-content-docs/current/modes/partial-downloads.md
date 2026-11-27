@@ -1,7 +1,6 @@
 ---
 title: Недокачанные и брошенные загрузки
 description: Поиск и удаление брошенных файлов недокачанных загрузок — .crdownload, .part и .fdmdownload, — которые остаются после прерванных загрузок в браузерах и менеджерах загрузок.
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

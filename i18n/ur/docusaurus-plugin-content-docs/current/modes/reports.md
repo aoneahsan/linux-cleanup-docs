@@ -1,7 +1,6 @@
 ---
 title: رپورٹس
 description: گائیڈڈ واک تھرو ایک JSON سیشن ریکارڈ لکھ سکتا ہے۔ ان ریکارڈز کی فہرست دیکھیں، کھولیں، Markdown یا HTML میں بدلیں اور ایکسپورٹ کریں۔
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

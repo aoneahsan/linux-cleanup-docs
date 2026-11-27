@@ -1,7 +1,6 @@
 ---
 title: الفحص (للقراءة فقط)
 description: فحص جذور ذاكرة التخزين المؤقت والتنزيلات غير المكتملة وسائر مرشحات التنظيف في Linux دون حذف ملفات.
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

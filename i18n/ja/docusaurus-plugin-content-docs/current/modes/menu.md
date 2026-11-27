@@ -1,7 +1,6 @@
 ---
 title: メニュー
 description: ガイド付きの手順全体ではなく、linux-cleanup のカテゴリーを 1 つずつ実行できる番号付きメニュー。
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

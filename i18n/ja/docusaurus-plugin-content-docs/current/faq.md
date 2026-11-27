@@ -1,7 +1,6 @@
 ---
 title: よくある質問
 description: linux-cleanup のパス、リリースの確認、ドライラン、完全な削除、対応ディストリビューションについての回答。
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

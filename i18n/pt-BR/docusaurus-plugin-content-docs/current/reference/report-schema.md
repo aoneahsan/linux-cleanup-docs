@@ -1,7 +1,6 @@
 ---
 title: Esquema do relatório
 description: A estrutura JSON que o passeio guiado do linux-cleanup grava, com credits, meta, disk, memory, steps e totals.
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

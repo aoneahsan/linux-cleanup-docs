@@ -1,7 +1,6 @@
 ---
 title: Solución de problemas
 description: "Síntoma, causa y solución de los problemas que de verdad encuentran los usuarios de linux-cleanup: rechazos, dependencias que faltan, fallos de cron, análisis lentos y confusión de versiones."
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

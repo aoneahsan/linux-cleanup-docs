@@ -1,7 +1,6 @@
 ---
 title: Descargas incompletas o huérfanas
 description: Busque y elimine archivos de descargas incompletas abandonados (.crdownload, .part y .fdmdownload) que dejan las transferencias interrumpidas de navegadores y gestores de descargas.
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

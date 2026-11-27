@@ -1,7 +1,6 @@
 ---
 title: Variables de entorno
 description: "Todas las variables de entorno que lee linux-cleanup, con su valor por defecto y su efecto: cambio de directorios de salida, control del color y búsqueda de configuración XDG."
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

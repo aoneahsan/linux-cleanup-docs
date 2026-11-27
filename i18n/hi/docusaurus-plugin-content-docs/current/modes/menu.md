@@ -1,7 +1,6 @@
 ---
 title: मेन्यू
 description: नंबर वाला मेन्यू जिससे आप पूरे वॉकथ्रू के बजाय linux-cleanup की एक समय में एक श्रेणी चला सकते हैं।
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 卸载
 description: 完全移除 linux-cleanup——软件包、shell 别名、cron 条目，以及它的日志和会话记录。
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

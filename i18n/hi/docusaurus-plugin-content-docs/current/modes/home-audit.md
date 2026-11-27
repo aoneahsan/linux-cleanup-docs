@@ -1,7 +1,6 @@
 ---
 title: होम जाँच
 description: होम फ़ोल्डर की 20 सबसे बड़ी चीज़ों की केवल-पढ़ने वाली सूची, चाहे linux-cleanup उन्हें साफ़ कर सके या नहीं — यह जानने का सबसे तेज़ तरीका कि आपकी डिस्क असल में किसने भरी है।
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

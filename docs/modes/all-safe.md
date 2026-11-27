@@ -1,7 +1,6 @@
 ---
 title: All-safe (batch)
 description: Clean every regenerable cache in one pass. The mode built for cron and unattended maintenance, and the only mode --yes applies to.
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

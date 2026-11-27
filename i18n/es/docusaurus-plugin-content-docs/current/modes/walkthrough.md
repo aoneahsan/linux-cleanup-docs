@@ -1,7 +1,6 @@
 ---
 title: Recorrido guiado (predeterminado)
 description: "El modo predeterminado de linux-cleanup: diez pasos guiados por todas las categorías de limpieza, con pregunta antes de cada uno, total acumulado e informe JSON de la sesión."
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

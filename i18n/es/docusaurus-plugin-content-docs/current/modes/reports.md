@@ -1,7 +1,6 @@
 ---
 title: Informes
 description: El recorrido guiado puede escribir un registro JSON de la sesión. Liste, vea, convierta a Markdown o HTML y exporte esos registros.
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

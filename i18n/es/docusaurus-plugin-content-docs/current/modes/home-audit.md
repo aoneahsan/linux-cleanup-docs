@@ -1,7 +1,6 @@
 ---
 title: Revisión del directorio personal
 description: "Una lista de solo lectura de las 20 entradas más grandes de su directorio personal, pueda o no limpiarlas linux-cleanup: la forma más rápida de saber qué ocupa de verdad el disco."
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: linux-cleanup
 description: ایک Bash کمانڈ لائن ٹول جو پاتھ اجازت فہرست، غیر فعالیت کی حد اور انٹرایکٹو تصدیق کے پیچھے دوبارہ بن سکنے والے کیش کو مستقل طور پر حذف کر کے Linux پر ڈسک کی جگہ واپس دلاتا ہے۔
-tags: [linux, cleanup, disk-space, cli, bash, overview]
 slug: /
 sidebar_label: تعارف
 sidebar_position: 1

@@ -1,7 +1,6 @@
 ---
 title: Отправить отчёт об ошибке
 description: "Как сообщить об ошибке linux-cleanup: собрать отладочный пакет, что содержит пакет сбоя, что проверить перед отправкой и куда отправлять."
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

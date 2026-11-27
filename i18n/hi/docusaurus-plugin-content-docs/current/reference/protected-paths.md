@@ -1,7 +1,6 @@
 ---
 title: संरक्षित पथ
 description: उन पथों की पूरी, जाँची हुई सूची जिन्हें linux-cleanup हटाने से मना करता है — सिस्टम रूट, निजी फ़ोल्डर, पैकेज मैनेजर के इंस्टॉल रूट और शेल-इनिट फ़ाइल नाम।
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Preguntas frecuentes
 description: Respuestas sobre las rutas de linux-cleanup, su comprobación de versiones, las simulaciones, la eliminación permanente y la compatibilidad con distribuciones.
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

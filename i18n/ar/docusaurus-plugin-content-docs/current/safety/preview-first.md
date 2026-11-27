@@ -1,7 +1,6 @@
 ---
 title: المعاينة قبل الحذف
 description: فحص للقراءة فقط وتشغيل تجريبي لمراجعة مسارات linux-cleanup قبل الحذف الدائم.
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Extensiones de editores
 description: Elimine las versiones sustituidas de extensiones de VS Code y Cursor (las copias antiguas que quedan al actualizarse una extensión), sujeto a una comprobación de sustitución y al filtro de inactividad.
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Parcours guidé (par défaut)
 description: "Le mode par défaut de linux-cleanup : dix étapes guidées à travers toutes les catégories de nettoyage, avec une question avant chacune, un total cumulé et un rapport de session JSON."
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

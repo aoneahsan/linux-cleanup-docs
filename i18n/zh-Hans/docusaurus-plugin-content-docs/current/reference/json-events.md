@@ -1,7 +1,6 @@
 ---
 title: 机器可读的事件
 description: 用于本地扫描和非交互式全安全运行的第 1 版 NDJSON 事件。
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

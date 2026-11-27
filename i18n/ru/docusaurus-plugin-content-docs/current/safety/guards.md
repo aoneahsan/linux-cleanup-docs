@@ -1,7 +1,6 @@
 ---
 title: Защиты
 description: "Четыре независимых барьера, которые путь проходит, прежде чем linux-cleanup его удалит: список разрешённых путей, порог простоя, только интерактивные режимы для личных файлов и ограничение sudo."
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Desinstalar
 description: Remova o linux-cleanup por completo — o pacote, o alias do shell, a entrada do cron e os logs e registros de sessão.
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

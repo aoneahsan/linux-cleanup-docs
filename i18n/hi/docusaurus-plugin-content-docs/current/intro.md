@@ -1,7 +1,6 @@
 ---
 title: linux-cleanup
 description: एक Bash कमांड-लाइन टूल जो पथ अनुमति-सूची, निष्क्रियता सीमा और इंटरैक्टिव पुष्टि के पीछे दोबारा बन सकने वाले कैश को स्थायी रूप से हटाकर Linux पर डिस्क जगह वापस दिलाता है।
-tags: [linux, cleanup, disk-space, cli, bash, overview]
 slug: /
 sidebar_label: परिचय
 sidebar_position: 1

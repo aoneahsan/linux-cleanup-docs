@@ -1,7 +1,6 @@
 ---
 title: रिपोर्ट
 description: गाइडेड वॉकथ्रू एक JSON सत्र रिकॉर्ड लिख सकता है। उन्हें सूचीबद्ध करें, देखें, Markdown या HTML में बदलें और एक्सपोर्ट करें।
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

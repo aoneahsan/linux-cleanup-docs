@@ -1,7 +1,6 @@
 ---
 title: 全安全（批量）
 description: 一次清理所有可再生成的缓存。这是为 cron 和无人值守维护打造的模式，也是 --yes 唯一适用的模式。
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

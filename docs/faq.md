@@ -1,7 +1,6 @@
 ---
 title: FAQ
 description: Answers about linux-cleanup paths, its release check, dry runs, permanent deletion and distribution support.
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

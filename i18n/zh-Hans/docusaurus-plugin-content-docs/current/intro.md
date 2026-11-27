@@ -1,7 +1,6 @@
 ---
 title: linux-cleanup
 description: 一个 Bash 命令行工具，在路径白名单、闲置阈值和交互确认的保护下，通过永久删除可再生成的缓存来回收 Linux 上的磁盘空间。
-tags: [linux, cleanup, disk-space, cli, bash, overview]
 slug: /
 sidebar_label: 简介
 sidebar_position: 1

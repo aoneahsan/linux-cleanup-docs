@@ -1,7 +1,6 @@
 ---
 title: Visão geral dos modos
 description: Todos os modos do linux-cleanup agrupados pelo que fazem — inspeção somente leitura, limpeza guiada e em lote, modos interativos para dados pessoais e auxiliares de saída e reparo.
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

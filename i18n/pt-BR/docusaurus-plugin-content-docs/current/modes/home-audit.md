@@ -1,7 +1,6 @@
 ---
 title: Auditoria da pasta pessoal
 description: Uma lista somente leitura das 20 maiores entradas da sua pasta pessoal, o linux-cleanup consiga limpá-las ou não — o jeito mais rápido de descobrir o que realmente está ocupando o disco.
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

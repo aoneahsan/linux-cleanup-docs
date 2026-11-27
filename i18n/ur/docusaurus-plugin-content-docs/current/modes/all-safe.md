@@ -1,7 +1,6 @@
 ---
 title: مکمل محفوظ (بیچ)
 description: ایک ہی بار میں ہر دوبارہ بن سکنے والا کیش صاف کریں۔ cron اور بغیر نگرانی دیکھ بھال کے لیے بنا موڈ، اور واحد موڈ جس پر --yes لاگو ہوتا ہے۔
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

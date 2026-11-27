@@ -1,7 +1,6 @@
 ---
 title: سوچ سمجھ کر جگہ واپس لیں
 description: Linux ڈسک کا استعمال جانچیں، ہر صفائی موڈ کا پری ویو کریں، پھر کیش، پروجیکٹ یا سسٹم کے پاتھس ایک ایک کر کے چنیں۔
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

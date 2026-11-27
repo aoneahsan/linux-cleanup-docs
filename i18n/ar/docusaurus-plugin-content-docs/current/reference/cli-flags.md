@@ -1,7 +1,6 @@
 ---
 title: خيارات سطر الأوامر
 description: كل خيار في سطر أوامر linux-cleanup — الأوضاع والخيارات والأسماء البديلة والقيم الافتراضية — مع عمل كل منها وموضع توثيقه الكامل.
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: استكشاف الأخطاء
 description: "العَرَض والسبب والإصلاح للمشكلات التي يواجهها مستخدمو linux-cleanup فعلًا: حالات الرفض، والاعتماديات المفقودة، وإخفاقات cron، وبطء الفحص، والتباس الإصدارات."
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

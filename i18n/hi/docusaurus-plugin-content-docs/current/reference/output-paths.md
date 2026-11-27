@@ -1,7 +1,6 @@
 ---
 title: आउटपुट पथ
 description: linux-cleanup अपने लॉग, JSON सत्र रिकॉर्ड, डीबग बंडल और क्रैश बंडल कहाँ लिखता है — ढाँचा, हर इंस्टॉल के डिफ़ॉल्ट, रखने की अवधि और अनुमतियाँ।
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

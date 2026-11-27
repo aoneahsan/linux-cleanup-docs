@@ -1,7 +1,6 @@
 ---
 title: Audit des paquets globaux
 description: Un audit en lecture seule des paquets installés globalement avec npm, pnpm, yarn, bun et deno, qui marque chacun comme utilisé récemment, requis par un autre ou inutilisé, et affiche des commandes de désinstallation à lancer vous-même.
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

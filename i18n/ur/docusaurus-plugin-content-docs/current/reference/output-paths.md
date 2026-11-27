@@ -1,7 +1,6 @@
 ---
 title: آؤٹ پٹ پاتھس
 description: linux-cleanup اپنے لاگز، JSON سیشن ریکارڈز، ڈی بگ بنڈلز اور کریش بنڈلز کہاں لکھتا ہے — ترتیب، ہر انسٹال کے ڈیفالٹ، رکھنے کی مدت اور اجازتیں۔
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

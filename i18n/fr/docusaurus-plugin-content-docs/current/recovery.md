@@ -1,7 +1,6 @@
 ---
 title: Récupération
 description: "Que faire après une suppression non voulue par linux-cleanup : examiner les journaux disponibles, restaurer depuis une sauvegarde ou la source, et éviter d’écrire sur le disque quand la récupération compte."
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

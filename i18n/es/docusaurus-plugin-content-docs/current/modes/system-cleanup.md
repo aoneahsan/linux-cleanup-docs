@@ -1,7 +1,6 @@
 ---
 title: Limpieza del sistema (sudo)
 description: "El modo de sistema con sudo: apt, registro del sistema, Snap, lista de kernels, archivos antiguos de /tmp y vaciado opcional de la caché de páginas."
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

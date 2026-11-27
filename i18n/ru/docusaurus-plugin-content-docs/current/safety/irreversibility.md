@@ -1,7 +1,6 @@
 ---
 title: Удаление безвозвратно
 description: В linux-cleanup нет отмены, корзины и резервной копии. Что это значит на практике, почему так задумано и какие варианты у вас действительно остаются потом.
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

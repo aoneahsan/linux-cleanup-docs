@@ -1,7 +1,6 @@
 ---
 title: このプロジェクトについて
 description: linux-cleanup を作った人、その設計の考え方、ライセンス、連絡や貢献の方法。
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

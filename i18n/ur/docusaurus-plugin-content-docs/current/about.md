@@ -1,7 +1,6 @@
 ---
 title: تعارف
 description: linux-cleanup کس نے بنایا، اس کے پیچھے ڈیزائن کے اصول، اس کا لائسنس، اور رابطہ یا تعاون کیسے کریں۔
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

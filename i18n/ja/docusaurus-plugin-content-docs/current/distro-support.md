@@ -1,7 +1,6 @@
 ---
 title: 対応ディストリビューション
 description: 各 Linux ディストリビューションで linux-cleanup がすること。キャッシュの掃除はどこでも動きますが、sudo を使う --system モードは Debian と Ubuntu 専用です。
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

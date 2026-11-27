@@ -1,7 +1,6 @@
 ---
 title: 全局包检查
 description: 只读检查 npm、pnpm、yarn、bun 和 deno 全局安装的软件包，把每个标记为最近使用、被依赖或长期未用——并打印由您自己运行的卸载命令。
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

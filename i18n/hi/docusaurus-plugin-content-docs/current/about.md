@@ -1,7 +1,6 @@
 ---
 title: परिचय
 description: linux-cleanup किसने बनाया, इसके पीछे के डिज़ाइन सिद्धांत, इसका लाइसेंस, और संपर्क या योगदान कैसे करें।
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

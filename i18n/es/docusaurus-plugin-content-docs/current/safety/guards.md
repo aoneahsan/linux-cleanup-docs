@@ -1,7 +1,6 @@
 ---
 title: Protecciones
 description: "Los cuatro filtros independientes que una ruta debe pasar antes de que linux-cleanup la elimine: la lista de rutas permitidas, el filtro de inactividad, los modos personales solo interactivos y el confinamiento de sudo."
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

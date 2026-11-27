@@ -1,7 +1,6 @@
 ---
 title: Auditoria de pacotes globais
 description: Uma auditoria somente leitura dos pacotes instalados globalmente com npm, pnpm, yarn, bun e deno, que marca cada um como usado recentemente, dependência de outro ou parado — e mostra comandos de desinstalação para você mesmo rodar.
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: فحص الحزم العامة
 description: فحص للقراءة فقط للحزم المثبتة عالميًا عبر npm وpnpm وyarn وbun وdeno، يصف كلًّا منها بأنها مستخدمة حديثًا أو معتمَد عليها أو مهملة، ويطبع أوامر إلغاء التثبيت لتُشغَّل يدويًا.
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

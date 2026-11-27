@@ -1,7 +1,6 @@
 ---
 title: Send a bug report
 description: How to report a linux-cleanup bug — building a debug bundle, what a crash bundle contains, what to review before sending, and where to send it.
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

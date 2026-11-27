@@ -1,7 +1,6 @@
 ---
 title: التنزيلات غير المكتملة أو المتروكة
 description: العثور على ملفات التنزيل غير المكتملة المتروكة — .crdownload و.part و.fdmdownload — التي تخلّفها عمليات نقل المتصفحات ومديري التنزيل المقطوعة، وحذفها.
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

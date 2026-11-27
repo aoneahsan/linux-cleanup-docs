@@ -1,7 +1,6 @@
 ---
 title: 会删除什么
 description: Linux 清理模式及其目标路径，以及日常缓存、系统操作和个人文件之间的区别。
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting
 description: Symptom, cause and fix for the problems linux-cleanup users actually hit — refusals, missing dependencies, cron failures, slow scans and version confusion.
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

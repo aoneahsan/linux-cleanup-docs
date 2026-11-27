@@ -1,7 +1,6 @@
 ---
 title: Análisis (solo lectura)
 description: Revise las raíces de caché, las descargas incompletas y otros candidatos de limpieza de Linux sin eliminar archivos.
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

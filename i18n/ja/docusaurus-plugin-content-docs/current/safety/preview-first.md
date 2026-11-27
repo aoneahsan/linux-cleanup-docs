@@ -1,7 +1,6 @@
 ---
 title: 削除前のプレビュー
 description: 完全に削除する前に、読み取り専用のスキャンとドライランで linux-cleanup のパスを確認します。
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

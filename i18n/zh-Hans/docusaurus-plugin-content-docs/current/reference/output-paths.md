@@ -1,7 +1,6 @@
 ---
 title: 输出路径
 description: linux-cleanup 把日志、JSON 会话记录、调试包和崩溃包写在哪里——目录结构、各安装方式的默认位置、保留期限和权限。
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

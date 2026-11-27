@@ -1,7 +1,6 @@
 ---
 title: Garde-fous
 description: "Les quatre barrières indépendantes qu’un chemin doit franchir avant que linux-cleanup le supprime : la liste de chemins autorisés, le seuil d’inactivité, les modes personnels uniquement interactifs et le confinement de sudo."
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

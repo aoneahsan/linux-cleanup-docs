@@ -1,7 +1,6 @@
 ---
 title: TUI (menu visual)
 description: O menu visual com whiptail ou dialog, lançado no linux-cleanup 1.3.0, que volta ao menu da CLI quando nenhum dos dois está instalado.
-tags: [tui, whiptail, dialog, visual, menu, modes]
 sidebar_position: 5
 ---
 

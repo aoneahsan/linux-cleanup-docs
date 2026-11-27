@@ -1,7 +1,6 @@
 ---
 title: Machine-readable events
 description: Version 1 NDJSON events for local scans and non-interactive all-safe runs.
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

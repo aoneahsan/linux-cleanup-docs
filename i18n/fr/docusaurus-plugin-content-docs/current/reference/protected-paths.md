@@ -1,7 +1,6 @@
 ---
 title: Chemins protégés
 description: "La liste complète et vérifiée des chemins que linux-cleanup refuse de supprimer : racines du système, dossiers personnels, racines d’installation des gestionnaires de paquets et noms des fichiers d’initialisation du shell."
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

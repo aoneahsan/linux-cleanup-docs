@@ -1,7 +1,6 @@
 ---
 title: القائمة
 description: القائمة المرقّمة التي تتيح تشغيل فئة واحدة من linux-cleanup في كل مرة بدلًا من الجولة الكاملة.
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

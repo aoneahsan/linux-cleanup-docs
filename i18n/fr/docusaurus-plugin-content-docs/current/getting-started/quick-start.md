@@ -1,7 +1,6 @@
 ---
 title: Démarrage rapide
 description: "Votre première session linux-cleanup en une dizaine de minutes : vérifier les garde-fous, analyser en lecture seule, puis lancer le parcours guidé et lire le rapport."
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

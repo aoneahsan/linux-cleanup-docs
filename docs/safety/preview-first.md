@@ -1,7 +1,6 @@
 ---
 title: Preview before deleting
 description: Use a read-only scan and a dry run to inspect linux-cleanup paths before permanent deletion.
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: トラブルシューティング
 description: linux-cleanup の利用者が実際につまずく問題の症状、原因、対処。拒否、依存関係の不足、cron の失敗、遅いスキャン、バージョンの取り違え。
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

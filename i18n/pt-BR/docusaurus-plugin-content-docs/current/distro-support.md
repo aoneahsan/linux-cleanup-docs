@@ -1,7 +1,6 @@
 ---
 title: Distribuições suportadas
 description: O que o linux-cleanup faz em cada distribuição Linux — a limpeza de caches funciona em todas, mas o modo --system com sudo é só para Debian e Ubuntu.
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

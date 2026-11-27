@@ -1,7 +1,6 @@
 ---
 title: 退出码
 description: linux-cleanup 每个退出码的含义、哪些会自动触发崩溃包，以及如何在脚本或 cron 任务中据此分支。
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

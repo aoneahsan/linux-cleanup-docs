@@ -1,7 +1,6 @@
 ---
 title: linux-cleanup
 description: Una utilidad de línea de comandos en Bash que recupera espacio en disco en Linux eliminando de forma permanente cachés que se pueden regenerar, detrás de una lista de rutas permitidas, un umbral de inactividad y una confirmación interactiva.
-tags: [linux, cleanup, disk-space, cli, bash, overview]
 slug: /
 sidebar_label: Introducción
 sidebar_position: 1

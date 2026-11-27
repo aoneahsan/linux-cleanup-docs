@@ -1,7 +1,6 @@
 ---
 title: 常见问题
 description: 关于 linux-cleanup 的路径、版本检查、试运行、永久删除和发行版支持的解答。
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

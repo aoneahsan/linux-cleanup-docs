@@ -1,7 +1,6 @@
 ---
 title: 模式对照表
 description: 所有 linux-cleanup 模式并列对照：是否删除、是否交互、是否使用 sudo、是否写入会话记录。
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

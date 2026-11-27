@@ -1,7 +1,6 @@
 ---
 title: الحذف دائم
 description: لا تراجع في linux-cleanup ولا سلة مهملات ولا نسخة احتياطية. ما يعنيه ذلك عمليًا، ولماذا صُمم هكذا، وما الخيارات المتاحة فعلًا بعد ذلك.
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

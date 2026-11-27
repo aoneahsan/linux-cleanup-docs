@@ -1,7 +1,6 @@
 ---
 title: الاستعادة
 description: "ما العمل بعد حذف غير مرغوب من linux-cleanup: فحص السجلات المتاحة، والاستعادة من نسخة احتياطية أو من المصدر، وتجنب الكتابة على القرص حين تهم الاستعادة."
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

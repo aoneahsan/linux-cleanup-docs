@@ -11,6 +11,8 @@ import { LOCALES } from './src/data/locales';
 import ecosystemPages from './src/plugins/ecosystem';
 import { robotsSitemaps, withAlternates } from './src/plugins/sitemapAlternates';
 import { missingPages } from './src/data/localeReady';
+import faqJsonLd from './src/plugins/faqJsonLd';
+import REMOVED_PATHS from './src/data/seo-removed-paths.json';
 
 // ---------------------------------------------------------------------------
 // linux-cleanup — Documentation site config
@@ -82,6 +84,11 @@ const config: Config = {
     noLocalPaths,
     ecosystemPages,
     robotsSitemaps(READY.map((l) => l.code)),
+    faqJsonLd,
+    // Tag pages are switched off (owner, 2026-11-27: thin lists Google crawled and left out). Each old tag URL, in
+    // every locale, redirects to the page that carried the tag; GitHub Pages cannot send a 301, so the plugin writes
+    // a canonical + meta-refresh page, which search engines treat as a permanent redirect.
+    ['@docusaurus/plugin-client-redirects', { redirects: REMOVED_PATHS }],
   ],
   title: 'linux-cleanup',
   tagline:
@@ -147,7 +154,7 @@ const config: Config = {
             '@type': 'WebSite',
             '@id': `${SITE_URL}/#website`,
             name: 'linux-cleanup Documentation',
-            url: SITE_URL,
+            url: `${SITE_URL}/`,
             inLanguage: LOCALES.map((l) => l.htmlLang),
             creator: { '@id': 'https://aoneahsan.com/#person' },
             publisher: { '@id': 'https://zaions.com/#organization' },
@@ -188,7 +195,9 @@ const config: Config = {
     localeConfigs: Object.fromEntries(READY.map((l) => [l.code, { label: l.label, direction: l.direction, htmlLang: l.htmlLang }])),
   },
 
-  trailingSlash: false,
+  // GitHub Pages serves every route as `<route>/index.html` and 301s the slashless URL, so the slashed form is
+  // the one canonical, sitemap and link use (owner, 2026-11-27).
+  trailingSlash: true,
   // The banner script embeds an unfollowable third-party link in every page; the site has one fixed baseUrl.
   baseUrlIssueBanner: false,
 
@@ -231,6 +240,8 @@ const config: Config = {
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
             'MANUAL-TASKS.md',
+            // Internal record of search-console fixes (docs/search-consoles/fix-log.md), never a public page.
+            'search-consoles/**',
             'PACKAGES.md',
             'story/**',
           ],
@@ -293,6 +304,8 @@ const config: Config = {
           'linux cleanup, free disk space linux, clear yarn cache, clear npm cache, delete node_modules, gradle cache cleanup, linux disk full, ubuntu clean disk space, bash cleanup script, safe disk cleanup, linux cache cleaner cli',
       },
       { name: 'author', content: 'Ahsan Mahmood' },
+      // Yandex Webmaster ownership (search audit 2026-11-26, linux-cleanup-docs#1).
+      { name: 'yandex-verification', content: 'bfb02722189028cf' },
       {
         name: 'robots',
         content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',

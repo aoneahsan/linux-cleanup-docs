@@ -1,7 +1,6 @@
 ---
 title: Compatibilidad con distribuciones
 description: "Qué hace linux-cleanup en cada distribución de Linux: la limpieza de cachés funciona en todas, pero el modo --system con sudo solo es para Debian y Ubuntu."
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

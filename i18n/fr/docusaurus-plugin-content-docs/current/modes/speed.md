@@ -1,7 +1,6 @@
 ---
 title: Diagnostic de vitesse
 description: Examiner la température, la pression et les tâches de démarrage de Linux, puis décider d’appliquer ou non chaque changement proposé.
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

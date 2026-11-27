@@ -1,7 +1,6 @@
 ---
 title: Opciones de la CLI
 description: Todas las opciones de línea de comandos de linux-cleanup (modos, opciones, alias y valores por defecto), con lo que hace cada una y dónde está documentada a fondo.
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

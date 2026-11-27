@@ -1,7 +1,6 @@
 ---
 title: 恢复
 description: linux-cleanup 误删之后该怎么做——查看可用的日志，从备份或来源恢复，在恢复要紧时避免继续写盘。
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

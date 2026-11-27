@@ -1,7 +1,6 @@
 ---
 title: دعم التوزيعات
 description: "ما يفعله linux-cleanup على كل توزيعة Linux: تنظيف ذاكرة التخزين المؤقت يعمل في كل مكان، لكن وضع --system الذي يحتاج إلى sudo مخصص لـ Debian وUbuntu فقط."
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

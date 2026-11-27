@@ -1,7 +1,6 @@
 ---
 title: عام سوالات
 description: linux-cleanup کے پاتھس، ریلیز جانچ، آزمائشی رن، مستقل حذف اور ڈسٹرو سپورٹ کے بارے میں جوابات۔
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

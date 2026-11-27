@@ -12,7 +12,7 @@ function files(dir: string, base = dir): string[] {
   if (!existsSync(dir)) return [];
   return readdirSync(dir).flatMap((name) => {
     const full = path.join(dir, name);
-    if (statSync(full).isDirectory()) return name === 'story' || name.startsWith('_') ? [] : files(full, base);
+    if (statSync(full).isDirectory()) return name === 'story' || name === 'search-consoles' || name.startsWith('_') ? [] : files(full, base);
     return /\.mdx?$/.test(name) && !name.startsWith('_') && !SKIP.has(name) ? [path.relative(base, full)] : [];
   });
 }

@@ -1,7 +1,6 @@
 ---
 title: Пошаговый сценарий (по умолчанию)
 description: "Режим linux-cleanup по умолчанию: десять шагов по всем категориям очистки, с вопросом перед каждым, нарастающим итогом и JSON-отчётом о сеансе."
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

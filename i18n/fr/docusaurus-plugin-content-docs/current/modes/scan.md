@@ -1,7 +1,6 @@
 ---
 title: Analyse (lecture seule)
 description: Examiner les racines de cache, les téléchargements partiels et les autres candidats au nettoyage sous Linux sans supprimer de fichiers.
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: TUI（可视化菜单）
 description: linux-cleanup 1.3.0 新增的由 whiptail 或 dialog 驱动的可视化菜单，两者都未安装时会平稳退回到命令行菜单。
-tags: [tui, whiptail, dialog, visual, menu, modes]
 sidebar_position: 5
 ---
 

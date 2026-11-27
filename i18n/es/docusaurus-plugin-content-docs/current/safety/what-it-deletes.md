@@ -1,7 +1,6 @@
 ---
 title: Qué elimina
 description: Los modos de limpieza de Linux y sus rutas de destino, con la diferencia entre cachés habituales, tareas del sistema y archivos personales.
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

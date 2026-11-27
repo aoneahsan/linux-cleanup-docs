@@ -1,7 +1,6 @@
 ---
 title: 完全安全（一括）
 description: 再生成できるキャッシュを 1 回でまとめて掃除します。cron や無人のメンテナンス向けのモードで、`--yes` が効く唯一のモードです。
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

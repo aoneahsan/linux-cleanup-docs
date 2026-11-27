@@ -1,7 +1,6 @@
 ---
 title: Recovery
 description: What to do after an unwanted linux-cleanup deletion — inspect available logs, restore from a backup or source, and avoid further disk writes where recovery matters.
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

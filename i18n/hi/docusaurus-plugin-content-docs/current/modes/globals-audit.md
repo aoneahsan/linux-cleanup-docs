@@ -1,7 +1,6 @@
 ---
 title: ग्लोबल पैकेज जाँच
 description: npm, pnpm, yarn, bun और deno में ग्लोबल इंस्टॉल पैकेजों की केवल-पढ़ने वाली जाँच, हर एक को हाल में इस्तेमाल, निर्भरता या पुराना बताती है — और अनइंस्टॉल कमांड छापती है जो आप ख़ुद चलाते हैं।
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

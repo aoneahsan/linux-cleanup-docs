@@ -1,7 +1,6 @@
 ---
 title: एनवायरनमेंट वेरिएबल
 description: linux-cleanup जो भी एनवायरनमेंट वेरिएबल पढ़ता है, उनके डिफ़ॉल्ट और असर — आउटपुट फ़ोल्डर बदलना, रंग नियंत्रण और XDG कॉन्फ़िग की खोज।
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: アンインストール
 description: linux-cleanup を完全に取り除きます。パッケージ、シェルのエイリアス、cron の設定、ログとセッション記録。
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "linux-cleanup-docs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "description": "Public documentation site for linux-cleanup, a Bash CLI that reclaims disk space on Linux by deleting regenerable caches behind allowlist, staleness, and confirmation guards. Built with Docusaurus, deployed to GitHub Pages.",
   "author": {
@@ -30,10 +30,12 @@
     "serve": "docusaurus serve --port 5969",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:seo": "vitest run src/test/seo-contract.test.ts"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.2",
+    "@docusaurus/plugin-client-redirects": "^3.10.2",
     "@docusaurus/plugin-content-docs": "^3.10.2",
     "@docusaurus/preset-classic": "^3.10.2",
     "@docusaurus/theme-common": "^3.10.2",
@@ -42,6 +44,7 @@
     "@easyops-cn/docusaurus-search-local": "^0.55.3",
     "@mdx-js/react": "^3.1.1",
     "@supabase/realtime-js": "^2.119.2",
+    "cheerio": "^1.2.0",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.3.1",
@@ -52,7 +55,9 @@
     "@docusaurus/module-type-aliases": "^3.10.2",
     "@docusaurus/types": "^3.10.2",
     "@types/react": "^19.3.0",
-    "typescript": "~7.0.2"
+    "typescript": "~7.0.2",
+    "vite": "^8.4.0",
+    "vitest": "^5.1.2"
   },
   "browserslist": {
     "production": [

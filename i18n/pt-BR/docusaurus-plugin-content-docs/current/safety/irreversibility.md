@@ -1,7 +1,6 @@
 ---
 title: Apagar é permanente
 description: O linux-cleanup não tem desfazer, lixeira nem backup. O que isso significa na prática, por que foi feito assim e quais opções você realmente tem depois.
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

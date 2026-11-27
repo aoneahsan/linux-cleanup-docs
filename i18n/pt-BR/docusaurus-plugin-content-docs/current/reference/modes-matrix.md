@@ -1,7 +1,6 @@
 ---
 title: Tabela de modos
 description: "Todos os modos do linux-cleanup lado a lado: se apagam, se são interativos, se usam sudo e se gravam um registro de sessão."
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

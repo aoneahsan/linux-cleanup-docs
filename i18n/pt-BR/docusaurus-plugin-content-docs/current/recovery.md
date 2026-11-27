@@ -1,7 +1,6 @@
 ---
 title: Recuperação
 description: O que fazer depois de uma exclusão indesejada do linux-cleanup — conferir os logs disponíveis, restaurar de um backup ou da origem e evitar gravar no disco quando a recuperação importa.
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

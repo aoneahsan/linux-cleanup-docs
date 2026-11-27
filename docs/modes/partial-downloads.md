@@ -1,7 +1,6 @@
 ---
 title: Partial / orphan downloads
 description: Find and remove abandoned partial download files — .crdownload, .part and .fdmdownload — left behind by interrupted browser and download-manager transfers.
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

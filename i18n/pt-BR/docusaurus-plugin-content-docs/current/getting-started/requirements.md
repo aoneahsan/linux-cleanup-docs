@@ -1,7 +1,6 @@
 ---
 title: Requisitos
 description: O que o linux-cleanup precisa para rodar — bash 4+, GNU coreutils, só Linux — e as dependências opcionais que liberam a exportação de relatórios e o menu visual.
-tags: [requirements, dependencies, installation, jq, whiptail]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Installation
 description: Install linux-cleanup three ways — zero-install with npx, globally with npm, or by cloning the repository — and verify the install before running anything destructive.
-tags: [installation, npx, npm, git, setup, upgrade]
 sidebar_position: 2
 ---
 

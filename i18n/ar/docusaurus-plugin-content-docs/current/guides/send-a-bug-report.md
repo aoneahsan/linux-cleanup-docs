@@ -1,7 +1,6 @@
 ---
 title: إرسال تقرير خلل
 description: "كيفية الإبلاغ عن خلل في linux-cleanup: إنشاء حزمة تصحيح، وما تحتويه حزمة الانهيار، وما يُراجَع قبل الإرسال، وإلى أين يُرسل."
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

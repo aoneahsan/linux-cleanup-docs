@@ -1,7 +1,6 @@
 ---
 title: Diagnóstico de velocidade
 description: Confira temperatura, pressão e o que inicia junto com o Linux, e decida se aplica cada mudança sugerida.
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

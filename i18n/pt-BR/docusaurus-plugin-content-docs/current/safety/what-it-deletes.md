@@ -1,7 +1,6 @@
 ---
 title: O que ele apaga
 description: Os modos de limpeza do Linux e seus caminhos de destino, com a diferença entre caches do dia a dia, tarefas do sistema e arquivos pessoais.
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

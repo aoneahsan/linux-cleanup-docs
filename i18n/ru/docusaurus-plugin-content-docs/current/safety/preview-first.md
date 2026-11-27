@@ -1,7 +1,6 @@
 ---
 title: Предпросмотр перед удалением
 description: Сканирование только для чтения и пробный запуск, чтобы проверить пути linux-cleanup до безвозвратного удаления.
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

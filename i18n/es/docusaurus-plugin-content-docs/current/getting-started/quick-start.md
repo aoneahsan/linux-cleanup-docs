@@ -1,7 +1,6 @@
 ---
 title: Inicio rápido
 description: "Ejecute su primera sesión de linux-cleanup en unos diez minutos: compruebe las protecciones, revise en modo de solo lectura, ejecute el recorrido guiado y lea el informe."
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

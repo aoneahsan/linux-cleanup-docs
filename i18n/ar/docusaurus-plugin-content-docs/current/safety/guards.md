@@ -1,7 +1,6 @@
 ---
 title: الضمانات
 description: "البوابات الأربع المستقلة التي يجب أن يجتازها المسار قبل أن يحذفه linux-cleanup: قائمة المسارات المسموحة، وبوابة الخمول، والأوضاع الشخصية التفاعلية فقط، وحصر sudo."
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

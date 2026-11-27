@@ -1,7 +1,6 @@
 ---
 title: رپورٹ اسکیما
 description: linux-cleanup کا رہنمائی والا واک تھرو جو JSON ساخت لکھتا ہے — credits، meta، disk، memory، steps اور totals کے ساتھ۔
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

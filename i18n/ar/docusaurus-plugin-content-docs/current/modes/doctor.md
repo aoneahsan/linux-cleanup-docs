@@ -1,7 +1,6 @@
 ---
 title: الطبيب
 description: اكتشاف بيئات التشغيل المثبتة على القرص والغائبة عن تهيئة الصدفة — nvm وpnpm وbun وdeno وcargo — وإضافة كتلة التهيئة المعتمدة بعد التأكيد. إضافة فقط.
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

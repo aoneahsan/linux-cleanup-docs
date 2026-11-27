@@ -1,7 +1,6 @@
 ---
 title: FAQ
 description: Réponses sur les chemins de linux-cleanup, sa vérification des versions, les simulations, la suppression définitive et les distributions prises en charge.
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

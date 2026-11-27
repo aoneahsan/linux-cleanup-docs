@@ -1,7 +1,6 @@
 ---
 title: حذف سے پہلے پری ویو
 description: مستقل حذف سے پہلے linux-cleanup کے پاتھس صرف پڑھنے والے اسکین اور آزمائشی رن سے جانچیں۔
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

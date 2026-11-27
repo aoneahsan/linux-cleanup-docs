@@ -1,7 +1,6 @@
 ---
 title: Tableau des modes
 description: "Tous les modes de linux-cleanup côte à côte : s’ils suppriment, s’ils sont interactifs, s’ils utilisent sudo et s’ils écrivent un enregistrement de session."
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

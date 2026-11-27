@@ -1,7 +1,6 @@
 ---
 title: Visualizar antes de apagar
 description: Use uma verificação somente leitura e uma simulação para conferir os caminhos do linux-cleanup antes de uma exclusão permanente.
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: रिकवरी
 description: linux-cleanup से अनचाहे हटाने के बाद क्या करें — उपलब्ध लॉग देखें, बैकअप या स्रोत से वापस लाएँ, और जहाँ रिकवरी मायने रखती हो वहाँ डिस्क पर और लिखने से बचें।
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

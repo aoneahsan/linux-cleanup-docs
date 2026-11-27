@@ -1,7 +1,6 @@
 ---
 title: モードの対照表
 description: linux-cleanup のすべてのモードを並べて比較。削除するか、対話式か、sudo を使うか、セッション記録を書くか。
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

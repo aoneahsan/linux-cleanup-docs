@@ -1,7 +1,6 @@
 ---
 title: Distributions prises en charge
 description: "Ce que fait linux-cleanup sur chaque distribution Linux : le nettoyage des caches fonctionne partout, mais le mode --system avec sudo ne vise que Debian et Ubuntu."
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Ce qu’il supprime
 description: Les modes de nettoyage Linux et leurs chemins cibles, avec la différence entre caches courants, travaux système et fichiers personnels.
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: نظرة على الأوضاع
 description: "كل أوضاع linux-cleanup مجمّعة حسب عملها: الفحص للقراءة فقط، والتنظيف الموجّه والدفعي، وأوضاع البيانات الشخصية التفاعلية، وأدوات المخرجات والإصلاح."
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

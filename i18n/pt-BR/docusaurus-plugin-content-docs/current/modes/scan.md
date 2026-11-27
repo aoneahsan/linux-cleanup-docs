@@ -1,7 +1,6 @@
 ---
 title: Verificação (somente leitura)
 description: Confira raízes de cache, downloads incompletos e outros candidatos à limpeza no Linux sem apagar arquivos.
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: CLI فلیگز
 description: linux-cleanup کا ہر کمانڈ لائن فلیگ — موڈز، اختیارات، متبادل نام اور ڈیفالٹ — ہر ایک کیا کرتا ہے اور اس کی پوری تفصیل کہاں ہے۔
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Nettoyage du système (sudo)
 description: "Le mode système avec sudo : apt, journal, Snap, liste des noyaux, fichiers anciens de /tmp et vidage facultatif du cache de pages."
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

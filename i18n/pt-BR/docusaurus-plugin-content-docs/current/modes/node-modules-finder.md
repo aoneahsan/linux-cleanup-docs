@@ -1,7 +1,6 @@
 ---
 title: Localizador de node_modules parados
 description: Encontre pastas node_modules em projetos sem mexer há N dias ou mais e apague de forma interativa. Muitas vezes é o que mais libera espaço na máquina de quem programa.
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

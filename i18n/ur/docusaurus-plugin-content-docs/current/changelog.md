@@ -1,7 +1,6 @@
 ---
 title: تبدیلیوں کا ریکارڈ
 description: linux-cleanup کی ریلیزز کی تاریخ، بشمول آزمائشی رن، ریلیز کی اطلاعات اور مقامی JSON ایونٹس۔
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: تنظيف النظام (sudo)
 description: "وضع النظام بصلاحيات sudo: apt وسجل النظام وSnap وسرد الأنوية والملفات القديمة في /tmp وتفريغ ذاكرة الصفحات اختياريًا."
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

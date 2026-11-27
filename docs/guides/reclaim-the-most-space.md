@@ -1,7 +1,6 @@
 ---
 title: Reclaim space deliberately
 description: Inspect Linux disk use, preview each cleanup mode, then choose cache, project or system paths one at a time.
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

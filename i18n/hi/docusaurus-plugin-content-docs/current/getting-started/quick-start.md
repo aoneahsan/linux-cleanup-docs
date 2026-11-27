@@ -1,7 +1,6 @@
 ---
 title: जल्दी शुरुआत
 description: लगभग दस मिनट में linux-cleanup का पहला सत्र चलाएँ — जाँचें परखें, केवल-पढ़ने वाली जाँच करें, फिर गाइडेड वॉकथ्रू चलाएँ और रिपोर्ट पढ़ें।
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

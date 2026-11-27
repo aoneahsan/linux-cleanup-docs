@@ -1,7 +1,6 @@
 ---
 title: Recherche des node_modules délaissés
 description: Trouver les dossiers node_modules de projets inutilisés depuis N jours ou plus et les supprimer en mode interactif. Souvent le plus gros gain d’espace sur une machine de développeur.
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

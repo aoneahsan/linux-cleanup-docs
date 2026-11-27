@@ -1,7 +1,6 @@
 ---
 title: 安全装置
 description: linux-cleanup がパスを削除する前に通過させる 4 つの独立した関門：パスの許可リスト、アイドルしきい値、対話式のみの個人モード、sudo の制限。
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

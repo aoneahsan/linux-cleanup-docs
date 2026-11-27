@@ -1,7 +1,6 @@
 ---
 title: Relatórios
 description: O passeio guiado pode gravar um registro JSON da sessão. Liste, veja, converta para Markdown ou HTML e exporte esses registros.
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

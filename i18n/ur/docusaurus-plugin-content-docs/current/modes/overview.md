@@ -1,7 +1,6 @@
 ---
 title: موڈز کا جائزہ
 description: linux-cleanup کے تمام موڈز، کام کے لحاظ سے گروپ میں — صرف پڑھنے والی جانچ، گائیڈڈ اور بیچ صفائی، ذاتی ڈیٹا کے انٹرایکٹو موڈز، اور آؤٹ پٹ و مرمت کے معاون۔
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Totalmente seguro (por lotes)
 description: Limpie todas las cachés regenerables de una sola pasada. El modo pensado para cron y el mantenimiento desatendido, y el único al que se aplica --yes.
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 速度の診断
 description: Linux の温度、負荷、起動時の処理を確認し、提案された変更を 1 つずつ適用するか判断します。
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

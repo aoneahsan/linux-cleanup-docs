@@ -1,7 +1,6 @@
 ---
 title: پرانی ذاتی فائلیں
 description: صرف انٹرایکٹو موڈ جو ~/Downloads اور ترتیب دی گئی غیر محفوظ جڑوں میں بڑی، طویل عرصے سے غیر استعمال شدہ فائلیں ڈھونڈتا ہے۔
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

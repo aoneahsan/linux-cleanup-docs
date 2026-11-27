@@ -1,7 +1,6 @@
 ---
 title: Давно не используемые личные файлы
 description: Только интерактивный режим, который находит крупные, давно не используемые файлы в ~/Downloads и настроенных незащищённых корнях.
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

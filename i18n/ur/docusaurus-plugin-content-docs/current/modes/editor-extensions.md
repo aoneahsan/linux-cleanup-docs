@@ -1,7 +1,6 @@
 ---
 title: ایڈیٹر ایکسٹینشنز
 description: VS Code اور Cursor کے پرانے ہو چکے ایکسٹینشن ورژنز حذف کریں — اپ ڈیٹ کے بعد پیچھے رہ جانے والی پرانی کاپیاں — نئے ورژن کی جانچ اور غیر فعالیت کی حد کے تحت۔
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

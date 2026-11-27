@@ -1,7 +1,6 @@
 ---
 title: Protected paths
 description: The complete verified list of paths linux-cleanup refuses to delete — system roots, personal directories, package-manager install roots, and shell-init filenames.
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

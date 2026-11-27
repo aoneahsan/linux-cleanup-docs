@@ -1,7 +1,6 @@
 ---
 title: Схема отчёта
 description: "Структура JSON, которую пишет пошаговый сценарий linux-cleanup: credits, meta, disk, memory, steps и totals."
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

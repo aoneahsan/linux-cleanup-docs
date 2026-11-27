@@ -1,7 +1,6 @@
 ---
 title: Códigos de saída
 description: O que significa cada código de saída do linux-cleanup, quais geram automaticamente um pacote de falha e como usá-los num script ou numa tarefa do cron.
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

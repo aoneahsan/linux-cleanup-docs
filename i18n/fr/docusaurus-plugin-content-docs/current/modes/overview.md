@@ -1,7 +1,6 @@
 ---
 title: Aperçu des modes
 description: "Tous les modes de linux-cleanup regroupés selon ce qu’ils font : inspection en lecture seule, nettoyage guidé et par lot, modes interactifs pour les données personnelles, et outils de sortie et de réparation."
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

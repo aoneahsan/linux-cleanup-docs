@@ -1,7 +1,6 @@
 ---
 title: 環境変数
 description: linux-cleanup が読むすべての環境変数と、その既定値と効果。出力先の上書き、色の制御、XDG の設定ファイルの探し方。
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

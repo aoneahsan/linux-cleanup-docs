@@ -1,7 +1,6 @@
 ---
 title: Сканирование (только чтение)
 description: Просмотр корней кэша, недокачанных загрузок и других кандидатов на очистку в Linux без удаления файлов.
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: समस्या निवारण
 description: linux-cleanup उपयोगकर्ताओं को सच में आने वाली समस्याओं के लक्षण, कारण और हल — इनकार, ग़ायब निर्भरताएँ, cron विफलताएँ, धीमे स्कैन और संस्करण की उलझन।
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

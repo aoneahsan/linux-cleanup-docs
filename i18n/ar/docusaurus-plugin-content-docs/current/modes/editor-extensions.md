@@ -1,7 +1,6 @@
 ---
 title: إضافات المحررات
 description: حذف إصدارات إضافات VS Code وCursor التي حلّ محلها غيرها — النسخ القديمة المتروكة بعد تحديث الإضافة — بشرط اجتياز فحص الاستبدال وبوابة الخمول.
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

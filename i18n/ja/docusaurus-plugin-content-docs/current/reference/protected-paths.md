@@ -1,7 +1,6 @@
 ---
 title: 保護パス
 description: linux-cleanup が削除を拒否するパスの、確認済みの完全な一覧。システムのルート、個人のディレクトリ、パッケージマネージャーのインストール先、シェルの初期化ファイル名。
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

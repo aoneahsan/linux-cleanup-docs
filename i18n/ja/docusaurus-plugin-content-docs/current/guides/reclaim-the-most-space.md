@@ -1,7 +1,6 @@
 ---
 title: 意図して容量を取り戻す
 description: Linux のディスクの使われ方を確かめ、各クリーンアップモードをプレビューしてから、キャッシュ、プロジェクト、システムのパスを 1 つずつ選びます。
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

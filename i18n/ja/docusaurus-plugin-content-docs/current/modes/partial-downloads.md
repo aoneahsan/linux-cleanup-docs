@@ -1,7 +1,6 @@
 ---
 title: 途中の・持ち主のないダウンロード
 description: ブラウザーやダウンロードマネージャーの転送が中断して残った途中のダウンロードファイル（.crdownload、.part、.fdmdownload）を見つけて削除します。
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

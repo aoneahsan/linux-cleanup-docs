@@ -1,7 +1,6 @@
 ---
 title: محفوظ پاتھس
 description: ان پاتھس کی پوری، تصدیق شدہ فہرست جنہیں linux-cleanup حذف کرنے سے انکار کرتا ہے — سسٹم روٹس، ذاتی فولڈرز، پیکیج مینیجرز کے انسٹال روٹس اور شیل-انٹ فائلوں کے نام۔
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

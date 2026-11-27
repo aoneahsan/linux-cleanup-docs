@@ -1,7 +1,6 @@
 ---
 title: Fichiers personnels inutilisés
 description: Le mode uniquement interactif qui trouve les gros fichiers inutilisés depuis longtemps dans ~/Downloads et les racines non protégées configurées.
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

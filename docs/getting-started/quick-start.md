@@ -1,7 +1,6 @@
 ---
 title: Quick start
 description: Run your first linux-cleanup session in about ten minutes — verify the guards, audit read-only, then run the guided walkthrough and read the report.
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

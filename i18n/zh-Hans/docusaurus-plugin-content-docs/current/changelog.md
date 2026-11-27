@@ -1,7 +1,6 @@
 ---
 title: 更新日志
 description: linux-cleanup 的发布历史，包括试运行、版本通知和本地 JSON 事件。
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

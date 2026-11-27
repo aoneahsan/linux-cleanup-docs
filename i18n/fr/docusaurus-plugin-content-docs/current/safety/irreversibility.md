@@ -1,7 +1,6 @@
 ---
 title: La suppression est définitive
 description: linux-cleanup n’a ni annulation, ni corbeille, ni sauvegarde. Ce que cela veut dire en pratique, pourquoi il est conçu ainsi et quelles options il vous reste vraiment ensuite.
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

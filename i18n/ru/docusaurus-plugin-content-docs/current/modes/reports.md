@@ -1,7 +1,6 @@
 ---
 title: Отчёты
 description: Пошаговый сценарий может записать JSON-запись сеанса. Просматривайте их список, открывайте, преобразуйте в Markdown или HTML и экспортируйте.
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

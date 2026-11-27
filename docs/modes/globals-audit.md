@@ -1,7 +1,6 @@
 ---
 title: Globals audit
 description: A read-only audit of globally installed npm, pnpm, yarn, bun and deno packages, marking each as recently used, depended upon, or stale — and printing uninstall commands you run yourself.
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

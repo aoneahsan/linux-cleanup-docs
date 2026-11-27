@@ -1,7 +1,6 @@
 ---
 title: ज़रूरतें
 description: linux-cleanup चलाने के लिए क्या चाहिए — bash 4+, GNU coreutils, केवल Linux — और वे वैकल्पिक निर्भरताएँ जो रिपोर्ट एक्सपोर्ट और विज़ुअल मेन्यू खोलती हैं।
-tags: [requirements, dependencies, installation, jq, whiptail]
 sidebar_position: 1
 ---
 

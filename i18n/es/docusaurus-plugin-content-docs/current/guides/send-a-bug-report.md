@@ -1,7 +1,6 @@
 ---
 title: Enviar un informe de error
 description: "Cómo informar de un error de linux-cleanup: crear un paquete de depuración, qué contiene un paquete de fallo, qué revisar antes de enviarlo y adónde enviarlo."
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

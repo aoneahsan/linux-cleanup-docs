@@ -1,7 +1,6 @@
 ---
 title: Extensions d’éditeurs
 description: Supprimer les versions remplacées d’extensions VS Code et Cursor (les anciennes copies laissées après une mise à jour), sous réserve d’une vérification de remplacement et du seuil d’inactivité.
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

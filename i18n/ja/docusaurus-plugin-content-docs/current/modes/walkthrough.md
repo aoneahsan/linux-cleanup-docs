@@ -1,7 +1,6 @@
 ---
 title: ガイド付きの手順（既定）
 description: linux-cleanup の既定のモード。すべてのクリーンアップのカテゴリーを 10 の手順でたどり、それぞれの前に確認し、累計と JSON のセッションレポートを残します。
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: المتطلبات
 description: ما يحتاجه linux-cleanup ليعمل — bash 4 أو أحدث وGNU coreutils وLinux فقط — والاعتماديات الاختيارية التي تتيح تصدير التقارير والقائمة المرئية.
-tags: [requirements, dependencies, installation, jq, whiptail]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Téléchargements partiels ou orphelins
 description: Trouver et supprimer les fichiers de téléchargements partiels abandonnés (.crdownload, .part et .fdmdownload) laissés par des transferts interrompus de navigateurs et de gestionnaires de téléchargement.
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: モードの概要
 description: linux-cleanup のすべてのモードを働きごとにまとめました。読み取り専用の確認、ガイド付き・一括のクリーンアップ、対話式の個人データのモード、出力と修復の補助。
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

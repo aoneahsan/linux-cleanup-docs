@@ -1,7 +1,6 @@
 ---
 title: 命令行参数
 description: linux-cleanup 的每个命令行参数——模式、选项、别名和默认值——以及每个参数的作用和完整说明所在的页面。
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

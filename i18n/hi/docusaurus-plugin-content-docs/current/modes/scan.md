@@ -1,7 +1,6 @@
 ---
 title: स्कैन (केवल पढ़ना)
 description: कैश की जड़ें, अधूरे डाउनलोड और Linux सफ़ाई के दूसरे उम्मीदवार बिना फ़ाइलें हटाए देखें।
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

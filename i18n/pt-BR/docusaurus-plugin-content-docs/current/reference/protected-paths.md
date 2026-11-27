@@ -1,7 +1,6 @@
 ---
 title: Caminhos protegidos
 description: A lista completa e verificada dos caminhos que o linux-cleanup se recusa a apagar — raízes do sistema, pastas pessoais, raízes de instalação de gerenciadores de pacotes e nomes de arquivos de inicialização do shell.
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

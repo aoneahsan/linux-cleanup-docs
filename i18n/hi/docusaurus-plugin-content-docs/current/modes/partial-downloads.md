@@ -1,7 +1,6 @@
 ---
 title: अधूरे / अनाथ डाउनलोड
 description: ब्राउज़र और डाउनलोड मैनेजर के रुके ट्रांसफ़र से पीछे छूटी अधूरी डाउनलोड फ़ाइलें — .crdownload, .part और .fdmdownload — ढूँढें और हटाएँ।
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

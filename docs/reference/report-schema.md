@@ -1,7 +1,6 @@
 ---
 title: Report schema
 description: The JSON structure a linux-cleanup guided walkthrough writes, with credits, meta, disk, memory, steps and totals.
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

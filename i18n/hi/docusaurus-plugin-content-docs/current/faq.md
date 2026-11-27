@@ -1,7 +1,6 @@
 ---
 title: अक्सर पूछे जाने वाले सवाल
 description: linux-cleanup के पथ, रिलीज़ जाँच, ड्राई रन, स्थायी हटाने और डिस्ट्रो समर्थन के बारे में जवाब।
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 速度诊断
 description: 检查 Linux 的温度、压力和开机启动项，再逐项决定是否应用建议的更改。
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

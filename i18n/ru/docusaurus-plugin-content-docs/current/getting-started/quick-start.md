@@ -1,7 +1,6 @@
 ---
 title: Быстрый старт
 description: "Первый сеанс linux-cleanup примерно за десять минут: проверить защиты, просканировать только для чтения, затем пройти пошаговый сценарий и прочитать отчёт."
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

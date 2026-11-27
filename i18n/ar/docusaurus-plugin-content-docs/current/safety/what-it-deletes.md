@@ -1,7 +1,6 @@
 ---
 title: ما الذي يحذفه
 description: أوضاع التنظيف في Linux ومسارات أهدافها، مع الفرق بين ذاكرة التخزين المؤقت المعتادة وأعمال النظام والملفات الشخصية.
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

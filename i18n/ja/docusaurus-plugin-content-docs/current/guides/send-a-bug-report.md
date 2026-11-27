@@ -1,7 +1,6 @@
 ---
 title: 不具合を報告する
 description: linux-cleanup の不具合の報告方法。デバッグ用バンドルの作り方、クラッシュ用バンドルの中身、送る前に確認すること、送り先。
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

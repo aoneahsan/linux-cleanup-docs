@@ -1,7 +1,6 @@
 ---
 title: مسارات المخرجات
 description: "أين يكتب linux-cleanup سجلاته وسجلات جلسات JSON وحزم التصحيح وحزم الانهيار: البنية، والقيم الافتراضية لكل طريقة تثبيت، ومدة الاحتفاظ، والأذونات."
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

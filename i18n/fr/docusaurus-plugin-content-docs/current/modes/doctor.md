@@ -1,7 +1,6 @@
 ---
 title: Doctor
 description: Détecter les environnements d’exécution installés sur le disque mais absents de l’initialisation du shell (nvm, pnpm, bun, deno, cargo) et ajouter le bloc d’initialisation standard après confirmation. Ajout uniquement.
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

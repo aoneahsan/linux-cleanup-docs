@@ -1,7 +1,6 @@
 ---
 title: Prérequis
 description: Ce dont linux-cleanup a besoin pour fonctionner (bash 4+, GNU coreutils, Linux uniquement) et les dépendances facultatives qui activent l’export des rapports et le menu visuel.
-tags: [requirements, dependencies, installation, jq, whiptail]
 sidebar_position: 1
 ---
 

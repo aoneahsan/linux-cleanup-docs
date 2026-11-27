@@ -1,7 +1,6 @@
 ---
 title: linux-cleanup
 description: Утилита командной строки на Bash, которая освобождает место на диске в Linux, безвозвратно удаляя кэш, который можно создать заново, — за списком разрешённых путей, порогом простоя и интерактивным подтверждением.
-tags: [linux, cleanup, disk-space, cli, bash, overview]
 slug: /
 sidebar_label: Введение
 sidebar_position: 1

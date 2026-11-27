@@ -1,7 +1,6 @@
 ---
 title: インストール
 description: npx でインストールせずに、npm でグローバルに、またはリポジトリをクローンして linux-cleanup を導入する 3 つの方法と、削除を伴う実行の前にインストールを確かめる方法。
-tags: [installation, npx, npm, git, setup, upgrade]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Tabla de modos
 description: "Todos los modos de linux-cleanup lado a lado: si eliminan, si son interactivos, si usan sudo y si escriben un registro de sesión."
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Proteções
 description: "As quatro barreiras independentes que um caminho precisa passar antes de o linux-cleanup apagá-lo: a lista de caminhos permitidos, o limite de ociosidade, os modos pessoais só interativos e o confinamento do sudo."
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Doctor
 description: ディスクにはインストールされているのにシェルの初期化から漏れている実行環境（nvm、pnpm、bun、deno、cargo）を見つけ、確認のうえで標準の初期化ブロックを追記します。追記のみです。
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

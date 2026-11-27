@@ -1,7 +1,6 @@
 ---
 title: 删除是永久的
 description: linux-cleanup 没有撤销、回收站或备份步骤。这在实际中意味着什么、为何这样设计，以及事后您真正有哪些选择。
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

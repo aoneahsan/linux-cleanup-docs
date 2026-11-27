@@ -1,7 +1,6 @@
 ---
 title: 何を削除するか
 description: Linux のクリーンアップモードと対象パス。通常のキャッシュ、システム作業、個人ファイルの違い。
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: مخطط التقرير
 description: بنية JSON التي تكتبها الجولة الموجّهة في linux-cleanup، مع credits وmeta وdisk وmemory وsteps وtotals.
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

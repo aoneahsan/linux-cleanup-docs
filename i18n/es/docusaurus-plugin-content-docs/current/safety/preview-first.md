@@ -1,7 +1,6 @@
 ---
 title: Revisar antes de eliminar
 description: Use un análisis de solo lectura y una simulación para revisar las rutas de linux-cleanup antes de una eliminación permanente.
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

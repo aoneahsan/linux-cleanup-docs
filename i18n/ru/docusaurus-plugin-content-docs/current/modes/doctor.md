@@ -1,7 +1,6 @@
 ---
 title: Doctor
 description: Находит среды выполнения, которые установлены на диске, но не подключены при запуске оболочки, — nvm, pnpm, bun, deno, cargo — и после подтверждения добавляет стандартный блок инициализации. Только добавляет.
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: À propos
 description: Qui a créé linux-cleanup, les principes qui le guident, sa licence, et comment prendre contact ou contribuer.
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

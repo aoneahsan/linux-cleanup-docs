@@ -1,7 +1,6 @@
 ---
 title: Журнал изменений
 description: "История выпусков linux-cleanup: пробные запуски, уведомления о выпусках и локальные JSON-события."
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

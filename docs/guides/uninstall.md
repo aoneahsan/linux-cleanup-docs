@@ -1,7 +1,6 @@
 ---
 title: Uninstall
 description: Remove linux-cleanup completely — the package, the shell alias, the cron entry, and its logs and session records.
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

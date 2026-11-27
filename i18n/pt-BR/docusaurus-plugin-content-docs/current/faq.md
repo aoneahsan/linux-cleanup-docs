@@ -1,7 +1,6 @@
 ---
 title: Perguntas frequentes
 description: Respostas sobre os caminhos do linux-cleanup, a checagem de versões, simulações, exclusão permanente e distribuições suportadas.
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

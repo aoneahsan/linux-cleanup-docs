@@ -1,7 +1,6 @@
 ---
 title: 删除前先预览
 description: 在永久删除之前，用只读扫描和试运行检查 linux-cleanup 的路径。
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

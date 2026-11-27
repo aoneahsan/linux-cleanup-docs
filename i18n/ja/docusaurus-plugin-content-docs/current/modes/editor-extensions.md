@@ -1,7 +1,6 @@
 ---
 title: エディター拡張機能
 description: VS Code と Cursor で置き換えられた拡張機能の古いバージョン（更新後に残るコピー）を、置き換えの確認とアイドルしきい値を条件に削除します。
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

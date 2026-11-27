@@ -1,7 +1,6 @@
 ---
 title: Limpeza do sistema (sudo)
 description: "O modo de sistema com sudo: apt, journal, Snap, lista de kernels, arquivos antigos do /tmp e liberação opcional do cache de páginas."
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

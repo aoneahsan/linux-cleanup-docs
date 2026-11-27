@@ -1,7 +1,6 @@
 ---
 title: Registro de cambios
 description: Historial de versiones de linux-cleanup, con simulaciones, avisos de versión y eventos JSON locales.
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

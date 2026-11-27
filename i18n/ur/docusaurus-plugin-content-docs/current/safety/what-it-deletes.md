@@ -1,7 +1,6 @@
 ---
 title: یہ کیا حذف کرتا ہے
 description: Linux صفائی کے موڈز اور ان کے ہدف پاتھس، روزمرہ کیش، سسٹم کے کام اور ذاتی فائلوں کے فرق کے ساتھ۔
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

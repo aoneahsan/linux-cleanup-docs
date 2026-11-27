@@ -21,7 +21,8 @@ export function withAlternates(ready: readonly string[], lang: (code: string) =>
   const [root, ...others] = ready;
   return async (params) => {
     const items = await params.defaultCreateSitemapItems(params);
-    return items.map((item) => {
+    // The local search results page is a tool, not content; it stays out of every sitemap (SA, docs skill).
+    return items.filter((item) => !/\/search\/?$/.test(new URL(item.url).pathname)).map((item) => {
       const url = new URL(item.url);
       const first = url.pathname.split('/')[1] ?? '';
       const rest = others.includes(first) ? url.pathname.slice(first.length + 1) || '/' : url.pathname;

@@ -1,7 +1,6 @@
 ---
 title: إلغاء التثبيت
 description: "إزالة linux-cleanup بالكامل: الحزمة والاسم المستعار للصدفة ومدخل cron وسجلاته وسجلات الجلسات."
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

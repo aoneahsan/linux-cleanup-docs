@@ -1,7 +1,6 @@
 ---
 title: 扫描（只读）
 description: 检查缓存根目录、未完成的下载和其他 Linux 清理候选项，不删除任何文件。
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

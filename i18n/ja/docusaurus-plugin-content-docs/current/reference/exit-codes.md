@@ -1,7 +1,6 @@
 ---
 title: 終了コード
 description: linux-cleanup の各終了コードの意味、自動でクラッシュ用バンドルを作るコード、スクリプトや cron のジョブでの分岐のしかた。
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

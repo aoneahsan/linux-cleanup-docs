@@ -1,7 +1,6 @@
 ---
 title: 运行要求
 description: linux-cleanup 运行所需的条件——bash 4+、GNU coreutils、仅限 Linux——以及可解锁报告导出和可视化菜单的可选依赖。
-tags: [requirements, dependencies, installation, jq, whiptail]
 sidebar_position: 1
 ---
 

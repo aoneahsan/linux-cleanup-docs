@@ -1,7 +1,6 @@
 ---
 title: Флаги CLI
 description: Все флаги командной строки linux-cleanup — режимы, параметры, псевдонимы и значения по умолчанию — что делает каждый и где он описан полностью.
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

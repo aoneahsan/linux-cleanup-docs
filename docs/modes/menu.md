@@ -1,7 +1,6 @@
 ---
 title: Menu
 description: The numbered jump-to menu that lets you run a single linux-cleanup category at a time instead of the full walkthrough.
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

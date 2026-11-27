@@ -1,7 +1,6 @@
 ---
 title: التقارير
 description: يمكن أن تكتب الجولة الموجّهة سجل جلسة بصيغة JSON. سرد تلك السجلات وعرضها وتحويلها إلى Markdown أو HTML وتصديرها.
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

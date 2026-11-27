@@ -1,7 +1,6 @@
 ---
 title: Environment variables
 description: Every environment variable linux-cleanup reads, with its default and effect — output directory overrides, colour control, and XDG config discovery.
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

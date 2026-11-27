@@ -1,7 +1,6 @@
 ---
 title: シェルのエイリアスと毎週の cron
 description: シェルのエイリアス cleanup と、毎週自動で実行する完全安全のクリーンアップの導入方法。それぞれが書き込むものと、取り除き方。
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

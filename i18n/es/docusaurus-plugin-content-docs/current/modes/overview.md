@@ -1,7 +1,6 @@
 ---
 title: Resumen de modos
 description: "Todos los modos de linux-cleanup agrupados por lo que hacen: inspección de solo lectura, limpieza guiada y por lotes, modos interactivos de datos personales y ayudantes de salida y reparación."
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

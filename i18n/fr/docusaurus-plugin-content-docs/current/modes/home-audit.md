@@ -1,7 +1,6 @@
 ---
 title: Audit du dossier personnel
 description: "Une liste en lecture seule des 20 plus grosses entrées de votre dossier personnel, que linux-cleanup puisse les nettoyer ou non : le moyen le plus rapide de savoir ce qui occupe vraiment le disque."
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Псевдоним оболочки и еженедельный cron
 description: "Установка псевдонима оболочки cleanup и еженедельной автоматической полностью безопасной очистки: что пишет каждый и как их убрать."
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

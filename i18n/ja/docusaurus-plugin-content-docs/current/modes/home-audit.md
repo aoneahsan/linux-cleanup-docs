@@ -1,7 +1,6 @@
 ---
 title: ホームの監査
 description: ホームディレクトリで最も大きい 20 項目を、linux-cleanup が掃除できるかどうかに関係なく読み取り専用で一覧にします。ディスクを実際に使っているものを知るいちばん早い方法です。
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

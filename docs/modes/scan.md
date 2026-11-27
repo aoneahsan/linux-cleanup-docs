@@ -1,7 +1,6 @@
 ---
 title: Scan (read-only)
 description: Inspect cache roots, partial downloads and other Linux cleanup candidates without deleting files.
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Таблица режимов
 description: "Все режимы linux-cleanup рядом: удаляет ли, интерактивен ли, использует ли sudo и пишет ли запись сеанса."
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

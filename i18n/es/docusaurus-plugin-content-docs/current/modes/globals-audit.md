@@ -1,7 +1,6 @@
 ---
 title: Revisión de paquetes globales
 description: Una revisión de solo lectura de los paquetes instalados globalmente con npm, pnpm, yarn, bun y deno, que marca cada uno como usado recientemente, como dependencia o sin uso, e imprime comandos de desinstalación que ejecuta usted.
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

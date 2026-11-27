@@ -1,7 +1,6 @@
 ---
 title: Меню
 description: Нумерованное меню, через которое можно запускать по одной категории linux-cleanup вместо всего пошагового сценария.
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

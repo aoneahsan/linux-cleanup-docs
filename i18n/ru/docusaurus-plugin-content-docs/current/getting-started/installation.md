@@ -1,7 +1,6 @@
 ---
 title: Установка
 description: Три способа установить linux-cleanup — без установки через npx, глобально через npm или клонированием репозитория — и проверка установки до любого удаления.
-tags: [installation, npx, npm, git, setup, upgrade]
 sidebar_position: 2
 ---
 

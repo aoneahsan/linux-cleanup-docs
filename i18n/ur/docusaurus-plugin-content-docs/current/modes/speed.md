@@ -1,7 +1,6 @@
 ---
 title: رفتار کی تشخیص
 description: Linux کا درجہ حرارت، دباؤ اور شروع میں چلنے والا کام دیکھیں، پھر ہر تجویز کردہ تبدیلی لاگو کرنے کا فیصلہ کریں۔
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: रिपोर्ट स्कीमा
 description: linux-cleanup का निर्देशित वॉकथ्रू जो JSON ढाँचा लिखता है — credits, meta, disk, memory, steps और totals के साथ।
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

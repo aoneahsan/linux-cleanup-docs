@@ -1,7 +1,6 @@
 ---
 title: Caminhos de saída
 description: "Onde o linux-cleanup grava os logs, os registros JSON de sessão, os pacotes de depuração e os de falha: a estrutura, os padrões por forma de instalação, a retenção e as permissões."
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

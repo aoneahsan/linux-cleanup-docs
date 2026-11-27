@@ -1,7 +1,6 @@
 ---
 title: クイックスタート
 description: 約 10 分で linux-cleanup の最初のセッションを実行します。安全装置の確認、読み取り専用の確認、ガイド付きの手順、レポートの読み方まで。
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

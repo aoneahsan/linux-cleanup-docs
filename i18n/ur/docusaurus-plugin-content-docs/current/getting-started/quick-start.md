@@ -1,7 +1,6 @@
 ---
 title: فوری آغاز
 description: تقریباً دس منٹ میں linux-cleanup کا پہلا سیشن چلائیں — حفاظتی رکاوٹیں جانچیں، صرف پڑھنے والی جانچ کریں، پھر گائیڈڈ واک تھرو چلائیں اور رپورٹ پڑھیں۔
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

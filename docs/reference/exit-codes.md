@@ -1,7 +1,6 @@
 ---
 title: Exit codes
 description: What each linux-cleanup exit code means, which ones trigger an automatic crash bundle, and how to branch on them from a script or cron job.
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

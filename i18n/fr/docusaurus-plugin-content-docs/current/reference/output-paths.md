@@ -1,7 +1,6 @@
 ---
 title: Chemins de sortie
 description: "Où linux-cleanup écrit ses journaux, ses enregistrements de session JSON, ses paquets de débogage et de plantage : arborescence, valeurs par défaut selon l’installation, conservation et droits."
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

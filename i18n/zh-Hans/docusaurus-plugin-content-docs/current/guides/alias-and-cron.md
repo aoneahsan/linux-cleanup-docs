@@ -1,7 +1,6 @@
 ---
 title: shell 别名与每周 cron
 description: 安装 shell 别名 cleanup 和每周自动运行的全安全清理，各自写入了什么，以及如何再移除它们。
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

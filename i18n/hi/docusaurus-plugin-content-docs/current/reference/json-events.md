@@ -1,7 +1,6 @@
 ---
 title: मशीन से पढ़े जाने वाले इवेंट
 description: स्थानीय स्कैन और गैर-इंटरैक्टिव पूरी तरह सुरक्षित रन के लिए संस्करण 1 के NDJSON इवेंट।
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

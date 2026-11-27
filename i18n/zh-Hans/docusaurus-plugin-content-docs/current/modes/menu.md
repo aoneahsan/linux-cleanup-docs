@@ -1,7 +1,6 @@
 ---
 title: 菜单
 description: 带编号的跳转菜单，让您一次只运行 linux-cleanup 的一个类别，而不是完整的引导流程。
-tags: [menu, interactive, modes]
 sidebar_position: 4
 ---
 

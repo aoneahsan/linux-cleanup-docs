@@ -1,7 +1,6 @@
 ---
 title: Journal des modifications
 description: Historique des versions de linux-cleanup, avec les simulations, les avis de version et les événements JSON locaux.
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

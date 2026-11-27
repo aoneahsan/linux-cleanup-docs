@@ -1,7 +1,6 @@
 ---
 title: डिस्ट्रो समर्थन
 description: linux-cleanup हर Linux वितरण पर क्या करता है — कैश सफ़ाई हर जगह काम करती है, पर sudo वाला --system मोड केवल Debian और Ubuntu के लिए है।
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

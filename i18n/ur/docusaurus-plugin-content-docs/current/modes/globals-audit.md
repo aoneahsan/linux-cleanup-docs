@@ -1,7 +1,6 @@
 ---
 title: گلوبل پیکیجز کی جانچ
 description: npm، pnpm، yarn، bun اور deno میں گلوبل انسٹال پیکیجز کی صرف پڑھنے والی جانچ، ہر ایک کو حال میں استعمال، کسی کا انحصار یا پرانا بتاتی ہے — اور ان انسٹال کمانڈز دکھاتی ہے جو آپ خود چلاتے ہیں۔
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 长期未用的 node_modules 查找
 description: 在 N 天或更久没有动过的项目中查找 node_modules 目录，并以交互方式删除。在开发者的机器上，这往往是回收空间最多的一项。
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

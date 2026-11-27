@@ -1,7 +1,6 @@
 ---
 title: Shell alias and weekly cron
 description: Install a cleanup shell alias and a weekly automated all-safe run, what each one writes, and how to remove them again.
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

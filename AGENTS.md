@@ -4,7 +4,7 @@
 |---|---|
 | Last optimized | 2026-11-27 |
 | Next routine optimization eligible | 2026-12-27 |
-| Guide bytes | 7,318 B |
+| Guide bytes | 7,515 B |
 | Covered subtree | This repository; parent linux-cleanup-root measured separately |
 | Method | Due review: compact guidance kept, stale release and language facts corrected, AGENTS mirror differs only in its H1 |
 | Fleet record | /home/ahsan/Documents/01-code/docs/tracking/project-context-budget-tracker.json |
@@ -67,6 +67,7 @@ permanent, plainly, every time it is relevant.
 ```bash
 yarn typecheck
 yarn build      # ALSO the link checker — onBrokenLinks is 'throw'
+yarn test:seo   # build-output contract: canonicals (trailing slash), sitemaps, JSON-LD, redirects
 ```
 
 Zero warnings, zero errors. A broken internal link fails the build by design.
@@ -77,7 +78,7 @@ sanctioned path.
 ## Content conventions
 
 - **Every page carries `title` + `description` front matter.** Without them the page is unsearchable and
-  ships an empty meta description. `tags` power discovery
+  ships an empty meta description. No `tags`: tag pages are switched off and their old URLs redirect (owner, 2026-11-27; `src/data/seo-removed-paths.json`)
 - **Update `sidebars.ts` in the same change** that adds a page. A page not in the sidebar is unreachable
 - **Docusaurus admonitions** (`:::danger`), not GitHub alerts (`> [!WARNING]`) — they are not interchangeable
 - **Relative links between docs** (`../safety/guards.md`), so the build validates them

@@ -1,7 +1,6 @@
 ---
 title: 编辑器扩展
 description: 删除 VS Code 和 Cursor 中已被取代的扩展版本——即扩展更新后留下的旧副本——前提是通过取代检查和闲置阈值。
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Codes de sortie
 description: Ce que signifie chaque code de sortie de linux-cleanup, lesquels créent automatiquement un paquet de plantage et comment s’en servir dans un script ou une tâche cron.
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

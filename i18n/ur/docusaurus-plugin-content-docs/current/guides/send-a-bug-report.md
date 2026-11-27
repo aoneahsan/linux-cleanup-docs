@@ -1,7 +1,6 @@
 ---
 title: خرابی کی رپورٹ بھیجیں
 description: linux-cleanup کی خرابی کیسے بتائیں — ڈی بگ بنڈل بنانا، کریش بنڈل میں کیا ہوتا ہے، بھیجنے سے پہلے کیا دیکھیں، اور کہاں بھیجیں۔
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Instalação
 description: Instale o linux-cleanup de três jeitos — sem instalar com npx, globalmente com npm ou clonando o repositório — e confira a instalação antes de rodar qualquer coisa que apague.
-tags: [installation, npx, npm, git, setup, upgrade]
 sidebar_position: 2
 ---
 

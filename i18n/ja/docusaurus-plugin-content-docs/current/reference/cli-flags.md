@@ -1,7 +1,6 @@
 ---
 title: CLI のフラグ
 description: linux-cleanup のすべてのコマンドラインフラグ（モード、オプション、別名、既定値）と、それぞれの働きと詳しい説明のページ。
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

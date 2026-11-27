@@ -1,7 +1,6 @@
 ---
 title: Distro support
 description: What linux-cleanup does on each Linux distribution — cache cleanup works everywhere, but the sudo --system mode targets Debian and Ubuntu only.
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

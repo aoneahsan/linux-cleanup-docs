@@ -1,7 +1,6 @@
 ---
 title: موڈز کا جدول
 description: linux-cleanup کے تمام موڈز ساتھ ساتھ — کون حذف کرتا ہے، کون انٹرایکٹو ہے، کون sudo استعمال کرتا ہے، اور کون سیشن ریکارڈ لکھتا ہے۔
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

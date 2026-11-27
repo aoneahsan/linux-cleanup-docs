@@ -1,7 +1,6 @@
 ---
 title: جدول الأوضاع
 description: "كل أوضاع linux-cleanup جنبًا إلى جنب: هل يحذف، وهل هو تفاعلي، وهل يستخدم sudo، وهل يكتب سجل جلسة."
-tags: [modes, matrix, reference, comparison]
 sidebar_position: 2
 ---
 

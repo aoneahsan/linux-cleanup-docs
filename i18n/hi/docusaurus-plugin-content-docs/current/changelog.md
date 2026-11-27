@@ -1,7 +1,6 @@
 ---
 title: बदलावों का इतिहास
 description: linux-cleanup की रिलीज़ का इतिहास, जिसमें ड्राई रन, रिलीज़ सूचनाएँ और स्थानीय JSON इवेंट शामिल हैं।
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

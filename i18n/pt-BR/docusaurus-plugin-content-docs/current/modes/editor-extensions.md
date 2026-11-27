@@ -1,7 +1,6 @@
 ---
 title: Extensões de editores
 description: Remova versões substituídas de extensões do VS Code e do Cursor — as cópias antigas que ficam quando uma extensão atualiza — passando por uma checagem de substituição e pelo limite de ociosidade.
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

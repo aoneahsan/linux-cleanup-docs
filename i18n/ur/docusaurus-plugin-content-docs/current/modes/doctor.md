@@ -1,7 +1,6 @@
 ---
 title: ڈاکٹر
 description: ڈسک پر انسٹال مگر شیل کی ابتدائی ترتیب سے غائب رن ٹائمز — nvm، pnpm، bun، deno، cargo — پہچانیں اور آپ کی تصدیق پر معیاری ابتدائی بلاک شامل کریں۔ صرف شامل کرتا ہے۔
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

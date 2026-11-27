@@ -1,7 +1,6 @@
 ---
 title: पूरी तरह सुरक्षित (बैच)
 description: एक ही बार में हर दोबारा बन सकने वाला कैश साफ़ करें। cron और बिना देखरेख रखरखाव के लिए बना मोड, और अकेला मोड जिस पर --yes लागू होता है।
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

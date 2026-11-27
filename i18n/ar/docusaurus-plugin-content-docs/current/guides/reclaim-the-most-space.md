@@ -1,7 +1,6 @@
 ---
 title: استعادة المساحة بتأنٍّ
 description: فحص استخدام القرص في Linux، ومعاينة كل وضع تنظيف، ثم اختيار مسارات ذاكرة التخزين المؤقت أو المشاريع أو النظام واحدًا واحدًا.
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

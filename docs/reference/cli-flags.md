@@ -1,7 +1,6 @@
 ---
 title: CLI flags
 description: Every linux-cleanup command-line flag — modes, options, aliases and defaults — with what each one does and where it is documented in full.
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

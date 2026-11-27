@@ -1,7 +1,6 @@
 ---
 title: ہوم کی جانچ
 description: ہوم فولڈر کی 20 سب سے بڑی چیزوں کی صرف پڑھنے والی فہرست، چاہے linux-cleanup انہیں صاف کر سکے یا نہیں — یہ جاننے کا سب سے تیز طریقہ کہ آپ کی ڈسک اصل میں کس نے بھری ہے۔
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

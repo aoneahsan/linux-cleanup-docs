@@ -1,7 +1,6 @@
 ---
 title: الآمن بالكامل (دفعة واحدة)
 description: تنظيف كل ذاكرة تخزين مؤقت قابلة لإعادة الإنشاء في مرور واحد. الوضع المصمم لـ cron والصيانة دون إشراف، والوضع الوحيد الذي ينطبق عليه --yes.
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

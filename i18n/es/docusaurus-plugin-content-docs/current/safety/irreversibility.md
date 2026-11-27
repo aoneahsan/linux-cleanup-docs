@@ -1,7 +1,6 @@
 ---
 title: La eliminación es permanente
 description: linux-cleanup no tiene deshacer, papelera ni copia de seguridad. Qué significa en la práctica, por qué se diseñó así y qué opciones tiene realmente después.
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: बग रिपोर्ट भेजें
 description: linux-cleanup का बग कैसे बताएँ — डीबग बंडल बनाना, क्रैश बंडल में क्या होता है, भेजने से पहले क्या जाँचें, और कहाँ भेजें।
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

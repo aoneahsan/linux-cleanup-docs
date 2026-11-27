@@ -1,7 +1,6 @@
 ---
 title: Buscador de node_modules abandonados
 description: Busque directorios node_modules en proyectos sin tocar durante N días o más y elimínelos de forma interactiva. A menudo es lo que más espacio libera en el equipo de un desarrollador.
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

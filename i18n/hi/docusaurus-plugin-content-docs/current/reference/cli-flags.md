@@ -1,7 +1,6 @@
 ---
 title: CLI फ़्लैग
 description: linux-cleanup का हर कमांड लाइन फ़्लैग — मोड, विकल्प, उपनाम और डिफ़ॉल्ट — हर एक क्या करता है और उसका पूरा विवरण कहाँ है।
-tags: [cli, flags, reference, options, commands]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 受保护的路径
 description: linux-cleanup 拒绝删除的路径的完整核实清单——系统根目录、个人目录、软件包管理器的安装根目录以及 shell 初始化文件名。
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

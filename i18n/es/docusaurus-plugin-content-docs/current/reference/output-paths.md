@@ -1,7 +1,6 @@
 ---
 title: Rutas de salida
 description: "Dónde escribe linux-cleanup sus registros, los registros JSON de sesión, los paquetes de depuración y los de fallo: estructura, valores por defecto según la instalación, conservación y permisos."
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

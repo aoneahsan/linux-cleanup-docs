@@ -1,7 +1,6 @@
 ---
 title: Prévisualiser avant de supprimer
 description: Une analyse en lecture seule et une simulation pour examiner les chemins de linux-cleanup avant une suppression définitive.
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

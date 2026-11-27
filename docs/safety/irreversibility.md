@@ -1,7 +1,6 @@
 ---
 title: Deletion is permanent
 description: linux-cleanup has no undo, no trash, and no backup step. What that means in practice, why it was designed that way, and what your options actually are afterwards.
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

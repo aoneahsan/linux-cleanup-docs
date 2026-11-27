@@ -1,7 +1,6 @@
 ---
 title: حفاظتی رکاوٹیں
 description: "وہ چار آزاد رکاوٹیں جو linux-cleanup کے کسی پاتھ کو حذف کرنے سے پہلے اسے پار کرنی ہوتی ہیں: پاتھ اجازت فہرست، غیر فعالیت کی رکاوٹ، صرف انٹرایکٹو ذاتی موڈز اور sudo کی حد۔"
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

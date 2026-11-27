@@ -1,7 +1,6 @@
 ---
 title: System cleanup (sudo)
 description: "The sudo system mode: apt, journal, Snap, kernel listing, aged files in /tmp and optional page-cache eviction."
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

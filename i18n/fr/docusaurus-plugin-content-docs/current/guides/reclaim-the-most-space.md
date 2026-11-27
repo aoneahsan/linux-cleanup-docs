@@ -1,7 +1,6 @@
 ---
 title: Libérer de l’espace en connaissance de cause
 description: Examiner l’occupation du disque sous Linux, prévisualiser chaque mode de nettoyage, puis choisir les chemins de cache, de projets ou du système un par un.
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

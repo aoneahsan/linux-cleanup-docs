@@ -1,7 +1,6 @@
 ---
 title: Histórico de mudanças
 description: Histórico de versões do linux-cleanup, com simulações, avisos de versão e eventos JSON locais.
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

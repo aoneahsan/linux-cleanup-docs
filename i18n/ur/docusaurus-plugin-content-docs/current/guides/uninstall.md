@@ -1,7 +1,6 @@
 ---
 title: ان انسٹال
 description: linux-cleanup کو مکمل طور پر ہٹائیں — پیکیج، شیل ایلیاس، cron اندراج، اور اس کے لاگز اور سیشن ریکارڈز۔
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 使われていない個人ファイル
 description: ~/Downloads と設定された非保護ルートで、大きく長期間使われていないファイルを見つける対話式専用のモード。
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

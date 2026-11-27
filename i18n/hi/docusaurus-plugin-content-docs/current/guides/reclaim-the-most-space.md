@@ -1,7 +1,6 @@
 ---
 title: सोच-समझकर जगह वापस पाएँ
 description: Linux डिस्क उपयोग जाँचें, हर सफ़ाई मोड का पूर्वावलोकन करें, फिर कैश, प्रोजेक्ट या सिस्टम पथ एक-एक करके चुनें।
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

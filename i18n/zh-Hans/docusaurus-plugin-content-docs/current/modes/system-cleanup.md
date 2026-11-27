@@ -1,7 +1,6 @@
 ---
 title: 系统清理（sudo）
 description: sudo 系统模式：apt、日志、Snap、内核列表、/tmp 中的旧文件，以及可选的页面缓存释放。
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

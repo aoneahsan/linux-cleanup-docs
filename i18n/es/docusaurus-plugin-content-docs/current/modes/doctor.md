@@ -1,7 +1,6 @@
 ---
 title: Doctor
 description: Detecte runtimes instalados en el disco pero ausentes del arranque de la shell (nvm, pnpm, bun, deno, cargo) y añada el bloque de inicio estándar con su confirmación. Solo añade.
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

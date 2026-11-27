@@ -1,7 +1,6 @@
 ---
 title: मोड का सार
 description: linux-cleanup के सभी मोड, काम के हिसाब से समूह में — केवल-पढ़ने वाली जाँच, गाइडेड और बैच सफ़ाई, इंटरैक्टिव निजी-डेटा मोड, और आउटपुट व सुधार के सहायक।
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

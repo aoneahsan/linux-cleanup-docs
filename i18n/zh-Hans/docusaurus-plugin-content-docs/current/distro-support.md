@@ -1,7 +1,6 @@
 ---
 title: 发行版支持
 description: linux-cleanup 在各个 Linux 发行版上会做什么——缓存清理到处都能用，但需要 sudo 的 --system 模式只针对 Debian 和 Ubuntu。
-tags: [distro, ubuntu, debian, fedora, arch, opensuse, wsl, compatibility]
 sidebar_position: 90
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Машиночитаемые события
 description: События NDJSON версии 1 для локального сканирования и неинтерактивной полностью безопасной очистки.
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

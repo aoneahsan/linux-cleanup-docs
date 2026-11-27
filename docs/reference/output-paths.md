@@ -1,7 +1,6 @@
 ---
 title: Output paths
 description: Where linux-cleanup writes its logs, JSON session records, debug bundles and crash bundles — the layout, per-install defaults, retention and permissions.
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: हटाने से पहले पूर्वावलोकन
 description: स्थायी रूप से हटाने से पहले linux-cleanup के पथ केवल-पढ़ने वाले स्कैन और ड्राई रन से जाँचें।
-tags: [safety, dry-run, scan, preview, read-only]
 sidebar_position: 2
 ---
 

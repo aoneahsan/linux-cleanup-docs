@@ -1,7 +1,6 @@
 ---
 title: Очистка системы (sudo)
 description: "Системный режим с sudo: apt, системный журнал, Snap, список ядер, старые файлы в /tmp и необязательный сброс кэша страниц."
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: انسٹالیشن
 description: linux-cleanup تین طریقوں سے انسٹال کریں — npx سے بغیر انسٹال، npm سے گلوبل، یا ریپوزٹری کلون کر کے — اور کچھ بھی حذف کرنے والا چلانے سے پہلے انسٹال جانچیں۔
-tags: [installation, npx, npm, git, setup, upgrade]
 sidebar_position: 2
 ---
 

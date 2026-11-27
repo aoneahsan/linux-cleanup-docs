@@ -1,7 +1,6 @@
 ---
 title: linux-cleanup
 description: パスの許可リスト、アイドルしきい値、対話式の確認を経て、再生成できるキャッシュを完全に削除し、Linux のディスク容量を取り戻す Bash 製コマンドラインツール。
-tags: [linux, cleanup, disk-space, cli, bash, overview]
 slug: /
 sidebar_label: はじめに
 sidebar_position: 1

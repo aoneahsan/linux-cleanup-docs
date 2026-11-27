@@ -1,7 +1,6 @@
 ---
 title: Modes overview
 description: All linux-cleanup modes grouped by what they do — read-only inspection, guided and batch cleanup, interactive personal-data modes, and output and repair helpers.
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: वॉकथ्रू (डिफ़ॉल्ट)
 description: linux-cleanup का डिफ़ॉल्ट मोड — हर सफ़ाई श्रेणी से गुज़रते दस गाइडेड चरण, हर एक से पहले पूछते हुए, चलते कुल और JSON सत्र रिपोर्ट के साथ।
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

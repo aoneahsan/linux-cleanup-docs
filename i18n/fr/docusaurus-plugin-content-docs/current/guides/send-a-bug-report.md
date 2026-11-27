@@ -1,7 +1,6 @@
 ---
 title: Envoyer un rapport de bogue
 description: "Comment signaler un bogue de linux-cleanup : créer un paquet de débogage, ce que contient un paquet de plantage, quoi vérifier avant l’envoi et où l’envoyer."
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

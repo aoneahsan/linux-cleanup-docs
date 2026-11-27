@@ -1,7 +1,6 @@
 ---
 title: 使われていない node_modules の検出
 description: N 日以上手を付けていないプロジェクトの node_modules を見つけ、対話式で削除します。開発用のマシンでは、いちばん多く容量を取り戻せることがよくあります。
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

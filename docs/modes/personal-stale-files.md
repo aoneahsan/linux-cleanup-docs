@@ -1,7 +1,6 @@
 ---
 title: Stale personal files
 description: The interactive-only mode that finds large, long-unused files in ~/Downloads and configured unprotected roots.
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

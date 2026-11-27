@@ -1,7 +1,6 @@
 ---
 title: Home audit
 description: A read-only listing of the 20 largest entries in your home directory, whether or not linux-cleanup can clean them — the fastest way to find out what is actually using your disk.
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

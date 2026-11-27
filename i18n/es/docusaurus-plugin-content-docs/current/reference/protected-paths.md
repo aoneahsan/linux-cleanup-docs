@@ -1,7 +1,6 @@
 ---
 title: Rutas protegidas
 description: "La lista completa y verificada de rutas que linux-cleanup se niega a eliminar: raíces del sistema, directorios personales, raíces de instalación de gestores de paquetes y nombres de archivos de inicio del shell."
-tags: [protected, allowlist, safety, paths, reference]
 sidebar_position: 3
 ---
 

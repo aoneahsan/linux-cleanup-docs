@@ -1,7 +1,6 @@
 ---
 title: 模式概览
 description: 按用途分组的所有 linux-cleanup 模式——只读检查、引导和批量清理、交互式个人数据模式，以及输出和修复辅助工具。
-tags: [modes, overview, cli, reference]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: ادھورے / لاوارث ڈاؤن لوڈز
 description: براؤزرز اور ڈاؤن لوڈ مینیجرز کے رکے ہوئے ٹرانسفرز سے پیچھے رہ جانے والی ادھوری ڈاؤن لوڈ فائلیں — .crdownload، .part اور .fdmdownload — ڈھونڈیں اور حذف کریں۔
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

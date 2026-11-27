@@ -1,7 +1,6 @@
 ---
 title: التثبيت
 description: ثلاث طرق لتثبيت linux-cleanup — دون تثبيت عبر npx، أو تثبيت عام عبر npm، أو استنساخ المستودع — مع التحقق من التثبيت قبل تشغيل أي شيء يحذف.
-tags: [installation, npx, npm, git, setup, upgrade]
 sidebar_position: 2
 ---
 

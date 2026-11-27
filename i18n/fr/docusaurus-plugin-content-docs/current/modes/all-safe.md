@@ -1,7 +1,6 @@
 ---
 title: Entièrement sûr (par lot)
 description: Nettoyer en une seule passe tous les caches régénérables. Le mode conçu pour cron et la maintenance sans surveillance, et le seul auquel --yes s’applique.
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

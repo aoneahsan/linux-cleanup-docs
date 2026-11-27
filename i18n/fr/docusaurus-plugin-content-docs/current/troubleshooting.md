@@ -1,7 +1,6 @@
 ---
 title: Dépannage
 description: "Symptôme, cause et solution pour les problèmes que rencontrent vraiment les utilisateurs de linux-cleanup : refus, dépendances manquantes, échecs de cron, analyses lentes et confusion de versions."
-tags: [troubleshooting, errors, fixes, cron, jq, whiptail]
 sidebar_position: 92
 ---
 

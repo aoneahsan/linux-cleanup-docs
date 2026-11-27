@@ -1,7 +1,6 @@
 ---
 title: 機械で読めるイベント
 description: ローカルのスキャンと対話なしの完全安全の実行で出力する、バージョン 1 の NDJSON イベント。
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: पुरानी निजी फ़ाइलें
 description: केवल-इंटरैक्टिव मोड जो ~/Downloads और कॉन्फ़िगर की गई असंरक्षित जड़ों में बड़ी, लंबे समय से न इस्तेमाल हुई फ़ाइलें ढूँढता है।
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

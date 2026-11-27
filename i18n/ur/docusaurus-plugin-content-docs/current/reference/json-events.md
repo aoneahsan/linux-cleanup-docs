@@ -1,7 +1,6 @@
 ---
 title: مشین کے پڑھنے لائق ایونٹس
 description: مقامی اسکین اور غیر انٹرایکٹو مکمل محفوظ رنز کے لیے ورژن 1 کے NDJSON ایونٹس۔
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

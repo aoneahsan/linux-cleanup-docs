@@ -1,7 +1,6 @@
 ---
 title: Editor extensions
 description: Remove superseded VS Code and Cursor extension versions — the older copies left behind when an extension updates — subject to a supersession check and the staleness gate.
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Rapports
 description: Le parcours guidé peut écrire un enregistrement de session JSON. Listez, consultez, convertissez en Markdown ou HTML et exportez ces enregistrements.
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

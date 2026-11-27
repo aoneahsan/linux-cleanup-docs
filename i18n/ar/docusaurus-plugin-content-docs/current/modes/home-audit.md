@@ -1,7 +1,6 @@
 ---
 title: فحص المجلد الرئيسي
 description: قائمة للقراءة فقط بأكبر 20 مدخلًا في المجلد الرئيسي، سواء استطاع linux-cleanup تنظيفها أم لا — أسرع طريقة لمعرفة ما يشغل القرص فعلًا.
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

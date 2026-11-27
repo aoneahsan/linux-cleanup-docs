@@ -1,7 +1,6 @@
 ---
 title: Stale node_modules finder
 description: Find node_modules directories in projects untouched for N or more days and delete them interactively. Often the single largest reclaim on a developer machine.
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

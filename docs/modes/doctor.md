@@ -1,7 +1,6 @@
 ---
 title: Doctor
 description: Detect runtimes installed on disk but missing from your shell init — nvm, pnpm, bun, deno, cargo — and append the canonical init block with your confirmation. Additive only.
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: متغيرات البيئة
 description: "كل متغير بيئة يقرؤه linux-cleanup مع قيمته الافتراضية وأثره: تغيير مجلدات المخرجات، والتحكم في الألوان، والعثور على إعدادات XDG."
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

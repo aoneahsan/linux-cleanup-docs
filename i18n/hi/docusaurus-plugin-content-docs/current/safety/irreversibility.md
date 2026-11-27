@@ -1,7 +1,6 @@
 ---
 title: हटाना स्थायी है
 description: linux-cleanup में कोई अनडू, ट्रैश या बैकअप चरण नहीं है। व्यवहार में इसका क्या मतलब है, इसे ऐसा क्यों बनाया गया, और बाद में आपके पास असल में क्या विकल्प हैं।
-tags: [safety, irreversible, undo, data-loss, recovery]
 sidebar_position: 4
 ---
 

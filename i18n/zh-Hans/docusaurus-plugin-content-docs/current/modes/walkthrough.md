@@ -1,7 +1,6 @@
 ---
 title: 引导流程（默认）
 description: linux-cleanup 的默认模式——十个引导步骤走遍每个清理类别，每步前都会询问，显示累计结果并生成 JSON 会话报告。
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

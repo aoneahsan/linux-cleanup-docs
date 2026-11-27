@@ -1,7 +1,6 @@
 ---
 title: グローバルパッケージの監査
 description: npm、pnpm、yarn、bun、deno でグローバルにインストールしたパッケージを読み取り専用で監査し、最近使ったもの、依存されているもの、使われていないものに分け、自分で実行するアンインストールのコマンドを表示します。
-tags: [globals, npm, pnpm, yarn, bun, deno, read-only, modes]
 sidebar_position: 12
 ---
 

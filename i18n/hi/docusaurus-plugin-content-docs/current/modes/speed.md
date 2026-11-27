@@ -1,7 +1,6 @@
 ---
 title: स्पीड जाँच
 description: Linux का तापमान, दबाव और शुरुआत में चलने वाला काम देखें, फिर हर सुझाए बदलाव को लागू करना है या नहीं तय करें।
-tags: [speed, diagnosis, performance, startup, modes]
 sidebar_position: 16
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: سجل التغييرات
 description: تاريخ إصدارات linux-cleanup، بما في ذلك التشغيل التجريبي وإشعارات الإصدارات وأحداث JSON المحلية.
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

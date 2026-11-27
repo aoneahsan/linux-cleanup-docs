@@ -1,7 +1,6 @@
 ---
 title: Что удаляется
 description: "Режимы очистки Linux и их целевые пути: чем отличаются обычный кэш, системные задачи и личные файлы."
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Totalmente seguro (em lote)
 description: Limpe todos os caches regeneráveis de uma vez. O modo feito para cron e manutenção sem supervisão, e o único em que o --yes vale.
-tags: [all-safe, batch, cron, unattended, yes, modes]
 sidebar_position: 6
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Changelog
 description: Release history for linux-cleanup, including dry runs, release notices and local JSON events.
-tags: [changelog, releases, versions, history]
 sidebar_position: 94
 ---
 

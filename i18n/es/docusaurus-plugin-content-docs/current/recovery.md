@@ -1,7 +1,6 @@
 ---
 title: Recuperación
 description: "Qué hacer tras una eliminación no deseada de linux-cleanup: revisar los registros disponibles, restaurar desde una copia o desde el origen y evitar más escrituras en disco cuando la recuperación importa."
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

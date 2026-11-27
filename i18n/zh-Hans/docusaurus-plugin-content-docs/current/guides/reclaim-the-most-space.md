@@ -1,7 +1,6 @@
 ---
 title: 有意识地回收空间
 description: 检查 Linux 磁盘用量，预览每种清理模式，然后逐一选择缓存、项目或系统路径。
-tags: [guide, disk-space, reclaim, purge-all, recipe]
 sidebar_position: 1
 ---
 

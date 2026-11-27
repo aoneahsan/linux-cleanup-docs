@@ -1,7 +1,6 @@
 ---
 title: بداية سريعة
 description: "أول جلسة linux-cleanup في نحو عشر دقائق: التحقق من الضمانات، وفحص للقراءة فقط، ثم الجولة الموجّهة وقراءة التقرير."
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

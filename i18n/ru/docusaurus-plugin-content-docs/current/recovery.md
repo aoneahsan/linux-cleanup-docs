@@ -1,7 +1,6 @@
 ---
 title: Восстановление
 description: "Что делать после нежелательного удаления linux-cleanup: изучить доступные журналы, восстановить из резервной копии или источника и не писать на диск, если восстановление важно."
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

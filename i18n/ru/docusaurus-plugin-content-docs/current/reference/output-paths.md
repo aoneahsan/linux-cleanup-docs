@@ -1,7 +1,6 @@
 ---
 title: Пути вывода
 description: "Куда linux-cleanup пишет журналы, JSON-записи сеансов, отладочные пакеты и пакеты сбоев: структура, значения по умолчанию для каждого способа установки, хранение и права."
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

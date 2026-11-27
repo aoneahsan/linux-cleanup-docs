@@ -1,7 +1,6 @@
 ---
 title: Alias de shell y cron semanal
 description: Instale un alias de shell cleanup y una ejecución automática semanal totalmente segura, qué escribe cada uno y cómo volver a quitarlos.
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

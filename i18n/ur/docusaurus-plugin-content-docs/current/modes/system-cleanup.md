@@ -1,7 +1,6 @@
 ---
 title: سسٹم کی صفائی (sudo)
 description: "sudo والا سسٹم موڈ: apt، جرنل، Snap، کرنلز کی فہرست، /tmp کی پرانی فائلیں اور اختیاری پیج کیش خالی کرنا۔"
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

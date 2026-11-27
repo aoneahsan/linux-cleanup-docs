@@ -1,7 +1,6 @@
 ---
 title: Удаление
 description: "Полное удаление linux-cleanup: пакета, псевдонима оболочки, записи cron, а также журналов и записей сеансов."
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

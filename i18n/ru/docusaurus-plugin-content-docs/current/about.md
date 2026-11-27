@@ -1,7 +1,6 @@
 ---
 title: О проекте
 description: Кто создал linux-cleanup, на каких принципах он построен, под какой лицензией выходит и как связаться или внести вклад.
-tags: [about, author, licence, contributing, credits]
 sidebar_position: 95
 ---
 

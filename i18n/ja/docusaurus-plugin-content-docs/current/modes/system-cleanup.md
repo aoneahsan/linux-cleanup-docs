@@ -1,7 +1,6 @@
 ---
 title: システムのクリーンアップ（sudo）
 description: sudo を使うシステムモード。apt、ジャーナル、Snap、カーネルの一覧、/tmp の古いファイル、任意のページキャッシュの解放。
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 

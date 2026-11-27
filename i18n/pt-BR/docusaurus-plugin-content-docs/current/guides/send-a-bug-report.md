@@ -1,7 +1,6 @@
 ---
 title: Enviar um relatório de bug
 description: Como reportar um bug do linux-cleanup — criar um pacote de depuração, o que um pacote de falha contém, o que revisar antes de enviar e para onde enviar.
-tags: [guide, bug-report, feedback, debug-bundle, crash, privacy]
 sidebar_position: 3
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: الجولة الموجّهة (الافتراضية)
 description: "الوضع الافتراضي في linux-cleanup: عشر خطوات موجّهة عبر كل فئات التنظيف، مع سؤال قبل كل منها، ومجموع متراكم، وتقرير جلسة بصيغة JSON."
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

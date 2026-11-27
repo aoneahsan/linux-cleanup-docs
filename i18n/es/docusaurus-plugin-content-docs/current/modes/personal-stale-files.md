@@ -1,7 +1,6 @@
 ---
 title: Archivos personales sin uso
 description: El modo solo interactivo que busca archivos grandes y sin usar desde hace tiempo en ~/Downloads y en raíces sin protección configuradas.
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

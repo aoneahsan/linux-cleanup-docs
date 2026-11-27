@@ -1,7 +1,6 @@
 ---
 title: پرانے node_modules ڈھونڈیں
 description: N یا زیادہ دن سے نہ چھوئے گئے پروجیکٹس میں node_modules فولڈرز ڈھونڈیں اور انٹرایکٹو طور پر حذف کریں۔ ڈویلپر کی مشین پر اکثر سب سے زیادہ جگہ یہیں سے ملتی ہے۔
-tags: [node-modules, projects, interactive, disk-space, modes]
 sidebar_position: 8
 ---
 

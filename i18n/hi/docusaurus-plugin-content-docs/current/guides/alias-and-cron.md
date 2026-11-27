@@ -1,7 +1,6 @@
 ---
 title: शेल एलियास और साप्ताहिक cron
 description: cleanup शेल एलियास और हर हफ़्ते अपने आप चलने वाली पूरी तरह सुरक्षित सफ़ाई इंस्टॉल करें, हर एक क्या लिखता है, और उन्हें फिर कैसे हटाएँ।
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

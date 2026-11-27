@@ -1,7 +1,6 @@
 ---
 title: Safety guards
 description: The four independent gates a path must clear before linux-cleanup deletes it — the path allowlist, the staleness gate, interactive-only personal modes, and sudo confinement.
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

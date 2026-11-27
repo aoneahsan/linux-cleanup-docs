@@ -1,7 +1,6 @@
 ---
 title: 安全防护
 description: linux-cleanup 删除路径前必须通过的四道独立关卡：路径白名单、闲置阈值、仅限交互的个人模式，以及 sudo 限制。
-tags: [safety, allowlist, staleness, guards, design]
 sidebar_position: 3
 ---
 

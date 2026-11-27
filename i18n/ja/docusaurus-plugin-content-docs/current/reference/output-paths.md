@@ -1,7 +1,6 @@
 ---
 title: 出力先のパス
 description: linux-cleanup がログ、JSON のセッション記録、デバッグ用バンドル、クラッシュ用バンドルを書く場所。構成、インストール方法ごとの既定値、保持期間、権限。
-tags: [output, paths, logs, reports, feedback, retention, reference]
 sidebar_position: 5
 ---
 

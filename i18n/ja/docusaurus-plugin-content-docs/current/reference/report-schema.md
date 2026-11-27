@@ -1,7 +1,6 @@
 ---
 title: レポートのスキーマ
 description: linux-cleanup のガイド付きの手順が書き出す JSON の構造。credits、meta、disk、memory、steps、totals。
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

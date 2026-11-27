@@ -1,7 +1,6 @@
 ---
 title: 未完成 / 无主的下载
 description: 查找并删除被放弃的未完成下载文件——.crdownload、.part 和 .fdmdownload——它们是浏览器和下载管理器传输中断后留下的。
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

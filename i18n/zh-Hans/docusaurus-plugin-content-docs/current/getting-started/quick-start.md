@@ -1,7 +1,6 @@
 ---
 title: 快速开始
 description: 大约十分钟完成第一次 linux-cleanup 会话——验证防护、只读检查，然后运行引导流程并阅读报告。
-tags: [quick-start, tutorial, walkthrough, first-run, scan]
 sidebar_position: 3
 ---
 

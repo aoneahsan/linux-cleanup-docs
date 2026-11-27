@@ -1,7 +1,6 @@
 ---
 title: ایگزٹ کوڈز
 description: linux-cleanup کے ہر ایگزٹ کوڈ کا مطلب، کون سے خود بخود کریش بنڈل بناتے ہیں، اور اسکرپٹ یا cron جاب میں ان کی بنیاد پر کیسے شاخ بنائیں۔
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

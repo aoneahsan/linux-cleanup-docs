@@ -1,7 +1,6 @@
 ---
 title: 主目录检查
 description: 只读列出主目录中最大的 20 个条目，无论 linux-cleanup 能否清理它们——这是弄清磁盘到底被谁占用的最快方法。
-tags: [audit, disk-usage, read-only, home, modes]
 sidebar_position: 13
 ---
 

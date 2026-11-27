@@ -1,7 +1,6 @@
 ---
 title: 报告结构
 description: linux-cleanup 引导流程写入的 JSON 结构，包含 credits、meta、disk、memory、steps 和 totals。
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

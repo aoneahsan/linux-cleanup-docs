@@ -1,7 +1,6 @@
 ---
 title: انوائرنمنٹ ویری ایبلز
 description: linux-cleanup جو بھی انوائرنمنٹ ویری ایبل پڑھتا ہے، ان کا ڈیفالٹ اور اثر — آؤٹ پٹ فولڈر بدلنا، رنگوں کا کنٹرول اور XDG کنفیگ کی تلاش۔
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

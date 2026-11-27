@@ -1,7 +1,6 @@
 ---
 title: Schéma du rapport
 description: La structure JSON qu’écrit le parcours guidé de linux-cleanup, avec credits, meta, disk, memory, steps et totals.
-tags: [json, schema, reports, parsing, jq, reference]
 sidebar_position: 7
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: linux-cleanup
 description: أداة سطر أوامر مكتوبة بلغة Bash تستعيد مساحة القرص على Linux بحذف ذاكرة التخزين المؤقت القابلة لإعادة الإنشاء حذفًا دائمًا، خلف قائمة مسارات مسموحة وحد للخمول وتأكيد تفاعلي.
-tags: [linux, cleanup, disk-space, cli, bash, overview]
 slug: /
 sidebar_label: مقدمة
 sidebar_position: 1

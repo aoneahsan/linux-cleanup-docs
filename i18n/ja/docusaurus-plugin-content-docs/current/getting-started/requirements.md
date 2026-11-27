@@ -1,7 +1,6 @@
 ---
 title: 動作要件
 description: linux-cleanup の実行に必要なもの（bash 4 以上、GNU coreutils、Linux のみ）と、レポートの書き出しやビジュアルメニューを使えるようにする任意の依存関係。
-tags: [requirements, dependencies, installation, jq, whiptail]
 sidebar_position: 1
 ---
 

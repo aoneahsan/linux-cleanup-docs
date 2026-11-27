@@ -1,7 +1,6 @@
 ---
 title: Passeio guiado (padrão)
 description: O modo padrão do linux-cleanup — dez etapas guiadas por todas as categorias de limpeza, com pergunta antes de cada uma, total acumulado e relatório JSON da sessão.
-tags: [walkthrough, default, interactive, guided, modes]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: رموز الخروج
 description: ما يعنيه كل رمز خروج في linux-cleanup، وأيها يُنشئ حزمة انهيار تلقائيًا، وكيف يُبنى عليها تفرّع في برنامج نصي أو مهمة cron.
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

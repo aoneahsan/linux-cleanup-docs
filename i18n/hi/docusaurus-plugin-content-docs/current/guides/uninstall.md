@@ -1,7 +1,6 @@
 ---
 title: अनइंस्टॉल
 description: linux-cleanup को पूरी तरह हटाएँ — पैकेज, शेल एलियास, cron प्रविष्टि, और उसके लॉग व सत्र रिकॉर्ड।
-tags: [guide, uninstall, remove, cleanup, cron, alias]
 sidebar_position: 4
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 诊断
 description: 找出已安装在磁盘上、却没有写入 shell 初始化的运行时——nvm、pnpm、bun、deno、cargo——并在您确认后追加标准的初始化代码块。只追加。
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

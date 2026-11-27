@@ -1,7 +1,6 @@
 ---
 title: What it deletes
 description: The Linux cleanup modes and their target paths, with the difference between routine caches, system work and personal files.
-tags: [safety, deletion, targets, caches, disk-space]
 sidebar_position: 1
 ---
 

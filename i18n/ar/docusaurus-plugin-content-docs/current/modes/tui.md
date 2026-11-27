@@ -1,7 +1,6 @@
 ---
 title: TUI (القائمة المرئية)
 description: القائمة المرئية العاملة بـ whiptail أو dialog والمضافة في linux-cleanup 1.3.0، مع العودة بسلاسة إلى قائمة سطر الأوامر حين لا يتوفر أيهما.
-tags: [tui, whiptail, dialog, visual, menu, modes]
 sidebar_position: 5
 ---
 

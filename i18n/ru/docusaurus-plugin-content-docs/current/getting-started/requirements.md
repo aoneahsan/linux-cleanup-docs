@@ -1,7 +1,6 @@
 ---
 title: Требования
 description: Что нужно linux-cleanup для работы — bash 4+, GNU coreutils, только Linux — и необязательные зависимости, которые открывают экспорт отчётов и визуальное меню.
-tags: [requirements, dependencies, installation, jq, whiptail]
 sidebar_position: 1
 ---
 

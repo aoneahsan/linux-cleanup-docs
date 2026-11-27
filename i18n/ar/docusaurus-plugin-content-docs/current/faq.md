@@ -1,7 +1,6 @@
 ---
 title: الأسئلة الشائعة
 description: إجابات عن مسارات linux-cleanup، وفحص الإصدارات، والتشغيل التجريبي، والحذف الدائم، ودعم التوزيعات.
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

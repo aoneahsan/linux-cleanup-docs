@@ -1,7 +1,6 @@
 ---
 title: Переменные окружения
 description: "Все переменные окружения, которые читает linux-cleanup, с их значениями по умолчанию и действием: переопределение каталогов вывода, управление цветом и поиск настроек XDG."
-tags: [environment, variables, configuration, no-color, xdg, reference]
 sidebar_position: 4
 ---
 

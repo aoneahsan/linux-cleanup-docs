@@ -1,7 +1,6 @@
 ---
 title: Коды выхода
 description: Что означает каждый код выхода linux-cleanup, какие из них автоматически создают пакет сбоя и как ветвиться по ним в скрипте или задании cron.
-tags: [exit-codes, scripting, cron, crash-bundle, reference]
 sidebar_position: 6
 ---
 

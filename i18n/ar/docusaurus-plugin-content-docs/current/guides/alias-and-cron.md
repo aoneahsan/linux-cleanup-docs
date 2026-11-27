@@ -1,7 +1,6 @@
 ---
 title: الاسم المستعار للصدفة وcron الأسبوعي
 description: تثبيت الاسم المستعار cleanup وتشغيل آلي أسبوعي للتنظيف الآمن بالكامل، وما يكتبه كل منهما، وكيفية إزالتهما مجددًا.
-tags: [guide, alias, cron, automation, scheduling, setup]
 sidebar_position: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Частые вопросы
 description: Ответы о путях linux-cleanup, проверке выпусков, пробных запусках, безвозвратном удалении и поддержке дистрибутивов.
-tags: [faq, questions, safety, privacy, licence]
 sidebar_position: 93
 ---
 

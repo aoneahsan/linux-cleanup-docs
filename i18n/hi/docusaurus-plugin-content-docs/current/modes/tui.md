@@ -1,7 +1,6 @@
 ---
 title: TUI (विज़ुअल मेन्यू)
 description: linux-cleanup 1.3.0 में आया whiptail या dialog से चलने वाला विज़ुअल मेन्यू, जो दोनों न होने पर CLI मेन्यू पर लौट जाता है।
-tags: [tui, whiptail, dialog, visual, menu, modes]
 sidebar_position: 5
 ---
 

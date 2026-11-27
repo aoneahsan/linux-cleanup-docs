@@ -1,7 +1,6 @@
 ---
 title: スキャン（読み取り専用）
 description: ファイルを削除せずに、キャッシュのルート、途中のダウンロード、そのほかの Linux のクリーンアップ候補を確認します。
-tags: [scan, read-only, audit, preview, modes]
 sidebar_position: 3
 ---
 

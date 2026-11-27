@@ -1,7 +1,6 @@
 ---
 title: 报告
 description: 引导流程可以写一份 JSON 会话记录。可以列出、查看、转换为 Markdown 或 HTML，并导出这些记录。
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

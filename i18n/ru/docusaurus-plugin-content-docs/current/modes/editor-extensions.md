@@ -1,7 +1,6 @@
 ---
 title: Расширения редакторов
 description: Удаление вытесненных версий расширений VS Code и Cursor — старых копий, остающихся после обновления расширения, — с проверкой вытеснения и порогом простоя.
-tags: [vscode, cursor, extensions, editor, modes]
 sidebar_position: 11
 ---
 

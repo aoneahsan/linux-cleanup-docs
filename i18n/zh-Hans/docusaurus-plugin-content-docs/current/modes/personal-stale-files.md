@@ -1,7 +1,6 @@
 ---
 title: 长期未用的个人文件
 description: 仅限交互式的模式，在 ~/Downloads 和已配置的未受保护根目录中查找体积大、长期未用的文件。
-tags: [personal, downloads, desktop, interactive, stale, modes]
 sidebar_position: 9
 ---
 

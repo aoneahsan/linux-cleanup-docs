@@ -1,7 +1,6 @@
 ---
 title: डॉक्टर
 description: डिस्क पर इंस्टॉल पर शेल इनिट से ग़ायब रनटाइम — nvm, pnpm, bun, deno, cargo — पहचानें और आपकी पुष्टि पर मानक इनिट ब्लॉक जोड़ें। केवल जोड़ता है।
-tags: [doctor, repair, shell, bashrc, nvm, pnpm, bun, deno, cargo, modes]
 sidebar_position: 14
 ---
 

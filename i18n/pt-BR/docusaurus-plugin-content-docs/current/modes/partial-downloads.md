@@ -1,7 +1,6 @@
 ---
 title: Downloads incompletos ou órfãos
 description: Encontre e remova arquivos de downloads incompletos abandonados — .crdownload, .part e .fdmdownload — deixados por transferências interrompidas de navegadores e gerenciadores de download.
-tags: [partials, downloads, orphan, interactive, modes]
 sidebar_position: 10
 ---
 

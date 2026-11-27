@@ -1,7 +1,6 @@
 ---
 title: 復旧
 description: linux-cleanup で意図しない削除が起きたときにすること。手元のログを確認し、バックアップや入手元から戻し、復旧が重要ならディスクへの書き込みを避けます。
-tags: [recovery, data-loss, restore, undo, logs, reports]
 sidebar_position: 91
 ---
 

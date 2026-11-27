@@ -1,7 +1,6 @@
 ---
 title: Reports
 description: The guided walkthrough can write a JSON session record. List, view, convert to Markdown or HTML, and export those records.
-tags: [reports, json, export, markdown, html, jq, modes]
 sidebar_position: 15
 ---
 

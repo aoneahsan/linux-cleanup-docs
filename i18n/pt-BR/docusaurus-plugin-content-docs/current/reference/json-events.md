@@ -1,7 +1,6 @@
 ---
 title: Eventos legíveis por máquina
 description: Eventos NDJSON da versão 1 para verificações locais e execuções totalmente seguras não interativas.
-tags: [json, events, scan, dry-run, reference]
 sidebar_position: 8
 ---
 

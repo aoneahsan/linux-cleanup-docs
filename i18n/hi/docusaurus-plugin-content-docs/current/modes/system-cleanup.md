@@ -1,7 +1,6 @@
 ---
 title: सिस्टम सफ़ाई (sudo)
 description: "sudo वाला सिस्टम मोड: apt, जर्नल, Snap, कर्नेल सूची, /tmp की पुरानी फ़ाइलें और वैकल्पिक पेज-कैश खाली करना।"
-tags: [system, sudo, apt, journal, snap, kernel, tmp, modes]
 sidebar_position: 7
 ---
 
