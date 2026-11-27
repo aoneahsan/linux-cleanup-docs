@@ -9,6 +9,7 @@ import rehypeLinkLaw from './src/data/linkLaw';
 import OWNER from './src/data/owner-profile.json';
 import { LOCALES } from './src/data/locales';
 import ecosystemPages from './src/plugins/ecosystem';
+import { robotsSitemaps, withAlternates } from './src/plugins/sitemapAlternates';
 import { missingPages } from './src/data/localeReady';
 
 // ---------------------------------------------------------------------------
@@ -77,7 +78,11 @@ const config: Config = {
   },
   // Relative to the site folder, never require.resolve(): a resolved path would ship this machine's folders.
   clientModules: ['./src/clientModules/siteChrome.ts', './src/clientModules/scriptFont.ts'],
-  plugins: [noLocalPaths, ecosystemPages],
+  plugins: [
+    noLocalPaths,
+    ecosystemPages,
+    robotsSitemaps(READY.map((l) => l.code)),
+  ],
   title: 'linux-cleanup',
   tagline:
     'Preview Linux cleanup paths before permanent removal.',
@@ -264,6 +269,10 @@ const config: Config = {
           changefreq: 'weekly',
           priority: 0.7,
           lastmod: 'date',
+          createSitemapItems: withAlternates(
+            READY.map((l) => l.code),
+            (code) => LOCALES.find((l) => l.code === code)?.htmlLang ?? code,
+          ),
         },
         ...(gaMeasurementId ? { gtag: { trackingID: gaMeasurementId, anonymizeIP: true } } : {}),
       } satisfies Preset.Options,
