@@ -1,16 +1,22 @@
 # linux-cleanup-docs — agent guide
 
+| Context | Value |
+|---|---|
+| Last optimized | 2026-11-27 |
+| Next routine optimization eligible | 2026-12-27 |
+| Guide bytes | 7,318 B |
+| Covered subtree | This repository; parent linux-cleanup-root measured separately |
+| Method | Due review: compact guidance kept, stale release and language facts corrected, AGENTS mirror differs only in its H1 |
+| Fleet record | /home/ahsan/Documents/01-code/docs/tracking/project-context-budget-tracker.json |
+
 <!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
 
-**Production project since 2026-11-10.** The site describes CLI 2.1.1 (published 2026-11-22) and the desktop app; the 2.x rewrite passed
+**Production project since 2026-11-10.** Ten locales since 1.2.0 (2026-11-26): translations in `i18n/<code>/`, every heading pinned to its English slug with `{#slug}`, and a locale builds only when complete (`src/data/localeReady.ts`). The site describes CLI 2.1.1 (published 2026-11-22) and the desktop app; the 2.x rewrite passed
 GATE 4 on 2026-11-21. A new claim follows the published CLI and desktop release only, never unreleased code.
 
 **Mirror of `AGENTS.md`** — byte-identical except the header names. Change one, change both.
 
-**Last Updated:** 2026-11-22
-
-| Context Budget Last Verified | 2026-10-14; next routine pass 2026-11-13. See the workspace context tracker for coverage and byte counts. |
-|---|---|
+**Last Updated:** 2026-11-27
 
 The old docs were fact-checked against 1.4.0, then published with false claims about dry runs and network
 use. Verify every current claim against `../linux-cleanup/`, especially destructive modes.
