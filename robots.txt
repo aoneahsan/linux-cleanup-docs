@@ -60,3 +60,12 @@ User-agent: *
 Allow: /
 
 Sitemap: https://linux-cleanup-docs.aoneahsan.com/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/zh-Hans/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/hi/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/es/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/ar/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/fr/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/pt-BR/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/ru/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/ja/sitemap.xml
+Sitemap: https://linux-cleanup-docs.aoneahsan.com/ur/sitemap.xml
