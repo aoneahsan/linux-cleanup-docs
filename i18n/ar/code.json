@@ -360,5 +360,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "الوسوم",
     "description": "The title of the tag list page"
+  },
+  "apps.title": {
+    "message": "الحصول على linux-cleanup",
+    "description": "/apps page (apps.title)"
+  },
+  "apps.description": {
+    "message": "كل مكان يُنشر فيه linux-cleanup: حزمة npm وتطبيق سطح المكتب والموقع وهذه الوثائق.",
+    "description": "/apps page (apps.description)"
+  },
+  "apps.lead": {
+    "message": "أمر واحد على npm، والتنظيف نفسه في نافذة على سطح المكتب، والموقع الذي يشرحه، وهذه الوثائق على بُعد تبويب.",
+    "description": "/apps page (apps.lead)"
+  },
+  "apps.here": {
+    "message": "هذه الصفحة التي تقرؤها",
+    "description": "/apps page (apps.here)"
+  },
+  "apps.platform.npm.name": {
+    "message": "npm",
+    "description": "/apps page (apps.platform.npm.name)"
+  },
+  "apps.platform.npm.title": {
+    "message": "npx linux-cleanup",
+    "description": "/apps page (apps.platform.npm.title)"
+  },
+  "apps.platform.npm.text": {
+    "message": "أداة التنظيف نفسها: تشغيل مرة واحدة عبر npx، أو تثبيتها ليستخدمها الاسم المستعار وcron الأسبوعي. المعاينة أولًا بـ --dry-run.",
+    "description": "/apps page (apps.platform.npm.text)"
+  },
+  "apps.platform.npm.cta": {
+    "message": "عرض على npm",
+    "description": "/apps page (apps.platform.npm.cta)"
+  },
+  "apps.platform.desktop.name": {
+    "message": "تطبيق سطح المكتب لنظام Linux",
+    "description": "/apps page (apps.platform.desktop.name)"
+  },
+  "apps.platform.desktop.title": {
+    "message": "تطبيق سطح المكتب",
+    "description": "/apps page (apps.platform.desktop.title)"
+  },
+  "apps.platform.desktop.text": {
+    "message": "تنظيف all-safe في نافذة، بصيغة AppImage أو .deb، مع تشغيل تجريبي قبل كل تشغيل حقيقي وإيصال بعده.",
+    "description": "/apps page (apps.platform.desktop.text)"
+  },
+  "apps.platform.desktop.cta": {
+    "message": "تنزيل التطبيق",
+    "description": "/apps page (apps.platform.desktop.cta)"
+  },
+  "apps.platform.web.name": {
+    "message": "موقع linux-cleanup",
+    "description": "/apps page (apps.platform.web.name)"
+  },
+  "apps.platform.web.title": {
+    "message": "الموقع",
+    "description": "/apps page (apps.platform.web.title)"
+  },
+  "apps.platform.web.text": {
+    "message": "ما ينظّفه على Ubuntu وFedora وArch، وما لا يلمسه أبدًا، وكيف تعمل إشعارات التحديث.",
+    "description": "/apps page (apps.platform.web.text)"
+  },
+  "apps.platform.web.cta": {
+    "message": "فتح الموقع",
+    "description": "/apps page (apps.platform.web.cta)"
+  },
+  "apps.platform.docs.name": {
+    "message": "الوثائق",
+    "description": "/apps page (apps.platform.docs.name)"
+  },
+  "apps.platform.docs.title": {
+    "message": "هذه الوثائق",
+    "description": "/apps page (apps.platform.docs.title)"
+  },
+  "apps.platform.docs.text": {
+    "message": "كل قسم يمكنه تنظيفه، والمسارات المحمية، والخيارات، وصيغة التقرير.",
+    "description": "/apps page (apps.platform.docs.text)"
+  },
+  "apps.platform.docs.cta": {
+    "message": "قراءة الوثائق",
+    "description": "/apps page (apps.platform.docs.cta)"
+  },
+  "sitemap.title": {
+    "message": "خريطة الموقع",
+    "description": "/sitemap page (sitemap.title)"
+  },
+  "sitemap.description": {
+    "message": "كل صفحة من دليل linux-cleanup وكل ملاحظة إصدار، في صفحة واحدة.",
+    "description": "/sitemap page (sitemap.description)"
+  },
+  "sitemap.searchLabel": {
+    "message": "البحث عن صفحة",
+    "description": "/sitemap page (sitemap.searchLabel)"
+  },
+  "sitemap.searchHint": {
+    "message": "تشغيل تجريبي، node_modules، خيارات…",
+    "description": "/sitemap page (sitemap.searchHint)"
+  },
+  "sitemap.none": {
+    "message": "لا توجد صفحة مطابقة. تجربة كلمة أقصر.",
+    "description": "/sitemap page (sitemap.none)"
+  },
+  "sitemap.start": {
+    "message": "ابدأ من هنا",
+    "description": "/sitemap page (sitemap.start)"
+  },
+  "sitemap.releases": {
+    "message": "ملاحظات الإصدار",
+    "description": "/sitemap page (sitemap.releases)"
   }
 }

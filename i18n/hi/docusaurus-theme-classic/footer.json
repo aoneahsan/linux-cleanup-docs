@@ -110,5 +110,9 @@
   "copyright": {
     "message": "linux-cleanup — Zaions टीम ने प्यार से बनाया · © 2026 linux-cleanup · MIT लाइसेंस, बिना वारंटी: यह फ़ाइलें हटाता है।",
     "description": "The footer copyright"
+  },
+  "link.item.label.Site map": {
+    "message": "साइट मैप",
+    "description": "The label of footer link with label=Site map linking to /sitemap"
   }
 }

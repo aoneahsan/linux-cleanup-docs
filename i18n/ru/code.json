@@ -360,5 +360,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "Теги",
     "description": "The title of the tag list page"
+  },
+  "apps.title": {
+    "message": "Скачать linux-cleanup",
+    "description": "/apps page (apps.title)"
+  },
+  "apps.description": {
+    "message": "Все места, где выходит linux-cleanup: пакет npm, приложение для компьютера, сайт и эта документация.",
+    "description": "/apps page (apps.description)"
+  },
+  "apps.lead": {
+    "message": "Одна команда в npm, та же очистка в окне приложения, сайт, который её объясняет, и эта документация в соседней вкладке.",
+    "description": "/apps page (apps.lead)"
+  },
+  "apps.here": {
+    "message": "Вы здесь",
+    "description": "/apps page (apps.here)"
+  },
+  "apps.platform.npm.name": {
+    "message": "npm",
+    "description": "/apps page (apps.platform.npm.name)"
+  },
+  "apps.platform.npm.title": {
+    "message": "npx linux-cleanup",
+    "description": "/apps page (apps.platform.npm.title)"
+  },
+  "apps.platform.npm.text": {
+    "message": "Сам очиститель: запустите его один раз через npx или установите, и пусть его используют алиас и еженедельный cron. Сначала просмотрите всё с --dry-run.",
+    "description": "/apps page (apps.platform.npm.text)"
+  },
+  "apps.platform.npm.cta": {
+    "message": "Открыть в npm",
+    "description": "/apps page (apps.platform.npm.cta)"
+  },
+  "apps.platform.desktop.name": {
+    "message": "Настольное приложение для Linux",
+    "description": "/apps page (apps.platform.desktop.name)"
+  },
+  "apps.platform.desktop.title": {
+    "message": "Приложение для компьютера",
+    "description": "/apps page (apps.platform.desktop.title)"
+  },
+  "apps.platform.desktop.text": {
+    "message": "Очистка all-safe в окне, в виде AppImage или .deb, с пробным запуском перед каждым настоящим и квитанцией после.",
+    "description": "/apps page (apps.platform.desktop.text)"
+  },
+  "apps.platform.desktop.cta": {
+    "message": "Скачать приложение",
+    "description": "/apps page (apps.platform.desktop.cta)"
+  },
+  "apps.platform.web.name": {
+    "message": "Сайт linux-cleanup",
+    "description": "/apps page (apps.platform.web.name)"
+  },
+  "apps.platform.web.title": {
+    "message": "Сайт",
+    "description": "/apps page (apps.platform.web.title)"
+  },
+  "apps.platform.web.text": {
+    "message": "Что он очищает в Ubuntu, Fedora и Arch, чего никогда не касается и как работают уведомления об обновлениях.",
+    "description": "/apps page (apps.platform.web.text)"
+  },
+  "apps.platform.web.cta": {
+    "message": "Открыть сайт",
+    "description": "/apps page (apps.platform.web.cta)"
+  },
+  "apps.platform.docs.name": {
+    "message": "Документация",
+    "description": "/apps page (apps.platform.docs.name)"
+  },
+  "apps.platform.docs.title": {
+    "message": "Эта документация",
+    "description": "/apps page (apps.platform.docs.title)"
+  },
+  "apps.platform.docs.text": {
+    "message": "Каждый раздел, который он может очистить, защищённые пути, параметры и формат отчёта.",
+    "description": "/apps page (apps.platform.docs.text)"
+  },
+  "apps.platform.docs.cta": {
+    "message": "Читать документацию",
+    "description": "/apps page (apps.platform.docs.cta)"
+  },
+  "sitemap.title": {
+    "message": "Карта сайта",
+    "description": "/sitemap page (sitemap.title)"
+  },
+  "sitemap.description": {
+    "message": "Все страницы руководства linux-cleanup и все заметки о выпусках на одной странице.",
+    "description": "/sitemap page (sitemap.description)"
+  },
+  "sitemap.searchLabel": {
+    "message": "Найти страницу",
+    "description": "/sitemap page (sitemap.searchLabel)"
+  },
+  "sitemap.searchHint": {
+    "message": "пробный запуск, node_modules, параметры…",
+    "description": "/sitemap page (sitemap.searchHint)"
+  },
+  "sitemap.none": {
+    "message": "Подходящих страниц нет. Попробуйте слово покороче.",
+    "description": "/sitemap page (sitemap.none)"
+  },
+  "sitemap.start": {
+    "message": "С чего начать",
+    "description": "/sitemap page (sitemap.start)"
+  },
+  "sitemap.releases": {
+    "message": "Заметки о выпусках",
+    "description": "/sitemap page (sitemap.releases)"
   }
 }

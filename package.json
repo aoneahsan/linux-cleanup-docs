@@ -1,6 +1,6 @@
 {
   "name": "linux-cleanup-docs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "description": "Public documentation site for linux-cleanup, a Bash CLI that reclaims disk space on Linux by deleting regenerable caches behind allowlist, staleness, and confirmation guards. Built with Docusaurus, deployed to GitHub Pages.",
   "author": {

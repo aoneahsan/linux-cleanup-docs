@@ -12,6 +12,7 @@ import ecosystemPages from './src/plugins/ecosystem';
 import { robotsSitemaps, withAlternates } from './src/plugins/sitemapAlternates';
 import { missingPages } from './src/data/localeReady';
 import faqJsonLd from './src/plugins/faqJsonLd';
+import sitemapPage from './src/plugins/sitemapPage';
 import REMOVED_PATHS from './src/data/seo-removed-paths.json';
 
 // ---------------------------------------------------------------------------
@@ -85,6 +86,7 @@ const config: Config = {
     ecosystemPages,
     robotsSitemaps(READY.map((l) => l.code)),
     faqJsonLd,
+    sitemapPage,
     // Tag pages are switched off (owner, 2026-11-27: thin lists Google crawled and left out). Each old tag URL, in
     // every locale, redirects to the page that carried the tag; GitHub Pages cannot send a 301, so the plugin writes
     // a canonical + meta-refresh page, which search engines treat as a permanent redirect.
@@ -387,6 +389,7 @@ const config: Config = {
             { label: 'Report schema', to: '/reference/report-schema' },
             { label: 'Changelog', to: '/changelog' },
             { label: 'Release notes', to: '/feed' },
+            { label: 'Site map', to: '/sitemap' },
           ],
         },
         {

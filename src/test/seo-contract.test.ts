@@ -99,6 +99,23 @@ describe('docs build output', () => {
     expect(missing).toEqual([]);
   });
 
+  it('speaks each locale on the React pages too (/apps), with its ItemList', () => {
+    const english = /Download the app|Read the docs|You're reading it/;
+    const apps = pages.filter((p) => /(^|\/)apps\/index\.html$/.test(p.rel));
+    expect(apps.length).toBe(LOCALES.length + 1);
+    for (const a of apps) {
+      expect(a.text, a.rel).toContain('"ItemList"');
+      if (a.rel !== 'apps/index.html') expect(english.test(a.text.replace(/<script[\s\S]*?<\/script>/g, '')), a.rel).toBe(false);
+    }
+  });
+
+  it('ships the human site map (/sitemap/) in every locale, linked to every page', () => {
+    const maps = pages.filter((p) => /(^|\/)sitemap\/index\.html$/.test(p.rel));
+    expect(maps.length).toBe(LOCALES.length + 1);
+    const en = maps.find((m) => m.rel === 'sitemap/index.html')?.text ?? '';
+    expect((en.match(/href="\/[^"]*\/"/g) ?? []).length).toBeGreaterThan(80);
+  });
+
   it('keeps the slashed URL form and the link checker in the config', () => {
     const config = readFileSync(path.join(ROOT, 'docusaurus.config.ts'), 'utf8');
     expect(config).toMatch(/^\s*trailingSlash: true,/m);

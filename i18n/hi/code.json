@@ -360,5 +360,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "टैग",
     "description": "The title of the tag list page"
+  },
+  "apps.title": {
+    "message": "linux-cleanup पाएँ",
+    "description": "/apps page (apps.title)"
+  },
+  "apps.description": {
+    "message": "linux-cleanup जहाँ-जहाँ रिलीज़ होता है: npm पैकेज, डेस्कटॉप ऐप, वेबसाइट और ये दस्तावेज़।",
+    "description": "/apps page (apps.description)"
+  },
+  "apps.lead": {
+    "message": "npm पर एक कमांड, डेस्कटॉप विंडो में वही सफ़ाई, उसे समझाने वाली वेबसाइट, और एक टैब दूर ये दस्तावेज़।",
+    "description": "/apps page (apps.lead)"
+  },
+  "apps.here": {
+    "message": "आप यही पढ़ रहे हैं",
+    "description": "/apps page (apps.here)"
+  },
+  "apps.platform.npm.name": {
+    "message": "npm",
+    "description": "/apps page (apps.platform.npm.name)"
+  },
+  "apps.platform.npm.title": {
+    "message": "npx linux-cleanup",
+    "description": "/apps page (apps.platform.npm.title)"
+  },
+  "apps.platform.npm.text": {
+    "message": "क्लीनर ख़ुद: npx से एक बार चलाएँ, या इंस्टॉल करें और alias व साप्ताहिक cron को इसका इस्तेमाल करने दें। पहले --dry-run से सब कुछ देख लें।",
+    "description": "/apps page (apps.platform.npm.text)"
+  },
+  "apps.platform.npm.cta": {
+    "message": "npm पर देखें",
+    "description": "/apps page (apps.platform.npm.cta)"
+  },
+  "apps.platform.desktop.name": {
+    "message": "Linux के लिए डेस्कटॉप ऐप",
+    "description": "/apps page (apps.platform.desktop.name)"
+  },
+  "apps.platform.desktop.title": {
+    "message": "डेस्कटॉप ऐप",
+    "description": "/apps page (apps.platform.desktop.title)"
+  },
+  "apps.platform.desktop.text": {
+    "message": "all-safe सफ़ाई एक विंडो में, AppImage या .deb के रूप में, हर असली रन से पहले ड्राई रन और उसके बाद रसीद के साथ।",
+    "description": "/apps page (apps.platform.desktop.text)"
+  },
+  "apps.platform.desktop.cta": {
+    "message": "ऐप डाउनलोड करें",
+    "description": "/apps page (apps.platform.desktop.cta)"
+  },
+  "apps.platform.web.name": {
+    "message": "linux-cleanup वेबसाइट",
+    "description": "/apps page (apps.platform.web.name)"
+  },
+  "apps.platform.web.title": {
+    "message": "वेबसाइट",
+    "description": "/apps page (apps.platform.web.title)"
+  },
+  "apps.platform.web.text": {
+    "message": "यह Ubuntu, Fedora और Arch पर क्या साफ़ करता है, किसे कभी नहीं छूता, और अपडेट सूचनाएँ कैसे काम करती हैं।",
+    "description": "/apps page (apps.platform.web.text)"
+  },
+  "apps.platform.web.cta": {
+    "message": "वेबसाइट खोलें",
+    "description": "/apps page (apps.platform.web.cta)"
+  },
+  "apps.platform.docs.name": {
+    "message": "दस्तावेज़",
+    "description": "/apps page (apps.platform.docs.name)"
+  },
+  "apps.platform.docs.title": {
+    "message": "ये दस्तावेज़",
+    "description": "/apps page (apps.platform.docs.title)"
+  },
+  "apps.platform.docs.text": {
+    "message": "हर वह हिस्सा जिसे यह साफ़ कर सकता है, सुरक्षित पाथ, विकल्प और रिपोर्ट का फ़ॉर्मैट।",
+    "description": "/apps page (apps.platform.docs.text)"
+  },
+  "apps.platform.docs.cta": {
+    "message": "दस्तावेज़ पढ़ें",
+    "description": "/apps page (apps.platform.docs.cta)"
+  },
+  "sitemap.title": {
+    "message": "साइट मैप",
+    "description": "/sitemap page (sitemap.title)"
+  },
+  "sitemap.description": {
+    "message": "linux-cleanup मैनुअल का हर पेज और हर रिलीज़ नोट, एक ही पेज पर।",
+    "description": "/sitemap page (sitemap.description)"
+  },
+  "sitemap.searchLabel": {
+    "message": "पेज खोजें",
+    "description": "/sitemap page (sitemap.searchLabel)"
+  },
+  "sitemap.searchHint": {
+    "message": "ड्राई रन, node_modules, विकल्प…",
+    "description": "/sitemap page (sitemap.searchHint)"
+  },
+  "sitemap.none": {
+    "message": "कोई पेज मेल नहीं खाता। कोई छोटा शब्द आज़माएँ।",
+    "description": "/sitemap page (sitemap.none)"
+  },
+  "sitemap.start": {
+    "message": "यहाँ से शुरू करें",
+    "description": "/sitemap page (sitemap.start)"
+  },
+  "sitemap.releases": {
+    "message": "रिलीज़ नोट",
+    "description": "/sitemap page (sitemap.releases)"
   }
 }

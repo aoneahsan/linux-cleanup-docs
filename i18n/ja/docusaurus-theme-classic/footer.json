@@ -110,5 +110,9 @@
   "copyright": {
     "message": "linux-cleanup — Zaions チームが心を込めて開発 · © 2026 linux-cleanup · MIT ライセンス、無保証：ファイルを削除するツールです。",
     "description": "The footer copyright"
+  },
+  "link.item.label.Site map": {
+    "message": "サイトマップ",
+    "description": "The label of footer link with label=Site map linking to /sitemap"
   }
 }

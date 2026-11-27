@@ -360,5 +360,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "タグ",
     "description": "The title of the tag list page"
+  },
+  "apps.title": {
+    "message": "linux-cleanup を入手",
+    "description": "/apps page (apps.title)"
+  },
+  "apps.description": {
+    "message": "linux-cleanup が公開されているすべての場所です。npm パッケージ、デスクトップアプリ、ウェブサイト、そしてこのドキュメントです。",
+    "description": "/apps page (apps.description)"
+  },
+  "apps.lead": {
+    "message": "npm のコマンド 1 つ、デスクトップのウィンドウで同じクリーンアップ、それを説明するウェブサイト、そしてタブ 1 つ先のこのドキュメントです。",
+    "description": "/apps page (apps.lead)"
+  },
+  "apps.here": {
+    "message": "いまお読みのページです",
+    "description": "/apps page (apps.here)"
+  },
+  "apps.platform.npm.name": {
+    "message": "npm",
+    "description": "/apps page (apps.platform.npm.name)"
+  },
+  "apps.platform.npm.title": {
+    "message": "npx linux-cleanup",
+    "description": "/apps page (apps.platform.npm.title)"
+  },
+  "apps.platform.npm.text": {
+    "message": "クリーナー本体です。npx で一度実行するか、インストールしてエイリアスと毎週の cron から使います。まず --dry-run ですべてを確認してください。",
+    "description": "/apps page (apps.platform.npm.text)"
+  },
+  "apps.platform.npm.cta": {
+    "message": "npm で見る",
+    "description": "/apps page (apps.platform.npm.cta)"
+  },
+  "apps.platform.desktop.name": {
+    "message": "Linux 用デスクトップアプリ",
+    "description": "/apps page (apps.platform.desktop.name)"
+  },
+  "apps.platform.desktop.title": {
+    "message": "デスクトップアプリ",
+    "description": "/apps page (apps.platform.desktop.title)"
+  },
+  "apps.platform.desktop.text": {
+    "message": "all-safe のクリーンアップをウィンドウで実行します。AppImage または .deb で、毎回の本実行の前にドライランを行い、実行後に記録を残します。",
+    "description": "/apps page (apps.platform.desktop.text)"
+  },
+  "apps.platform.desktop.cta": {
+    "message": "アプリをダウンロード",
+    "description": "/apps page (apps.platform.desktop.cta)"
+  },
+  "apps.platform.web.name": {
+    "message": "linux-cleanup のウェブサイト",
+    "description": "/apps page (apps.platform.web.name)"
+  },
+  "apps.platform.web.title": {
+    "message": "ウェブサイト",
+    "description": "/apps page (apps.platform.web.title)"
+  },
+  "apps.platform.web.text": {
+    "message": "Ubuntu、Fedora、Arch で何を削除し、何に決して触れないか、そして更新のお知らせの仕組みを説明しています。",
+    "description": "/apps page (apps.platform.web.text)"
+  },
+  "apps.platform.web.cta": {
+    "message": "ウェブサイトを開く",
+    "description": "/apps page (apps.platform.web.cta)"
+  },
+  "apps.platform.docs.name": {
+    "message": "ドキュメント",
+    "description": "/apps page (apps.platform.docs.name)"
+  },
+  "apps.platform.docs.title": {
+    "message": "このドキュメント",
+    "description": "/apps page (apps.platform.docs.title)"
+  },
+  "apps.platform.docs.text": {
+    "message": "削除できる各セクション、保護されたパス、オプション、レポートの形式を説明しています。",
+    "description": "/apps page (apps.platform.docs.text)"
+  },
+  "apps.platform.docs.cta": {
+    "message": "ドキュメントを読む",
+    "description": "/apps page (apps.platform.docs.cta)"
+  },
+  "sitemap.title": {
+    "message": "サイトマップ",
+    "description": "/sitemap page (sitemap.title)"
+  },
+  "sitemap.description": {
+    "message": "linux-cleanup のマニュアルの全ページと、すべてのリリースノートを 1 ページにまとめています。",
+    "description": "/sitemap page (sitemap.description)"
+  },
+  "sitemap.searchLabel": {
+    "message": "ページを探す",
+    "description": "/sitemap page (sitemap.searchLabel)"
+  },
+  "sitemap.searchHint": {
+    "message": "ドライラン、node_modules、オプション…",
+    "description": "/sitemap page (sitemap.searchHint)"
+  },
+  "sitemap.none": {
+    "message": "一致するページがありません。短い語でお試しください。",
+    "description": "/sitemap page (sitemap.none)"
+  },
+  "sitemap.start": {
+    "message": "はじめに",
+    "description": "/sitemap page (sitemap.start)"
+  },
+  "sitemap.releases": {
+    "message": "リリースノート",
+    "description": "/sitemap page (sitemap.releases)"
   }
 }

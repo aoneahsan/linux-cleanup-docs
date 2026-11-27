@@ -360,5 +360,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "apps.title": {
+    "message": "获取 linux-cleanup",
+    "description": "/apps page (apps.title)"
+  },
+  "apps.description": {
+    "message": "从 npm 包、桌面应用、网站到这份文档，linux-cleanup 发布的每个地方都在这里。",
+    "description": "/apps page (apps.description)"
+  },
+  "apps.lead": {
+    "message": "npm 上的一条命令，桌面窗口里的同一套清理，讲解它的网站，还有随时可查的这份文档。",
+    "description": "/apps page (apps.lead)"
+  },
+  "apps.here": {
+    "message": "您正在阅读",
+    "description": "/apps page (apps.here)"
+  },
+  "apps.platform.npm.name": {
+    "message": "npm",
+    "description": "/apps page (apps.platform.npm.name)"
+  },
+  "apps.platform.npm.title": {
+    "message": "npx linux-cleanup",
+    "description": "/apps page (apps.platform.npm.title)"
+  },
+  "apps.platform.npm.text": {
+    "message": "清理工具本身：用 npx 运行一次，或安装后让别名和每周 cron 使用它。先用 --dry-run 预览一切。",
+    "description": "/apps page (apps.platform.npm.text)"
+  },
+  "apps.platform.npm.cta": {
+    "message": "在 npm 上查看",
+    "description": "/apps page (apps.platform.npm.cta)"
+  },
+  "apps.platform.desktop.name": {
+    "message": "Linux 桌面应用",
+    "description": "/apps page (apps.platform.desktop.name)"
+  },
+  "apps.platform.desktop.title": {
+    "message": "桌面应用",
+    "description": "/apps page (apps.platform.desktop.title)"
+  },
+  "apps.platform.desktop.text": {
+    "message": "在窗口中运行 all-safe 清理，提供 AppImage 或 .deb，每次真正运行前都有试运行，运行后附回执。",
+    "description": "/apps page (apps.platform.desktop.text)"
+  },
+  "apps.platform.desktop.cta": {
+    "message": "下载应用",
+    "description": "/apps page (apps.platform.desktop.cta)"
+  },
+  "apps.platform.web.name": {
+    "message": "linux-cleanup 网站",
+    "description": "/apps page (apps.platform.web.name)"
+  },
+  "apps.platform.web.title": {
+    "message": "网站",
+    "description": "/apps page (apps.platform.web.title)"
+  },
+  "apps.platform.web.text": {
+    "message": "它在 Ubuntu、Fedora 和 Arch 上清理什么，从不触碰什么，以及更新通知如何工作。",
+    "description": "/apps page (apps.platform.web.text)"
+  },
+  "apps.platform.web.cta": {
+    "message": "打开网站",
+    "description": "/apps page (apps.platform.web.cta)"
+  },
+  "apps.platform.docs.name": {
+    "message": "文档",
+    "description": "/apps page (apps.platform.docs.name)"
+  },
+  "apps.platform.docs.title": {
+    "message": "这份文档",
+    "description": "/apps page (apps.platform.docs.title)"
+  },
+  "apps.platform.docs.text": {
+    "message": "它能清理的每个部分、受保护的路径、选项和报告格式。",
+    "description": "/apps page (apps.platform.docs.text)"
+  },
+  "apps.platform.docs.cta": {
+    "message": "阅读文档",
+    "description": "/apps page (apps.platform.docs.cta)"
+  },
+  "sitemap.title": {
+    "message": "网站地图",
+    "description": "/sitemap page (sitemap.title)"
+  },
+  "sitemap.description": {
+    "message": "linux-cleanup 手册的每个页面和每条发布说明，都在这一页。",
+    "description": "/sitemap page (sitemap.description)"
+  },
+  "sitemap.searchLabel": {
+    "message": "查找页面",
+    "description": "/sitemap page (sitemap.searchLabel)"
+  },
+  "sitemap.searchHint": {
+    "message": "试运行、node_modules、选项……",
+    "description": "/sitemap page (sitemap.searchHint)"
+  },
+  "sitemap.none": {
+    "message": "没有匹配的页面。请试试更短的词。",
+    "description": "/sitemap page (sitemap.none)"
+  },
+  "sitemap.start": {
+    "message": "从这里开始",
+    "description": "/sitemap page (sitemap.start)"
+  },
+  "sitemap.releases": {
+    "message": "版本说明",
+    "description": "/sitemap page (sitemap.releases)"
   }
 }

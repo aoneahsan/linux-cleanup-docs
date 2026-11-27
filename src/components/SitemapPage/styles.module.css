@@ -1,0 +1,25 @@
+/* /sitemap/ — cards in the docs' own Infima tokens; logical properties so Arabic and Urdu mirror on their own. */
+.lead { max-inline-size: 46rem; font-size: 1.1rem; }
+
+.search { display: grid; gap: .4rem; max-inline-size: 32rem; margin-block: 1.5rem 2rem; font-weight: 600; }
+.search input {
+  min-block-size: 2.75rem; padding-inline: .9rem; font: inherit; font-weight: 400;
+  border: 1px solid var(--ifm-color-emphasis-400); border-radius: .4rem;
+  background: var(--ifm-background-surface-color); color: inherit;
+}
+.search input:focus-visible { outline: 2px solid var(--ifm-color-primary); outline-offset: 2px; }
+
+.group { margin-block-end: 2.5rem; }
+
+.grid {
+  list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+}
+.card {
+  display: grid; align-content: start; gap: .4rem; padding: 1rem 1.1rem; margin: 0;
+  border: 1px solid var(--ifm-color-emphasis-300); border-radius: .5rem;
+  border-inline-start: 4px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+}
+.card p { margin: 0; font-size: .92rem; color: var(--ifm-color-emphasis-800); }
+.title { font-weight: 700; }

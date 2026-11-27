@@ -360,5 +360,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "ٹیگز",
     "description": "The title of the tag list page"
+  },
+  "apps.title": {
+    "message": "linux-cleanup حاصل کریں",
+    "description": "/apps page (apps.title)"
+  },
+  "apps.description": {
+    "message": "وہ تمام جگہیں جہاں linux-cleanup جاری ہوتا ہے: npm پیکیج، ڈیسک ٹاپ ایپ، ویب سائٹ اور یہ دستاویزات۔",
+    "description": "/apps page (apps.description)"
+  },
+  "apps.lead": {
+    "message": "npm پر ایک کمانڈ، ڈیسک ٹاپ ونڈو میں وہی صفائی، اسے سمجھانے والی ویب سائٹ، اور ایک ٹیب کے فاصلے پر یہ دستاویزات۔",
+    "description": "/apps page (apps.lead)"
+  },
+  "apps.here": {
+    "message": "آپ یہی پڑھ رہے ہیں",
+    "description": "/apps page (apps.here)"
+  },
+  "apps.platform.npm.name": {
+    "message": "npm",
+    "description": "/apps page (apps.platform.npm.name)"
+  },
+  "apps.platform.npm.title": {
+    "message": "npx linux-cleanup",
+    "description": "/apps page (apps.platform.npm.title)"
+  },
+  "apps.platform.npm.text": {
+    "message": "کلینر خود: npx سے ایک بار چلائیں، یا انسٹال کریں اور alias اور ہفتہ وار cron کو اسے استعمال کرنے دیں۔ پہلے --dry-run سے سب کچھ دیکھ لیں۔",
+    "description": "/apps page (apps.platform.npm.text)"
+  },
+  "apps.platform.npm.cta": {
+    "message": "npm پر دیکھیں",
+    "description": "/apps page (apps.platform.npm.cta)"
+  },
+  "apps.platform.desktop.name": {
+    "message": "Linux کے لیے ڈیسک ٹاپ ایپ",
+    "description": "/apps page (apps.platform.desktop.name)"
+  },
+  "apps.platform.desktop.title": {
+    "message": "ڈیسک ٹاپ ایپ",
+    "description": "/apps page (apps.platform.desktop.title)"
+  },
+  "apps.platform.desktop.text": {
+    "message": "all-safe صفائی ایک ونڈو میں، AppImage یا .deb کی صورت میں، ہر اصل رن سے پہلے ڈرائی رن اور بعد میں رسید کے ساتھ۔",
+    "description": "/apps page (apps.platform.desktop.text)"
+  },
+  "apps.platform.desktop.cta": {
+    "message": "ایپ ڈاؤن لوڈ کریں",
+    "description": "/apps page (apps.platform.desktop.cta)"
+  },
+  "apps.platform.web.name": {
+    "message": "linux-cleanup ویب سائٹ",
+    "description": "/apps page (apps.platform.web.name)"
+  },
+  "apps.platform.web.title": {
+    "message": "ویب سائٹ",
+    "description": "/apps page (apps.platform.web.title)"
+  },
+  "apps.platform.web.text": {
+    "message": "یہ Ubuntu، Fedora اور Arch پر کیا صاف کرتا ہے، کسے کبھی نہیں چھوتا، اور اپ ڈیٹ کی اطلاعات کیسے کام کرتی ہیں۔",
+    "description": "/apps page (apps.platform.web.text)"
+  },
+  "apps.platform.web.cta": {
+    "message": "ویب سائٹ کھولیں",
+    "description": "/apps page (apps.platform.web.cta)"
+  },
+  "apps.platform.docs.name": {
+    "message": "دستاویزات",
+    "description": "/apps page (apps.platform.docs.name)"
+  },
+  "apps.platform.docs.title": {
+    "message": "یہ دستاویزات",
+    "description": "/apps page (apps.platform.docs.title)"
+  },
+  "apps.platform.docs.text": {
+    "message": "ہر وہ حصہ جسے یہ صاف کر سکتا ہے، محفوظ پاتھ، اختیارات اور رپورٹ کا فارمیٹ۔",
+    "description": "/apps page (apps.platform.docs.text)"
+  },
+  "apps.platform.docs.cta": {
+    "message": "دستاویزات پڑھیں",
+    "description": "/apps page (apps.platform.docs.cta)"
+  },
+  "sitemap.title": {
+    "message": "سائٹ میپ",
+    "description": "/sitemap page (sitemap.title)"
+  },
+  "sitemap.description": {
+    "message": "linux-cleanup دستی کا ہر صفحہ اور ہر ریلیز نوٹ، ایک ہی صفحے پر۔",
+    "description": "/sitemap page (sitemap.description)"
+  },
+  "sitemap.searchLabel": {
+    "message": "صفحہ تلاش کریں",
+    "description": "/sitemap page (sitemap.searchLabel)"
+  },
+  "sitemap.searchHint": {
+    "message": "ڈرائی رن، node_modules، اختیارات…",
+    "description": "/sitemap page (sitemap.searchHint)"
+  },
+  "sitemap.none": {
+    "message": "کوئی صفحہ میل نہیں کھاتا۔ کوئی چھوٹا لفظ آزمائیں۔",
+    "description": "/sitemap page (sitemap.none)"
+  },
+  "sitemap.start": {
+    "message": "یہاں سے شروع کریں",
+    "description": "/sitemap page (sitemap.start)"
+  },
+  "sitemap.releases": {
+    "message": "ریلیز نوٹس",
+    "description": "/sitemap page (sitemap.releases)"
   }
 }

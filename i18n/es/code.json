@@ -360,5 +360,113 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "apps.title": {
+    "message": "Obtener linux-cleanup",
+    "description": "/apps page (apps.title)"
+  },
+  "apps.description": {
+    "message": "Todos los lugares donde se publica linux-cleanup: el paquete de npm, la aplicación de escritorio, el sitio web y esta documentación.",
+    "description": "/apps page (apps.description)"
+  },
+  "apps.lead": {
+    "message": "Un comando en npm, la misma limpieza en una ventana de escritorio, el sitio web que la explica y esta documentación a una pestaña de distancia.",
+    "description": "/apps page (apps.lead)"
+  },
+  "apps.here": {
+    "message": "Usted está aquí",
+    "description": "/apps page (apps.here)"
+  },
+  "apps.platform.npm.name": {
+    "message": "npm",
+    "description": "/apps page (apps.platform.npm.name)"
+  },
+  "apps.platform.npm.title": {
+    "message": "npx linux-cleanup",
+    "description": "/apps page (apps.platform.npm.title)"
+  },
+  "apps.platform.npm.text": {
+    "message": "El limpiador en sí: ejecútelo una vez con npx, o instálelo y deje que el alias y el cron semanal lo usen. Revise todo antes con --dry-run.",
+    "description": "/apps page (apps.platform.npm.text)"
+  },
+  "apps.platform.npm.cta": {
+    "message": "Ver en npm",
+    "description": "/apps page (apps.platform.npm.cta)"
+  },
+  "apps.platform.desktop.name": {
+    "message": "Aplicación de escritorio para Linux",
+    "description": "/apps page (apps.platform.desktop.name)"
+  },
+  "apps.platform.desktop.title": {
+    "message": "La aplicación de escritorio",
+    "description": "/apps page (apps.platform.desktop.title)"
+  },
+  "apps.platform.desktop.text": {
+    "message": "La limpieza all-safe en una ventana, como AppImage o .deb, con una ejecución de prueba antes de cada ejecución real y un comprobante después.",
+    "description": "/apps page (apps.platform.desktop.text)"
+  },
+  "apps.platform.desktop.cta": {
+    "message": "Descargar la aplicación",
+    "description": "/apps page (apps.platform.desktop.cta)"
+  },
+  "apps.platform.web.name": {
+    "message": "Sitio web de linux-cleanup",
+    "description": "/apps page (apps.platform.web.name)"
+  },
+  "apps.platform.web.title": {
+    "message": "El sitio web",
+    "description": "/apps page (apps.platform.web.title)"
+  },
+  "apps.platform.web.text": {
+    "message": "Qué limpia en Ubuntu, Fedora y Arch, qué no toca nunca y cómo funcionan los avisos de actualización.",
+    "description": "/apps page (apps.platform.web.text)"
+  },
+  "apps.platform.web.cta": {
+    "message": "Abrir el sitio web",
+    "description": "/apps page (apps.platform.web.cta)"
+  },
+  "apps.platform.docs.name": {
+    "message": "Documentación",
+    "description": "/apps page (apps.platform.docs.name)"
+  },
+  "apps.platform.docs.title": {
+    "message": "Esta documentación",
+    "description": "/apps page (apps.platform.docs.title)"
+  },
+  "apps.platform.docs.text": {
+    "message": "Cada sección que puede limpiar, las rutas protegidas, las opciones y el formato del informe.",
+    "description": "/apps page (apps.platform.docs.text)"
+  },
+  "apps.platform.docs.cta": {
+    "message": "Leer la documentación",
+    "description": "/apps page (apps.platform.docs.cta)"
+  },
+  "sitemap.title": {
+    "message": "Mapa del sitio",
+    "description": "/sitemap page (sitemap.title)"
+  },
+  "sitemap.description": {
+    "message": "Todas las páginas del manual de linux-cleanup y todas las notas de versión, en una sola página.",
+    "description": "/sitemap page (sitemap.description)"
+  },
+  "sitemap.searchLabel": {
+    "message": "Buscar una página",
+    "description": "/sitemap page (sitemap.searchLabel)"
+  },
+  "sitemap.searchHint": {
+    "message": "ejecución de prueba, node_modules, opciones…",
+    "description": "/sitemap page (sitemap.searchHint)"
+  },
+  "sitemap.none": {
+    "message": "Ninguna página coincide. Pruebe con una palabra más corta.",
+    "description": "/sitemap page (sitemap.none)"
+  },
+  "sitemap.start": {
+    "message": "Empiece aquí",
+    "description": "/sitemap page (sitemap.start)"
+  },
+  "sitemap.releases": {
+    "message": "Notas de versión",
+    "description": "/sitemap page (sitemap.releases)"
   }
 }
