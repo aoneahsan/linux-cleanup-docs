@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>linux-cleanup release notes</title>
-        <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed</link>
+        <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/</link>
         <description>Every linux-cleanup release, command line and desktop app.</description>
         <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -11,108 +11,88 @@
         <copyright>© 2026 Ahsan Mahmood</copyright>
         <item>
             <title><![CDATA[Настольное приложение 1.0.5]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.5</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.5</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.5/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.5/</guid>
             <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
             <description><![CDATA[Приложение говорит на десяти языках, а учётная запись сохраняет выбор на каждом компьютере и в письмах.]]></description>
             <content:encoded><![CDATA[<p>Приложение говорит на десяти языках: английском, упрощённом китайском, хинди, испанском, арабском, французском, бразильском португальском, русском, японском и урду. Выберите язык в «Настройки → Общие → Язык».</p>
 <p>После входа выбор следует за учётной записью на другие ваши компьютеры, и письма аккаунта приходят на этом языке. Арабский и урду читаются справа налево, а пути и команды остаются слева направо. В справке появились «Ещё от Zaions» и «О разработчике». Встроенная командная строка по-прежнему 2.1.1, и приложение само обновляется с 1.0.4.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Настольное приложение 1.0.4]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.4</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.4</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.4/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.4/</guid>
             <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
             <description><![CDATA[AppImage добавляет себя в меню приложений, а окно показывает значок linux-cleanup.]]></description>
             <content:encoded><![CDATA[<p>AppImage при первом запуске добавляет себя в меню приложений вместе со значком и держит этот пункт указывающим туда, где лежит файл. Открытое окно и док показывают значок linux-cleanup вместо пустого. .deb делал это и раньше. То, что очищает приложение, не изменилось. Приложение обновляется само.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Настольное приложение 1.0.3]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.3</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.3</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.3/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.3/</guid>
             <pubDate>Sun, 22 Nov 2026 12:16:00 GMT</pubDate>
             <description><![CDATA[Поставляется с командной строкой 2.1.1 и актуальными библиотеками.]]></description>
             <content:encoded><![CDATA[<p>Приложение теперь поставляется с командной строкой 2.1.1 и актуальными библиотеками. То, что оно очищает, не изменилось. Приложение обновляется само.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[CLI 2.1.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.1/</guid>
             <pubDate>Sun, 22 Nov 2026 12:01:00 GMT</pubDate>
             <description><![CDATA[Экраны справки, версии и «О программе» ведут на сайт, это руководство и страницу загрузки настольного приложения.]]></description>
             <content:encoded><![CDATA[<p><code>--help</code>, <code>--version</code> и окно «О программе» в меню теперь ведут на сайт, это руководство и страницу загрузки настольного приложения. Окно «О программе» также прямо говорит, что скрипт один раз читает публичную запись о выпусках при запуске. То, что удаляет каждый режим, не изменилось. Запуск: <code>npx -y linux-cleanup@2.1.1 --version</code>.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Настольное приложение 1.0.2]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.2</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.2</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.2/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.2/</guid>
             <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
             <description><![CDATA[Понятнее формулировки на экране обновлений и рабочая команда проверки на экране ошибок.]]></description>
             <content:encoded><![CDATA[<p>Понятнее формулировки на экране обновлений, а экран ошибок теперь копирует рабочую команду: <code>npx -y linux-cleanup --self-test</code>. Приложение обновляется само.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Настольное приложение 1.0.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.1/</guid>
             <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
             <description><![CDATA[Отчёты об ошибках без путей и имён файлов, обзор с настоящими экранами, страница «Скачать linux-cleanup» и более устойчивые туры по страницам.]]></description>
             <content:encoded><![CDATA[<p>Отчёты об ошибках приходят к нам без путей и имён файлов, обзор показывает настоящие экраны, а в справке есть страница «Скачать linux-cleanup» со всеми местами, где он работает.</p>
-<p>Туры по страницам держат каждый шаг в поле зрения по мере продвижения. Приложение само обновилось с 1.0.0. См. <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/desktop/install">установку настольного приложения</a>.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
+<p>Туры по страницам держат каждый шаг в поле зрения по мере продвижения. Приложение само обновилось с 1.0.0. См. <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/desktop/install/">установку настольного приложения</a>.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Настольное приложение 1.0.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/desktop-1.0.0/</guid>
             <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
             <description><![CDATA[Первый настольный выпуск: AppImage и .deb для Linux x86_64 со встроенным CLI 2.1.0.]]></description>
             <content:encoded><![CDATA[<p>Первый настольный выпуск: полностью безопасная очистка в окне, с пробным запуском перед каждым реальным и отчётом после него.</p>
-<p>AppImage и .deb для Linux x86_64 со встроенным CLI 2.1.0. Приложение обновляется само из подписанных выпусков. Начните с <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/desktop/install">установки настольного приложения</a>.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
+<p>AppImage и .deb для Linux x86_64 со встроенным CLI 2.1.0. Приложение обновляется само из подписанных выпусков. Начните с <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/desktop/install/">установки настольного приложения</a>.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CLI 2.1.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.1.0/</guid>
             <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
             <description><![CDATA[--json-events выдаёт локальные версионированные JSON-события для --scan и неинтерактивной полностью безопасной очистки, включая пробные запуски.]]></description>
             <content:encoded><![CDATA[<p><code>--json-events</code> выдаёт локальные версионированные JSON-события для <code>--scan</code> и неинтерактивного <code>--all-safe --yes</code>.</p>
-<p>Если добавить <code>--dry-run</code> к полностью безопасной очистке, предлагаемые пути будут показаны без удаления. Поток может содержать полные локальные пути, поэтому оставляйте его на машине. Подробности — в <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/reference/json-events">справочнике JSON-событий</a> и <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/changelog">списке изменений</a>.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
+<p>Если добавить <code>--dry-run</code> к полностью безопасной очистке, предлагаемые пути будут показаны без удаления. Поток может содержать полные локальные пути, поэтому оставляйте его на машине. Подробности — в <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/reference/json-events/">справочнике JSON-событий</a> и <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/changelog/">списке изменений</a>.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CLI 2.0.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.1/</guid>
             <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
             <description><![CDATA[README перечисляет все места, где выпускается linux-cleanup. Работа скрипта не изменилась.]]></description>
             <content:encoded><![CDATA[<p>README перечисляет все места, где выпускается linux-cleanup. Работа скрипта не изменилась.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[CLI 2.0.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/ru/feed/cli-2.0.0/</guid>
             <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
             <description><![CDATA[linux-cleanup 2.0.0 добавляет --dry-run, проверку записи о выпусках при запуске и --refresh-app.]]></description>
             <content:encoded><![CDATA[<p>Добавлены <code>--dry-run</code>, проверка публичной записи о выпусках при запуске и <code>--refresh-app</code> для постоянной копии CLI.</p>
-<p>Обычные уведомления о выпуске пропускают первый запуск и блокируют со следующего; срочные блокируют старую копию сразу. Без сети запуск продолжается. Пробный запуск не удаляет цели очистки и не меняет настройки, хотя может записать локальный журнал и состояние проверки обновлений. Полная запись — в <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/changelog">списке изменений</a>.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
+<p>Обычные уведомления о выпуске пропускают первый запуск и блокируют со следующего; срочные блокируют старую копию сразу. Без сети запуск продолжается. Пробный запуск не удаляет цели очистки и не меняет настройки, хотя может записать локальный журнал и состояние проверки обновлений. Полная запись — в <a class="" href="https://linux-cleanup-docs.aoneahsan.com/ru/changelog/">списке изменений</a>.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>

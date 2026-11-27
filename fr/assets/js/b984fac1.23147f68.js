@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunklinux_cleanup_docs||=[]).push([[2775],{8444(e){e.exports=JSON.parse('{"metadata":{"permalink":"/fr/feed","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Chaque version de linux-cleanup, ligne de commande et application de bureau, de la plus r\xe9cente \xe0 la plus ancienne.","blogTitle":"Notes de version"}}')}}]);

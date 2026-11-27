@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>linux-cleanup release notes</title>
-        <link>https://linux-cleanup-docs.aoneahsan.com/es/feed</link>
+        <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/</link>
         <description>Every linux-cleanup release, command line and desktop app.</description>
         <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -11,108 +11,88 @@
         <copyright>© 2026 Ahsan Mahmood</copyright>
         <item>
             <title><![CDATA[Escritorio 1.0.5]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.5</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.5</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.5/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.5/</guid>
             <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
             <description><![CDATA[La aplicación habla diez idiomas, y una cuenta con sesión iniciada conserva la elección en cada computadora y en sus correos.]]></description>
             <content:encoded><![CDATA[<p>La aplicación habla diez idiomas: inglés, chino simplificado, hindi, español, árabe, francés, portugués de Brasil, ruso, japonés y urdu. Elija uno en Configuración → General → Idioma.</p>
 <p>Con la sesión iniciada, la elección acompaña a su cuenta en sus otras computadoras, y los correos de la cuenta llegan en ese idioma. El árabe y el urdu se leen de derecha a izquierda, con las rutas y los comandos todavía de izquierda a derecha. Ayuda incluye Más de Zaions y Sobre el desarrollador. La línea de comandos incluida sigue siendo la 2.1.1, y la aplicación se actualiza sola desde la 1.0.4.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Escritorio 1.0.4]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.4</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.4</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.4/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.4/</guid>
             <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
             <description><![CDATA[El AppImage se añade al menú de aplicaciones y la ventana muestra el icono de linux-cleanup.]]></description>
             <content:encoded><![CDATA[<p>El AppImage ahora se añade al menú de aplicaciones, con su icono, la primera vez que se ejecuta, y mantiene esa entrada apuntando a donde esté el archivo. La ventana abierta y el dock muestran el icono de linux-cleanup en lugar de uno en blanco. El .deb ya lo hacía. No cambió nada de lo que limpia la aplicación. La aplicación se actualiza sola.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Escritorio 1.0.3]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.3</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.3</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.3/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.3/</guid>
             <pubDate>Sun, 22 Nov 2026 12:16:00 GMT</pubDate>
             <description><![CDATA[Incluye la línea de comandos 2.1.1 y bibliotecas actuales.]]></description>
             <content:encoded><![CDATA[<p>La aplicación ahora incluye la línea de comandos 2.1.1 y bibliotecas actuales. No cambió nada de lo que limpia. La aplicación se actualiza sola.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[CLI 2.1.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.1/</guid>
             <pubDate>Sun, 22 Nov 2026 12:01:00 GMT</pubDate>
             <description><![CDATA[Las pantallas de ayuda, versión y Acerca de enlazan al sitio web, a este manual y a la descarga de escritorio.]]></description>
             <content:encoded><![CDATA[<p><code>--help</code>, <code>--version</code> y el cuadro Acerca de del menú ahora enlazan al sitio web, a este manual y a la página de descarga de la aplicación de escritorio. El cuadro Acerca de también dice claramente que el script lee una vez el registro público de versiones al iniciar. No cambió nada de lo que elimina cada modo. Ejecútelo con <code>npx -y linux-cleanup@2.1.1 --version</code>.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Escritorio 1.0.2]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.2</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.2</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.2/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.2/</guid>
             <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
             <description><![CDATA[Textos más claros en la pantalla Actualizaciones y un comando de comprobación que funciona en la pantalla de errores.]]></description>
             <content:encoded><![CDATA[<p>Textos más claros en la pantalla Actualizaciones, y la pantalla de errores ahora copia un comando que funciona: <code>npx -y linux-cleanup --self-test</code>. La aplicación se actualiza sola.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Escritorio 1.0.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.1/</guid>
             <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
             <description><![CDATA[Informes de errores sin rutas ni nombres de archivo, un recorrido con pantallas reales, una página Obtener linux-cleanup y recorridos de página más estables.]]></description>
             <content:encoded><![CDATA[<p>Los informes de errores nos llegan sin rutas ni nombres de archivo, el recorrido muestra pantallas reales y Ayuda tiene una página Obtener linux-cleanup con cada lugar donde funciona.</p>
-<p>Los recorridos de página mantienen cada paso a la vista mientras avanza. La aplicación se actualizó sola desde la 1.0.0. Vea <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/desktop/install">instalar la aplicación de escritorio</a>.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
+<p>Los recorridos de página mantienen cada paso a la vista mientras avanza. La aplicación se actualizó sola desde la 1.0.0. Vea <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/desktop/install/">instalar la aplicación de escritorio</a>.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Escritorio 1.0.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/desktop-1.0.0/</guid>
             <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
             <description><![CDATA[La primera versión de escritorio, AppImage y .deb para Linux x86_64, con la CLI 2.1.0 incluida.]]></description>
             <content:encoded><![CDATA[<p>La primera versión de escritorio: la limpieza totalmente segura en una ventana, con una simulación antes de cada ejecución real y un recibo después.</p>
-<p>AppImage y .deb para Linux x86_64, con la CLI 2.1.0 incluida. Se actualiza sola desde versiones firmadas. Empiece por <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/desktop/install">instalar la aplicación de escritorio</a>.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
+<p>AppImage y .deb para Linux x86_64, con la CLI 2.1.0 incluida. Se actualiza sola desde versiones firmadas. Empiece por <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/desktop/install/">instalar la aplicación de escritorio</a>.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CLI 2.1.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.1.0/</guid>
             <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
             <description><![CDATA[--json-events emite eventos JSON locales y versionados para --scan y para ejecuciones totalmente seguras no interactivas, simulaciones incluidas.]]></description>
             <content:encoded><![CDATA[<p><code>--json-events</code> emite eventos JSON locales y versionados para <code>--scan</code> y para <code>--all-safe --yes</code> no interactivo.</p>
-<p>Añadir <code>--dry-run</code> a la limpieza totalmente segura informa de las rutas propuestas sin eliminarlas. El flujo puede contener rutas locales completas, así que manténgalo en el equipo. La <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/reference/json-events">referencia de eventos JSON</a> y el <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/changelog">registro de cambios</a> tienen los detalles.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
+<p>Añadir <code>--dry-run</code> a la limpieza totalmente segura informa de las rutas propuestas sin eliminarlas. El flujo puede contener rutas locales completas, así que manténgalo en el equipo. La <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/reference/json-events/">referencia de eventos JSON</a> y el <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/changelog/">registro de cambios</a> tienen los detalles.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CLI 2.0.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.1/</guid>
             <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
             <description><![CDATA[El README lista cada lugar donde se publica linux-cleanup. Nada cambia en lo que hace el script.]]></description>
             <content:encoded><![CDATA[<p>El README lista cada lugar donde se publica linux-cleanup. Nada cambia en lo que hace el script.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[CLI 2.0.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/es/feed/cli-2.0.0/</guid>
             <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
             <description><![CDATA[linux-cleanup 2.0.0 añade --dry-run, una comprobación del registro de versiones al iniciar y --refresh-app.]]></description>
             <content:encoded><![CDATA[<p>Se añadieron <code>--dry-run</code>, una comprobación del registro público de versiones al iniciar y <code>--refresh-app</code> para la copia persistente de la CLI.</p>
-<p>Los avisos de versión normales permiten la primera ejecución y bloquean desde el siguiente inicio; los urgentes bloquean de inmediato una copia antigua. Las ejecuciones sin conexión continúan. Una simulación no elimina objetivos de limpieza ni cambia la configuración, aunque puede escribir un registro local y el estado de la comprobación de actualizaciones. Lea el <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/changelog">registro de cambios</a> para ver la entrada completa.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
+<p>Los avisos de versión normales permiten la primera ejecución y bloquean desde el siguiente inicio; los urgentes bloquean de inmediato una copia antigua. Las ejecuciones sin conexión continúan. Una simulación no elimina objetivos de limpieza ni cambia la configuración, aunque puede escribir un registro local y el estado de la comprobación de actualizaciones. Lea el <a class="" href="https://linux-cleanup-docs.aoneahsan.com/es/changelog/">registro de cambios</a> para ver la entrada completa.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>

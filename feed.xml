@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>linux-cleanup release notes</title>
-        <link>https://linux-cleanup-docs.aoneahsan.com/feed</link>
+        <link>https://linux-cleanup-docs.aoneahsan.com/feed/</link>
         <description>Every linux-cleanup release, command line and desktop app.</description>
         <lastBuildDate>Thu, 26 Nov 2026 16:40:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -11,8 +11,8 @@
         <copyright>© 2026 Ahsan Mahmood</copyright>
         <item>
             <title><![CDATA[Desktop 1.0.5]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.5</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.5</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.5/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.5/</guid>
             <pubDate>Thu, 26 Nov 2026 16:40:00 GMT</pubDate>
             <description><![CDATA[The app speaks ten languages, and a signed-in account keeps the choice on every computer and in its emails.]]></description>
             <content:encoded><![CDATA[<p>The app speaks ten languages: English, Simplified Chinese, Hindi, Spanish, Arabic, French, Brazilian Portuguese,
@@ -20,116 +20,96 @@ Russian, Japanese and Urdu. Pick one in Settings → General → Language.</p>
 <p>Signed in, the choice follows your account to your other computers, and account emails arrive in it. Arabic and
 Urdu read right to left, with paths and commands still left to right. Help has More from Zaions and About the
 developer. The bundled command line is still 2.1.1, and the app updates itself from 1.0.4.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Desktop 1.0.4]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.4</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.4</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.4/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.4/</guid>
             <pubDate>Sun, 22 Nov 2026 14:45:00 GMT</pubDate>
             <description><![CDATA[The AppImage adds itself to the applications menu, and the window shows the linux-cleanup icon.]]></description>
             <content:encoded><![CDATA[<p>The AppImage now adds itself to your applications menu, with its icon, the first time it runs, and keeps that
 entry pointing at wherever the file lives. The open window and the dock show the linux-cleanup icon instead of a
 blank one. The .deb already did this. Nothing changed in what the app cleans. The app updates itself.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Desktop 1.0.3]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.3</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.3</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.3/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.3/</guid>
             <pubDate>Sun, 22 Nov 2026 12:16:00 GMT</pubDate>
             <description><![CDATA[Ships with the command line 2.1.1 and current libraries.]]></description>
             <content:encoded><![CDATA[<p>The app now ships with the command line 2.1.1 and current libraries. Nothing changed in what it cleans. The app
 updates itself.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[CLI 2.1.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.1/</guid>
             <pubDate>Sun, 22 Nov 2026 12:01:00 GMT</pubDate>
             <description><![CDATA[The help, version and About screens point to the website, this manual and the desktop download.]]></description>
             <content:encoded><![CDATA[<p><code>--help</code>, <code>--version</code> and the menu's About box now point to the website, this manual and the desktop app's
 download page. The About box also says plainly that the script reads the public release record once at start.
 Nothing changed in what any mode removes. Run it with <code>npx -y linux-cleanup@2.1.1 --version</code>.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Desktop 1.0.2]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.2</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.2</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.2/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.2/</guid>
             <pubDate>Sun, 22 Nov 2026 09:40:00 GMT</pubDate>
             <description><![CDATA[Clearer wording on the Updates screen and a working check command on the errors screen.]]></description>
             <content:encoded><![CDATA[<p>Clearer wording on the Updates screen, and the errors screen now copies a command that works:
 <code>npx -y linux-cleanup --self-test</code>. The app updates itself.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[Desktop 1.0.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.1/</guid>
             <pubDate>Sun, 22 Nov 2026 07:40:00 GMT</pubDate>
             <description><![CDATA[Error reports with no paths or file names, a walkthrough with real screens, a Get linux-cleanup page and steadier page tours.]]></description>
             <content:encoded><![CDATA[<p>Error reports reach us without paths or file names, the walkthrough shows real screens, and Help has a Get
 linux-cleanup page listing every place it runs.</p>
 <p>Page tours keep each step in view as you move through them. The app updated itself from 1.0.0. See
-<a class="" href="https://linux-cleanup-docs.aoneahsan.com/desktop/install">installing the desktop app</a>.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
+<a class="" href="https://linux-cleanup-docs.aoneahsan.com/desktop/install/">installing the desktop app</a>.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Desktop 1.0.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/desktop-1.0.0/</guid>
             <pubDate>Sat, 21 Nov 2026 14:00:00 GMT</pubDate>
             <description><![CDATA[The first desktop release, an AppImage and .deb for x86_64 Linux bundling CLI 2.1.0.]]></description>
             <content:encoded><![CDATA[<p>The first desktop release: the all-safe cleanup in a window, with a dry run before every real run and a receipt
 after it.</p>
 <p>AppImage and .deb for x86_64 Linux, bundling CLI 2.1.0. It updates itself from signed releases. Start with
-<a class="" href="https://linux-cleanup-docs.aoneahsan.com/desktop/install">installing the desktop app</a>.</p>]]></content:encoded>
-            <category>desktop</category>
-            <category>release</category>
+<a class="" href="https://linux-cleanup-docs.aoneahsan.com/desktop/install/">installing the desktop app</a>.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CLI 2.1.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.1.0/</guid>
             <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
             <description><![CDATA[--json-events streams local, versioned JSON events for --scan and non-interactive all-safe runs, dry runs included.]]></description>
             <content:encoded><![CDATA[<p><code>--json-events</code> streams local, versioned JSON events for <code>--scan</code> and non-interactive <code>--all-safe --yes</code>.</p>
 <p>Adding <code>--dry-run</code> to all-safe reports proposed paths without deleting them. The stream can contain full local
-paths, so keep it on the machine. The <a class="" href="https://linux-cleanup-docs.aoneahsan.com/reference/json-events">JSON events reference</a> and the <a class="" href="https://linux-cleanup-docs.aoneahsan.com/changelog">changelog</a>
+paths, so keep it on the machine. The <a class="" href="https://linux-cleanup-docs.aoneahsan.com/reference/json-events/">JSON events reference</a> and the <a class="" href="https://linux-cleanup-docs.aoneahsan.com/changelog/">changelog</a>
 have the details.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[CLI 2.0.1]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.1</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.1</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.1/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.1/</guid>
             <pubDate>Sat, 21 Nov 2026 10:00:00 GMT</pubDate>
             <description><![CDATA[The README lists every place linux-cleanup is released. No change to what the script does.]]></description>
             <content:encoded><![CDATA[<p>The README lists every place linux-cleanup is released. No change to what the script does.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
         </item>
         <item>
             <title><![CDATA[CLI 2.0.0]]></title>
-            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.0</link>
-            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.0</guid>
+            <link>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.0/</link>
+            <guid>https://linux-cleanup-docs.aoneahsan.com/feed/cli-2.0.0/</guid>
             <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
             <description><![CDATA[linux-cleanup 2.0.0 adds --dry-run, a release-record check on start and --refresh-app.]]></description>
             <content:encoded><![CDATA[<p>Added <code>--dry-run</code>, a public release-record check on start, and <code>--refresh-app</code> for the persistent CLI copy.</p>
 <p>Normal release notices allow the first run and block from the next start; urgent notices block an older copy at
 once. Offline runs continue. A dry run does not remove cleanup targets or change settings, though it may write a
-local log and update-check state. Read the <a class="" href="https://linux-cleanup-docs.aoneahsan.com/changelog">changelog</a> for the full entry.</p>]]></content:encoded>
-            <category>cli</category>
-            <category>release</category>
+local log and update-check state. Read the <a class="" href="https://linux-cleanup-docs.aoneahsan.com/changelog/">changelog</a> for the full entry.</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
